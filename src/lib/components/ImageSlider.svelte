@@ -35,6 +35,7 @@
 		<img {src} {alt} />
 	{/each}
 </div>
+<p>Swipe left for more images</p>
 
 <style>
 	.image-slider {

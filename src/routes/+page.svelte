@@ -33,8 +33,10 @@
 					<Side_By_Side>
 						<a href={`/blog/${post.slug}`} class="title">
 							<h2>{post.title}</h2>
-							<p class="date">{formatDate(post.date)}</p>
-							<p class="description">{post.description}</p>
+							<div class="meta">
+								<p class="date">{formatDate(post.date)}</p>
+								<p class="description">{post.description}</p>
+							</div>
 						</a>
 						<Image src={post.image} alt={post.title} />
 					</Side_By_Side>
@@ -55,3 +57,16 @@
 		{/each}
 	</ul>
 </section>
+
+<style>
+	a {
+		h2 {
+			margin: 0;
+			padding: 0;
+			padding-bottom: 10px;
+		}
+	}
+	.meta {
+		color: var(--color-text);
+	}
+</style>
