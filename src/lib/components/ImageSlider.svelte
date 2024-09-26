@@ -33,10 +33,10 @@
 <div class="image-slider">
 	{#each images as image, i}
 		<img
-			src={image}
+			src={image.src}
 			class:active={i === currentIndex}
 			class:inactive={i !== currentIndex}
-			alt={`Image ${i + 1}`}
+			alt={image.alt}
 		/>
 	{/each}
 
