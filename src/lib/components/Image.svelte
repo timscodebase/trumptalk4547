@@ -1,5 +1,10 @@
 <script lang="ts">
-	let { src, alt } = $props() as { src: string; alt: string }
+	interface Props {
+		src: string
+		alt: string
+	}
+
+	let { src, alt } = $props() as Props
 </script>
 
 <img {src} {alt} loading="lazy" />
