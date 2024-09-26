@@ -43,6 +43,7 @@
 		scroll-snap-type: x mandatory;
 		display: flex;
 		gap: 5px;
+		background: var(--color-surface-op);
 	}
 
 	img {
