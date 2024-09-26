@@ -31,19 +31,9 @@
 </script>
 
 <div class="image-slider">
-	{#each images as image, i}
-		<img
-			src={image.src}
-			class:active={i === currentIndex}
-			class:inactive={i !== currentIndex}
-			alt={image.alt}
-		/>
+	{#each images as { src, alt }}
+		<img {src} {alt} />
 	{/each}
-
-	<div class="controls">
-		<button onclick={previousImage}>&lt;</button>
-		<button onclick={nextImage}>&gt;</button>
-	</div>
 </div>
 
 <style>
@@ -52,7 +42,8 @@
 		scroll-snap-type: mandatory;
 		scroll-snap-stop: always;
 		scroll-snap-align: center;
-		display: flex;
+		display: grid;
+		grid-auto-flow: row;
 		gap: 5px;
 	}
 </style>
