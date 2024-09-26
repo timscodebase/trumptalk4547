@@ -39,11 +39,17 @@
 <style>
 	.image-slider {
 		overflow-x: scroll;
-		scroll-snap-type: mandatory;
-		scroll-snap-stop: always;
-		scroll-snap-align: center;
+		scroll-snap-type: x mandatory;
 		display: grid;
 		grid-auto-flow: row;
 		gap: 5px;
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+		object-fit: contain;
+		scroll-snap-align: center;
+		scroll-snap-align: start;
 	}
 </style>
