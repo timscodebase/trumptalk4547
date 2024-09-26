@@ -23,3 +23,16 @@ h6,
 	font-family: var(---fonts-header);
 	font-weight: bold;
 }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-accent);
+	padding-bottom: .75rem;
+}
+
+h2 {
+	padding-bottom: 1.5rem;
+}

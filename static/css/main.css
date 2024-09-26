@@ -2,6 +2,28 @@
 
 :root {
 	view-transition-name: root;
+
+	/* Primarey Theme Colors */
+	--color-surface-light: #5d91fa;
+	--color-surface-dark: #0339A6;
+	--color-text-light: #070F26 ;
+	--color-text-dark: #F2F2F2;
+	--color-accent-dark: #E00707;
+	--color-accent-light: #A60505;
+	--color-success-dark: #00C700;
+	--color-success-light: #008B00;
+	--color-error-dark: #E24000;
+	--color-error-light: #8C2800;
+	--color-warning-dark: #C4BD00;
+	--color-warning-light: #8A8600;
+	--color-toggle-dark: #F2F2F2;
+	--color-toggle-light: #070F26;
+
+	--shadow-light: 0px 4px 2px #070F26;
+	--shadow-light-footer: 0px 2px 1px #070F26;
+	--shadow-dark: 0px 4px 2px #F2F2F2;
+	--shadow-dark-footer: 0px 2px 1px #F2F2F2;
+
 	--color-surface: var(--color-surface-light);
 	--color-text: var(--color-text-light);
 	--color-accent: var(--color-accent-light);
@@ -9,6 +31,18 @@
 	--color-error: var(--color-error-light);
 	--color-warning: var(--color-warning-light);
 	--color-toggle: var(--color-toggle-light);
+	--color-selected-text: var(--color-text-dark);
+	--color-selected: var(--color-accent-dark);
+
+	--shadow: var(--shadow-light);
+	--shadow-footer: var(--shadow-light-footer);
+	--op-shadow: var(--shadow-dark);
+	--op-shadow-footer: var(--shadow-dark-footer);
+
+	--color-red: var(--color-accent-dark);
+	--color-blue: var(--color-surface-dark);
+
+	--text-toggle: '☀️';
 
 	--text-toggle: '🌙';
 }
@@ -101,6 +135,14 @@ html:active-view-transition-type(reload) {
 	--color-error: var(--color-error-dark);
 	--color-warning: var(--color-warning-dark);
 	--color-toggle: var(--color-toggle-dark);
+	--color-selected: var(--color-accent-light);
+
+	--color-red: var(--color-accent-light);
+	--color-blue: var(--color-surface-light);
+	--color-shadow: var(--color-accent);
+
+	--shadow: var(--shadow-dark);
+	--op-shadow: var(--shadow-light);
 
 	--text-toggle: '☀️';
 }
@@ -120,6 +162,11 @@ a {
 	}
 }
 
+p::selection {
+  color: var(--color-selected-text);
+  background-color: var(--color-selected);
+}
+
 ul {
 	list-style: none;
 	padding: 0;
@@ -137,4 +184,26 @@ ul {
 
 .side-by-side > img:last-child {
     border-radius: 0 var(--radius-3) var(--radius-3) 0;
+}
+
+.logo-span {
+	font-size: 2.5rem;
+	text-shadow: var(--shadow);
+}
+
+footer .logo-span {
+	font-size: 1.2rem;
+	text-shadow: var(--op-shadow-footer);
+}
+
+.red {
+	color: var(--color-red);
+}
+
+.blue {
+	color: var(--color-blue);
+}
+
+.op-shadow {
+	text-shadow: var(--op-shadow);
 }

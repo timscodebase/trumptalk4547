@@ -65,6 +65,7 @@
 			textarea {
 				border-radius: var(--radius-2);
 				border: 1px solid var(--color-accent);
+				background-color: transparent;
 			}
 		}
 

@@ -10,7 +10,10 @@
 <header>
 	<a href="/">
 		<div class="logo">
-			<span class="logo-span header-font">{config.name}</span>
+			<span class="logo-span header-font"
+				><span class="red">Trump</span> <span class="op-shadow">Talk</span>
+				<span class="blue">45/47</span>
+			</span>
 			<p>{config.description}</p>
 		</div>
 	</a>
@@ -59,9 +62,5 @@
 				margin-bottom: 0.5rem;
 			}
 		}
-	}
-
-	.logo-span {
-		font-size: 2.5rem;
 	}
 </style>

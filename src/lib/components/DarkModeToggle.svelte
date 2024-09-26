@@ -34,15 +34,15 @@
 </script>
 
 <div class="theme-switch-wrapper">
-	<label class="theme-switch" for="checkbox">
-		<input type="checkbox" id="checkbox" />
-		<div class="slider round"></div>
-	</label>
 	{#if isDarkMode}
 		<em><iconify-icon icon="fe:sunny-o"></iconify-icon></em>
 	{:else}
 		<em><iconify-icon icon="fe:moon"></iconify-icon></em>
 	{/if}
+	<label class="theme-switch" for="checkbox">
+		<input type="checkbox" id="checkbox" />
+		<div class="slider round"></div>
+	</label>
 </div>
 
 <style>
@@ -57,7 +57,7 @@
 			display: grid;
 			place-items: center;
 			justify-content: center;
-			margin-left: 10px;
+			margin-right: 10px;
 			font-size: 1.5rem;
 			color: var(--color-accent);
 			font-weight: 600;

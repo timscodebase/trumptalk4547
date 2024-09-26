@@ -1,6 +1,6 @@
 <script lang="ts">
+	import 'iconify-icon'
 	import { Footer, Header } from '$lib'
-	import { colors } from '$lib/config'
 
 	import 'open-props/style'
 	import 'open-props/normalize'
@@ -10,10 +10,6 @@
 	// set root variables
 	$effect(() => {
 		const root = document.documentElement || document.body
-
-		for (const color in colors) {
-			root.style.setProperty(`--${color}`, colors[color as keyof typeof colors])
-		}
 
 		window.addEventListener('pagereveal', async (e) => {
 			if (e.viewTransition) {

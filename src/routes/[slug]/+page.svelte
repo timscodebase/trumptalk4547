@@ -3,32 +3,33 @@
 	import * as config from '$lib/config'
 
 	export let data
+	const { meta, content } = data
 </script>
 
 <!-- SEO -->
 <svelte:head>
-	<title>{config.name} | {data.meta.title}</title>
+	<title>{config.name} | {meta.title}</title>
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:title" content={meta.title} />
 </svelte:head>
 
 <article>
 	<!-- Title -->
 	<hgroup>
-		<h1 style={`--transition-name: post-${slugify(data.meta.title)}`}>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
+		<h1 style={`--transition-name: post-${slugify(meta.title)}`}>{meta.title}</h1>
+		<p>Published at {formatDate(meta.date)}</p>
 	</hgroup>
 
 	<!-- Tags -->
 	<div class="tags">
-		{#each data.meta.categories as category}
+		{#each meta.categories as category}
 			<span class="surface-4">&num;{category}</span>
 		{/each}
 	</div>
 
 	<!-- Post -->
 	<div class="prose">
-		<svelte:component this={data.content} />
+		<svelte:component this={content} />
 	</div>
 </article>
 
