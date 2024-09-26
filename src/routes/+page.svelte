@@ -31,12 +31,14 @@
 			{#if i % 2}
 				<li class="post" style={`--transition-name: post-${post.slug}`}>
 					<Side_By_Side>
-						<a href={`/blog/${post.slug}`} class="title">
-							<h2>{post.title}</h2>
-						</a>
-						<div class="meta">
-							<p class="date">{formatDate(post.date)}</p>
-							<p class="description">{post.description}</p>
+						<div>
+							<a href={`/blog/${post.slug}`} class="title">
+								<h2>{post.title}</h2>
+							</a>
+							<div class="meta">
+								<p class="date">{formatDate(post.date)}</p>
+								<p class="description">{post.description}</p>
+							</div>
 						</div>
 						<Image src={post.image} alt={post.title} />
 					</Side_By_Side>
@@ -46,12 +48,14 @@
 				<li class="post" style={`--transition-name: post-${post.slug}`}>
 					<Side_By_Side>
 						<Image src={post.image} alt={post.title} />
-						<a href={`/blog/${post.slug}`} class="title">
-							<h2>{post.title}</h2>
-						</a>
-						<div class="meta">
-							<p class="date">{formatDate(post.date)}</p>
-							<p class="description">{post.description}</p>
+						<div>
+							<a href={`/blog/${post.slug}`} class="title">
+								<h2>{post.title}</h2>
+							</a>
+							<div class="meta">
+								<p class="date">{formatDate(post.date)}</p>
+								<p class="description">{post.description}</p>
+							</div>
 						</div>
 					</Side_By_Side>
 				</li>
