@@ -25,6 +25,7 @@
 	--shadow-dark-footer: 0px 1px 1px #F2F2F2;
 
 	--color-surface: var(--color-surface-light);
+	--color-surface-op: var(--color-surface-dark);
 	--color-text: var(--color-text-light);
 	--color-accent: var(--color-accent-light);
 	--color-success: var(--color-success-light);
@@ -129,6 +130,7 @@ html:active-view-transition-type(reload) {
 
 [data-theme='dark'] {
 	--color-surface: var(--color-surface-dark);
+	--color-surface-op: var(--color-surface-light);
 	--color-text: var(--color-text-dark);
 	--color-accent: var(--color-accent-dark);
 	--color-success: var(--color-success-dark);
