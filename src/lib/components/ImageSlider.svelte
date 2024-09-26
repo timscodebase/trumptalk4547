@@ -40,8 +40,7 @@
 	.image-slider {
 		overflow-x: scroll;
 		scroll-snap-type: x mandatory;
-		display: grid;
-		grid-auto-flow: row;
+		display: flex;
 		gap: 5px;
 	}
 
