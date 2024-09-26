@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Image } from '$lib/types'
+	import type { Image } from '$lib/types'
 
 	type Props = {
 		images: Image[]
@@ -7,9 +7,9 @@
 		interval?: number
 	}
 
-	let { images, autoplay = false, interval = 3000 } = $props() as Props
-	let currentIndex = 0
-	let intervalId = null
+	let { images, interval = 3000 } = $props() as Props
+	let currentIndex = $state(0)
+	let intervalId: NodeJS.Timeout | null = null
 
 	$effect(() => {
 		intervalId = setInterval(() => {
@@ -17,7 +17,7 @@
 		}, interval)
 
 		return () => {
-			clearInterval(intervalId)
+			if (intervalId) clearInterval(intervalId)
 		}
 	})
 
@@ -72,9 +72,6 @@
 	}
 
 	.controls {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
 		width: 100%;
 	}
 
