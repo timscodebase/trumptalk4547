@@ -54,8 +54,8 @@ featured: true
 
 #### Further reading...
 
- - [Donald Trump - Wikipedia](en.wikipedia.org)
+ - [Donald Trump - Wikipedia](https://en.wikipedia.org)
 
- - [Donald Trump: Life before the presidency](millercenter.org)
+ - [Donald Trump: Life before the presidency](https://millercenter.org)
 
- - [Donald J. Trump (White House)](whitehousehistory.org)
+ - [Donald J. Trump (White House)](https://whitehousehistory.org)
