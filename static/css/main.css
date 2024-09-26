@@ -1,0 +1,140 @@
+@import url('./typograpy.css');
+
+:root {
+	view-transition-name: root;
+	--color-surface: var(--color-surface-light);
+	--color-text: var(--color-text-light);
+	--color-accent: var(--color-accent-light);
+	--color-success: var(--color-success-light);
+	--color-error: var(--color-error-light);
+	--color-warning: var(--color-warning-light);
+	--color-toggle: var(--color-toggle-light);
+
+	--text-toggle: '🌙';
+}
+
+@view-transition {
+  navigation: auto;
+  types: slide, forwards;
+}
+
+/* Determine what gets captured when the type is forwards or backwards */
+html:active-view-transition-type(forwards, backwards) {
+  :root {
+    view-transition-name: none;
+  }
+  article {
+    view-transition-name: content;
+  }
+  .pagination {
+    view-transition-name: pagination;
+  }
+}
+
+/* Animation styles for forwards type only */
+html:active-view-transition-type(forwards) {
+  &::view-transition-old(content) {
+    animation-name: slide-out-to-left;
+  }
+  &::view-transition-new(content) {
+    animation-name: slide-in-from-right;
+  }
+}
+
+/* Animation styles for backwards type only */
+html:active-view-transition-type(backwards) {
+  &::view-transition-old(content) {
+    animation-name: slide-out-to-right;
+  }
+  &::view-transition-new(content) {
+    animation-name: slide-in-from-left;
+  }
+}
+
+/* Animation styles for reload type only */
+html:active-view-transition-type(reload) {
+  &::view-transition-old(root) {
+    animation-name: fade-out, scale-down;
+  }
+  &::view-transition-new(root) {
+    animation-delay: 0.25s;
+    animation-name: fade-in, scale-up;
+  }
+}
+
+
+@keyframes move-out {
+	from {
+		transform: translateY(0%);
+	}
+
+	to {
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes move-in {
+	from {
+		transform: translateY(100%);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
+}
+
+/* Apply the custom animation to the old and new page states */
+
+::view-transition-old(root) {
+	animation: 0.2s ease-in both move-out;
+}
+
+::view-transition-new(root) {
+	animation: 0.2s ease-in both move-in;
+}
+
+[data-theme='dark'] {
+	--color-surface: var(--color-surface-dark);
+	--color-text: var(--color-text-dark);
+	--color-accent: var(--color-accent-dark);
+	--color-success: var(--color-success-dark);
+	--color-error: var(--color-error-dark);
+	--color-warning: var(--color-warning-dark);
+	--color-toggle: var(--color-toggle-dark);
+
+	--text-toggle: '☀️';
+}
+
+body {
+	background: var(--color-surface);
+	color: var(--color-text);
+}
+
+a {
+	color: var(--color-accent);
+	text-decoration: none;
+	font-weight: bold;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.side-by-side:has(img) {
+	img {
+		border: none;
+	}
+}
+
+.side-by-side > img:first-child {
+    border-radius: var(--radius-3) 0 0 var(--radius-3);
+}
+
+.side-by-side > img:last-child {
+    border-radius: 0 var(--radius-3) var(--radius-3) 0;
+}
