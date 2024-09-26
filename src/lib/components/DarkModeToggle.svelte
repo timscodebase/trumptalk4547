@@ -1,5 +1,5 @@
 <script lang="ts">
-	let isDarkMode = $state(true)
+	let isDarkMode = $state(false)
 
 	$effect(() => {
 		const toggleSwitch = document.querySelector(
