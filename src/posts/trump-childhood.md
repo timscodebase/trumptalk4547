@@ -11,7 +11,13 @@ featured: true
 ---
 
 <script>
-  import { Image, ImageSlideShow } from '../lib'
+  import { Image, ImageSlider } from '../lib';
+  const images = [
+    { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_Biography_Photos_rroysh.webp", alt: "Young Donald Trump with family" },
+    { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_2016_Biography_Photos_1_pjh0af.webp", alt: "Young Donald Trump as a ball player" },
+    { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_2016_Biography_Photos_tzfabu.webp", alt: "Donald Trump at military academy" },
+    { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_2016_Biography_1_oahr0u.webp", alt: "Donald Trump with his father" }
+  ];
 </script>
 
 ## Donald J. Trump's Childhood
@@ -31,6 +37,8 @@ featured: true
 **Military Academy** — At age 13, he was enrolled in the New York Military Academy, a private boarding school.
 
 **Higher Education** — Trump attended Fordham University for two years before transferring to the Wharton School of the University of Pennsylvania, where he graduated with a Bachelor of Science in economics in 1968.
+
+<ImageSlider {images} />
 
 ### Family Background
 

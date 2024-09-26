@@ -10,7 +10,7 @@ export type Post = {
 	featured: boolean
 }
 
-export interface Image {
+export type Image = {
 	src: string
 	alt: string
 }

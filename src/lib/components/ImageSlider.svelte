@@ -1,33 +1,33 @@
-<script>
-	import { Image } from "$lib/types"
+<script lang="ts">
+	import { Image } from '$lib/types'
 
-  type Props = {
-    images: Image[];
-    autoplay?: boolean;
-    interval?: number;
-  }
+	type Props = {
+		images: Image[]
+		autoplay?: boolean
+		interval?: number
+	}
 
-  let { images, autoplay, interval } = $props() as Props
-  let currentIndex = 0;
-  let intervalId = null;
+	let { images, autoplay = false, interval = 3000 } = $props() as Props
+	let currentIndex = 0
+	let intervalId = null
 
-  $effect(() => {
-    intervalId = setInterval(() => {
-      currentIndex = (currentIndex + 1) % images.length;
-    }, interval);
+	$effect(() => {
+		intervalId = setInterval(() => {
+			currentIndex = (currentIndex + 1) % images.length
+		}, interval)
 
-    return () => {
-      clearInterval(intervalId);
-    };
-  });
+		return () => {
+			clearInterval(intervalId)
+		}
+	})
 
-  function previousImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-  }
+	function previousImage() {
+		currentIndex = (currentIndex - 1 + images.length) % images.length
+	}
 
-  function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-  }
+	function nextImage() {
+		currentIndex = (currentIndex + 1) % images.length
+	}
 </script>
 
 <div class="image-slider">
@@ -85,4 +85,4 @@
 		font-size: 16px;
 		cursor: pointer;
 	}
-</div>
+</style>
