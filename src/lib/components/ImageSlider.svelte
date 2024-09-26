@@ -48,38 +48,11 @@
 
 <style>
 	.image-slider {
-		position: relative;
-		width: 100%;
-		height: 500px; /* adjust height as needed */
-	}
-
-	.image-slider img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transition: opacity 0.5s;
-	}
-
-	.image-slider img.active {
-		opacity: 1;
-	}
-
-	.image-slider img_inactive {
-		opacity: 0;
-	}
-
-	.controls {
-		width: 100%;
-	}
-
-	.controls button {
-		background-color: rgba(255, 255, 255, 0.5);
-		border: none;
-		padding: 10px 20px;
-		font-size: 16px;
-		cursor: pointer;
+		overflow-x: scroll;
+		scroll-snap-type: mandatory;
+		scroll-snap-stop: always;
+		scroll-snap-align: center;
+		display: flex;
+		gap: 5px;
 	}
 </style>
