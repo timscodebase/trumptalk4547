@@ -38,7 +38,7 @@ featured: true
 
 **Higher Education** — Trump attended Fordham University for two years before transferring to the Wharton School of the University of Pennsylvania, where he graduated with a Bachelor of Science in economics in 1968.
 
-<ImageSlider {images} />
+<!-- <ImageSlider {images} /> -->
 
 ### Family Background
 
