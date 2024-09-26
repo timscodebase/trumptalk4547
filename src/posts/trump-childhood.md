@@ -38,8 +38,6 @@ featured: true
 
 **Higher Education** — Trump attended Fordham University for two years before transferring to the Wharton School of the University of Pennsylvania, where he graduated with a Bachelor of Science in economics in 1968.
 
-<!-- <ImageSlider {images} /> -->
-
 ### Family Background
 
 **Parents** — Fred Trump was a successful real estate developer, and Mary Anne MacLeod Trump was a Scottish immigrant who came to the U.S. in 1930.
