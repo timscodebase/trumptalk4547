@@ -33,11 +33,11 @@
 					<Side_By_Side>
 						<a href={`/blog/${post.slug}`} class="title">
 							<h2>{post.title}</h2>
-							<div class="meta">
-								<p class="date">{formatDate(post.date)}</p>
-								<p class="description">{post.description}</p>
-							</div>
 						</a>
+						<div class="meta">
+							<p class="date">{formatDate(post.date)}</p>
+							<p class="description">{post.description}</p>
+						</div>
 						<Image src={post.image} alt={post.title} />
 					</Side_By_Side>
 				</li>
@@ -48,11 +48,11 @@
 						<Image src={post.image} alt={post.title} />
 						<a href={`/blog/${post.slug}`} class="title">
 							<h2>{post.title}</h2>
-							<div class="meta">
-								<p class="date">{formatDate(post.date)}</p>
-								<p class="description">{post.description}</p>
-							</div>
 						</a>
+						<div class="meta">
+							<p class="date">{formatDate(post.date)}</p>
+							<p class="description">{post.description}</p>
+						</div>
 					</Side_By_Side>
 				</li>
 			{/if}
@@ -61,12 +61,10 @@
 </section>
 
 <style>
-	a {
-		h2 {
-			margin: 0;
-			padding: 0;
-			padding-bottom: 10px;
-		}
+	h2 {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 10px;
 	}
 	.meta {
 		color: var(--color-text);
