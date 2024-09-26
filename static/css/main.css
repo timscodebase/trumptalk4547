@@ -24,6 +24,27 @@
 	--shadow-dark: 0px 2px 2px #F2F2F2;
 	--shadow-dark-footer: 0px 1px 1px #F2F2F2;
 
+	--color-surface: var(--color-surface-dark);
+	--color-surface-op: var(--color-surface-light);
+	--color-text: var(--color-text-dark);
+	--color-accent: var(--color-accent-dark);
+	--color-success: var(--color-success-dark);
+	--color-error: var(--color-error-dark);
+	--color-warning: var(--color-warning-dark);
+	--color-toggle: var(--color-toggle-dark);
+	--color-selected: var(--color-accent-light);
+
+	--color-red: var(--color-accent-light);
+	--color-blue: var(--color-surface-light);
+	--color-shadow: var(--color-accent);
+
+	--shadow: var(--shadow-dark);
+	--op-shadow: var(--shadow-light);
+
+	--text-toggle: '☀️';
+}
+
+[data-theme='light'] {
 	--color-surface: var(--color-surface-light);
 	--color-surface-op: var(--color-surface-dark);
 	--color-text: var(--color-text-light);
@@ -32,20 +53,37 @@
 	--color-error: var(--color-error-light);
 	--color-warning: var(--color-warning-light);
 	--color-toggle: var(--color-toggle-light);
-	--color-selected-text: var(--color-text-dark);
 	--color-selected: var(--color-accent-dark);
-
-	--shadow: var(--shadow-light);
-	--shadow-footer: var(--shadow-light-footer);
-	--op-shadow: var(--shadow-dark);
-	--op-shadow-footer: var(--shadow-dark-footer);
 
 	--color-red: var(--color-accent-dark);
 	--color-blue: var(--color-surface-dark);
+	--color-shadow: var(--color-accent);
 
-	--text-toggle: '☀️';
+	--shadow: var(--shadow-light);
+	--op-shadow: var(--shadow-dark);
 
 	--text-toggle: '🌙';
+}
+
+[data-theme='dark'] {
+	--color-surface: var(--color-surface-dark);
+	--color-surface-op: var(--color-surface-light);
+	--color-text: var(--color-text-dark);
+	--color-accent: var(--color-accent-dark);
+	--color-success: var(--color-success-dark);
+	--color-error: var(--color-error-dark);
+	--color-warning: var(--color-warning-dark);
+	--color-toggle: var(--color-toggle-dark);
+	--color-selected: var(--color-accent-light);
+
+	--color-red: var(--color-accent-light);
+	--color-blue: var(--color-surface-light);
+	--color-shadow: var(--color-accent);
+
+	--shadow: var(--shadow-dark);
+	--op-shadow: var(--shadow-light);
+
+	--text-toggle: '☀️';
 }
 
 @view-transition {
@@ -126,27 +164,6 @@ html:active-view-transition-type(reload) {
 
 ::view-transition-new(root) {
 	animation: 0.2s ease-in both move-in;
-}
-
-[data-theme='dark'] {
-	--color-surface: var(--color-surface-dark);
-	--color-surface-op: var(--color-surface-light);
-	--color-text: var(--color-text-dark);
-	--color-accent: var(--color-accent-dark);
-	--color-success: var(--color-success-dark);
-	--color-error: var(--color-error-dark);
-	--color-warning: var(--color-warning-dark);
-	--color-toggle: var(--color-toggle-dark);
-	--color-selected: var(--color-accent-light);
-
-	--color-red: var(--color-accent-light);
-	--color-blue: var(--color-surface-light);
-	--color-shadow: var(--color-accent);
-
-	--shadow: var(--shadow-dark);
-	--op-shadow: var(--shadow-light);
-
-	--text-toggle: '☀️';
 }
 
 body {
