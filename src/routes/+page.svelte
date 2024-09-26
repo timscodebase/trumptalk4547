@@ -46,7 +46,7 @@
 				<li class="post" style={`--transition-name: post-${post.slug}`}>
 					<Side_By_Side>
 						<Image src={post.image} alt={post.title} />
-						< href={`/blog/${post.slug}`} class="title">
+						<a href={`/blog/${post.slug}`} class="title">
 							<h2>{post.title}</h2>
 							<div class="meta">
 								<p class="date">{formatDate(post.date)}</p>
