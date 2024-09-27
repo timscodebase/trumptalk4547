@@ -1,7 +1,7 @@
 ---
 title: Donald J. Trump's Childhood
 description: A few facts about Donald J. Trump's Childhood
-date: '2024-9-25'
+date: '2024-09-25'
 image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727330685/Donald_Trump_2016_Biography_bgtjcg.webp'
 categories:
   - Donald Trump

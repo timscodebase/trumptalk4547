@@ -205,7 +205,7 @@ ul {
 }
 
 .side-by-side > img:last-child {
-    border-radius: 0 var(--radius-3) var(--radius-3) 0;
+    /* border-radius: 0 var(--radius-3) var(--radius-3) 0; */
 }
 
 .logo-span {
