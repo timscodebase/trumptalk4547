@@ -37,7 +37,7 @@
 		margin-inline: auto;
 	}
 
-	@media (max-width: 650px) {
+	@media (max-width: 1000px) {
 		.wrapper {
 			padding-inline: 1rem;
 		}

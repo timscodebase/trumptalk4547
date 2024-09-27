@@ -70,7 +70,7 @@
 		width: 40px;
 	}
 
-	@media (max-width: 650px) {
+	@media (max-width: 1000px) {
 		.theme-switch {
 			height: 12px;
 			width: 20px;
@@ -114,7 +114,7 @@
 		background-color: var(--color-accent);
 	}
 
-	@media (max-width: 650px) {
+	@media (max-width: 1000px) {
 		.slider:before {
 			--offset: 1px;
 			--size: 10px;
@@ -129,7 +129,7 @@
 		transform: translateX(16px);
 	}
 
-	@media (max-width: 650px) {
+	@media (max-width: 1000px) {
 		input:checked + .slider:before {
 			transform: translateX(8px);
 		}

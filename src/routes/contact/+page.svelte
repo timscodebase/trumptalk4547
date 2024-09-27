@@ -45,7 +45,7 @@
 	}
 
 	.form_wrap {
-		max-width: 650px;
+		max-width: 1000px;
 		margin: 0 auto;
 	}
 
