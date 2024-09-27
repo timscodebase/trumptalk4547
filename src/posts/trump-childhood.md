@@ -11,7 +11,7 @@ featured: true
 ---
 
 <script>
-  import { Image, ImageSlider } from '../lib';
+  import { ExternalLink, Image, ImageSlider } from '../lib';
   const images = [
     { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_Biography_Photos_rroysh.webp", alt: "Young Donald Trump with family" },
     { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_2016_Biography_Photos_1_pjh0af.webp", alt: "Young Donald Trump as a ball player" },
@@ -54,8 +54,8 @@ featured: true
 
 #### Further reading...
 
- - [Donald Trump - Wikipedia](https://en.wikipedia.org)
+<ExternalLink href="https://en.wikipedia.org/wiki/Donald_Trump" text="Donald Trump - Wikipedia" />
 
- - [Donald Trump: Life before the presidency](https://millercenter.org)
+<ExternalLink href="https://millercenter.org/president/trump/life-presidency" text="Donald Trump: Life before the presidency" />
 
- - [Donald J. Trump (White House)](https://whitehousehistory.org)
+<ExternalLink href="https://www.whitehouse.gov/about-the-white-house/presidents/donald-j-trump/" text="Donald J. Trump (White House)" />

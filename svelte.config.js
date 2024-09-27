@@ -41,6 +41,9 @@ const config = {
         }
       }
     }
+	},
+	compilerOptions: {
+		runes: true
 	}
 }
 

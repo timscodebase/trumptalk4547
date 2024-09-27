@@ -50,6 +50,15 @@
 		background: var(--color-text);
 	}
 
+	h2 {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 10px;
+	}
+	.meta {
+		color: var(--color-text);
+	}
+
 	@media (max-width: 1000px) {
 		a {
 			display: grid;

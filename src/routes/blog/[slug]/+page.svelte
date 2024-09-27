@@ -2,7 +2,7 @@
 	import { formatDate, slugify } from '$lib/utils'
 	import * as config from '$lib/config'
 
-	export let data
+	let { data } = $props()
 	const { meta, content } = data
 </script>
 
@@ -35,7 +35,7 @@
 
 <style>
 	article {
-		max-inline-size: var(--size-content-3);
+		/* max-inline-size: var(--size-content-3); */
 		margin-inline: auto;
 	}
 
@@ -51,12 +51,6 @@
 
 	.tags {
 		display: flex;
-		gap: var(--size-3);
-		margin-top: var(--size-7);
-	}
-
-	.tags > * {
-		padding: var(--size-2) var(--size-3);
-		border-radius: var(--radius-round);
+		gap: 5px;
 	}
 </style>

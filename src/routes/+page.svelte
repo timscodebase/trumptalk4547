@@ -43,14 +43,6 @@
 </section>
 
 <style>
-	h2 {
-		margin: 0;
-		padding: 0;
-		padding-bottom: 10px;
-	}
-	.meta {
-		color: var(--color-text);
-	}
 	.posts {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
