@@ -1,5 +1,5 @@
 {
-    "short_name": "trump talk 45/47",
+    "short_name": "Trump Talk 45/47",
     "name": "Trump Talk 45/47",
     "start_url": "/",
     "orientation": "any",
@@ -15,7 +15,6 @@
         "src": "screenshot-mobile.webp",
         "sizes": "374x665",
         "type": "image/webp",
-        "form_factor": "tall",
         "label": "List of Awesome Resources available in Awesome App"
       }
     ],
