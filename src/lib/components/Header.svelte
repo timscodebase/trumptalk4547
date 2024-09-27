@@ -26,6 +26,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding-top: 1.5rem;
 		border-bottom: 3px solid var(--color-accent);
 		margin-bottom: 2rem;
 		padding-bottom: 1rem;

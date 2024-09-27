@@ -5,13 +5,18 @@
 </script>
 
 <section>
-	<h1>Countdown To The Election</h1>
+	<span class="header">Countdown To The Election</span>
 	<p class="blue bold op-shadow">
 		Only <span class="red">{daysUntilFutureDate(electionDay)}</span> days left!!
 	</p>
 </section>
 
 <style>
+	.header {
+		font-size: 1.8rem;
+		font-weight: bold;
+		color: var(--color-text);
+	}
 	section {
 		display: grid;
 		place-content: center;
