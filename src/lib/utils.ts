@@ -18,3 +18,10 @@ export const slugify = (text: string) => {
 		.replace(/^-+/, '')
 		.replace(/-+$/, '')
 }
+
+export function daysUntilFutureDate(futureDate: Date): number {
+  const currentDate = new Date();
+  const timeDifference = futureDate.getTime() - currentDate.getTime();
+  const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+  return daysDifference;
+}
