@@ -8,15 +8,17 @@
 
 <style>
 	.side-by-side {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
 		place-items: center;
 		gap: 0;
 		margin: 1rem 0;
 		overflow: hidden;
-		border-radius: var(--radius-3);
+		/* border-radius: var(--radius-3); */
 		border: 2px solid var(--color-accent);
 	}
+
 	:global(.side-by-side p) {
 		margin: 0;
 		padding-left: 1.5rem;

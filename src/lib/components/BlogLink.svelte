@@ -50,6 +50,25 @@
 		background: var(--color-text);
 	}
 
+	@media (max-width: 1000px) {
+		a {
+			display: grid;
+			place-content: center;
+			padding: 1rem;
+			padding-bottom: 0;
+
+			h2 {
+				display: inline-block;
+				width: 100%;
+				font-size: 1.3rem;
+				overflow-wrap: break-word;
+				text-align: center;
+				padding-bottom: 16px;
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	.meta {
 		color: var(--color-text-op);
 		background: var(--color-surface-op);

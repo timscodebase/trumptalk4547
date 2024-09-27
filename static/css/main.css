@@ -201,7 +201,7 @@ ul {
 }
 
 .side-by-side > img:first-child {
-    border-radius: var(--radius-3) 0 0 var(--radius-3);
+    /* border-radius: var(--radius-3) 0 0 var(--radius-3); */
 }
 
 .side-by-side > img:last-child {
