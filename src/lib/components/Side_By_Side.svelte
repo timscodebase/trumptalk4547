@@ -11,7 +11,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		place-items: center;
-		gap: 1rem;
+		gap: 0;
 		margin: 1rem 0;
 		overflow: hidden;
 		border-radius: var(--radius-3);
