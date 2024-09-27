@@ -1,5 +1,5 @@
 <script>
-	import { BlogLink, Image } from '$lib'
+	import { BlogLink, ElectionCountDown, Image } from '$lib'
 	import * as config from '$lib/config'
 
 	let data = $props()
@@ -11,6 +11,7 @@
 </svelte:head>
 
 <section>
+	<ElectionCountDown />
 	<Image
 		src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727323076/Untitled_Sept_25_2024_vm1jwu.png"
 		alt="Iconic Donald J Trump picture"

@@ -226,6 +226,10 @@ footer .logo-span {
 	color: var(--color-blue);
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .op-shadow {
 	text-shadow: var(--op-shadow);
 }
