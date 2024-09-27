@@ -21,8 +21,6 @@ async function getPosts() {
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
 
-	console.log("Posts:", posts)
-
 	return posts
 }
 export async function GET() {
