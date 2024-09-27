@@ -24,7 +24,7 @@
 			<p class="description">{post.description}</p>
 		</div>
 	</div>
-	<Image src={post.image} alt={post.title} />
+	<img src={post.image} alt={post.title} loading="lazy" />
 </Side_By_Side>
 
 <style>
@@ -59,6 +59,9 @@
 				padding-bottom: 16px;
 				margin-bottom: 0;
 			}
+		}
+		img {
+			height: 250px;
 		}
 	}
 
