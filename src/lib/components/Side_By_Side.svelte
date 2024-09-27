@@ -8,7 +8,6 @@
 
 <style>
 	.side-by-side {
-		max-height: 345px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		place-items: center;

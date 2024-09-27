@@ -11,8 +11,8 @@
 
 <style>
 	img {
-		height: auto;
-		max-width: 100%;
+		max-height: 100%;
+		max-width: auto;
 		object-fit: contain;
 		border-radius: var(--radius-3);
 		border: 2px solid var(--color-accent);
