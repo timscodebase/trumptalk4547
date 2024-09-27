@@ -2,11 +2,7 @@
 	import { name } from './../../lib/config.ts'
 	import * as config from '$lib/config'
 
-	/** @type {import('./$types').PageData} */
-	export let data
-
-	/** @type {import('./$types').ActionData} */
-	export let form
+	let { data, form } = $props()
 </script>
 
 <svelte:head>
