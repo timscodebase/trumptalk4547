@@ -1,5 +1,5 @@
 <script lang="ts">
-	interface Props {
+	type Props = {
 		src: string
 		alt: string
 	}

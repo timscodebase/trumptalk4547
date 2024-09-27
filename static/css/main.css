@@ -8,14 +8,14 @@
 	--color-surface-dark: #0339A6;
 	--color-text-light: #070F26 ;
 	--color-text-dark: #F2F2F2;
+	--color-accent-light: #E00707;
 	--color-accent-dark: #E00707;
-	--color-accent-light: #A60505;
-	--color-success-dark: #00C700;
-	--color-success-light: #008B00;
-	--color-error-dark: #E24000;
-	--color-error-light: #8C2800;
-	--color-warning-dark: #C4BD00;
-	--color-warning-light: #8A8600;
+	--color-success-light: #00C700;
+	--color-success-dark: #008B00;
+	--color-error-light: #E24000;
+	--color-error-dark: #8C2800;
+	--color-warning-light: #C4BD00;
+	--color-warning-dark: #8A8600;
 	--color-toggle-dark: #F2F2F2;
 	--color-toggle-light: #070F26;
 
@@ -27,6 +27,7 @@
 	--color-surface: var(--color-surface-dark);
 	--color-surface-op: var(--color-surface-light);
 	--color-text: var(--color-text-dark);
+	--color-text-op: var(--color-text-light);
 	--color-accent: var(--color-accent-dark);
 	--color-success: var(--color-success-dark);
 	--color-error: var(--color-error-dark);
@@ -48,6 +49,7 @@
 	--color-surface: var(--color-surface-light);
 	--color-surface-op: var(--color-surface-dark);
 	--color-text: var(--color-text-light);
+	--color-text-op: var(--color-text-dark);
 	--color-accent: var(--color-accent-light);
 	--color-success: var(--color-success-light);
 	--color-error: var(--color-error-light);
@@ -69,6 +71,7 @@
 	--color-surface: var(--color-surface-dark);
 	--color-surface-op: var(--color-surface-light);
 	--color-text: var(--color-text-dark);
+	--color-text-op: var(--color-text-light);
 	--color-accent: var(--color-accent-dark);
 	--color-success: var(--color-success-dark);
 	--color-error: var(--color-error-dark);
