@@ -51,4 +51,9 @@
 	.meta {
 		color: var(--color-text);
 	}
+	.posts {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 5px;
+	}
 </style>
