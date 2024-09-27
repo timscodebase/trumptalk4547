@@ -11,7 +11,6 @@
 </svelte:head>
 
 <section>
-	<ElectionCountDown />
 	<Image
 		src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727323076/Untitled_Sept_25_2024_vm1jwu.png"
 		alt="Iconic Donald J Trump picture"
@@ -22,6 +21,7 @@
 		provident modi nemo molestiae repellat ab earum beatae dolore labore neque vero voluptatibus,
 		minus inventore? Soluta possimus libero ut rem blanditiis sed suscipit.
 	</p>
+	<ElectionCountDown />
 </section>
 
 <section>
