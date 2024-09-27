@@ -19,10 +19,10 @@
 	--color-toggle-dark: #F2F2F2;
 	--color-toggle-light: #070F26;
 
-	--shadow-light: 0px 2px 2px #070F26;
-	--shadow-light-footer: 0px 1px 1px #070F26;
-	--shadow-dark: 0px 2px 2px #F2F2F2;
-	--shadow-dark-footer: 0px 1px 1px #F2F2F2;
+	--shadow-light: 0px 1px 0px #070F26;
+	--shadow-light-footer: 0px 0.5px 0px #070F26;
+	--shadow-dark: 0px 1px 0px #F2F2F2;
+	--shadow-dark-footer: 0px 0.5px 0px #F2F2F2;
 
 	--color-surface: var(--color-surface-dark);
 	--color-surface-op: var(--color-surface-light);
@@ -231,5 +231,10 @@ footer .logo-span {
 }
 
 .op-shadow {
+	text-shadow: var(--op-shadow);
+}
+
+strong {
+	color: var(--color-text);
 	text-shadow: var(--op-shadow);
 }

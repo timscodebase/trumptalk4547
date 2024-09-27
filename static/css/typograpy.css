@@ -30,9 +30,10 @@ h4,
 h5,
 h6 {
 	color: var(--color-accent);
-	padding-bottom: .75rem;
+	padding: 0.75rem 0;
+	text-shadow: var(--shadow);
 }
 
 h2 {
-	padding-bottom: 1.5rem;
+	padding: 1rem 0;
 }

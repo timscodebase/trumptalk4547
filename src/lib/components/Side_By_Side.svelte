@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let children
+	let { children } = $props()
 </script>
 
 <div class="side-by-side">
