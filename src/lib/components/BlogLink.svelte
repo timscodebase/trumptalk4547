@@ -3,7 +3,6 @@
 	import { formatDate } from '$lib/utils'
 
 	type Props = {
-		odd?: boolean
 		post: {
 			slug: string
 			title: string
@@ -12,36 +11,21 @@
 			image: string
 		}
 	}
-	let { odd = true, post } = $props() as Props
+	let { post } = $props() as Props
 </script>
 
-{#if odd}
-	<Side_By_Side>
-		<div>
-			<a href={`/blog/${post.slug}`} class="title">
-				<h2>{post.title}</h2>
-			</a>
-			<div class="meta">
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
-			</div>
+<Side_By_Side>
+	<div>
+		<a href={`/blog/${post.slug}`} class="title">
+			<h2>{post.title}</h2>
+		</a>
+		<div class="meta">
+			<p class="date">{formatDate(post.date)}</p>
+			<p class="description">{post.description}</p>
 		</div>
-		<Image src={post.image} alt={post.title} />
-	</Side_By_Side>
-{:else}
-	<Side_By_Side>
-		<Image src={post.image} alt={post.title} />
-		<div>
-			<a href={`/blog/${post.slug}`} class="title">
-				<h2>{post.title}</h2>
-			</a>
-			<div class="meta">
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
-			</div>
-		</div>
-	</Side_By_Side>
-{/if}
+	</div>
+	<Image src={post.image} alt={post.title} />
+</Side_By_Side>
 
 <style>
 	a {

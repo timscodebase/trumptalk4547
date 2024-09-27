@@ -27,25 +27,17 @@
 <section>
 	<ul class="posts">
 		{#each posts as post, i}
-			<!-- if i is odd -->
-			{#if i % 2}
-				<li class="post" style={`--transition-name: post-${post.slug}`}>
-					<BlogLink {post} />
-				</li>
-				<!-- else -->
-			{:else}
-				<li class="post" style={`--transition-name: post-${post.slug}`}>
-					<BlogLink {post} odd={false} />
-				</li>
-			{/if}
+			<li class="post" style={`--transition-name: post-${post.slug}`}>
+				<BlogLink {post} />
+			</li>
 		{/each}
 	</ul>
 </section>
 
 <style>
 	.posts {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-wrap: wrap;
 		gap: 5px;
 	}
 </style>
