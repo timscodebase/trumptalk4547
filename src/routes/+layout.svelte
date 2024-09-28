@@ -2,8 +2,8 @@
 	import 'iconify-icon'
 	import { Footer, Header } from '$lib'
 
-	import 'open-props/style'
-	import 'open-props/normalize'
+	// import 'open-props/style'
+	// import 'open-props/normalize'
 
 	let { children } = $props()
 

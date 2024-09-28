@@ -6,8 +6,5 @@ export const load = (async ({ fetch }) => {
 	const posts: Post[] = await response.json()
 	const featuredPosts: Post[] = posts.filter((post) => post.featured)
 
-	console.log("All Posts", posts)
-	console.log("Featured Posts", featuredPosts)
-
 	return { posts: featuredPosts }
 }) satisfies PageLoad;
