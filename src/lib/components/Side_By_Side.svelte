@@ -23,10 +23,8 @@
 		padding-left: 1.5rem;
 	}
 	:global(.side-by-side img) {
-		height: 100%;
-		width: auto;
+		height: auto;
 		max-width: 100%;
-		aspect-ratio: 16 / 9;
 		object-fit: cover;
 	}
 </style>
