@@ -17,48 +17,65 @@
 <Side_By_Side>
 	<div>
 		<a href={`/blog/${post.slug}`} class="title">
+			<img src={post.image} alt={post.title} loading="lazy" />
 			<h2>{post.title}</h2>
+
+			<div class="meta">
+				<p class="date">{formatDate(post.date)}</p>
+				<p class="description">{post.description}</p>
+			</div>
 		</a>
-		<div class="meta">
-			<p class="date">{formatDate(post.date)}</p>
-			<p class="description">{post.description}</p>
-		</div>
 	</div>
-	<img src={post.image} alt={post.title} loading="lazy" />
 </Side_By_Side>
 
 <style>
 	a {
 		display: block;
-		padding: 1rem 0 0 1rem;
+		padding: 0;
 		background: var(--color-text);
+	}
+
+	p {
+		margin: 0;
+		padding-left: 1.5rem;
 	}
 
 	h2 {
 		margin: 0;
-		padding: 0;
-		padding-bottom: 10px;
+		padding: 10px 0;
+		text-align: center;
 	}
 	.meta {
 		color: var(--color-text);
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+		object-fit: cover;
+		aspect-ratio: 16 / 9;
 	}
 
 	@media (max-width: 1000px) {
 		a {
 			display: grid;
 			place-content: center;
-			padding: 1rem;
 			padding-bottom: 0;
 
 			h2 {
 				display: inline-block;
 				width: 100%;
-				font-size: 1.3rem;
+				font-size: 1rem;
 				overflow-wrap: break-word;
 				text-align: center;
 				padding-bottom: 16px;
 				margin-bottom: 0;
 			}
+		}
+
+		p {
+			font-size: 0.75rem;
+			padding: 0.2rem 0.5rem;
 		}
 	}
 
