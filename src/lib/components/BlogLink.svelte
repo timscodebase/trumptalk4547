@@ -60,9 +60,6 @@
 				margin-bottom: 0;
 			}
 		}
-		img {
-			height: 150px;
-		}
 	}
 
 	.meta {
