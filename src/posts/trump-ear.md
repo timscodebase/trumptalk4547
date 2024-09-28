@@ -1,6 +1,6 @@
 ---
 title: Donald J. Trump's Ear
-description: A few facts about Donald J. Trump's right ear after the first assasination attempt
+description: Trump sustained a minor injury to his right ear, described as a 'half-moon shape' wound that did not require stitches.
 date: '2024-09-27'
 image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727451101/trumps-ear_qwd1xd.webp'
 categories:
