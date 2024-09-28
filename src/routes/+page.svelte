@@ -38,6 +38,17 @@
 	.posts {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 5px;
+		gap: 1rem;
+
+		li {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		.posts {
+			gap: 0.5rem;
+		}
 	}
 </style>
