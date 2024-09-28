@@ -7,7 +7,7 @@ categories:
   - Donald Trump
   - Childhood
 published: true
-featured: true
+featured: false
 ---
 
 <script>
