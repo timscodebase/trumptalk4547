@@ -61,7 +61,7 @@
 			}
 		}
 		img {
-			height: 250px;
+			height: 150px;
 		}
 	}
 
