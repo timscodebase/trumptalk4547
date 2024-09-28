@@ -60,4 +60,10 @@
 			}
 		}
 	}
+
+	@media (max-width: 1000px) {
+		footer {
+			flex-direction: column;
+		}
+	}
 </style>
