@@ -34,6 +34,8 @@
 	</ul>
 </section>
 
+<a href="/blog">More articles &rarr;</a>
+
 <style>
 	.posts {
 		display: grid;
