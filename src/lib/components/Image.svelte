@@ -11,10 +11,9 @@
 
 <style>
 	img {
-		max-height: 100%;
-		max-width: auto;
+		height: auto;
+		max-width: 100%;
 		object-fit: contain;
-		/* border-radius: var(--radius-3); */
 		border: 2px solid var(--color-accent);
 	}
 </style>
