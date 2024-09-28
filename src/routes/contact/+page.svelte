@@ -53,9 +53,8 @@
 		border: 2px solid var(--color-accent);
 
 		label {
+			display: flex;
 			gap: 1rem;
-			display: grid;
-			grid-template-columns: 100px 1fr;
 
 			input,
 			textarea {
@@ -73,6 +72,16 @@
 			padding: 0.5rem 1rem;
 			font-weight: bold;
 			cursor: pointer;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		form {
+			gap: 0.5rem;
+		}
+
+		label {
+			flex-wrap: wrap;
 		}
 	}
 </style>
