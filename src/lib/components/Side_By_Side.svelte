@@ -17,14 +17,4 @@
 		/* border-radius: var(--radius-3); */
 		border: 2px solid var(--color-accent);
 	}
-
-	:global(.side-by-side p) {
-		margin: 0;
-		padding-left: 1.5rem;
-	}
-	:global(.side-by-side img) {
-		height: auto;
-		max-width: 100%;
-		object-fit: cover;
-	}
 </style>

@@ -5,8 +5,9 @@
 <footer>
 	<p>
 		&copy; {new Date().getFullYear()}
-		<span class="logo-span header-font"
-			><span class="red">Trump</span> <span class="op-shadow">Talk</span>
+		<span class="logo-span header-font">
+			<span class="red">Trump</span>
+			<span class="op-shadow">Talk</span>
 			<span class="blue">45/47</span>
 		</span>
 	</p>
