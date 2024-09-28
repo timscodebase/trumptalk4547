@@ -175,12 +175,16 @@ body {
 }
 
 a {
-	color: var(--color-accent);
 	text-decoration: none;
 	font-weight: bold;
 
 	&:hover {
+		color: var(--color-accent);
 		text-decoration: underline;
+	}
+
+	&:visited {
+		color: var(--color-text);
 	}
 }
 

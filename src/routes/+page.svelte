@@ -34,7 +34,7 @@
 	</ul>
 </section>
 
-<a href="/blog">More articles &rarr;</a>
+<a class="more-articles" href="/blog">More articles &rarr;</a>
 
 <style>
 	.posts {
@@ -45,6 +45,17 @@
 		li {
 			padding: 0;
 			margin: 0;
+		}
+	}
+
+	.more-articles {
+		display: block;
+		color: var(--color-text);
+		padding-top: 1.5rem;
+		font-weight: bold;
+
+		&:hover {
+			text-decoration: none;
 		}
 	}
 
