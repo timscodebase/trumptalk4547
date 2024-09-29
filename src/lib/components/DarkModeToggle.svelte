@@ -51,7 +51,6 @@
 		place-items: center;
 		justify-content: center;
 		grid-template-columns: auto 1fr;
-		height: 24px;
 
 		em {
 			display: grid;
@@ -72,13 +71,14 @@
 
 	@media (max-width: 1000px) {
 		.theme-switch {
-			height: 12px;
-			width: 20px;
+			margin: 10px 0;
+			height: 36px;
+			width: 60px;
 		}
 
 		.theme-switch-wrapper {
 			em {
-				font-size: 1rem;
+				font-size: 2rem;
 			}
 		}
 	}
@@ -116,8 +116,8 @@
 
 	@media (max-width: 1000px) {
 		.slider:before {
-			--offset: 1px;
-			--size: 10px;
+			--offset: 3px;
+			--size: 30px;
 		}
 	}
 

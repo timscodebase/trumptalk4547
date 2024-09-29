@@ -2,7 +2,7 @@
 title: Controversy Over Nancy Pelosi's Husband's Visa Stock Trades
 description: Paul Pelosi, husband of Nancy Pelosi, sold 2,000 shares of Visa stock worth between $500,000 and $1 million on July 1, 2024.
 date: '2024-09-27'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727473956/Nancy_Pelosi_controversy_w7kz9q.jpg'
+image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727598017/paul-pelosi_nawalj.webp'
 categories:
   - Donald Trump
   - Childhood
@@ -16,7 +16,7 @@ featured: true
 
 ## Controversy Over Nancy Pelosi's Husband's Visa Stock Trades
 
-<Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727473956/Nancy_Pelosi_controversy_w7kz9q.jpg" alt="Scared Nancy Pelosi in front of american flags" />
+<Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727598017/paul-pelosi_nawalj.webp" alt="Paul and Nancy Pelosi" />
 
 **Stock Sale Timing** — Paul Pelosi, husband of Nancy Pelosi, sold 2,000 shares of Visa stock worth between $500,000 and $1 million on July 1, 2024.
 
