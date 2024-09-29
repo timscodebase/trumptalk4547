@@ -61,4 +61,10 @@
 		gap: 5px;
 		padding-bottom: 1rem;
 	}
+
+	@media (max-width: 1000px) {
+		.tags {
+			flex-wrap: wrap;
+		}
+	}
 </style>

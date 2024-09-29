@@ -44,7 +44,7 @@
 
 		h2 {
 			display: block;
-			font-size: clamp(1rem, 2vw, 1.5rem);
+			font-size: clamp(0.9rem, 2vw, 1.5rem);
 			padding: 0.5rem 5px;
 			color: var(--color-text-op);
 		}
@@ -79,7 +79,6 @@
 			h2 {
 				display: inline-block;
 				width: 100%;
-				font-size: 1rem;
 				overflow-wrap: break-word;
 				text-align: center;
 				padding-bottom: 16px;
