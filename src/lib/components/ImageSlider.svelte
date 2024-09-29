@@ -43,7 +43,13 @@
 		scroll-snap-type: x mandatory;
 		display: flex;
 		gap: 5px;
+		width: 550px;
+		margin: 0 auto;
 		background: var(--color-surface-op);
+	}
+
+	p {
+		text-align: center;
 	}
 
 	img {

@@ -91,7 +91,7 @@
 		}
 
 		label {
-			flex-wrap: wrap;
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
