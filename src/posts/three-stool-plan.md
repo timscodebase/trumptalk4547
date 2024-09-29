@@ -2,7 +2,7 @@
 title: Trump's Three Legged Stool
 description: An easy three point plan of Former Pres. Donald J. Trump to Make America Great Again
 date: '2024-09-28'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727561069/the-powerpuff-girls-stool_owggkq.png'
+image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727639079/the-powerpuff-girls-stool-2_pobppg.png'
 categories:
   - Donald Trump
   - Maga
@@ -15,7 +15,7 @@ featured: true
   import { ExternalLink, Image } from '../lib';
 </script>
 
-<Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727561069/the-powerpuff-girls-stool_owggkq.png" alt="Donald J Trump's 3 legged stool to Make America Great Again" />
+<Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727639079/the-powerpuff-girls-stool-2_pobppg.png" alt="Donald J Trump's 3 legged stool to Make America Great Again" />
 
 ## Strong Border
 
