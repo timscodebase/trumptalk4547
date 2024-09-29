@@ -43,6 +43,16 @@
 		header {
 			flex-direction: column;
 		}
+
+		.logo-span {
+			padding-bottom: 2rem;
+		}
+
+		p {
+			text-align: center;
+			font-size: 1.75rem;
+			line-height: 2rem;
+		}
 	}
 
 	.logo {
