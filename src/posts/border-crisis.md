@@ -2,7 +2,7 @@
 title: Latest ICE Immigration Statistics
 description: New ICE report reveals the Biden-Harris administration has let in 425,000 illegal immigrants who are convicted criminals.
 date: '2024-09-28'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727555109/border-crisis-hero_qbayoz.png'
+image: 'https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1727555109/border-crisis-hero_qbayoz.png'
 categories:
   - Kamala Harris
   - Border Czar
@@ -14,8 +14,6 @@ featured: true
 <script>
   import { Image } from '../lib';
 </script>
-
-## Latest ICE Immigration Statistics
 
 <Image
   src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727555109/border-crisis-2_hczyd4.png"

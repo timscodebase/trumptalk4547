@@ -15,11 +15,9 @@ featured: true
   import { ExternalLink, Image } from '../lib';
 </script>
 
-## Donald J. Trump's Childhood
-
 <Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727561069/the-powerpuff-girls-stool_owggkq.png" alt="Donald J Trump's 3 legged stool to Make America Great Again" />
 
-### Strong Border
+## Strong Border
 
 A strong sovereign border is essential for a nation's security, economic stability, and cultural identity.   
 
@@ -34,17 +32,13 @@ It's important to note that while a strong border is essential, it should be bal
 
 A nation's immigration policies should be designed to strike a balance between security and compassion.   
 
-#### Sources and related content
+### Sources and related content
 
 - <ExternalLink href="https://www.hoover.org/research/erosion-border-control-and-its-threat-national-sovereignty" text="The Erosion of Border Control and Its Threat to National Sovereignty - Hoover Institution" />
-
 - <ExternalLink href="https://www.cbp.gov/newsroom/stats" text="Stats and Summaries - U.S. Customs and Border Protection" />
-
 - <ExternalLink href="https://www.dhs.gov/topics/border-security#:~:text=Land%2C%20sea%2C%20and%20air%20borders,States'%20first%20unified%20border%20agency." text="Border Security" />
-
 - <ExternalLink href="https://www.dhs.gov/archive/news/2020/10/29/border-wall-system-deployed-effective-and-disrupting-criminals-and-smugglers#:~:text=The%20results%20speak%20for%20themselves,areas%20where%20barriers%20are%20deployed." text="The Border Wall System is Deployed, Effective, and Disrupting Criminals and Smugglers" />
-
-- <ExternalLink href="Sovereign Borders Matter At Home And Abroad - Republican Leader" text="https://www.republicanleader.senate.gov/newsroom/remarks/sovereign-borders-matter-at-home-and-abroad" />
+- <ExternalLink href="https://www.republicanleader.senate.gov/newsroom/remarks/sovereign-borders-matter-at-home-and-abroad" text="Sovereign Borders Matter At Home And Abroad - Republican Leader" />
 
 ### Free and fair elections are the cornerstone of democratic societies.
 
@@ -65,9 +59,7 @@ In summary, free and fair elections are essential for the functioning of a democ
 An honest American press plays a crucial role in maintaining a healthy democracy. Here's why:
 
 1. **Holding Power to Account:** Journalists act as watchdogs, investigating and reporting on government actions, corporate practices, and social issues. Their independent scrutiny can expose wrongdoing, corruption, and abuse of power.
-
 2. **Informing the Public:** A reliable press provides citizens with accurate and unbiased information, enabling them to make informed decisions about their lives, communities, and government.
-
 3. **Promoting Civic Engagement:** By shedding light on important issues and fostering public discourse, a free press encourages citizens to participate in the democratic process and hold their elected officials accountable.
 4. **Protecting Individual Rights:** A free press helps safeguard individual rights by exposing violations and advocating for justice.
 5. **Fostering Innovation and Progress:** An honest press can stimulate critical thinking, challenge the status quo, and inspire new ideas, contributing to societal progress and innovation.

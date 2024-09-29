@@ -7,7 +7,7 @@
 <section>
 	<span class="header">Countdown To The Election</span>
 	<p class="blue bold op-shadow">
-		Only <span class="red">{daysUntilFutureDate(electionDay)}</span> days left!!
+		Only <span class="red mono">{daysUntilFutureDate(electionDay)}</span> days left!!
 	</p>
 </section>
 
@@ -26,6 +26,8 @@
 			display: inline-block;
 			width: 100%;
 			font-size: 2rem;
+			padding: 0;
+			margin: 0;
 		}
 	}
 </style>
