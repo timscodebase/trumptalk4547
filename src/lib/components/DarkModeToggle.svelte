@@ -131,7 +131,7 @@
 
 	@media (max-width: 1000px) {
 		input:checked + .slider:before {
-			transform: translateX(8px);
+			transform: translateX(24px);
 		}
 	}
 
