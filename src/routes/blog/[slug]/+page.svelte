@@ -14,20 +14,17 @@
 </svelte:head>
 
 <article>
-	<!-- Title -->
 	<hgroup>
 		<h1 style={`--transition-name: post-${slugify(meta.title)}`}>{meta.title}</h1>
-		<p>Published at {formatDate(meta.date)}</p>
+		<p class="date">Published at {formatDate(meta.date)}</p>
+
+		<div class="tags">
+			{#each meta.categories as category}
+				<span class="surface-4">&num;{category}</span>
+			{/each}
+		</div>
 	</hgroup>
 
-	<!-- Tags -->
-	<div class="tags">
-		{#each meta.categories as category}
-			<span class="surface-4">&num;{category}</span>
-		{/each}
-	</div>
-
-	<!-- Post -->
 	<div class="prose">
 		<svelte:component this={content} />
 	</div>
@@ -49,8 +46,19 @@
 		opacity: 0.7;
 	}
 
+	.date,
+	.tags {
+		font-family: var(--font-mono);
+	}
+
+	.date {
+		margin: 0;
+		padding: 0;
+	}
+
 	.tags {
 		display: flex;
 		gap: 5px;
+		padding-bottom: 1rem;
 	}
 </style>

@@ -67,8 +67,7 @@
 	img {
 		height: auto;
 		max-width: 100%;
-		object-fit: cover;
-		aspect-ratio: 16 / 9;
+		object-fit: contain;
 	}
 
 	@media (max-width: 1000px) {

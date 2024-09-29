@@ -8,7 +8,7 @@ categories:
   - Assasination Attempt
   - Ear
 published: true
-featured: true
+featured: false
 ---
 
 <script>
@@ -20,8 +20,6 @@ featured: true
     { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_2016_Biography_1_oahr0u.webp", alt: "Donald Trump with his father" }
   ];
 </script>
-
-## Details of Donald Trump's Ear Injury
 
 <Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727451102/trumps-ear-3_gurqsc.avif" alt="Trump's bloody right ear after first assasination attempt" />
 
@@ -35,7 +33,7 @@ featured: true
 
 **FBI Statement** — The FBI confirmed that a bullet or fragments struck Trump's ear, though there was initial confusion about whether it was a bullet or shrapnel.
 
-### Top Search Results
+## Top Search Results
 
 "Trump's ear looks like it couldn't have 'gone through less' ..." - independent.co.uk
 
@@ -43,7 +41,7 @@ featured: true
 
 "FBI confirms that a bullet struck Trump's ear during ..." - nbcnews.com
 
-#### Assassination Attempt
+### Assassination Attempt
 
 **Date** — The assassination attempt occurred on July 13, 2024, during a rally in Butler, Pennsylvania.
 

@@ -20,8 +20,6 @@ featured: false
   ];
 </script>
 
-## Donald J. Trump's Childhood
-
 <Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727330685/Donald_Trump_2016_Biography_bgtjcg.webp" alt="Donald J Trump as a child" />
 
 **Birth** — Donald John Trump was born on June 14, 1946, at Jamaica Hospital in Queens, New York City.
@@ -40,7 +38,7 @@ featured: false
 
 <ImageSlider {images} />
 
-### Family Background
+## Family Background
 
 **Parents** — Fred Trump was a successful real estate developer, and Mary Anne MacLeod Trump was a Scottish immigrant who came to the U.S. in 1930.
 
@@ -52,7 +50,7 @@ featured: false
 
 **Ancestry** — Fred Trump was the son of German immigrants, while Mary Anne MacLeod Trump hailed from Scotland.
 
-#### Further reading...
+### Further reading...
 
 <ExternalLink href="https://en.wikipedia.org/wiki/Donald_Trump" text="Donald Trump - Wikipedia" />
 
