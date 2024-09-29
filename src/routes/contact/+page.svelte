@@ -53,14 +53,24 @@
 		border: 2px solid var(--color-accent);
 
 		label {
-			display: flex;
+			display: grid;
+			grid-template-columns: 100px 1fr;
 			gap: 1rem;
+			font-size: 1.25rem;
+
+			p {
+				margin: 0;
+				padding: 0;
+			}
 
 			input,
 			textarea {
 				border-radius: var(--radius-2);
 				border: 1px solid var(--color-accent);
 				background-color: transparent;
+				padding: 0.5rem;
+				color: var(--color-text);
+				font-size: 1.25rem;
 			}
 		}
 

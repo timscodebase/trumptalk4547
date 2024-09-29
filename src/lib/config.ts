@@ -9,5 +9,6 @@ export const keywords = ['svelte', 'kit', 'sveltekit', 'site', 'template']
 export const nav_links = [
 	{ url: '/', text: 'Home' },
 	{ url: '/about', text: 'About' },
+	{ url: '/blog', text: 'Blog' },
 	{ url: '/contact', text: 'Contact' }
 ]
