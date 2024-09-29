@@ -44,7 +44,7 @@
 
 		h2 {
 			display: block;
-			font-size: 2.5rem;
+			font-size: clamp(1rem, 2vw, 1.5rem);
 			padding: 0.5rem 5px;
 			color: var(--color-text-op);
 		}

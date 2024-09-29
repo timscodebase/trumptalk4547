@@ -174,26 +174,6 @@ body {
 	color: var(--color-text);
 }
 
-a {
-	color: var(--color-text);
-	text-decoration: none;
-	font-weight: bold;
-
-	&:hover {
-		color: var(--color-accent);
-		text-decoration: underline;
-	}
-
-	&:visited {
-		color: var(--color-text);
-	}
-}
-
-p::selection {
-  color: var(--color-selected-text);
-  background-color: var(--color-selected);
-}
-
 ul {
 	list-style: none;
 	padding: 0;
