@@ -32,7 +32,6 @@ export const actions = {
         return fail(400, { message, missing: true })
       }
 
-      // Create a transporter object using the nodemailer library
       const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com.com',
         port: 465,
