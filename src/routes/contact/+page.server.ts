@@ -37,8 +37,8 @@ export const actions = {
         port: 465,
         secure: true,
         auth: {
-          user: SECRET_GMAIL_USERNAME,
-          pass: SECRET_GMAIL_PASSWORD
+          user: 'trumptalk4547',
+          pass: 'WSX2345xcvb9!!'
         }
       })
 
