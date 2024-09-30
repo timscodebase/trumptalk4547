@@ -17,6 +17,9 @@ importers:
       lucide-svelte:
         specifier: ^0.439.0
         version: 0.439.0(svelte@5.0.0-next.260)
+      nodemailer:
+        specifier: ^6.9.15
+        version: 6.9.15
       open-props:
         specifier: ^1.7.6
         version: 1.7.6
@@ -1652,6 +1655,10 @@ packages:
   node-gyp-build@4.8.2:
     resolution: {integrity: sha512-IRUxE4BVsHWXkV/SFOut4qTlagw2aM8T5/vnTsmrHJvVoKueJHRc/JaFND7QDDc61kLYUJ6qlZM3sqTSyx2dTw==}
     hasBin: true
+
+  nodemailer@6.9.15:
+    resolution: {integrity: sha512-AHf04ySLC6CIfuRtRiEYtGEXgRfa6INgWGluDhnxTZhHSKvrBu7lc1VVchQ0d8nPc4cFaZoPq8vkyNoZr0TpGQ==}
+    engines: {node: '>=6.0.0'}
 
   nopt@5.0.0:
     resolution: {integrity: sha512-Tbj67rffqceeLpcRXrT7vKAN8CwfPeIBgM7E6iBkmKLV7bEMwpGgYLGv0jACUsECaa/vuxP0IjEont6umdMgtQ==}
@@ -3941,6 +3948,8 @@ snapshots:
       whatwg-url: 5.0.0
 
   node-gyp-build@4.8.2: {}
+
+  nodemailer@6.9.15: {}
 
   nopt@5.0.0:
     dependencies:
