@@ -1,6 +1,6 @@
 import { dev } from '$app/environment'
 
-export const url = dev ? 'http://localhost:5713' : 'site-template-gamma.vercel.app'
+export const url = dev ? 'http://localhost:5713' : 'trumptalk4547.com'
 
 export const name = 'Trump Talk 45/47'
 export const description = 'President Trump\'s 47th News, Analysis, and Speeches'
