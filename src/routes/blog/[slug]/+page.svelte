@@ -3,10 +3,9 @@
 	import * as config from '$lib/config'
 
 	let { data } = $props()
-	const { meta, content } = data
+	const { content, metadata: meta } = data
 </script>
 
-<!-- SEO -->
 <svelte:head>
 	<title>{config.name} | {meta.title}</title>
 	<meta property="og:type" content="article" />
@@ -26,13 +25,12 @@
 	</hgroup>
 
 	<div class="prose">
-		<svelte:component this={content} />
+		{@render content()}
 	</div>
 </article>
 
 <style>
 	article {
-		/* max-inline-size: var(--size-content-3); */
 		margin-inline: auto;
 	}
 

@@ -1,4 +1,4 @@
-import type { PageLoad } from './$types'
+import type { PageServerLoad } from './$types'
 import type { Post } from '$lib/types'
 
 export const load = (async ({ fetch }) => {
@@ -7,4 +7,4 @@ export const load = (async ({ fetch }) => {
 	const featuredPosts: Post[] = posts.filter((post) => post.featured)
 
 	return { posts: featuredPosts }
-}) satisfies PageLoad;
+}) satisfies PageServerLoad;

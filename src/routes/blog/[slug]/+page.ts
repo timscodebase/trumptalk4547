@@ -4,10 +4,11 @@ import { error } from '@sveltejs/kit'
 export const load = (async ({ params }: { params: { slug: string } }) => {
   try {
 		const post = await import(`../../../posts/${params.slug}.md`)
-    
+    const { default: content, metadata } = post
+		
 		return {
-			content: post.default,
-			meta: post.metadata
+			content,
+			metadata
 		}
 	} catch (e) {
 		error(404, `Could not find ${params.slug}`)
