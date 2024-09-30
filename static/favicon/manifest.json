@@ -2,6 +2,7 @@
     "short_name": "Trump Talk 45/47",
     "name": "Trump Talk 45/47",
     "start_url": "/",
+    "id": "/",
     "orientation": "any",
     "screenshots" : [
       {
