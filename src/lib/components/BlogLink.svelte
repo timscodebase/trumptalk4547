@@ -52,7 +52,7 @@
 
 	p {
 		margin: 0;
-		padding-left: 1.5rem;
+		padding: 1rem;
 	}
 
 	h2 {
