@@ -21,6 +21,10 @@
 		display: grid;
 		place-content: center;
 		text-align: center;
+		background-image: url('https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727595366/American_Flag_vgd5il.webp');
+		background-size: cover;
+		text-shadow: 0px 2px 2px var(--color-text-op);
+		border: 2px solid var(--color-accent);
 
 		p {
 			display: inline-block;
@@ -28,6 +32,7 @@
 			font-size: 2rem;
 			padding: 0;
 			margin: 0;
+			text-shadow: 2px 2px 2px var(--color-text-op);
 		}
 	}
 </style>
