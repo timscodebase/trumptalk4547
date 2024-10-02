@@ -1,6 +1,9 @@
 <script lang="ts">
 	import 'iconify-icon'
-	import { Analytics, Footer, Header } from '$lib'
+	import { Footer, Header } from '$lib'
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
+
+	injectSpeedInsights()
 
 	// import 'open-props/style'
 	// import 'open-props/normalize'
@@ -22,8 +25,6 @@
 		})
 	})
 </script>
-
-<Analytics
 
 <div class="wrapper">
 	<Header />
