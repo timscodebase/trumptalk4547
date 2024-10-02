@@ -1,6 +1,6 @@
 <script lang="ts">
 	import 'iconify-icon'
-	import { Footer, Header } from '$lib'
+	import { Analytics, Footer, Header } from '$lib'
 
 	// import 'open-props/style'
 	// import 'open-props/normalize'
@@ -22,6 +22,8 @@
 		})
 	})
 </script>
+
+<Analytics
 
 <div class="wrapper">
 	<Header />

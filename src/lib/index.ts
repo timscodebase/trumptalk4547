@@ -1,3 +1,4 @@
+import Analytics from './components/Analytics.svelte'
 import BlogLink from './components/BlogLink.svelte'
 import DarkModeToggle from './components/DarkModeToggle.svelte'
 import ElectionCountDown from './components/ElectionCountDown.svelte'
@@ -11,6 +12,7 @@ import Nav from './components/Nav.svelte'
 import Side_By_Side from './components/Side_By_Side.svelte'
 
 export {
+  Analytics,
   BlogLink,
   DarkModeToggle,
   ElectionCountDown,
