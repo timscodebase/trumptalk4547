@@ -37,6 +37,10 @@
 			text-decoration: none;
 			color: var(--text);
 		}
+
+		p {
+			font-size: 1rem;
+		}
 	}
 
 	@media (max-width: 1000px) {
@@ -50,7 +54,6 @@
 
 		p {
 			text-align: center;
-			font-size: 1.75rem;
 			line-height: 2rem;
 		}
 	}
@@ -66,11 +69,14 @@
 	}
 
 	@media (max-width: 1000px) {
-		.logo {
-			align-items: center;
+		.logo-span {
+			text-align: center;
+			font-size: 3rem;
+			padding-bottom: 0;
 
 			p {
 				margin-bottom: 0.5rem;
+				font-size: 2rem;
 			}
 		}
 	}
