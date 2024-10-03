@@ -237,3 +237,8 @@ strong {
 .mono {
 	font-family: var(--font-mono);
 }
+
+.flow-text {
+	float: left;
+	shape-outside: margin-box;
+}
