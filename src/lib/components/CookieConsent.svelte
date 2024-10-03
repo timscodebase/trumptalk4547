@@ -6,4 +6,8 @@
 	}
 </script>
 
-<GdprBanner cookieName="foo" description="bar" on:analytics={initAnalytics} />
+<GdprBanner
+	cookieName="Cookie Consent"
+	description="We don't use many cookies, but we do use analytics."
+	on:analytics={initAnalytics}
+/>
