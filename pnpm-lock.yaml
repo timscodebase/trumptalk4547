@@ -39,6 +39,9 @@ importers:
         specifier: ^1.20.0
         version: 1.20.0
     devDependencies:
+      '@beyonk/gdpr-cookie-consent-banner':
+        specifier: ^12.1.4
+        version: 12.1.4
       '@sveltejs/adapter-auto':
         specifier: ^3.2.5
         version: 3.2.5(@sveltejs/kit@2.6.1(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.8(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.8(@types/node@16.18.11)))
@@ -99,6 +102,9 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@beyonk/gdpr-cookie-consent-banner@12.1.4':
+    resolution: {integrity: sha512-W4S50psrX5WMAihwwqFsnNzL0ZF91OHv4EuIMelTD4yTMU09qTU1cKgUJ7Tt8qRvIyTzfbPwiXGrDYUtFJuOtw==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -1468,6 +1474,10 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
+  js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
+    engines: {node: '>=14'}
+
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
@@ -2393,6 +2403,10 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@beyonk/gdpr-cookie-consent-banner@12.1.4':
+    dependencies:
+      js-cookie: 3.0.5
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -3777,6 +3791,8 @@ snapshots:
   isarray@0.0.1: {}
 
   isexe@2.0.0: {}
+
+  js-cookie@3.0.5: {}
 
   js-yaml@4.1.0:
     dependencies:

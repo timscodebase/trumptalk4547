@@ -1,4 +1,5 @@
 import BlogLink from './components/BlogLink.svelte'
+import CookieConsent from './components/CookieConsent.svelte'
 import DarkModeToggle from './components/DarkModeToggle.svelte'
 import ElectionCountDown from './components/ElectionCountDown.svelte'
 import ExternalLink from './components/ExternalLink.svelte'
@@ -12,6 +13,7 @@ import Side_By_Side from './components/Side_By_Side.svelte'
 
 export {
   BlogLink,
+  CookieConsent,
   DarkModeToggle,
   ElectionCountDown,
   ExternalLink,
