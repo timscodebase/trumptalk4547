@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script lang="ts">
 	import { formatDate, slugify } from '$lib/utils'
 	import * as config from '$lib/config'

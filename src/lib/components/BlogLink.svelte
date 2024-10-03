@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script lang="ts">
 	import { Image, Side_By_Side } from '$lib'
 	import { formatDate } from '$lib/utils'
