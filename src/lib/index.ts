@@ -1,3 +1,4 @@
+import Analylitics from './components/Analylitics.svelte'
 import BlogLink from './components/BlogLink.svelte'
 import CookieConsent from './components/CookieConsent.svelte'
 import DarkModeToggle from './components/DarkModeToggle.svelte'
@@ -12,6 +13,7 @@ import Nav from './components/Nav.svelte'
 import Side_By_Side from './components/Side_By_Side.svelte'
 
 export {
+  Analylitics,
   BlogLink,
   CookieConsent,
   DarkModeToggle,

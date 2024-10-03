@@ -2,7 +2,7 @@
 
 <script lang="ts">
 	import 'iconify-icon'
-	import { CookieConsent, Footer, Header } from '$lib'
+	import { Analylitics, CookieConsent, Footer, Header } from '$lib'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 
 	injectSpeedInsights()
@@ -24,6 +24,8 @@
 		})
 	})
 </script>
+
+<Analylitics />
 
 <div class="wrapper">
 	<Header />
