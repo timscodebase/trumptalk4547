@@ -2,17 +2,22 @@
 	type Props = {
 		alt: string
 		border?: boolean
+		size?: string
 		src: string
+		className?: string
 	}
 
-	let { alt, border = true, src } = $props() as Props
+	let { alt, border = true, size = '100%', src, className = '' } = $props() as Props
 </script>
 
-{#if border}
-	<img class="border" {src} {alt} loading="lazy" />
-{:else}
-	<img {src} {alt} loading="lazy" />
-{/if}
+<img
+	style={`width: ${size}; height: ${size};`}
+	class:border
+	class={className}
+	{src}
+	{alt}
+	loading="lazy"
+/>
 
 <style>
 	img {
