@@ -1,12 +1,11 @@
+<svelte:options runes={true} />
+
 <script lang="ts">
 	import 'iconify-icon'
-	import { Footer, Header } from '$lib'
+	import { CookieConsent, Footer, Header } from '$lib'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 
 	injectSpeedInsights()
-
-	// import 'open-props/style'
-	// import 'open-props/normalize'
 
 	let { children } = $props()
 
@@ -33,6 +32,8 @@
 	</main>
 	<Footer />
 </div>
+
+<CookieConsent />
 
 <style>
 	.wrapper {

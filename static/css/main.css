@@ -1,5 +1,6 @@
 @import url('./typograpy.css');
 @import url('./consent.css');
+@import url('./banner.css');
 
 :root {
 	view-transition-name: root;

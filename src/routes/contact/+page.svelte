@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script>
 	import { name } from './../../lib/config.ts'
 	import * as config from '$lib/config'

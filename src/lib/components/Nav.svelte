@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script>
 	let links = $props()
 </script>
