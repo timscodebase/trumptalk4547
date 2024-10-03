@@ -1,4 +1,5 @@
 @import url('./typograpy.css');
+@import url('./consent.css');
 
 :root {
 	view-transition-name: root;
