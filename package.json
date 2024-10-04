@@ -21,17 +21,17 @@
 		"eslint": "^9.11.1",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.44.1",
-		"globals": "^15.9.0",
+		"globals": "^15.10.0",
 		"mdsvex": "^0.12.3",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.7",
 		"svelte": "5.0.0-next.260",
 		"svelte-check": "^4.0.4",
 		"typescript": "^5.6.2",
-		"typescript-eslint": "^8.7.0",
-		"vercel": "^37.6.0",
+		"typescript-eslint": "^8.8.0",
+		"vercel": "^37.6.1",
 		"vite": "^5.4.8",
-		"vitest": "^2.1.1"
+		"vitest": "^2.1.2"
 	},
 	"type": "module",
 	"dependencies": {
@@ -47,6 +47,6 @@
 		"rehype-slug": "^6.0.0",
 		"remark-toc": "^9.0.0",
 		"remark-unwrap-images": "^4.0.0",
-		"shiki": "^1.20.0"
+		"shiki": "^1.21.0"
 	}
 }

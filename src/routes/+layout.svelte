@@ -5,7 +5,6 @@
 	import { Analylitics, CookieConsent, Footer, Header } from '$lib'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import { inject } from '@vercel/analytics'
-	import { partytownSnippet } from '@builder.io/partytown/integration'
 
 	injectSpeedInsights()
 
@@ -26,10 +25,6 @@
 		})
 	})
 </script>
-
-<svelte:head>
-	{@html '<script>' + partytownSnippet() + '</script>'}
-</svelte:head>
 
 <Analylitics />
 
