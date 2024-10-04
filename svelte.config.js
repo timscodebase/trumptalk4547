@@ -30,7 +30,7 @@ const mdsvexOptions = {
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
-	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],,
+	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	partytownVite({
 		dest: join(__dirname, 'static', '~partytown'),
 	}),
