@@ -1,8 +1,9 @@
-import adapter from '@sveltejs/adapter-vercel'
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
-
-import { mdsvex, escapeSvelte } from 'mdsvex'
+import { join } from 'path';
 import { getHighlighter } from 'shiki'
+import { mdsvex, escapeSvelte } from 'mdsvex'
+import adapter from '@sveltejs/adapter-vercel'
+import { partytownVite } from '@builder.io/partytown/utils'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
 import remarkUnwrapImages from 'remark-unwrap-images'
 import remarkToc from 'remark-toc'
@@ -29,7 +30,10 @@ const mdsvexOptions = {
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
-	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
+	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],,
+	partytownVite({
+		dest: join(__dirname, 'static', '~partytown'),
+	}),
 	kit: {
 		adapter: adapter(),
 		prerender: {
