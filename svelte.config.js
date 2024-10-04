@@ -31,9 +31,6 @@ const mdsvexOptions = {
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
-	partytownVite({
-		dest: join(__dirname, 'static', '~partytown'),
-	}),
 	kit: {
 		adapter: adapter(),
 		prerender: {

@@ -12,11 +12,6 @@
 </script>
 
 <svelte:head>
-	<script>
-		partytown = {
-			forward: ['dataLayer.push', 'gtag']
-		}
-	</script>
 	<meta name="google-adsense-account" content="ca-pub-2145750142271743" />
 	<script
 		async
