@@ -6,7 +6,7 @@ image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v172816
 categories:
   - Corey Comperatore
   - Butter, PA
-  - Donald Trump
+  - Donald J Trump
 published: true
 featured: true
 ---
