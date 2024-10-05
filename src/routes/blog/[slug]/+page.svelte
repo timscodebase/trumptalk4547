@@ -10,11 +10,14 @@
 
 <svelte:head>
 	<title>{config.name} | {meta.title}</title>
+
 	<meta name="robots" content="index, follow" />
-	<meta property="og:type" content="article" />
+
 	<meta property="og:title" content={meta.title} />
 	<meta property="og:description" content={meta.description} />
 	<meta property="og:image" content={meta.image} />
+	<meta property="og:url" content={`${config.url}/blog/${slugify(meta.title)}`} />
+	<meta property="og:type" content="article" />
 
 	<meta name="twitter:creator" content="@TrumpTalk4547" />
 	<meta name="twitter:card" content="summary_large_image" />
