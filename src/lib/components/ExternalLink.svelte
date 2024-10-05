@@ -11,12 +11,14 @@
 
 <style>
 	a {
-		display: block;
+		text-decoration: none;
 		text-decoration: none;
 		color: var(--color-text);
+		border-bottom: 2px dotted var(--color-accent);
 
 		&:hover {
-			text-decoration: underline;
+			color: var(--color-text);
+			border-bottom: 2px solid var(--color-accent);
 		}
 	}
 </style>
