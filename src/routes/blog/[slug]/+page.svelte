@@ -12,7 +12,8 @@
 	<title>{config.name} | {meta.title}</title>
 
 	<meta name="robots" content="index, follow" />
-
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content={config.name} />
 	<meta property="og:title" content={meta.title} />
 	<meta property="og:description" content={meta.description} />
 	<meta property="og:image" content={meta.image} />
