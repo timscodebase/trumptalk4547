@@ -22,7 +22,7 @@
 	<meta name="twitter:title" content={meta.title} />
 	<meta name="twitter:description" content={meta.description} />
 	<meta name="twitter:image" content={meta.image} />
-	<meta name="twitter:url" content={`${config.url}/blog/${meta.slug}`} />
+	<meta name="twitter:url" content={`${config.url}/blog/${slugify(meta.title)}`} />
 </svelte:head>
 
 <article>
