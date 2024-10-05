@@ -2,7 +2,7 @@
 title: No Wars, Proxy Wars, Forever Wars
 description: A synopsis of the state of war over the past 16 years
 date: '2024-09-29'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727595366/Designer_image_dzyumn.jpg'
+image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727595366/Designer_image_dzyumn.webp'
 categories:
   - Donald Trump
   - Barack Obama
@@ -18,7 +18,7 @@ featured: true
   import { ExternalLink, Image } from '../lib';
 </script>
 
-<Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727595366/Designer_image_dzyumn.jpg" alt="No Wars, Proxy Wars, Forever Wars" />
+<Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727595366/Designer_image_dzyumn.webp" alt="No Wars, Proxy Wars, Forever Wars" />
 
 ## No New Wars
 
