@@ -10,6 +10,7 @@
 
 <svelte:head>
 	<title>{config.name} | {meta.title}</title>
+	<meta name="robots" content="index, follow" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={meta.title} />
 	<meta property="og:description" content={meta.description} />
@@ -21,6 +22,7 @@
 	<meta name="twitter:title" content={meta.title} />
 	<meta name="twitter:description" content={meta.description} />
 	<meta name="twitter:image" content={meta.image} />
+	<meta name="twitter:url" content={`${config.url}/blog/${meta.slug}`} />
 </svelte:head>
 
 <article>
