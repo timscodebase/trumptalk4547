@@ -11,24 +11,24 @@
 	<p>&copy; {new Date().getFullYear()}</p>
 	<ul>
 		<li>
-			<a href="https://discord.gg/pB4DCCyC">
-				<iconify-icon icon="ic:baseline-discord"></iconify-icon>
+			<a aria-label="Youtube" href="http://www.youtube.com/@TrumpTalk4547"> YouTube </a>
+		</li>
+		<li>
+			<a aria-label="X" href="https://x.com/TrumpTalk4547"> X </a>
+		</li>
+		<li>
+			<a aria-label="Spotify" href="https://open.spotify.com/show/7wBMRk8wLKJIrQjmLHE0jy">
+				Spotify
 			</a>
 		</li>
 		<li>
-			<a href="http://www.youtube.com/@TrumpTalk4547">
-				<iconify-icon icon="mdi:youtube"></iconify-icon>
-			</a>
-		</li>
-		<li>
-			<a href="https://x.com/TrumpTalk4547">
-				<iconify-icon icon="ri:twitter-x-fill"></iconify-icon>
-			</a>
-		</li>
-		<li>
-			<a href="https://www.patreon.com/TrumpTalk4547">
+			<a aria-label="Patreon" href="https://www.patreon.com/TrumpTalk4547">
+				Patreon
 				<iconify-icon icon="fa6-brands:patreon"></iconify-icon>
 			</a>
+		</li>
+		<li>
+			<a aria-label="Discord" href="https://discord.gg/pB4DCCyC"> Discord </a>
 		</li>
 	</ul>
 </footer>
@@ -44,7 +44,8 @@
 		text-align: center;
 
 		p {
-			font-size: 1.5rem;
+			font-size: 1rem;
+			margin: 0;
 		}
 
 		ul {
@@ -56,7 +57,7 @@
 
 			a {
 				color: var(--color-text);
-				font-size: 1.5rem;
+				font-size: 1rem;
 			}
 		}
 	}
@@ -64,6 +65,12 @@
 	@media (max-width: 1000px) {
 		footer {
 			flex-direction: column;
+
+			ul {
+				margin-top: 1rem;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
 		}
 	}
 </style>

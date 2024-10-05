@@ -243,3 +243,10 @@ strong {
 	float: left;
 	shape-outside: margin-box;
 }
+
+hr {
+  border: 0;
+  height: 6px;
+	margin: 2rem 0;
+	background: linear-gradient(to right, var(--color-accent), var(--color-text), var(--color-surface-op));
+}

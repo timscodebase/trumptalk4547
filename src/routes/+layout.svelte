@@ -5,12 +5,11 @@
 	import { Analylitics, CookieConsent, Footer, Header } from '$lib'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import { inject } from '@vercel/analytics'
+	import PartytownSnippet from 'partytown-sveltekit/PartytownSnippet.svelte'
 
 	injectSpeedInsights()
 
 	let { children } = $props()
-
-	// set root variables
 	$effect(() => {
 		const root = document.documentElement || document.body
 
@@ -37,6 +36,8 @@
 </div>
 
 <CookieConsent />
+
+<PartytownSnippet />
 
 <style>
 	.wrapper {
