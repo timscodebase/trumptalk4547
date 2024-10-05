@@ -11,24 +11,29 @@
 	<p>&copy; {new Date().getFullYear()}</p>
 	<ul>
 		<li>
-			<a aria-label="Youtube" href="http://www.youtube.com/@TrumpTalk4547"> YouTube </a>
+			<a aria-label="Youtube" href="http://www.youtube.com/@TrumpTalk4547">
+				<iconify-icon icon="fa6-brands:youtube"></iconify-icon>
+			</a>
 		</li>
 		<li>
-			<a aria-label="X" href="https://x.com/TrumpTalk4547"> X </a>
+			<a aria-label="X" href="https://x.com/TrumpTalk4547">
+				<iconify-icon icon="fa6-brands:x-twitter"></iconify-icon>
+			</a>
 		</li>
 		<li>
 			<a aria-label="Spotify" href="https://open.spotify.com/show/7wBMRk8wLKJIrQjmLHE0jy">
-				Spotify
+				<iconify-icon icon="fa6-brands:spotify"></iconify-icon>
 			</a>
 		</li>
 		<li>
 			<a aria-label="Patreon" href="https://www.patreon.com/TrumpTalk4547">
-				Patreon
 				<iconify-icon icon="fa6-brands:patreon"></iconify-icon>
 			</a>
 		</li>
 		<li>
-			<a aria-label="Discord" href="https://discord.gg/pB4DCCyC"> Discord </a>
+			<a aria-label="Discord" href="https://discord.gg/pB4DCCyC">
+				<iconify-icon icon="fa6-brands:discord"></iconify-icon>
+			</a>
 		</li>
 	</ul>
 </footer>
