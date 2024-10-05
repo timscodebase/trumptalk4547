@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores'
+	import Partytown from 'partytown-sveltekit/Partytown.svelte'
 
 	$effect(() => {
 		if (typeof gtag !== 'undefined') {
@@ -11,14 +12,14 @@
 	})
 </script>
 
-<svelte:head>
-	<meta name="google-adsense-account" content="ca-pub-2145750142271743" />
+<Partytown
+	script={`
+<meta name="google-adsense-account" content="ca-pub-2145750142271743" />
 	<script
 		async
 		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2145750142271743"
 		crossorigin="anonymous"
-	>
-	</script>
+	 ✂prettier:content✂="Cgk=">{}</script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZH87M6DDV">
 	</script>
 	<script>
@@ -31,4 +32,5 @@
 		gtag('js', new Date())
 		gtag('config', 'G-FZH87M6DDV')
 	</script>
-</svelte:head>
+`}
+></Partytown>

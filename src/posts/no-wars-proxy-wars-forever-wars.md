@@ -20,33 +20,34 @@ featured: true
 
 <Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727595366/Designer_image_dzyumn.jpg" alt="No Wars, Proxy Wars, Forever Wars" />
 
-## No Wars
+## No New Wars
 
-- **No New Wars** — Donald Trump did not start any new wars during his first term as President of the United States.
-- **Historical Context** — Trump is not the only modern president to avoid starting new wars; others include Jimmy Carter, Gerald Ford, and Richard Nixon.
-- **Military Actions** — Although Trump did not start new wars, he escalated existing conflicts, such as increasing airstrikes in Afghanistan and supporting the Saudi-led war in Yemen.
-- **Near Misses** — Trump came close to initiating new conflicts, notably with North Korea and Iran, but these did not escalate into full-scale wars.
-- **Public Statements** — Trump frequently touted his record of not starting new wars, using it as a point of pride in his farewell address and other public statements.
+During Donald Trump's first term as President of the United States, one notable aspect of his foreign policy was his avoidance of starting any new wars. This sets him apart from several predecessors, as maintaining a non-interventionist stance in terms of initiating conflicts is a significant deviation in modern U.S. history. However, Trump is not alone in this respect; other modern presidents, such as Jimmy Carter, Gerald Ford, and Richard Nixon, also did not start new wars during their terms.
 
-## Proxy Wars
+While Trump refrained from launching new military conflicts, his administration did escalate existing ones. For instance, there was a notable increase in airstrikes in Afghanistan, and his administration provided substantial support to the Saudi-led war in Yemen. These actions highlighted a complex approach to military engagement, where new conflicts were avoided but existing ones were intensified.
 
-US Proxy Wars Involving Israel and Gaza
+Trump's tenure also witnessed several near-misses regarding potential new conflicts. The most prominent of these were with North Korea and Iran, where tensions reached significant heights but ultimately did not result in full-scale wars. Despite these close calls, Trump frequently touted his record of not starting new wars, using it as a point of pride in his farewell address and other public statements.
 
-- **US Involvement** — The United States has been involved in multiple proxy wars, including those in Gaza, by supporting Israel militarily and politically.
-- **Iranian Influence** — Iran and its proxies, such as Hezbollah and Hamas, have been significant players in the Gaza conflict, often opposing US and Israeli interests.
-- **Cycle of Escalation** — The conflict in Gaza has led to a cycle of escalation involving various regional actors, including Iran, the US, and their respective allies.
-- **Recent Events** — Since October 7, 2023, the war in Gaza has intensified, with significant regional implications and increased attacks on US and Israeli targets by Iranian proxies.
-- **Domestic Impact** — The conflict has also affected US domestic politics, particularly on college campuses, where pro-Palestinian and pro-Israeli groups have clashed.
+---
 
-## Forever Wars
+## US Proxy Wars Involving Israel and Gaza
 
-Key Aspects and Impacts of US 'Forever Wars'
+The United States has long been involved in various proxy wars, including the ongoing conflict in Gaza. U.S. involvement has primarily come through substantial military and political support for Israel. This support has positioned the U.S. as a key player in the region, influencing the dynamics of the conflict significantly.
 
-- **Authorization for Use of Military Force (AUMF)** — The 2001 and 2002 AUMFs gave the US president broad authority to wage war against perceived enemies, leading to prolonged military engagements.
-- **Financial Cost** — The Afghanistan War alone has cost over $2.6 trillion, highlighting the immense financial burden of these conflicts.
-- **Human Cost** — These wars have resulted in significant civilian casualties, with thousands of US troops killed, wounded, or traumatized.
-- **Global Impact** — The US's involvement in these wars has had far-reaching consequences, affecting international relations and global security.
-- **Perpetual State** — The term 'forever wars' refers to the ongoing, indefinite nature of these conflicts, with no clear end in sight.
+On the other side, Iran, along with its proxies such as Hezbollah and Hamas, has played a significant role in opposing U.S. and Israeli interests in Gaza. This involvement has contributed to a cycle of escalation, with various regional actors, including Iran, the U.S., and their respective allies, continually intensifying the conflict.
+
+Recent events have further complicated the situation. Since October 7, 2023, the war in Gaza has intensified dramatically, leading to significant regional implications. The increased attacks on U.S. and Israeli targets by Iranian proxies have underscored the volatile nature of the conflict. This escalation has not only affected international relations but has also had a domestic impact in the U.S. The conflict has become a contentious issue, particularly on college campuses, where pro-Palestinian and pro-Israeli groups have frequently clashed.
+
+---
+
+## Key Aspects and Impacts of US 'Forever Wars'
+The term 'forever wars' refers to the prolonged and seemingly indefinite military engagements that the U.S. has been involved in since the early 2000s. A significant factor in these ongoing conflicts is the Authorization for Use of Military Force (AUMF) passed in 2001 and 2002. These AUMFs gave the U.S. president broad authority to wage war against perceived enemies, leading to extended military actions without clear endpoints.
+
+The financial cost of these wars has been staggering. For example, the Afghanistan War alone has cost over $2.6 trillion, placing a significant burden on the U.S. economy. Beyond the financial implications, the human cost has been profound. These wars have resulted in substantial civilian casualties, and thousands of U.S. troops have been killed, wounded, or left traumatized.
+
+The global impact of these 'forever wars' is far-reaching, affecting international relations and global security. The U.S.'s prolonged military presence in various regions has reshaped geopolitical landscapes and influenced the policies of numerous countries. The indefinite nature of these conflicts has led to a state of perpetual warfare, with no clear end in sight, highlighting the complex and enduring challenges of U.S. military engagement on the global stage.
+
+---
 
 ### Top Search Results
 
