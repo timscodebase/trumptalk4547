@@ -78,6 +78,9 @@ importers:
       mdsvex:
         specifier: ^0.12.3
         version: 0.12.3(svelte@5.0.0-next.260)
+      partytown-sveltekit:
+        specifier: ^0.0.3
+        version: 0.0.3
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -118,6 +121,10 @@ packages:
   '@builder.io/partytown@0.10.2':
     resolution: {integrity: sha512-A9U+4PREWcS+CCYzKGIPovtGB/PBgnH/8oQyCE6Nr9drDJk6cMPpLQIEajpGPmG9tYF7N3FkRvhXm/AS9+0iKg==}
     engines: {node: '>=18.0.0'}
+    hasBin: true
+
+  '@builder.io/partytown@0.5.4':
+    resolution: {integrity: sha512-qnikpQgi30AS01aFlNQV6l8/qdZIcP76mp90ti+u4rucXHsn4afSKivQXApqxvrQG9+Ibv45STyvHizvxef/7A==}
     hasBin: true
 
   '@cspotcode/source-map-support@0.8.1':
@@ -1789,6 +1796,9 @@ packages:
     resolution: {integrity: sha512-kHt7kzLoS9VBZfUsiKjv43mr91ea+U05EyKkEtqp7vNbHxmaVuEqN7XxeEVnGrMtYOAxGrDElSi96K7EgO1zCA==}
     engines: {node: '>=6'}
 
+  partytown-sveltekit@0.0.3:
+    resolution: {integrity: sha512-wYdyjCwgyWAgIsf8xcPNIf5VD75hygP8dDVRbi5Vey+5iMwKQpq6bvj1jay8z7nVOAfBEEQETcmyeAQDfSdyEw==}
+
   path-browserify@1.0.1:
     resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
 
@@ -2450,6 +2460,8 @@ snapshots:
       js-cookie: 3.0.5
 
   '@builder.io/partytown@0.10.2': {}
+
+  '@builder.io/partytown@0.5.4': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -4110,6 +4122,10 @@ snapshots:
       callsites: 3.1.0
 
   parse-ms@2.1.0: {}
+
+  partytown-sveltekit@0.0.3:
+    dependencies:
+      '@builder.io/partytown': 0.5.4
 
   path-browserify@1.0.1: {}
 
