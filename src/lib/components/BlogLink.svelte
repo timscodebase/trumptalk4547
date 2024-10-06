@@ -46,9 +46,9 @@
 
 		h2 {
 			display: block;
-			font-size: clamp(0.9rem, 2vw, 1.5rem);
+			font-size: clamp(0.9rem, 3vw, 2.5rem);
 			padding: 0.5rem 5px;
-			color: var(--color-text-op);
+			color: var(--color-accent);
 		}
 	}
 
