@@ -21,11 +21,6 @@
 	--color-toggle-dark: #F2F2F2;
 	--color-toggle-light: #070F26;
 
-	--shadow-light: 0px 1px 0px #070F26;
-	--shadow-light-footer: 0px 0.5px 0px #070F26;
-	--shadow-dark: 0px 1px 0px #F2F2F2;
-	--shadow-dark-footer: 0px 0.5px 0px #F2F2F2;
-
 	--color-surface: var(--color-surface-dark);
 	--color-surface-op: var(--color-surface-light);
 	--color-text: var(--color-text-dark);
@@ -40,6 +35,11 @@
 	--color-red: var(--color-accent-light);
 	--color-blue: var(--color-surface-light);
 	--color-shadow: var(--color-accent);
+
+	--shadow-light: 0px 1px 0px var(--color-surface);
+	--shadow-light-footer: 0px 0.5px 0px var(--color-surface);
+	--shadow-dark: 0px 1px 0px var(--color-surface-op);
+	--shadow-dark-footer: 0px 0.5px 0px var(--color-surface-op);
 
 	--shadow: var(--shadow-dark);
 	--op-shadow: var(--shadow-light);
