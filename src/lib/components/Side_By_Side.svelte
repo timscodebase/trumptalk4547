@@ -15,6 +15,6 @@
 		place-items: center;
 		gap: 0;
 		overflow: hidden;
-		border: 2px solid var(--color-accent);
+		/* border: 2px solid var(--color-accent); */
 	}
 </style>

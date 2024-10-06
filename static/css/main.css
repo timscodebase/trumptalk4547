@@ -250,6 +250,10 @@ hr {
 	margin: 2rem 0;
 	background: linear-gradient(to right, var(--color-accent), var(--color-text), var(--color-surface-op));
 }
-iframe {
-	border: 2px solid var(--color-accent);
+
+@media (max-width: 1000px) {
+	.logo {
+		max-width: 100% !important;
+		height: auto !important;
+	}
 }
