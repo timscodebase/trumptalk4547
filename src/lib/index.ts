@@ -1,5 +1,6 @@
 import Analylitics from './components/Analylitics.svelte'
 import BlogLink from './components/BlogLink.svelte'
+import BuyMeACoffee from './components/BuyMeACoffee.svelte'
 import CookieConsent from './components/CookieConsent.svelte'
 import DarkModeToggle from './components/DarkModeToggle.svelte'
 import ElectionCountDown from './components/ElectionCountDown.svelte'
@@ -15,6 +16,7 @@ import Side_By_Side from './components/Side_By_Side.svelte'
 export {
   Analylitics,
   BlogLink,
+  BuyMeACoffee,
   CookieConsent,
   DarkModeToggle,
   ElectionCountDown,
