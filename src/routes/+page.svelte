@@ -1,5 +1,5 @@
 <script>
-	import { BlogLink, ElectionCountDown, Image } from '$lib'
+	import { BlogLink, ExternalLink, ElectionCountDown, Image } from '$lib'
 	import * as config from '$lib/config'
 
 	let data = $props()
@@ -61,6 +61,28 @@
 
 <a class="more-articles" href="/blog">More articles &rarr;</a>
 
+<section>
+	<h2>Links and other resources</h2>
+
+	<div class="resources">
+		<ExternalLink href="https://swampthevoteusa.com">
+			<Image
+				src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728170297/Swamp_the_Vote_Logo_utbuob.png"
+				alt="Swamp the Vote Logo"
+				className="logo"
+			/>
+		</ExternalLink>
+		<iframe
+			allow="autoplay *; encrypted-media *;"
+			frameborder="0"
+			height="450"
+			style="color-scheme:dark light;width:100%;max-width:660px;overflow:hidden;background:transparent;"
+			sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+			src="https://embed.music.apple.com/us/playlist/sounds-of-maga/pl.u-76oN9ABT1gZVV"
+		></iframe>
+	</div>
+</section>
+
 <style>
 	h1 {
 		color: var(--color-accent);
@@ -88,6 +110,12 @@
 		&:hover {
 			text-decoration: none;
 		}
+	}
+
+	.resources {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
 	}
 
 	@media (max-width: 1000px) {

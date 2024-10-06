@@ -52,7 +52,7 @@
 		gap: 1rem;
 		padding: 1rem;
 		border-radius: var(--radius-3);
-		border: 2px solid var(--color-accent);
+		/* border: 2px solid var(--color-accent); */
 
 		label {
 			display: grid;

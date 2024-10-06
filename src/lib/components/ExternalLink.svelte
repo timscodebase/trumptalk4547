@@ -1,11 +1,22 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	let { text, href } = $props()
+	import type { P } from 'vitest/dist/chunks/environment.CzISCQ7o.js'
+
+	interface Props {
+		children: any
+		href: string
+		text?: string
+	}
+	let { children, href, text } = $props() as Props
 </script>
 
 <a {href} target="_blank" rel="noopener noreferrer">
-	{text}
+	{#if text}
+		{text}
+	{:else}
+		{@render children()}
+	{/if}
 	<iconify-icon icon="fe:link-external"></iconify-icon>
 </a>
 

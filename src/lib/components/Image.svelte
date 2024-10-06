@@ -28,6 +28,6 @@
 		object-fit: contain;
 	}
 	.border {
-		border: 2px solid var(--color-accent);
+		/* border: 2px solid var(--color-accent); */
 	}
 </style>
