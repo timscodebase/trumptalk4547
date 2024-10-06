@@ -1,6 +1,9 @@
 <script>
 	import { description } from '$lib/config'
+	import { BuyMeACoffee } from '$lib'
 </script>
+
+<BuyMeACoffee />
 
 <footer>
 	<span class="logo-span header-font">
