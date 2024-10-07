@@ -76,4 +76,22 @@
 		scroll-snap-align: center;
 		scroll-snap-align: start;
 	}
+
+	@media (max-width: 1000px) {
+		#sectionPin {
+			height: fit-content !important;
+		}
+		img {
+			max-width: 100% !important;
+			height: auto !important;
+		}
+
+		.pin-wrap-sticky {
+			position: relative;
+		}
+
+		.pin-wrap {
+			flex-direction: column;
+		}
+	}
 </style>
