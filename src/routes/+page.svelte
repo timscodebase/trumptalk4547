@@ -113,13 +113,18 @@
 	}
 
 	.resources {
-		display: grid;
+		display: flex;
 		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
 	}
 
 	@media (max-width: 1000px) {
 		.posts {
+			gap: 0.5rem;
+		}
+
+		.resources {
+			flex-wrap: wrap;
 			gap: 0.5rem;
 		}
 	}
