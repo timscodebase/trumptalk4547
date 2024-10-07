@@ -5,49 +5,64 @@
 
 	type Props = {
 		images: Image[]
-		autoplay?: boolean
-		interval?: number
+		text?: string
 	}
 
-	let { images, interval = 3000 } = $props() as Props
-	let currentIndex = $state(0)
-	let intervalId: NodeJS.Timeout | null = null
-
-	$effect(() => {
-		intervalId = setInterval(() => {
-			currentIndex = (currentIndex + 1) % images.length
-		}, interval)
-
-		return () => {
-			if (intervalId) clearInterval(intervalId)
-		}
-	})
-
-	function previousImage() {
-		currentIndex = (currentIndex - 1 + images.length) % images.length
-	}
-
-	function nextImage() {
-		currentIndex = (currentIndex + 1) % images.length
-	}
+	let { images, text = '' } = $props() as Props
 </script>
 
-<div class="image-slider">
-	{#each images as { src, alt }}
-		<img {src} {alt} />
-	{/each}
-</div>
-<p>Swipe left for more images</p>
+<section id="sectionPin">
+	<div class="pin-wrap-sticky">
+		<div class="pin-wrap">
+			<p class="imageText">{text}</p>
+			{#each images as { src, alt }}
+				<img {src} {alt} />
+			{/each}
+		</div>
+	</div>
+</section>
 
 <style>
-	.image-slider {
-		overflow-x: scroll;
-		scroll-snap-type: x mandatory;
+	@keyframes move {
+		to {
+			/* Move horizontally so that right edge is aligned against the viewport */
+			transform: translateX(calc(-100% + 100vw));
+		}
+	}
+
+	#sectionPin {
+		/* Stretch it out, so that we create room for the horizontal scroll animation */
+		height: 500vh;
+		overflow: visible; /* To make position sticky work … */
+
+		view-timeline-name: --section-pin-tl;
+		view-timeline-axis: block;
+	}
+
+	.pin-wrap-sticky {
+		/* Stick to Top */
+		height: 100vh;
+		width: 100vw;
+		position: sticky;
+		top: 0;
+
+		width: 100vw;
+		overflow-x: hidden;
+	}
+
+	.pin-wrap {
 		display: flex;
-		gap: 5px;
-		width: 550px;
-		margin: 0 auto;
-		background: var(--color-surface-op);
+		align-items: center;
+		height: 100vh;
+		width: fit-content;
+
+		/* Hook animation */
+		will-change: transform;
+		animation: linear move forwards;
+
+		/* Link animation to view-timeline */
+		animation-timeline: --section-pin-tl;
+		animation-range: contain 0% contain 100%;
 	}
 
 	p {
@@ -55,8 +70,8 @@
 	}
 
 	img {
-		height: auto;
-		max-width: 100%;
+		height: 100%;
+		width: auto;
 		object-fit: contain;
 		scroll-snap-align: center;
 		scroll-snap-align: start;
