@@ -1,6 +1,7 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
+	import { Utterances } from '@codewithshin/svelte-utterances'
 	import { formatDate, slugify } from '$lib/utils'
 	import * as config from '$lib/config'
 
@@ -43,6 +44,7 @@
 
 	<div class="prose">
 		{@render content()}
+		<Utterances repo="timscodebase/trumptalk4547" theme="github-light" />
 	</div>
 </article>
 
