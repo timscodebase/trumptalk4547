@@ -44,7 +44,13 @@
 
 	<section class="content">
 		{@render content()}
-		<Utterances reponame="timscodebase/trumptalk4547" theme="github-light" />
+		<Utterances
+			reponame="timscodebase/trumptalk4547"
+			issue-term="pathname"
+			theme="dark-blue"
+			crossorigin="anonymous"
+			async
+		/>
 	</section>
 </article>
 

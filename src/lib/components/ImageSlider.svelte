@@ -42,11 +42,9 @@
 	.pin-wrap-sticky {
 		/* Stick to Top */
 		height: 100vh;
-		width: 100vw;
+		width: 1000px;
 		position: sticky;
 		top: 0;
-
-		width: 100vw;
 		overflow-x: hidden;
 	}
 
