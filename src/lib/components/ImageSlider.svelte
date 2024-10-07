@@ -79,7 +79,9 @@
 
 	@media (max-width: 1000px) {
 		#sectionPin {
+			width: 100% !important;
 			height: fit-content !important;
+			overflow: visible !important;
 		}
 		img {
 			max-width: 100% !important;
