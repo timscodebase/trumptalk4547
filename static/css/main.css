@@ -199,11 +199,6 @@ ul {
     /* border-radius: 0 var(--radius-3) var(--radius-3) 0; */
 }
 
-.prose img {
-	display: block;
-	margin: 0 auto 1rem auto;
-}
-
 .logo-span {
 	font-size: 2.5rem;
 	text-shadow: var(--shadow);

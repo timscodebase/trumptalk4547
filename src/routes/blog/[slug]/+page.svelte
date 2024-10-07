@@ -42,15 +42,20 @@
 		</div>
 	</hgroup>
 
-	<div class="prose">
+	<section class="content">
 		{@render content()}
 		<Utterances reponame="timscodebase/trumptalk4547" theme="github-light" />
-	</div>
+	</section>
 </article>
 
 <style>
 	article {
 		margin-inline: auto;
+	}
+
+	.content {
+		content-visibility: auto;
+		contain-intrinsic-size: 1000px; /* Explained in the next section. */
 	}
 
 	h1 {
