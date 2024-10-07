@@ -44,7 +44,7 @@
 
 	<div class="prose">
 		{@render content()}
-		<Utterances repo="timscodebase/trumptalk4547" theme="github-light" />
+		<Utterances reponame="timscodebase/trumptalk4547" theme="github-light" />
 	</div>
 </article>
 
