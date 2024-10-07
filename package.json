@@ -14,6 +14,7 @@
 	},
 	"devDependencies": {
 		"@beyonk/gdpr-cookie-consent-banner": "^12.1.4",
+		"@codewithshin/svelte-utterances": "^0.2.4",
 		"@sveltejs/adapter-auto": "^3.2.5",
 		"@sveltejs/kit": "^2.6.1",
 		"@sveltejs/vite-plugin-svelte": "4.0.0-next.7",
