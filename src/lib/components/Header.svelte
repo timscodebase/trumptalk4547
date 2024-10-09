@@ -18,7 +18,7 @@
 		</div>
 	</a>
 	<Nav {links} />
-	<DarkModeToggle />
+	<!-- <DarkModeToggle /> -->
 </header>
 
 <style>
