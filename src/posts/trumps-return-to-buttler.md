@@ -1,6 +1,6 @@
 ---
 title: Donald J Trump's Triumphant Return to Buttler, PA
-description: Donald J Trump, J.D. Vance, Lara Trump, Eric Trump, Elon Musk and others speak at a ralley in Buttler PA. Corey Comperatore was honored and remembered for his heroic sacrifice. 
+description: Donald J Trump, J.D. Vance, Lara Trump, Eric Trump, Elon Musk and others speak at a ralley in Buttler PA. Corey Comperatore was honored and remembered for his heroic sacrifice.
 date: '2024-10-05'
 image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728166120/IMG_3043_o5a6ht.png'
 categories:
