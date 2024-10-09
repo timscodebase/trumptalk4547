@@ -19,7 +19,7 @@ h2,
 h3,
 h4,
 h5,
-h6,	
+h6,
 .header-font {
 	font-family: var(--font-header);
 	font-weight: bold;
@@ -92,6 +92,6 @@ p {
 }
 
 p::selection {
-  color: var(--color-selected-text);
-  background-color: var(--color-selected);
+	color: var(--color-selected-text);
+	background-color: var(--color-selected);
 }
