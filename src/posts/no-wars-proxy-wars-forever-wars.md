@@ -41,6 +41,7 @@ Recent events have further complicated the situation. Since October 7, 2023, the
 ---
 
 ## Key Aspects and Impacts of US 'Forever Wars'
+
 The term 'forever wars' refers to the prolonged and seemingly indefinite military engagements that the U.S. has been involved in since the early 2000s. A significant factor in these ongoing conflicts is the Authorization for Use of Military Force (AUMF) passed in 2001 and 2002. These AUMFs gave the U.S. president broad authority to wage war against perceived enemies, leading to extended military actions without clear endpoints.
 
 The financial cost of these wars has been staggering. For example, the Afghanistan War alone has cost over $2.6 trillion, placing a significant burden on the U.S. economy. Beyond the financial implications, the human cost has been profound. These wars have resulted in substantial civilian casualties, and thousands of U.S. troops have been killed, wounded, or left traumatized.

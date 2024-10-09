@@ -14,18 +14,18 @@ import Nav from './components/Nav.svelte'
 import Side_By_Side from './components/Side_By_Side.svelte'
 
 export {
-  Analylitics,
-  BlogLink,
-  BuyMeACoffee,
-  CookieConsent,
-  DarkModeToggle,
-  ElectionCountDown,
-  ExternalLink,
-  Footer,
-  Header,
-  Image,
-  ImageSlider,
-  Meta,
-  Nav,
-  Side_By_Side
+	Analylitics,
+	BlogLink,
+	BuyMeACoffee,
+	CookieConsent,
+	DarkModeToggle,
+	ElectionCountDown,
+	ExternalLink,
+	Footer,
+	Header,
+	Image,
+	ImageSlider,
+	Meta,
+	Nav,
+	Side_By_Side
 }

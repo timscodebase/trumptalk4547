@@ -7,19 +7,19 @@
 
 	/* Primarey Theme Colors */
 	--color-surface-light: #5d91fa;
-	--color-surface-dark: #0339A6;
-	--color-text-light: #070F26 ;
-	--color-text-dark: #F2F2F2;
-	--color-accent-light: #E00707;
-	--color-accent-dark: #E00707;
-	--color-success-light: #00C700;
-	--color-success-dark: #008B00;
-	--color-error-light: #E24000;
-	--color-error-dark: #8C2800;
-	--color-warning-light: #C4BD00;
-	--color-warning-dark: #8A8600;
-	--color-toggle-dark: #F2F2F2;
-	--color-toggle-light: #070F26;
+	--color-surface-dark: #0339a6;
+	--color-text-light: #070f26;
+	--color-text-dark: #f2f2f2;
+	--color-accent-light: #e00707;
+	--color-accent-dark: #e00707;
+	--color-success-light: #00c700;
+	--color-success-dark: #008b00;
+	--color-error-light: #e24000;
+	--color-error-dark: #8c2800;
+	--color-warning-light: #c4bd00;
+	--color-warning-dark: #8a8600;
+	--color-toggle-dark: #f2f2f2;
+	--color-toggle-light: #070f26;
 
 	--color-surface: var(--color-surface-dark);
 	--color-surface-op: var(--color-surface-light);
@@ -96,54 +96,53 @@
 }
 
 @view-transition {
-  navigation: auto;
-  types: slide, forwards;
+	navigation: auto;
+	types: slide, forwards;
 }
 
 /* Determine what gets captured when the type is forwards or backwards */
 html:active-view-transition-type(forwards, backwards) {
-  :root {
-    view-transition-name: none;
-  }
-  article {
-    view-transition-name: content;
-  }
-  .pagination {
-    view-transition-name: pagination;
-  }
+	:root {
+		view-transition-name: none;
+	}
+	article {
+		view-transition-name: content;
+	}
+	.pagination {
+		view-transition-name: pagination;
+	}
 }
 
 /* Animation styles for forwards type only */
 html:active-view-transition-type(forwards) {
-  &::view-transition-old(content) {
-    animation-name: slide-out-to-left;
-  }
-  &::view-transition-new(content) {
-    animation-name: slide-in-from-right;
-  }
+	&::view-transition-old(content) {
+		animation-name: slide-out-to-left;
+	}
+	&::view-transition-new(content) {
+		animation-name: slide-in-from-right;
+	}
 }
 
 /* Animation styles for backwards type only */
 html:active-view-transition-type(backwards) {
-  &::view-transition-old(content) {
-    animation-name: slide-out-to-right;
-  }
-  &::view-transition-new(content) {
-    animation-name: slide-in-from-left;
-  }
+	&::view-transition-old(content) {
+		animation-name: slide-out-to-right;
+	}
+	&::view-transition-new(content) {
+		animation-name: slide-in-from-left;
+	}
 }
 
 /* Animation styles for reload type only */
 html:active-view-transition-type(reload) {
-  &::view-transition-old(root) {
-    animation-name: fade-out, scale-down;
-  }
-  &::view-transition-new(root) {
-    animation-delay: 0.25s;
-    animation-name: fade-in, scale-up;
-  }
+	&::view-transition-old(root) {
+		animation-name: fade-out, scale-down;
+	}
+	&::view-transition-new(root) {
+		animation-delay: 0.25s;
+		animation-name: fade-in, scale-up;
+	}
 }
-
 
 @keyframes move-out {
 	from {
@@ -192,11 +191,11 @@ ul {
 }
 
 .side-by-side > img:first-child {
-    /* border-radius: var(--radius-3) 0 0 var(--radius-3); */
+	/* border-radius: var(--radius-3) 0 0 var(--radius-3); */
 }
 
 .side-by-side > img:last-child {
-    /* border-radius: 0 var(--radius-3) var(--radius-3) 0; */
+	/* border-radius: 0 var(--radius-3) var(--radius-3) 0; */
 }
 
 .logo-span {
@@ -240,10 +239,15 @@ strong {
 }
 
 hr {
-  border: 0;
-  height: 6px;
+	border: 0;
+	height: 6px;
 	margin: 2rem 0;
-	background: linear-gradient(to right, var(--color-accent), var(--color-text-dark), var(--color-surface-op));
+	background: linear-gradient(
+		to right,
+		var(--color-accent),
+		var(--color-text-dark),
+		var(--color-surface-op)
+	);
 }
 
 @media (max-width: 1000px) {
