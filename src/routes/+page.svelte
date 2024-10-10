@@ -1,5 +1,5 @@
 <script>
-	import { BlogLink, ExternalLink, ElectionCountDown, Image } from '$lib'
+	import { ExternalLink, ElectionCountDown, Image, Posts } from '$lib'
 	import * as config from '$lib/config'
 
 	let data = $props()
@@ -49,15 +49,7 @@
 	<ElectionCountDown />
 </section>
 
-<section>
-	<ul class="posts">
-		{#each posts as post, i}
-			<li class="post" style={`--transition-name: post-${post.slug}`}>
-				<BlogLink {post} />
-			</li>
-		{/each}
-	</ul>
-</section>
+<Posts {posts} />
 
 <a class="more-articles" href="/blog">More articles &rarr;</a>
 
@@ -69,6 +61,13 @@
 			<Image
 				src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728170297/Swamp_the_Vote_Logo_utbuob.png"
 				alt="Swamp the Vote Logo"
+				className="logo"
+			/>
+		</ExternalLink>
+		<ExternalLink href="https://petition.theamericapac.org">
+			<Image
+				src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728530480/American-pac_vjzl3k.jpg"
+				alt="America PAC Logo"
 				className="logo"
 			/>
 		</ExternalLink>
@@ -113,7 +112,7 @@
 	}
 
 	.resources {
-		display: flex;
+		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
 	}

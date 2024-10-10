@@ -1,22 +1,13 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import { Image, Side_By_Side } from '$lib'
+	import type { Post } from '$lib/types'
+	import { Image } from '$lib'
 	import { formatDate } from '$lib/utils'
-
-	type Props = {
-		post: {
-			slug: string
-			title: string
-			description: string
-			date: string
-			image: string
-		}
-	}
-	let { post } = $props() as Props
+	let { post } = $props() as { post: Post }
 </script>
 
-<Side_By_Side>
+<article>
 	<div>
 		<a href={`/blog/${post.slug}`} class="title">
 			<img src={post.image} alt={post.title} loading="lazy" />
@@ -28,9 +19,18 @@
 			</div>
 		</a>
 	</div>
-</Side_By_Side>
+</article>
 
 <style>
+	article {
+		display: grid;
+		grid-template-columns: 1fr;
+		place-items: center;
+		gap: 0;
+		overflow: hidden;
+		border: 2px solid var(--color-accent);
+	}
+
 	a {
 		display: block;
 		padding: 0;
