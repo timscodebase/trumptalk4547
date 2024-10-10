@@ -29,7 +29,7 @@
 		"prettier-plugin-svelte": "^3.2.7",
 		"svelte": "5.0.0-next.260",
 		"svelte-check": "^4.0.4",
-		"typescript": "^5.6.2",
+		"typescript": "5.7.0-beta",
 		"typescript-eslint": "^8.8.0",
 		"vercel": "^37.6.1",
 		"vite": "^5.4.8",

@@ -27,7 +27,8 @@
 		display: grid;
 		place-content: center;
 		text-align: center;
-		background-image: linear-gradient(
+		background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.15)),
+			linear-gradient(
 				to right,
 				rgba(196, 0, 0, 0.65),
 				rgba(197, 197, 197, 0.45),

@@ -11,7 +11,7 @@ import Image from './components/Image.svelte'
 import ImageSlider from './components/ImageSlider.svelte'
 import Meta from './components/Meta.svelte'
 import Nav from './components/Nav.svelte'
-import Side_By_Side from './components/Side_By_Side.svelte'
+import Posts from './components/Posts.svelte'
 
 export {
 	Analylitics,
@@ -27,5 +27,5 @@ export {
 	ImageSlider,
 	Meta,
 	Nav,
-	Side_By_Side
+	Posts
 }
