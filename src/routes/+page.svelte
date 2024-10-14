@@ -1,5 +1,5 @@
 <script>
-	import { ExternalLink, ElectionCountDown, Image, Posts } from '$lib'
+	import { SponsorLink, ElectionCountDown, Image, Posts } from '$lib'
 	import * as config from '$lib/config'
 
 	let data = $props()
@@ -57,29 +57,37 @@
 	<h2>Links and other resources</h2>
 
 	<div class="resources">
-		<ExternalLink href="https://swampthevoteusa.com">
+		<SponsorLink href="https://swampthevoteusa.com">
 			<Image
 				src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728170297/Swamp_the_Vote_Logo_utbuob.png"
 				alt="Swamp the Vote Logo"
 				className="logo"
 			/>
-		</ExternalLink>
-		<ExternalLink href="https://petition.theamericapac.org">
+		</SponsorLink>
+		<SponsorLink href="https://petition.theamericapac.org">
 			<Image
 				src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728530480/American-pac_vjzl3k.jpg"
 				alt="America PAC Logo"
 				className="logo"
 			/>
-		</ExternalLink>
-		<iframe
-			allow="autoplay *; encrypted-media *;"
-			frameborder="0"
-			height="450"
-			style="color-scheme:dark light;width:100%;max-width:660px;overflow:hidden;background:transparent;"
-			sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-			src="https://embed.music.apple.com/us/playlist/sounds-of-maga/pl.u-76oN9ABT1gZVV"
-		></iframe>
+		</SponsorLink>
+		<SponsorLink href="https://www.faithfulelections.org/rcv">
+			<Image
+				src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728877798/rank-choice-voting_fogo0l.png"
+				alt="No rank Choice Voting Logo"
+				className="logo"
+			/>
+		</SponsorLink>
 	</div>
+	<!-- svelte-ignore a11y_missing_attribute -->
+	<iframe
+		allow="autoplay *; encrypted-media *;"
+		frameborder="0"
+		height="450"
+		style="color-scheme:dark light;width:100%;max-width:660px;overflow:hidden;background:transparent;"
+		sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+		src="https://embed.music.apple.com/us/playlist/sounds-of-maga/pl.u-76oN9ABT1gZVV"
+	></iframe>
 </section>
 
 <style>
@@ -87,17 +95,6 @@
 		color: var(--color-accent);
 		padding-bottom: 10px;
 		text-shadow: 2px 2px var(--color-text-op);
-	}
-
-	.posts {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 1rem;
-
-		li {
-			padding: 0;
-			margin: 0;
-		}
 	}
 
 	.more-articles {
@@ -113,15 +110,12 @@
 
 	.resources {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	@media (max-width: 1000px) {
-		.posts {
-			gap: 0.5rem;
-		}
-
 		.resources {
 			flex-wrap: wrap;
 			gap: 0.5rem;
