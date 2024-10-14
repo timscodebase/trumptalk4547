@@ -15,7 +15,6 @@
 	{:else}
 		{@render children()}
 	{/if}
-	<iconify-icon icon="fe:link-external"></iconify-icon>
 </a>
 
 <style>

@@ -12,6 +12,7 @@ import ImageSlider from './components/ImageSlider.svelte'
 import Meta from './components/Meta.svelte'
 import Nav from './components/Nav.svelte'
 import Posts from './components/Posts.svelte'
+import SponsorLink from './components/SponsorLink.svelte'
 
 export {
 	Analylitics,
@@ -27,5 +28,6 @@ export {
 	ImageSlider,
 	Meta,
 	Nav,
-	Posts
+	Posts,
+	SponsorLink
 }
