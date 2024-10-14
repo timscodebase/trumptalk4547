@@ -13,7 +13,7 @@
 	{#if text}
 		{text}
 	{:else}
-		{@render children()}
+		<span>{@render children()}</span>
 	{/if}
 </a>
 
@@ -28,5 +28,11 @@
 			color: var(--color-text);
 			border-bottom: 2px solid var(--color-accent);
 		}
+	}
+
+	span {
+		font-size: clamp(1.5rem, 3vw, 2.5rem);
+		margin: 0.5rem 0;
+		color: var(--color-text);
 	}
 </style>
