@@ -13,6 +13,7 @@ import Meta from './components/Meta.svelte'
 import Nav from './components/Nav.svelte'
 import Posts from './components/Posts.svelte'
 import SponsorLink from './components/SponsorLink.svelte'
+import Sponsors from './components/Sponsors.svelte'
 
 export {
 	Analylitics,
@@ -29,5 +30,6 @@ export {
 	Meta,
 	Nav,
 	Posts,
-	SponsorLink
+	SponsorLink,
+	Sponsors
 }
