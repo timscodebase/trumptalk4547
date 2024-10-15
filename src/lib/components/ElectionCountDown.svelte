@@ -46,11 +46,6 @@
 			padding: 0;
 			margin: 0;
 			text-shadow: 2px 2px 2px var(--color-text-op);
-
-			.reminder {
-				font-size: 1.5rem;
-				letter-spacing: 1;
-			}
 		}
 	}
 </style>

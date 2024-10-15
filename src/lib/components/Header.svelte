@@ -1,6 +1,6 @@
 <script>
 	import * as config from '$lib/config'
-	import { DarkModeToggle, Meta, Nav } from '$lib'
+	import { Image, Meta, Nav } from '$lib'
 
 	const links = config.nav_links
 </script>
@@ -9,16 +9,12 @@
 
 <header>
 	<a href="/">
-		<div class="logo">
-			<span class="logo-span header-font"
-				><span class="red">Trump</span> <span class="op-shadow">Talk</span>
-				<span class="blue">45/47</span>
-			</span>
-			<p>{config.description}</p>
-		</div>
+		<Image
+			src="https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_300/v1728970925/Trump_Talk_Logo_ekwhdt.png"
+			alt="Trump Talk 45/47"
+		/>
 	</a>
 	<Nav {links} />
-	<!-- <DarkModeToggle /> -->
 </header>
 
 <style>
@@ -50,6 +46,9 @@
 
 		.logo-span {
 			padding-bottom: 2rem;
+			text-align: center;
+			font-size: 3rem;
+			padding-bottom: 0;
 		}
 
 		p {
@@ -65,19 +64,6 @@
 		p {
 			margin: 0;
 			margin-top: -8px;
-		}
-	}
-
-	@media (max-width: 1000px) {
-		.logo-span {
-			text-align: center;
-			font-size: 3rem;
-			padding-bottom: 0;
-
-			p {
-				margin-bottom: 0.5rem;
-				font-size: 2rem;
-			}
 		}
 	}
 </style>
