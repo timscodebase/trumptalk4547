@@ -11,8 +11,6 @@
 </svelte:head>
 
 <section>
-	<h1>Welcome to Trump Talk 45/47</h1>
-
 	<p>
 		Trump Talk 45/47 is your premier source for comprehensive news, insightful analysis, and
 		powerful speeches from President Donald J. Trump. Whether you are looking for the latest updates
