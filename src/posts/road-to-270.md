@@ -23,40 +23,32 @@ featured: true
 
 ## Live! Road To 270 Special Edition
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/68d29T3aWV8?si=CVKXENe_6-ojQQF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/68d29T3aWV8?si=CVKXENe_6-ojQQF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Special Guests:
-
-GEORGIA
-Chip Lake 
+### GEORGIA
+[Chip Lake](https://x.com/LakeChip)
 Principal | Glendale Strategies
-https://x.com/LakeChip
 
-NORTH CAROLINA
-Stephen Wiley
+### NORTH CAROLINA
+[Stephen Wiley](https://x.com/StephenBWiley)
 Executive Director | North Carolina House GOP
-https://x.com/StephenBWiley
 
-ARIZONA
-George Khalaf
-President | Data Orbital
-https://x.com/George_Khalaf | https://x.com/Data_Orbital
+### ARIZONA
+[George Khalaf](https://x.com/George_Khalaf)
+President | [Data Orbital](https://x.com/Data_Orbital)
 
-NEVADA
-Jeremy Hughes
-Consultant | November Inc.
-https://x.com/jeremybhughes | https://www.novemberinc.com/
 
-WISCONSIN
-Megan Novak
-Senior Advisor | Americans For Prosperity Action Wisconsin
-https://x.com/meganjnovak | https://x.com/afpwi
+### NEVADA
+[Jeremy Hughes](https://x.com/jeremybhughes)
+Consultant | [November Inc.](https://www.novemberinc.com)
 
-PENNSYLVANIA
-Scott Presler
-President | Early Vote Action
-https://x.com/ScottPresler | https://earlyvoteaction.com/
+### WISCONSIN
+[Megan Novak](https://x.com/meganjnovak)
+Senior Advisor | [Americans For Prosperity Action Wisconsin](https://x.com/afpwi)
 
-Emily Greene
-Senior Advisor | Americans For Prosperity Action Pennsylvania
-https://x.com/EmilyRoseGreene | https://x.com/afppennsylvania
+### PENNSYLVANIA
+[Scott Presler](https://x.com/ScottPresler)
+President | [Early Vote Action](https://earlyvoteaction.com)
+
+### [Emily Greene](https://x.com/EmilyRoseGreene)
+Senior Advisor | [Americans For Prosperity Action Pennsylvania](https://x.com/afppennsylvania)
