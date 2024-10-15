@@ -4,17 +4,17 @@
 	type Props = {
 		alt: string
 		border?: boolean
-		size?: string
+		padding?: boolean
+		width?: number
 		src: string
 		className?: string
 	}
 
-	let { alt, border = true, size = '100%', src, className = '' } = $props() as Props
+	let { alt, border = true, padding = 0, width = '100%', src, className = '' } = $props() as Props
 </script>
 
 <img
-	style={`width: ${size}; height: ${size};`}
-	class:border
+	style={`width: ${width}px; padding: ${padding ? '0 1rem' : 0}`}
 	class={className}
 	{src}
 	{alt}
@@ -26,8 +26,5 @@
 		height: auto;
 		max-width: 100%;
 		object-fit: contain;
-	}
-	.border {
-		/* border: 2px solid var(--color-accent); */
 	}
 </style>
