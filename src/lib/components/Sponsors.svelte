@@ -75,8 +75,7 @@
 	<iframe
 		allow="autoplay *; encrypted-media *;"
 		frameborder="0"
-		height="450"
-		style="color-scheme:dark light;width:100%;max-width:660px;overflow:hidden;background:transparent;"
+		style="color-scheme:dark light;width:100%;height:450px;overflow:hidden;background:transparent;"
 		sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
 		src="https://embed.music.apple.com/us/playlist/sounds-of-maga/pl.u-76oN9ABT1gZVV"
 	></iframe>
