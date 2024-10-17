@@ -15,6 +15,7 @@
 	<Image
 		border={false}
 		{size}
+		width="350"
 		src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1703907649/me_f8wxaa.png"
 		alt="The website's creator, Tim Smith"
 		className="flow-text"
