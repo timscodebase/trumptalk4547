@@ -3,8 +3,6 @@
 	import { BuyMeACoffee } from '$lib'
 </script>
 
-<BuyMeACoffee />
-
 <footer>
 	<span class="logo-span header-font">
 		<span class="red">Trump</span>
@@ -39,6 +37,7 @@
 			</a>
 		</li>
 	</ul>
+	<BuyMeACoffee />
 </footer>
 
 <style>
