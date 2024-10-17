@@ -256,3 +256,11 @@ hr {
 		height: auto !important;
 	}
 }
+
+.bmc-btn-container {
+	/* pin it to the bottom of the page NOT the bottom of the screen */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+}
