@@ -13,6 +13,7 @@
 			src="https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150/v1729009614/Trump_Talk_Logo_rrlvas.svg"
 			alt="Trump Talk 45/47"
 			width="200"
+			className="logo"
 		/>
 		<p>{config.description}</p>
 	</a>
@@ -32,10 +33,8 @@
 		margin-bottom: 1rem;
 
 		a {
-			/* display: flex;
-			justify-content: start;
-			flex-direction: column;
-			align-items: end; */
+			display: flex;
+			gap: 0.5rem;
 			text-decoration: none;
 			color: var(--text);
 		}
@@ -52,19 +51,20 @@
 			flex-direction: column;
 		}
 
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 0 auto;
+
+			:global(.logo) {
+				margin: 0 auto;
+			}
+		}
+
 		p {
 			text-align: center;
 			line-height: 2rem;
-		}
-	}
-
-	.logo {
-		display: flex;
-		flex-direction: column;
-
-		p {
-			margin: 0;
-			margin-top: -8px;
 		}
 	}
 </style>
