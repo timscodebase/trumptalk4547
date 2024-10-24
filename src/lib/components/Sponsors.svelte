@@ -59,6 +59,14 @@
 				></svg
 			>
 		</a>
+
+		<SponsorLink href="https://deltarescue.org">
+			<Image
+				src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1729252729/white-logo_pbjded.png"
+				alt="Delta Rescue Logo"
+				className="logo"
+			/>
+		</SponsorLink>
 	</div>
 	<!-- svelte-ignore a11y_missing_attribute -->
 	<iframe
