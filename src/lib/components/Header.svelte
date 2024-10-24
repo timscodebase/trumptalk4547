@@ -34,6 +34,7 @@
 
 		a {
 			display: flex;
+			place-items: end;
 			gap: 0.5rem;
 			text-decoration: none;
 			color: var(--text);
@@ -52,7 +53,6 @@
 		}
 
 		a {
-			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			margin: 0 auto;

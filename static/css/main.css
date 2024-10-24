@@ -7,10 +7,10 @@
 
 	/* Primarey Theme Colors */
 	--color-surface-light: #5d91fa;
-	--color-surface-dark: #0339a6;
+	--color-surface-dark: rgb(3, 57, 166);
 	--color-text-light: #070f26;
 	--color-text-dark: #f2f2f2;
-	--color-accent-light: #e00707;
+	--color-accent-light: rgb(224, 7, 7);
 	--color-accent-dark: #e00707;
 	--color-success-light: #00c700;
 	--color-success-dark: #008b00;
