@@ -60,6 +60,14 @@
 			>
 		</a>
 
+		<SponsorLink href="https://www.mthrw.org/">
+			<Image
+				src="https://res.cloudinary.com/tithos/image/upload/e_enhance,f_auto,q_auto:eco/v1730333866/MTHRW-logo_ejexjw.png"
+				alt="Mt Hood Republican Women Logo"
+				className="logo"
+			/>
+		</SponsorLink>
+
 		<SponsorLink href="https://deltarescue.org">
 			<Image
 				src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1729252729/white-logo_pbjded.png"
