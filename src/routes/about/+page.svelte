@@ -9,7 +9,7 @@
 	<title>{name} | About</title>
 </svelte:head>
 
-<h1><strong>Who is this guy</strong>, and why should I listem ti him?</h1>
+<h1><strong>Who is this guy</strong>, and why should I listem to him?</h1>
 
 <section style="min-height: calc({size} + 20px);">
 	<Image
