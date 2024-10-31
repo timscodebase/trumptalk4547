@@ -32,7 +32,13 @@
 			Donald Trump Transcripts
 		</SponsorLink>
 
-		<a class="external" href="https://usafacts.org" target="_blank" rel="noopener noreferrer">
+		<a
+			class="external"
+			href="https://usafacts.org"
+			target="_blank"
+			aria-label="USA Facts"
+			rel="noopener noreferrer"
+		>
 			<svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 182 23">
 				<path
 					fill="currentColor"
@@ -41,7 +47,13 @@
 			</svg>
 		</a>
 
-		<a class="external" href="https://tuckercarlson.com" target="_blank" rel="noopener noreferrer">
+		<a
+			class="external"
+			href="https://tuckercarlson.com"
+			target="_blank"
+			aria-label="Tucker Carlson"
+			rel="noopener noreferrer"
+		>
 			<svg xmlns="http://www.w3.org/2000/svg" class="svg-logo" viewBox="0 0 105 47" fill="none"
 				><g clip-path="url(#clip0_5202_1200)"
 					><mask maskUnits="userSpaceOnUse" x="0" y="0" width="157" height="47"
