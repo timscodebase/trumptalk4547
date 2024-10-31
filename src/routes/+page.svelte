@@ -54,12 +54,6 @@
 <Sponsors />
 
 <style>
-	h1 {
-		color: var(--color-accent);
-		padding-bottom: 10px;
-		text-shadow: 2px 2px var(--color-text-op);
-	}
-
 	.more-articles {
 		display: block;
 		color: var(--color-text);
