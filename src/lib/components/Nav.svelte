@@ -2,8 +2,23 @@
 
 <script>
 	import { page } from '$app/stores'
+	import { setContext } from 'svelte'
+	import { writable } from 'svelte/store'
+
+	const isNavOpen = writable(false)
+	$effect.pre(() => {
+		isNavOpen.set(false)
+	})
+
+	setContext('isNavOpen', isNavOpen)
 	let links = $props()
 </script>
+
+<button aria-label="Menu Toggle" onclick={() => ($isNavOpen = !$isNavOpen)}
+	><iconify-icon
+		icon={`line-md:${$isNavOpen ? 'menu-to-close-transition' : 'close-to-menu-transition'}`}
+	></iconify-icon></button
+>
 
 <nav>
 	<ul>

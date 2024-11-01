@@ -14,6 +14,7 @@ import Nav from './components/Nav.svelte'
 import Posts from './components/Posts.svelte'
 import SponsorLink from './components/SponsorLink.svelte'
 import Sponsors from './components/Sponsors.svelte'
+import Socials from './components/Socials.svelte'
 import USAFacts from './components/USAFacts.svelte'
 
 export {
@@ -33,5 +34,6 @@ export {
 	Posts,
 	SponsorLink,
 	Sponsors,
+	Socials,
 	USAFacts
 }

@@ -1,6 +1,6 @@
 <script>
 	import { description } from '$lib/config'
-	import { BuyMeACoffee, Image } from '$lib'
+	import { BuyMeACoffee, Image, Socials } from '$lib'
 </script>
 
 <footer>
@@ -15,33 +15,11 @@
 		<address>Gresham, Oregon</address>
 		&nbsp; in 2024
 	</div>
-	<ul class="socials">
-		<li>
-			<a aria-label="Youtube" href="http://www.youtube.com/@TrumpTalk4547">
-				<iconify-icon icon="fa6-brands:youtube"></iconify-icon>
-			</a>
-		</li>
-		<li>
-			<a aria-label="X" href="https://x.com/TrumpTalk4547">
-				<iconify-icon icon="fa6-brands:x-twitter"></iconify-icon>
-			</a>
-		</li>
-		<li>
-			<a aria-label="Spotify" href="https://open.spotify.com/show/7wBMRk8wLKJIrQjmLHE0jy">
-				<iconify-icon icon="fa6-brands:spotify"></iconify-icon>
-			</a>
-		</li>
-		<li>
-			<a aria-label="Patreon" href="https://www.patreon.com/TrumpTalk4547">
-				<iconify-icon icon="fa6-brands:patreon"></iconify-icon>
-			</a>
-		</li>
-		<li>
-			<a aria-label="Discord" href="https://discord.gg/pB4DCCyC">
-				<iconify-icon icon="fa6-brands:discord"></iconify-icon>
-			</a>
-		</li>
-	</ul>
+	<Socials />
+	<div class="socials">
+		<Socials />
+	</div>
+
 	<div class="buy-me-a-coffee">
 		<BuyMeACoffee />
 	</div>
@@ -65,41 +43,10 @@
 		div {
 			font-size: clamp(1rem, 2vw, 1.5rem);
 		}
-
-		p {
-			font-size: 1rem;
-			margin: 0;
-		}
-
-		ul {
-			display: flex;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			gap: 1rem;
-
-			a {
-				color: var(--color-text);
-				font-size: 1rem;
-			}
-		}
 	}
 
-	.logo {
-		grid-area: logo;
-	}
 	.address {
 		grid-area: address;
-	}
-	.socials {
-		grid-area: socials;
-		display: flex;
-		place-items: center;
-		padding-top: 1rem;
-
-		a {
-			font-size: 3rem;
-		}
 	}
 	.buy-me-a-coffee {
 		grid-area: buy-me-a-coffee;
