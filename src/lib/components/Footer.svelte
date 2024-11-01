@@ -95,9 +95,9 @@
 		grid-area: socials;
 		display: flex;
 		place-items: center;
+		padding-top: 1rem;
 
 		a {
-			color: var(--color-accent);
 			font-size: 3rem;
 		}
 	}
