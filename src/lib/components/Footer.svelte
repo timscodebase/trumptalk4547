@@ -91,6 +91,14 @@
 	.address {
 		grid-area: address;
 	}
+	.socials {
+		grid-area: socials;
+
+		a {
+			color: var(--color-accent);
+			font-size: 1.5rem;
+		}
+	}
 	.buy-me-a-coffee {
 		grid-area: buy-me-a-coffee;
 	}
