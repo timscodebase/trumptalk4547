@@ -57,11 +57,6 @@
 </ul>
 
 <style>
-	p {
-		font-size: 1rem;
-		margin: 0;
-	}
-
 	ul {
 		display: flex;
 		list-style: none;
@@ -83,6 +78,14 @@
 
 		a {
 			font-size: 3rem;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		ul {
+			margin-top: 1rem;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
 	}
 </style>
