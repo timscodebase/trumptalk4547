@@ -1,5 +1,3 @@
-<svelte:options runes={true} />
-
 <script lang="ts">
 	import { Utterances } from '@codewithshin/svelte-utterances'
 	import { formatDate, slugify } from '$lib/utils'

@@ -1,34 +1,50 @@
-<svelte:options runes={true} />
-
 <script>
 	import { page } from '$app/stores'
-	import { setContext } from 'svelte'
-	import { writable } from 'svelte/store'
 
-	const isNavOpen = writable(false)
-	$effect.pre(() => {
-		isNavOpen.set(false)
-	})
-
-	setContext('isNavOpen', isNavOpen)
+	let isNavOpen = $state(false)
 	let links = $props()
 </script>
 
-<button aria-label="Menu Toggle" onclick={() => ($isNavOpen = !$isNavOpen)}
-	><iconify-icon
-		icon={`line-md:${$isNavOpen ? 'menu-to-close-transition' : 'close-to-menu-transition'}`}
-	></iconify-icon></button
+<button
+	aria-label="Menu Toggle"
+	onclick={() => {
+		isNavOpen = !isNavOpen
+		console.log('Menu Toggle Clicked:', isNavOpen)
+	}}
 >
+	<iconify-icon
+		icon={`line-md:${isNavOpen ? 'menu-to-close-transition' : 'close-to-menu-transition'}`}
+	></iconify-icon>
+</button>
 
-<nav>
-	<ul>
-		{#each links.links as { url, text }}
-			<li><a href={url} class:active={$page.url.pathname === url}>{text}</a></li>
-		{/each}
-	</ul>
-</nav>
+<div class="nav-draw" class:open={isNavOpen}>
+	<nav>
+		<ul>
+			{#each links.links as { url, text }}
+				<li><a href={url} class:active={$page.url.pathname === url}>{text}</a></li>
+			{/each}
+		</ul>
+	</nav>
+</div>
 
 <style>
+	.nav-draw {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--color-background);
+		z-index: 100;
+		transform: translateX(100%);
+		transition: transform 300ms;
+		will-change: transform;
+
+		&.open {
+			transform: translateX(0);
+		}
+	}
+
 	ul {
 		display: flex;
 		list-style: none;
