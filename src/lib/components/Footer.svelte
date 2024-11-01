@@ -93,10 +93,12 @@
 	}
 	.socials {
 		grid-area: socials;
+		display: flex;
+		place-items: center;
 
 		a {
 			color: var(--color-accent);
-			font-size: 1.5rem;
+			font-size: 3rem;
 		}
 	}
 	.buy-me-a-coffee {
