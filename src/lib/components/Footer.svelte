@@ -52,7 +52,7 @@
 		display: grid;
 		grid-template-columns: 300px auto;
 		grid-template-rows: auto auto;
-		gap: 0px 0px;
+		gap: 1rem 0px;
 		grid-template-areas:
 			'logo address'
 			'socials buy-me-a-coffee';
@@ -107,7 +107,13 @@
 
 	@media (max-width: 1000px) {
 		footer {
-			flex-direction: column;
+			grid-template-columns: auto;
+			grid-template-rows: auto auto auto auto;
+			grid-template-areas:
+				'logo'
+				'address'
+				'socials'
+				'buy-me-a-coffee';
 
 			ul {
 				margin-top: 1rem;
