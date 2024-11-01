@@ -61,12 +61,6 @@
 				'address'
 				'socials'
 				'buy-me-a-coffee';
-
-			ul {
-				margin-top: 1rem;
-				flex-wrap: wrap;
-				justify-content: center;
-			}
 		}
 	}
 </style>

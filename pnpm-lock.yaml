@@ -13,7 +13,7 @@ importers:
         version: 0.10.2
       '@sveltejs/adapter-vercel':
         specifier: ^5.4.6
-        version: 5.4.6(@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))
+        version: 5.4.6(@sveltejs/kit@2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))
       '@sveltelaunch/svelte-5-email':
         specifier: ^0.0.11
         version: 0.0.11(svelte@5.0.0-next.260)
@@ -22,7 +22,7 @@ importers:
         version: 1.3.2
       '@vercel/speed-insights':
         specifier: ^1.0.14
-        version: 1.0.14(@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)
+        version: 1.0.14(@sveltejs/kit@2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)
       iconify-icon:
         specifier: ^2.1.0
         version: 2.1.0
@@ -59,10 +59,10 @@ importers:
         version: 0.2.4
       '@sveltejs/adapter-auto':
         specifier: ^3.3.1
-        version: 3.3.1(@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))
+        version: 3.3.1(@sveltejs/kit@2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))
       '@sveltejs/kit':
-        specifier: ^2.7.3
-        version: 2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
+        specifier: ^2.7.4
+        version: 2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
       '@sveltejs/vite-plugin-svelte':
         specifier: 4.0.0-next.7
         version: 4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
@@ -549,8 +549,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.4.0
 
-  '@sveltejs/kit@2.7.3':
-    resolution: {integrity: sha512-Vx7nq5MJ86I8qXYsVidC5PX6xm+uxt8DydvOdmJoyOK7LvGP18OFEG359yY+aa51t6pENvqZAMqAREQQx1OI2Q==}
+  '@sveltejs/kit@2.7.4':
+    resolution: {integrity: sha512-3DOPQYck3CpAmPgGq/HuhJMCCz8GF0ukbompPJQ2zShoSzrEKW9iG/l0nZmaxMvuOO3NNLmZj8F3W9uzqmkNdw==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -2241,6 +2241,10 @@ packages:
     resolution: {integrity: sha512-MY2/qGx4enyjprQnFaZsHib3Yadh3IXyV2C321GY0pjGfVBu4un0uDJkwgdxqO+Rdx8JMT8IfJIRwbYVz3Ob3Q==}
     engines: {node: '>=14'}
 
+  signal-exit@4.1.0:
+    resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
+    engines: {node: '>=14'}
+
   sirv@3.0.0:
     resolution: {integrity: sha512-BPwJGUeDaDCHihkORDchNyyTvWFhcusy1XMmhEVTQTwGeybFbp8YEmB+njbPnth1FibULBSBVwCQni25XlCUDg==}
     engines: {node: '>=18'}
@@ -2997,21 +3001,21 @@ snapshots:
 
   '@sinclair/typebox@0.25.24': {}
 
-  '@sveltejs/adapter-auto@3.3.1(@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))':
+  '@sveltejs/adapter-auto@3.3.1(@sveltejs/kit@2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))':
     dependencies:
-      '@sveltejs/kit': 2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
+      '@sveltejs/kit': 2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
       import-meta-resolve: 4.1.0
 
-  '@sveltejs/adapter-vercel@5.4.6(@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))':
+  '@sveltejs/adapter-vercel@5.4.6(@sveltejs/kit@2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))':
     dependencies:
-      '@sveltejs/kit': 2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
+      '@sveltejs/kit': 2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
       '@vercel/nft': 0.27.5
       esbuild: 0.21.5
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))':
+  '@sveltejs/kit@2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
       '@types/cookie': 0.6.0
@@ -3351,9 +3355,9 @@ snapshots:
 
   '@vercel/ruby@2.1.0': {}
 
-  '@vercel/speed-insights@1.0.14(@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)':
+  '@vercel/speed-insights@1.0.14(@sveltejs/kit@2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)':
     optionalDependencies:
-      '@sveltejs/kit': 2.7.3(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
+      '@sveltejs/kit': 2.7.4(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11)))(svelte@5.0.0-next.260)(vite@5.4.10(@types/node@16.18.11))
       svelte: 5.0.0-next.260
 
   '@vercel/static-build@2.5.34':
@@ -4001,7 +4005,7 @@ snapshots:
   foreground-child@3.3.0:
     dependencies:
       cross-spawn: 7.0.3
-      signal-exit: 4.0.2
+      signal-exit: 4.1.0
 
   fs-extra@11.1.0:
     dependencies:
@@ -4771,6 +4775,8 @@ snapshots:
   signal-exit@3.0.7: {}
 
   signal-exit@4.0.2: {}
+
+  signal-exit@4.1.0: {}
 
   sirv@3.0.0:
     dependencies:
