@@ -1,16 +1,21 @@
 <script>
 	import { description } from '$lib/config'
-	import { BuyMeACoffee } from '$lib'
+	import { BuyMeACoffee, Image } from '$lib'
 </script>
 
 <footer>
-	<span class="logo-span header-font">
-		<span class="red">Trump</span>
-		<span class="op-shadow">Talk</span>
-		<span class="blue">45/47</span>
-	</span>
-	<p>&copy; {new Date().getFullYear()}</p>
-	<ul>
+	<Image
+		src="https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150/v1729009614/Trump_Talk_Logo_rrlvas.svg"
+		alt="Trump Talk 45/47"
+		width="150"
+		className="logo"
+	/>
+	<div class="address center">
+		Founded in &nbsp;
+		<address>Gresham, Oregon</address>
+		&nbsp; in 2024
+	</div>
+	<ul class="socials">
 		<li>
 			<a aria-label="Youtube" href="http://www.youtube.com/@TrumpTalk4547">
 				<iconify-icon icon="fa6-brands:youtube"></iconify-icon>
@@ -37,18 +42,29 @@
 			</a>
 		</li>
 	</ul>
-	<BuyMeACoffee />
+	<div class="buy-me-a-coffee">
+		<BuyMeACoffee />
+	</div>
 </footer>
 
 <style>
 	footer {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		display: grid;
+		grid-template-columns: 300px auto;
+		grid-template-rows: auto auto;
+		gap: 0px 0px;
+		grid-template-areas:
+			'logo address'
+			'socials buy-me-a-coffee';
 		border-top: 2px solid var(--color-accent);
 		margin-top: 2rem;
-		padding: 2rem 1rem;
+		padding: 2rem 10px;
 		text-align: center;
+		background-color: rgba(0, 0, 0, 0.2);
+
+		div {
+			font-size: clamp(1rem, 2vw, 1.5rem);
+		}
 
 		p {
 			font-size: 1rem;
@@ -67,6 +83,16 @@
 				font-size: 1rem;
 			}
 		}
+	}
+
+	.logo {
+		grid-area: logo;
+	}
+	.address {
+		grid-area: address;
+	}
+	.buy-me-a-coffee {
+		grid-area: buy-me-a-coffee;
 	}
 
 	@media (max-width: 1000px) {

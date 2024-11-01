@@ -2,6 +2,7 @@
 
 <script>
 	import { name } from './../../lib/config.ts'
+	import { STATIC_FORMS_ACCESS_KEY } from '$env/static/public'
 	import * as config from '$lib/config'
 
 	let { data, form } = $props()
@@ -11,89 +12,36 @@
 	<title>{config.name} | Contact</title>
 </svelte:head>
 
-<section class="form_wrap">
-	<h1>Contact</h1>
-	<form method="POST" action="?/contact">
-		{#if form?.success}
-			<!-- this message is ephemeral; it exists because the page was rendered in
-				response to a form submission. it will vanish if the user reloads -->
-			<p>Thanks for reaching out {data.name}</p>
-		{/if}
-		<label>
-			<p>Name:</p>
-			<input type="text" name="name" />
-		</label>
-		<label>
-			<p>Email:</p>
-			<input name="email" type="email" value={form?.email ?? ''} />
-		</label>
-		<label>
-			<p>Message:</p>
-			<textarea name="message" rows="5"></textarea>
-		</label>
-		<button type="submit">Submit</button>
-		{#if form?.missing}<p class="error">All fields are required.</p>{/if}
-	</form>
+<h1>Contact Us</h1>
+
+<section>
+	<address>
+		<p>1797 NW Civic Dr.</p>
+		<p>Gresham, Oregon 97030</p>
+		<span>Email: <a href="mailto:trumptalk4547@gmail.com"> TrumptTalk4547@gmail.com </a></span>
+		<p>Phone: <a href="tel:415-694-3568">415-694-3568</a></p>
+	</address>
 </section>
 
 <style>
-	.error {
-		color: red;
-		font-weight: bold;
-	}
-
-	.form_wrap {
-		max-width: 1000px;
-		margin: 0 auto;
-	}
-
-	form {
-		display: grid;
-		gap: 1rem;
+	section {
+		display: flex;
+		place-items: center;
 		padding: 1rem;
-		border-radius: var(--radius-3);
-		/* border: 2px solid var(--color-accent); */
-
-		label {
-			display: grid;
-			grid-template-columns: 100px 1fr;
-			gap: 1rem;
-			font-size: 1.25rem;
-
-			p {
-				margin: 0;
-				padding: 0;
-			}
-
-			input,
-			textarea {
-				border-radius: var(--radius-2);
-				border: 1px solid var(--color-accent);
-				background-color: transparent;
-				padding: 0.5rem;
-				color: var(--color-text);
-				font-size: 1.25rem;
-			}
-		}
-
-		button {
-			background-color: var(--color-accent);
-			color: var(--color-text);
-			border: none;
-			border-radius: var(--radius-2);
-			padding: 0.5rem 1rem;
-			font-weight: bold;
-			cursor: pointer;
-		}
+		background: rgba(0, 0, 0, 0.2);
 	}
+	address {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-	@media (max-width: 1000px) {
-		form {
-			gap: 0.5rem;
-		}
-
-		label {
-			grid-template-columns: 1fr;
+		a,
+		p,
+		span {
+			font-size: clamp(1.5rem, 4vw, 3rem);
+			font-weight: bold;
 		}
 	}
 </style>
