@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script>
 	import { ElectionCountDown, Image, Posts } from '$lib'
 	import * as config from '$lib/config'

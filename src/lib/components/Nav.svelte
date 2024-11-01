@@ -1,23 +1,24 @@
+<svelte:options runes={true} />
+
 <script>
 	import { page } from '$app/stores'
 
-	let isNavOpen = $state(false)
+	let isMenuOpen = $state(false)
 	let links = $props()
+
+	function toggleMenu() {
+		isMenuOpen = !isMenuOpen
+		console.log('Menu Toggle Clicked:', isMenuOpen)
+	}
 </script>
 
-<button
-	aria-label="Menu Toggle"
-	onclick={() => {
-		isNavOpen = !isNavOpen
-		console.log('Menu Toggle Clicked:', isNavOpen)
-	}}
->
+<button aria-label="Menu Toggle" onclick={toggleMenu}>
 	<iconify-icon
-		icon={`line-md:${isNavOpen ? 'menu-to-close-transition' : 'close-to-menu-transition'}`}
+		icon={`line-md:${isMenuOpen ? 'menu-to-close-transition' : 'close-to-menu-transition'}`}
 	></iconify-icon>
 </button>
 
-<div class="nav-draw" class:open={isNavOpen}>
+<div class="nav-draw" class:open={isMenuOpen}>
 	<nav>
 		<ul>
 			{#each links.links as { url, text }}
