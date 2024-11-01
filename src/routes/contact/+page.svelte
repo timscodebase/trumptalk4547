@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script>
 	import { name } from './../../lib/config.ts'
 	import { STATIC_FORMS_ACCESS_KEY } from '$env/static/public'

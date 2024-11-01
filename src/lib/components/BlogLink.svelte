@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script lang="ts">
 	import type { Post } from '$lib/types'
 	import { Image } from '$lib'
