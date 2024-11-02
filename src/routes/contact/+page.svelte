@@ -1,6 +1,5 @@
 <script>
 	import { name } from './../../lib/config.ts'
-	import { STATIC_FORMS_ACCESS_KEY } from '$env/static/public'
 	import * as config from '$lib/config'
 
 	let { data, form } = $props()
@@ -38,8 +37,9 @@
 		a,
 		p,
 		span {
-			font-size: clamp(1.5rem, 4vw, 3rem);
+			font-size: clamp(1rem, 3vw, 2.5rem);
 			font-weight: bold;
+			text-align: center;
 		}
 	}
 </style>
