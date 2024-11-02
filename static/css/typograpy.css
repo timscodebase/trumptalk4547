@@ -3,6 +3,7 @@
 :root {
 	--font-body: 'Poppins', sans-serif;
 	--font-header: 'Bitter', serif;
+	--font-nav: var(--font-header);
 	--font-mono: monospace;
 }
 

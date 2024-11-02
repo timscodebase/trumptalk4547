@@ -1,5 +1,4 @@
 <script>
-	import { name } from './../../lib/config.ts'
 	import * as config from '$lib/config'
 
 	let { data, form } = $props()

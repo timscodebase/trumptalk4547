@@ -74,6 +74,13 @@
 		}
 	}
 
+	@media (max-width: 1000px) {
+		ul {
+			gap: 0.5rem;
+			flex-wrap: wrap;
+		}
+	}
+
 	.socials {
 		grid-area: socials;
 		display: flex;
