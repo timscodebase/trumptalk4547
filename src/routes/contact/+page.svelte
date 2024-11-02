@@ -15,7 +15,7 @@
 	<address>
 		<p>1797 NW Civic Dr.</p>
 		<p>Gresham, Oregon 97030</p>
-		<span>Email: <a href="mailto:trumptalk4547@gmail.com"> TrumptTalk4547@gmail.com </a></span>
+		<span>Email: <a href="mailto:trumptalk4547@gmail.com"> TrumpTalk4547@gmail.com </a></span>
 		<p>Phone: <a href="tel:415-694-3568">415-694-3568</a></p>
 	</address>
 </section>
