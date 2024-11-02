@@ -4,9 +4,12 @@
 	let open = $state(false)
 	const menu_links = [
 		{ url: '/', text: 'Home' },
-		{ url: '/about', text: 'About' },
 		{ url: '/blog', text: 'Blog' },
-		{ url: '/contact', text: 'Contact' }
+		{ url: '/they-say-it-best', text: 'They Say It Best' },
+		{ url: '/contact', text: 'Contact' },
+		{ url: '/about', text: 'About' },
+		{ url: '/privacy', text: 'Privacy' },
+		{ url: '/tos', text: 'Terms of Service' }
 	]
 </script>
 
@@ -84,11 +87,14 @@
 		text-align: center;
 
 		a {
-			font-size: clamp(3rem, 7vw, 6.5rem);
+			font-size: clamp(3rem, 6vw, 5.5rem);
+			font-family: var(--font-nav);
+			line-height: clamp(4rem, 6vw, 6.5rem);
+			color: var(--color-accent);
 
 			&:hover {
-				color: var(--color-accent);
-				text-decoration-color: var(--color-text);
+				color: var(--color-text);
+				text-decoration-color: var(--color-accent);
 			}
 		}
 	}
@@ -102,7 +108,7 @@
 
 	:global(.active) {
 		text-decoration: underline;
-		text-decoration-color: var(--color-accent);
-		text-decoration-thickness: 3px;
+		text-decoration-color: var(--color-surface-dark);
+		text-decoration-thickness: 6px;
 	}
 </style>

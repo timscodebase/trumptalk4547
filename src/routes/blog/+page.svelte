@@ -10,6 +10,6 @@
 	<title>{config.name}</title>
 </svelte:head>
 
-<h2>Blog</h2>
+<h1>Blog</h1>
 
 <Posts {posts} />
