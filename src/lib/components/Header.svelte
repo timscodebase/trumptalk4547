@@ -1,8 +1,6 @@
 <script>
 	import * as config from '$lib/config'
-	import { Image, Meta, Nav } from '$lib'
-
-	const links = config.nav_links
+	import { Image, Meta } from '$lib'
 </script>
 
 <Meta />
@@ -17,7 +15,6 @@
 		/>
 		<p>{config.description}</p>
 	</a>
-	<Nav {links} />
 </header>
 
 <style>

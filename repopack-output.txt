@@ -194,8 +194,6 @@ File: src/lib/components/Avengers.svelte
 ================
 File: src/lib/components/BlogLink.svelte
 ================
-<svelte:options runes={true} />
-
 <script lang="ts">
 	import type { Post } from '$lib/types'
 	import { Image } from '$lib'
@@ -536,8 +534,6 @@ File: src/lib/components/ElectionCountDown.svelte
 ================
 File: src/lib/components/ExternalLink.svelte
 ================
-<svelte:options runes={true} />
-
 <script lang="ts">
 	interface Props {
 		children: any
@@ -734,8 +730,6 @@ File: src/lib/components/Header.svelte
 ================
 File: src/lib/components/Image.svelte
 ================
-<svelte:options runes={true} />
-
 <script lang="ts">
 	type Props = {
 		alt: string
@@ -768,8 +762,6 @@ File: src/lib/components/Image.svelte
 ================
 File: src/lib/components/ImageSlider.svelte
 ================
-<svelte:options runes={true} />
-
 <script lang="ts">
 	import type { Image } from '$lib/types'
 
@@ -883,8 +875,6 @@ File: src/lib/components/Meta.svelte
 ================
 File: src/lib/components/Nav.svelte
 ================
-<svelte:options runes={true} />
-
 <script>
 	import { page } from '$app/stores'
 	let links = $props()
@@ -963,8 +953,6 @@ File: src/lib/components/Posts.svelte
 ================
 File: src/lib/components/SponsorLink.svelte
 ================
-<svelte:options runes={true} />
-
 <script lang="ts">
 	interface Props {
 		children: any
@@ -2186,8 +2174,6 @@ export async function GET() {
 ================
 File: src/routes/blog/[slug]/+page.svelte
 ================
-<svelte:options runes={true} />
-
 <script lang="ts">
 	import { Utterances } from '@codewithshin/svelte-utterances'
 	import { formatDate, slugify } from '$lib/utils'
@@ -2309,8 +2295,6 @@ export const load = (async ({ params }: { params: { slug: string } }) => {
 ================
 File: src/routes/blog/+page.svelte
 ================
-<svelte:options runes={true} />
-
 <script>
 	import { ElectionCountDown, Image, Posts } from '$lib'
 	import * as config from '$lib/config'
@@ -2409,8 +2393,6 @@ export const actions = {
 ================
 File: src/routes/contact/+page.svelte
 ================
-<svelte:options runes={true} />
-
 <script>
 	import { name } from './../../lib/config.ts'
 	import * as config from '$lib/config'
@@ -2585,8 +2567,6 @@ File: src/routes/+error.svelte
 ================
 File: src/routes/+layout.svelte
 ================
-<svelte:options runes={true} />
-
 <script lang="ts">
 	import 'iconify-icon'
 	import { Analylitics, CookieConsent, Footer, Header } from '$lib'

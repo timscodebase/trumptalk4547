@@ -67,6 +67,10 @@
 		a {
 			color: var(--color-text);
 			font-size: 1rem;
+
+			&:hover {
+				color: var(--color-accent);
+			}
 		}
 	}
 

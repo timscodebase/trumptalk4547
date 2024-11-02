@@ -6,9 +6,3 @@ export const name = 'Trump Talk 45/47'
 export const description = "News, Analysis, and Speeches for President Donald J. Trump"
 export const author = 'Tim Smith <gonad2019@gmail.com>'
 export const keywords = ['svelte', 'kit', 'sveltekit', 'site', 'template']
-export const nav_links = [
-	{ url: '/', text: 'Home' },
-	{ url: '/about', text: 'About' },
-	{ url: '/blog', text: 'Blog' },
-	{ url: '/contact', text: 'Contact' }
-]
