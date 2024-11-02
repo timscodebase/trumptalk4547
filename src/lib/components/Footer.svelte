@@ -15,7 +15,6 @@
 		<address>Gresham, Oregon</address>
 		&nbsp; in 2024
 	</div>
-	<Socials />
 	<div class="socials">
 		<Socials />
 	</div>
@@ -28,8 +27,9 @@
 <style>
 	footer {
 		display: grid;
-		grid-template-columns: 300px auto;
+		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
+		place-items: center;
 		gap: 1rem 0px;
 		grid-template-areas:
 			'logo address'
@@ -41,6 +41,8 @@
 		background-color: rgba(0, 0, 0, 0.2);
 
 		div {
+			display: flex;
+			place-items: center;
 			font-size: clamp(1rem, 2vw, 1.5rem);
 		}
 	}

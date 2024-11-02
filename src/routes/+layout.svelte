@@ -1,13 +1,13 @@
-<svelte:options runes={true} />
-
 <script lang="ts">
 	import 'iconify-icon'
-	import { Analylitics, CookieConsent, Footer, Header } from '$lib'
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import { inject } from '@vercel/analytics'
+	import * as config from '$lib/config'
+	import { Analylitics, CookieConsent, Footer, Header, Nav } from '$lib'
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import PartytownSnippet from 'partytown-sveltekit/PartytownSnippet.svelte'
 
-	injectSpeedInsights()
+	const links = config.nav_links
+	injectSpeedInsights() // Inject Vercel Insights
 
 	let { children } = $props()
 	$effect(() => {
@@ -26,6 +26,7 @@
 </script>
 
 <Analylitics />
+<Nav />
 
 <div class="wrapper">
 	<Header />
