@@ -77,7 +77,9 @@
 	@media (max-width: 1000px) {
 		ul {
 			gap: 0.5rem;
-			flex-wrap: wrap;
+			display: grid !important;
+			grid-template-columns: 1fr 1fr 1fr;
+			justify-items: center;
 		}
 	}
 
