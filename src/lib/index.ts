@@ -11,11 +11,13 @@ import Image from './components/Image.svelte'
 import ImageSlider from './components/ImageSlider.svelte'
 import Meta from './components/Meta.svelte'
 import Nav from './components/Nav.svelte'
+import Podcasters from './components/Podcasters.svelte'
 import Posts from './components/Posts.svelte'
 import SponsorLink from './components/SponsorLink.svelte'
 import Sponsors from './components/Sponsors.svelte'
 import Socials from './components/Socials.svelte'
 import USAFacts from './components/USAFacts.svelte'
+import YouTubers from './components/YouTubers.svelte'
 
 export {
 	Analylitics,
@@ -31,9 +33,11 @@ export {
 	ImageSlider,
 	Meta,
 	Nav,
+	Podcasters,
 	Posts,
 	SponsorLink,
 	Sponsors,
 	Socials,
-	USAFacts
+	USAFacts,
+	YouTubers
 }
