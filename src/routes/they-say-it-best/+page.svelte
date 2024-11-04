@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	import { Podcasters, YouTubers } from '$lib'
 </script>
 
 <svelte:head>
@@ -9,7 +10,7 @@
 <h1>They say it best!</h1>
 
 <h2>YouTubers</h2>
-<section></section>
+<YouTubers />
 
 <h2>Podcasts</h2>
-<section></section>
+<Podcasters />
