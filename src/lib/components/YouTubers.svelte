@@ -1,7 +1,4 @@
 <script lang="ts">
-	import { load } from './../../routes/they-say-it-best/+page.ts'
-	import { description } from '$lib/config'
-
 	const you_tubers = [
 		{
 			name: 'Red Eagle Politics',
