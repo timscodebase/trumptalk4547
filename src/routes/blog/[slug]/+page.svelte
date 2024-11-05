@@ -86,7 +86,7 @@
 	.tags {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 5px;
+		gap: 0 1rem;
 		padding-bottom: 1rem;
 	}
 
