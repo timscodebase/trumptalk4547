@@ -13,6 +13,7 @@ import Meta from './components/Meta.svelte'
 import Nav from './components/Nav.svelte'
 import Podcasters from './components/Podcasters.svelte'
 import Posts from './components/Posts.svelte'
+import Sitemap from './components/Sitemap.svelte'
 import SponsorLink from './components/SponsorLink.svelte'
 import Sponsors from './components/Sponsors.svelte'
 import Socials from './components/Socials.svelte'
@@ -35,6 +36,7 @@ export {
 	Nav,
 	Podcasters,
 	Posts,
+	Sitemap,
 	SponsorLink,
 	Sponsors,
 	Socials,

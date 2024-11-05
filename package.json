@@ -30,6 +30,7 @@
 		"svelte": "5.0.0-next.260",
 		"svelte-check": "^4.0.5",
 		"svelte-cloudinary": "^2.2.0",
+		"svelte-sitemap": "^2.6.0",
 		"typescript": "5.7.0-beta",
 		"typescript-eslint": "^8.12.2",
 		"vercel": "^37.14.0",
@@ -54,8 +55,8 @@
 		"shiki": "^1.22.2"
 	},
 	"exports": {
-   	".": {
-     	"svelte": "./dist/index.js"
-   	}
+		".": {
+			"svelte": "./dist/index.js"
+		}
 	}
 }
