@@ -2,7 +2,7 @@
 	import 'iconify-icon'
 	import { inject } from '@vercel/analytics'
 	import * as config from '$lib/config'
-	import { Analylitics, CookieConsent, Footer, Header, Nav } from '$lib'
+	import { Analylitics, CookieConsent, Footer, Header, Sitemap, Nav } from '$lib'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import PartytownSnippet from 'partytown-sveltekit/PartytownSnippet.svelte'
 
@@ -26,6 +26,8 @@
 </script>
 
 <Analylitics />
+
+<Sitemap />
 <Nav />
 
 <div class="wrapper">
