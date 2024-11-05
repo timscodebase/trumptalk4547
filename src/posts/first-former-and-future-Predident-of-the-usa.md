@@ -17,7 +17,7 @@ featured: true
 </script>
 
 <Image
-  src="https://res.cloudinary.com/tithos/image/upload/e_enhance,f_auto,q_auto:eco/v1730790237/Donald_Trump_July_2016_Getty_Images_ecwnh8.avif"
+  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1730790237/Donald_Trump_July_2016_Getty_Images_ecwnh8.avif"
   alt="Donald J. Trump with thumps up"
 />
 
