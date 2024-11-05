@@ -2,7 +2,8 @@
 	import * as config from '$lib/config'
 	import { Podcasters, YouTubers } from '$lib'
 
-	const highlighted_video = 'https://www.youtube.com/live/PsP_xIy7YYA?si=1hthkoYAjeSYJsfs'
+	const highlighted_video =
+		'https://www.youtube.com/embed/PsP_xIy7YYA?si=qF2RFgqqBZ42vRof&amp;start=420'
 </script>
 
 <svelte:head>
@@ -14,7 +15,7 @@
 <iframe
 	width="100%"
 	height="550px"
-	src="{highlighted_video};start=420"
+	src={highlighted_video}
 	title="YouTube video player"
 	frameborder="0"
 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
