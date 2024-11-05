@@ -7,6 +7,13 @@ export const GET: RequestHandler = async () => {
 
 	const response = await fetch('/api/posts');
 
+	function create_entry(path, lastmod) {
+	return `<url>
+    <loc>${new URL(path, PUBLIC_CANONICAL_ORIGIN).href}</loc>
+    ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}
+  </url>`;
+}
+
 	if (!response.ok) {
 		throw error(500, 'Failed to fetch posts.');
 	}
