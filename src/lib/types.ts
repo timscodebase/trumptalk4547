@@ -8,6 +8,8 @@ export type Post = {
 	categories: Categories[]
 	published: boolean
 	featured: boolean
+	author: string
+	avatar: string
 }
 
 export type Image = {
