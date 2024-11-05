@@ -20,8 +20,7 @@
 		},
 		{
 			name: 'LV NATION',
-			description:
-				'The Hill, the true source of news. The Hill, the true source of news. The Hill, the true source of news. ',
+			description: `Welcome to the LV nation where we seek truth and we react to today's culture, politics & world overall!! we will be going live on here 💪🏽💪🏽`,
 			url: 'https://www.youtube.com/@The_LVNATION/videos',
 			image:
 				'https://yt3.googleusercontent.com/iS2nu5bJ52rTOlnH417coOBMDYta1gHWzS_7Fjgwa79jyuiqTiopfxJM0-A46infXP2j9te2qHM=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
