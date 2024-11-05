@@ -17,7 +17,7 @@ featured: true
 </script>
 
 <Image
-  src="https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:good,w_1200/v1730792976/The_Awakening_1915_Restoration_iaxoze.jpg"
+  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1730790237/Donald_Trump_July_2016_Getty_Images_ecwnh8.avif"
   alt="Donald J. Trump with thumps up"
 />
 
@@ -28,7 +28,7 @@ featured: true
 Today, on November 5, 2024, Donald J. Trump stands on the precipice of making history as the first American President to serve as both a former and future President. His political journey has already left an indelible mark on the American landscape. The M.A.G.A. (Make America Great Again) movement has invigorated millions of previously disengaged voters, inspiring them to research the issues and turn out to vote in numbers not seen in over three decades. Trump has brought to the forefront a conversation about the distinction between being "awake" and "woke," positioning his campaign as a beacon of hope in contrast to the perceived excesses of the Woke Movement.
 
 <Image
-  src="https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:good,w_1200/v1730792976/The_Awakening_1915_Restoration_iaxoze.jpg"
+  src="https://res.cloudinary.com/tithos/image/upload/e_enhance,f_auto,q_auto:eco/v1730384109/Trump_MSG_1_ecleru.jpg"
   alt="Enormous MAGA Rally"
 />
 
@@ -39,7 +39,7 @@ Trump's ability to draw unprecedented crowd sizes is a testament to his enduring
 In a striking parallel, Kamala Harris, who also snubbed the Al Smith Dinner, may face a similar fate. The potential for a historic repeat looms large as the nation teeters on the edge of a significant political shift, with many Americans experiencing a sense of déjà vu. Trump's rallies are more than mere political events; they are mass mobilizations that reflect a widespread desire for change and a return to the principles that his supporters believe will make America great once again.
 
 <Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:good/v1730792976/The_Awakening_1915_Restoration_iaxoze.jpg"
+  src="https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:good,w_1200/v1730792976/The_Awakening_1915_Restoration_iaxoze.jpg"
   alt="The Awakening of the Dormant Voter"
 />
 
