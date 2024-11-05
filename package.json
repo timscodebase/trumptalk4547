@@ -2,6 +2,7 @@
 	"name": "site-template",
 	"version": "0.0.1",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -37,7 +38,6 @@
 		"vite": "^5.4.10",
 		"vitest": "^2.1.4"
 	},
-	"type": "module",
 	"dependencies": {
 		"@builder.io/partytown": "^0.10.2",
 		"@sveltejs/adapter-vercel": "^5.4.6",
