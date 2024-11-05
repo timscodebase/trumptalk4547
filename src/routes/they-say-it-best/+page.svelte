@@ -2,8 +2,7 @@
 	import * as config from '$lib/config'
 	import { Podcasters, YouTubers } from '$lib'
 
-	const highlighted_video =
-		'https://www.youtube.com/embed/PsP_xIy7YYA?si=qF2RFgqqBZ42vRof&amp;start=420'
+	const highlighted_video = 'https://www.youtube.com/embed/PsP_xIy7YYA?si=qF2RFgqqBZ42vRof&amp'
 </script>
 
 <svelte:head>
