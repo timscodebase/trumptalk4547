@@ -2,7 +2,7 @@
 title: The First Former and Future President of The United States - Donald J. Trump
 description: History is being written in the US ad we are on the cusp of re-electing Donald J. Trump the first former and future President of The United States.
 date: '2024-11-05'
-image: 'https://res.cloudinary.com/tithos/image/upload/e_enhance,f_auto,q_auto:eco/v1730790237/Donald_Trump_July_2016_Getty_Images_ecwnh8.avif'
+image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1730790237/Donald_Trump_July_2016_Getty_Images_ecwnh8.avif'
 categories:
   - Donald J Trump
   - 45th President of the United States
