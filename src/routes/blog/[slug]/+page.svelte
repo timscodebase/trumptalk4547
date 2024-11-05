@@ -30,8 +30,23 @@
 </svelte:head>
 
 <article>
-	<hgroup>
-		<h1 style={`--transition-name: post-${slugify(meta.title)}`}>{meta.title}</h1>
+	<header>
+		<h1 style={`--transition-name: post-${slugify(meta.title)}`}>
+			{meta.title}
+		</h1>
+	</header>
+	<section class="content">
+		{@render content()}
+		<Utterances
+			reponame="timscodebase/trumptalk4547"
+			issue-term="pathname"
+			theme="dark-blue"
+			crossorigin="anonymous"
+			async
+		/>
+	</section>
+
+	<footer>
 		<section class="by_line">
 			<img src={meta.avatar} alt="{meta.author} avatar" />
 			<p>By {meta.author}</p>
@@ -43,18 +58,7 @@
 				<span class="surface-4">&num;{category}</span>
 			{/each}
 		</div>
-	</hgroup>
-
-	<section class="content">
-		{@render content()}
-		<Utterances
-			reponame="timscodebase/trumptalk4547"
-			issue-term="pathname"
-			theme="dark-blue"
-			crossorigin="anonymous"
-			async
-		/>
-	</section>
+	</footer>
 </article>
 
 <style>
