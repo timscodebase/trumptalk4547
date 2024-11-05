@@ -12,6 +12,7 @@ import ImageSlider from './components/ImageSlider.svelte'
 import Meta from './components/Meta.svelte'
 import Nav from './components/Nav.svelte'
 import Podcasters from './components/Podcasters.svelte'
+import Polymarket from './components/Polymarket.svelte'
 import Posts from './components/Posts.svelte'
 import SponsorLink from './components/SponsorLink.svelte'
 import Sponsors from './components/Sponsors.svelte'
@@ -34,6 +35,7 @@ export {
 	Meta,
 	Nav,
 	Podcasters,
+	Polymarket,
 	Posts,
 	SponsorLink,
 	Sponsors,

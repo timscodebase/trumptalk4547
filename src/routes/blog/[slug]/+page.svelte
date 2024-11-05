@@ -32,7 +32,11 @@
 <article>
 	<hgroup>
 		<h1 style={`--transition-name: post-${slugify(meta.title)}`}>{meta.title}</h1>
-		<p class="date">Published at {formatDate(meta.date)}</p>
+		<section class="by_line">
+			<img src={meta.avatar} alt="{meta.author} avatar" />
+			<p>By {meta.author}</p>
+			<p class="date">Published at {formatDate(meta.date)}</p>
+		</section>
 
 		<div class="tags">
 			{#each meta.categories as category}
@@ -73,14 +77,17 @@
 		opacity: 0.7;
 	}
 
+	.by_line,
 	.date,
 	.tags {
 		font-family: var(--font-mono);
 	}
 
-	.date {
-		margin: 0;
-		padding: 0;
+	.by_line {
+		display: flex;
+		place-items: center;
+		gap: 0 1rem;
+		padding: 1rem 0;
 	}
 
 	.tags {

@@ -1287,6 +1287,8 @@ categories:
   - Donald J Trump
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -1337,6 +1339,8 @@ categories:
   - Donald J Trump
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -1379,6 +1383,8 @@ categories:
   - Border Crisis
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -1481,6 +1487,8 @@ categories:
   - Joe Biden
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -1537,6 +1545,8 @@ categories:
   - Forever Wars
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -1596,6 +1606,8 @@ categories:
   - Swing States
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -1653,6 +1665,8 @@ categories:
   - Domestic Policy
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -1876,6 +1890,8 @@ categories:
   - Butter, PA
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -1906,6 +1922,8 @@ categories:
   - Childhood
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
@@ -2043,6 +2061,8 @@ categories:
   - Fox News
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>

@@ -9,6 +9,8 @@ categories:
   - Donald J Trump
 published: true
 featured: true
+author: Tim Smith
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>

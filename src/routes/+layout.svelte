@@ -27,7 +27,6 @@
 
 <Analylitics />
 
-<Sitemap />
 <Nav />
 
 <div class="wrapper">
