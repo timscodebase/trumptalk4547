@@ -39,7 +39,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ## "NOTHING COMES TO MIND" Kamala Harris
 
-<iframe width="100%" style="aspect-ratio: 16 / 9" aria-label="video embed" src="//video.foxnews.com/v/video-embed.html?video_id=6364175862112${loc}${ref}${xcf}" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
+
 
 ## The M.A.G.A Movement includes more demographic groups than we thought
 
