@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Utterances } from '@codewithshin/svelte-utterances'
 	import { formatDate, slugify } from '$lib/utils'
 	import * as config from '$lib/config'
 	import Partytown from 'partytown-sveltekit/Partytown.svelte'
@@ -35,15 +34,6 @@
 			{meta.title}
 		</h1>
 	</header>
-	<section class="content">
-		{@render content()}
-		<Utterances
-			reponame="timscodebase/trumptalk4547"
-			issue-term="pathname"
-			theme="dark-blue"
-			crossorigin="anonymous"
-			async
-		/>
 	</section>
 
 	<footer>
