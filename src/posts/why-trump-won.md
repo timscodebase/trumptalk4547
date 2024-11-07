@@ -43,7 +43,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ## The M.A.G.A Movement includes more demographic groups than we thought
 
-<iframe width="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/cQsVMDhg_s4?si=icAWDJvl-4aL7yGm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio: 16 / 9"  src="https://www.youtube.com/embed/cQsVMDhg_s4?si=xT7qR03zSsQQcfLe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## The View - The "spotlight" of the Liberal lagacy media establiment
 
