@@ -34,6 +34,9 @@
 			{meta.title}
 		</h1>
 	</header>
+	<section class="content">
+		{@render content()}
+	</section>
 
 	<footer>
 		<section class="by_line">
