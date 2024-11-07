@@ -34,7 +34,6 @@
 			{meta.title}
 		</h1>
 	</header>
-	</section>
 
 	<footer>
 		<section class="by_line">
