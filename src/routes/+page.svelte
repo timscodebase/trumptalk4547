@@ -20,6 +20,11 @@
 	</p>
 
 	<Image
+		src="https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/e_contrast:0/e_sharpen:100/v1730993816/Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm.avif"
+		alt="CNN 2024 Election Results"
+	/>
+
+	<Image
 		src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727323076/Untitled_Sept_25_2024_vm1jwu.png"
 		alt="Iconic Donald J Trump picture"
 	/>
