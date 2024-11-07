@@ -33,7 +33,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 - "NOTHING COMES TO MIND" Kamala Harris
 - The M.A.G.A Movement includes more demographic groups than we though
-- The View - The "spotlight" of the Liberal lagacy media establiment
+- The View - The "spotlight" of the Liberal legacy media establiment
 - The "coep" of againt Biden
 - "TAMPON TIM"
 
