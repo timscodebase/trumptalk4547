@@ -2,7 +2,7 @@
 title: 'Why Trump Won'
 description: 'While Trump indeed ran a great campain, is was NOT why he won.'
 date: '2024-11-07'
-image: 'https://res.cloudinary.com/tithos/image/upload/e_contrast:0,q_auto:eco/e_enhance/v1730991702/Screenshot_2024-11-07_at_5.51.02_AM_zmjwwi.avif'
+image: 'https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/e_contrast:0/e_sharpen:100/v1730993816/Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm.avif'
 categories:
   - Donald J Trump
   - Kamala Harris
@@ -19,6 +19,12 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 <Image
   src="https://res.cloudinary.com/tithos/image/upload/e_contrast:0,q_auto:eco/e_enhance/v1730991702/Screenshot_2024-11-07_at_5.51.02_AM_zmjwwi.avif"
   alt="Donald J. Trump elected the 47 Presisent of the United States"
+/>
+
+### CNN: Trump - 295 | Harris- 226
+<Image
+  src="https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/e_contrast:0/e_sharpen:100/v1730993816/Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm.avif"
+  alt="CNN 2024 Election Results"
 />
 
 ## Why Trump Won
