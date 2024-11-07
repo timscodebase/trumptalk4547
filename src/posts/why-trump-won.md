@@ -6,6 +6,8 @@ image: 'https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/e_co
 categories:
   - Donald J Trump
   - Kamala Harris
+  - Trump - 295
+  - Harris - 226
 published: true
 featured: true
 author: Tim Smith
@@ -21,7 +23,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
   alt="Donald J. Trump elected the 47 Presisent of the United States"
 />
 
-### CNN: Trump - 295 | Harris- 226
+### CNN: Trump - 295 | Harris - 226
 <Image
   src="https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/e_contrast:0/e_sharpen:100/v1730993816/Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm.avif"
   alt="CNN 2024 Election Results"
@@ -37,7 +39,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ## "NOTHING COMES TO MIND" Kamala Harris
 
-<script type="text/javascript" src="https://video.foxnews.com/v/embed.js?id=6364175862112&w=466&h=263"></script><noscript>Watch the latest video at <a href="https://www.foxnews.com">foxnews.com</a></noscript>
+<iframe width="100%" style="aspect-ratio: 16 / 9" aria-label="video embed" src="//video.foxnews.com/v/video-embed.html?video_id=6364175862112${loc}${ref}${xcf}" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
 
 ## The M.A.G.A Movement includes more demographic groups than we thought
 
