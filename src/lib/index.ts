@@ -6,6 +6,7 @@ import DarkModeToggle from './components/DarkModeToggle.svelte'
 import ElectionCountDown from './components/ElectionCountDown.svelte'
 import ExternalLink from './components/ExternalLink.svelte'
 import Footer from './components/Footer.svelte'
+import ForSaleBanner from './components/ForSaleBanner.svelte'
 import Header from './components/Header.svelte'
 import Image from './components/Image.svelte'
 import ImageSlider from './components/ImageSlider.svelte'
@@ -29,6 +30,7 @@ export {
 	ElectionCountDown,
 	ExternalLink,
 	Footer,
+	ForSaleBanner,
 	Header,
 	Image,
 	ImageSlider,
