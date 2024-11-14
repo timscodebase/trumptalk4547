@@ -1,5 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores'
+	import { dev } from '$app/environment'
+	import { injectAnalytics } from '@vercel/analytics/sveltekit'
+
+	injectAnalytics({ mode: dev ? 'development' : 'production' })
 
 	$effect(() => {
 		if (typeof gtag !== 'undefined') {
