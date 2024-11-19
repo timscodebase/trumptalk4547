@@ -30,9 +30,7 @@ const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter({
-      runtime: 'nodejs18.x'
-    })
+		adapter: adapter()
 	}
 }
 
