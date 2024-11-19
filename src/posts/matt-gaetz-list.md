@@ -1,6 +1,6 @@
 ---
-title: 'Matt Gaetz's congressional hit list'
-description: 'Matt Gaetz walks the The House of Representatives, pointing out corrupt Representatives.  Most are Rrepublican...'
+title: Matt Gaetz's congressional hit list
+description: Matt Gaetz walks the The House of Representatives, pointing out corrupt Representatives.  Most are Rrepublican...
 date: '2024-11-18'
 image: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1731982763/Screenshot_2024-11-18_at_6.04.47_PM_dtetud.webp'
 categories:
@@ -24,7 +24,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ## Matt Gaetz's congressional hit list
 
-<iframe width="100%" style="" src="https://www.youtube.com/embed/4aNmYCJGvw4?si=fbShNfKuTyNNsCsp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/4aNmYCJGvw4?si=fbShNfKuTyNNsCsp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 *Ethics Investigation* — Matt Gaetz has been under investigation by the House Ethics Committee for allegations of sexual misconduct and illicit drug use. These investigations have been ongoing since 2021.
 
