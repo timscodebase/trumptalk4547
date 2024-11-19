@@ -20,8 +20,8 @@
 	</p>
 
 	<Image
-		src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727323076/Untitled_Sept_25_2024_vm1jwu.png"
-		alt="Iconic Donald J Trump picture"
+		src="https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1731989370/Screenshot_2024-11-18_at_7.28.48_PM_jd0vvi.webp"
+		alt="Trump Vance and M.A.G.A. Flags"
 	/>
 
 	<h2>Stay Informed with Our News and Analysis</h2>
