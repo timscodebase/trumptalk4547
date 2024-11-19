@@ -6,7 +6,7 @@
 <section>
 	<span class="header">Countdown To Inauguration Day</span>
 	<p class="blue bold op-shadow">
-		<span class="red mono">{daysUntilFutureDate(inaugurationDay)}</span>
+		<span class="red mono">{daysUntilFutureDate(inaugurationDay)} daysß</span>
 	</p>
 </section>
 
