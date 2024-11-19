@@ -1,16 +1,9 @@
 <script lang="ts">
 	import { daysUntilFutureDate } from '$lib/utils'
-
-	const electionDay = new Date('2024-11-05')
 	const inaugurationDay = new Date('2025-01-20')
 </script>
 
 <section>
-	<span class="header">Countdown To The Election</span>
-	<p class="blue bold op-shadow">
-		Only <span class="red mono">{daysUntilFutureDate(electionDay)}</span> days left!!
-	</p>
-	<span class="reminder">ELECTION DAY IS THE LAST DAY TO VOTE, VOTE NOW!</span>
 	<span class="header">Countdown To Inauguration Day</span>
 	<p class="blue bold op-shadow">
 		<span class="red mono">{daysUntilFutureDate(inaugurationDay)}</span>
