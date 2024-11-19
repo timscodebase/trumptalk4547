@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "node": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}

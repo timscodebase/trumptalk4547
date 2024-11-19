@@ -67,12 +67,6 @@
 		text-transform: capitalize;
 	}
 
-	h1 + p {
-		margin-top: var(--size-2);
-		color: var(--text);
-		opacity: 0.7;
-	}
-
 	.by_line,
 	.date,
 	.tags {

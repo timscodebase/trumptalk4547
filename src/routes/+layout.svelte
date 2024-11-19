@@ -6,7 +6,6 @@
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import PartytownSnippet from 'partytown-sveltekit/PartytownSnippet.svelte'
 
-	const links = config.nav_links
 	injectSpeedInsights() // Inject Vercel Insights
 
 	let { children } = $props()
