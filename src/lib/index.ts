@@ -2,6 +2,7 @@ import Analylitics from './components/Analylitics.svelte'
 import BlogLink from './components/BlogLink.svelte'
 import BuyMeACoffee from './components/BuyMeACoffee.svelte'
 import CookieConsent from './components/CookieConsent.svelte'
+import ContactForm from './components/ContactForm.svelte'
 import DarkModeToggle from './components/DarkModeToggle.svelte'
 import ElectionCountDown from './components/ElectionCountDown.svelte'
 import ExternalLink from './components/ExternalLink.svelte'
@@ -22,26 +23,27 @@ import USAFacts from './components/USAFacts.svelte'
 import YouTubers from './components/YouTubers.svelte'
 
 export {
-	Analylitics,
-	BlogLink,
-	BuyMeACoffee,
-	CookieConsent,
-	DarkModeToggle,
-	ElectionCountDown,
-	ExternalLink,
-	Footer,
-	ForSaleBanner,
-	Header,
-	Image,
-	ImageSlider,
-	Meta,
-	Nav,
-	Podcasters,
-	Polymarket,
-	Posts,
-	SponsorLink,
-	Sponsors,
-	Socials,
-	USAFacts,
-	YouTubers
+  Analylitics,
+  BlogLink,
+  BuyMeACoffee,
+  ContactForm,
+  CookieConsent,
+  DarkModeToggle,
+  ElectionCountDown,
+  ExternalLink,
+  Footer,
+  ForSaleBanner,
+  Header,
+  Image,
+  ImageSlider,
+  Meta,
+  Nav,
+  Podcasters,
+  Polymarket,
+  Posts,
+  SponsorLink,
+  Sponsors,
+  Socials,
+  USAFacts,
+  YouTubers
 }
