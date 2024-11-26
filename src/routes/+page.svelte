@@ -17,38 +17,9 @@
 </div>
 
 <style>
-	body {
-		font-family: Arial, sans-serif;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-		color: #333;
-	}
 	.container {
 		padding: 20px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		border-radius: 10px;
-	}
-
-	p {
-		font-size: 1.2em;
-	}
-	.contact {
-		margin-top: 20px;
-	}
-	.contact a {
-		text-decoration: none;
-		color: #fff;
-		background-color: #d9534f;
-		padding: 10px 20px;
-		border-radius: 5px;
-		transition: background-color 0.3s ease;
-	}
-	.contact a:hover {
-		background-color: #c9302c;
 	}
 </style>
