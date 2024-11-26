@@ -6,7 +6,7 @@
 <Meta />
 
 <header>
-	<a href="/">
+	<a href="/home">
 		<Image
 			src="https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150/v1729009614/Trump_Talk_Logo_rrlvas.svg"
 			alt="Trump Talk 45/47"

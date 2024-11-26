@@ -3,7 +3,7 @@
 
 	let open = $state(false)
 	const menu_links = [
-		{ url: '/', text: 'Home' },
+		{ url: '/home', text: 'Home' },
 		{ url: '/blog', text: 'Blog' },
 		{ url: '/they-say-it-best', text: 'They Say It Best' },
 		{ url: '/contact', text: 'Contact' },

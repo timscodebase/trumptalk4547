@@ -1,9 +1,8 @@
 <script>
-	import { BuyMeACoffee, ContactForm, Image, Socials } from '$lib'
+	import { BuyMeACoffee, Image, Socials } from '$lib'
 </script>
 
 <footer>
-	<ContactForm />
 	<div class="wrap">
 		<Image
 			src="https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150/v1729009614/Trump_Talk_Logo_rrlvas.svg"
