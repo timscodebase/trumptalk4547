@@ -22,4 +22,22 @@
 		text-align: center;
 		border-radius: 10px;
 	}
+
+	p {
+		font-size: 1.2em;
+	}
+	.contact {
+		margin-top: 20px;
+	}
+	.contact a {
+		text-decoration: none;
+		color: var(--color-text);
+		background-color: var(--color-accent);
+		padding: 10px 20px;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	}
+	.contact a:hover {
+		background-color: var(--color-accent);
+	}
 </style>
