@@ -12,7 +12,7 @@
 		policies.
 	</p>
 	<div class="contact">
-		<a href="mailto:your-email@example.com">Contact Us to Buy</a>
+		<a href="mailto:trumptalk4547@gmail.com">Contact Us to Buy</a>
 	</div>
 </div>
 
