@@ -24,7 +24,7 @@
 	}
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
+<form onsubmit={handleSubmit}>
 	<label for="name">Name</label>
 	<input id="name" type="text" bind:value={name} required />
 
