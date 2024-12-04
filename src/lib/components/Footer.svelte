@@ -36,6 +36,19 @@
 			'logo address'
 			'socials buy-me-a-coffee';
 	}
+
+	@media (max-width: 1000px) {
+		.wrap {
+			grid-template-columns: auto;
+			grid-template-rows: auto auto auto auto;
+			grid-template-areas:
+				'logo'
+				'address'
+				'socials'
+				'buy-me-a-coffee';
+		}
+	}
+
 	footer {
 		display: grid;
 		border-top: 2px solid var(--color-accent);
