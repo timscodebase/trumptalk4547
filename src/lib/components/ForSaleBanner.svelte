@@ -1,6 +1,6 @@
 <script>
 	let {
-		message = '🇺🇸 This Domain Is For Sale!! 🇺🇸 ThIs Domain Is For Sale!! 🇺🇸 ThIs Domain Is For Sale!! 🇺🇸 ThIs Domain Is For Sale!! 🇺🇸 ThIs Domain Is For Sale!! 🇺🇸',
+		message = '🇺🇸 This Domain Is For Sale!! 🇺🇸 This Domain Is For Sale!! 🇺🇸 This Domain Is For Sale!! 🇺🇸 This Domain Is For Sale!! 🇺🇸 This Domain Is For Sale!! 🇺🇸',
 		speed = 60
 	} = $props()
 </script>
