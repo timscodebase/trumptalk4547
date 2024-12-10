@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { formatDate, slugify } from '$lib/utils'
 	import * as config from '$lib/config'
-	import Partytown from 'partytown-sveltekit/Partytown.svelte'
 
 	let { data } = $props()
 	const { content, metadata: meta } = data
