@@ -9,6 +9,7 @@ export type Post = {
 	published: boolean
 	featured: boolean
 	author: string
+	avatar: string
 }
 
 export type Image = {

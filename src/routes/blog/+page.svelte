@@ -1,5 +1,5 @@
 <script>
-	import { ElectionCountDown, Image, Posts } from '$lib'
+	import Posts from '$lib/components/Posts.svelte'
 	import * as config from '$lib/config'
 
 	let data = $props()
