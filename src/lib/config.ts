@@ -1,6 +1,6 @@
 import { dev } from '$app/environment'
 
-export const url = dev ? 'http://localhost:5713' : 'https://gresham-street-clean-up-crew.vercel.app/'
+export const url = dev ? 'http://localhost:5713' : 'https://trumptalk4547.com'
 
 export const name = 'Trump Talk 45/47'
 export const description = "News, Analysis, and Speeches for President Donald J. Trump"
