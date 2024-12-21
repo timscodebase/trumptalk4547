@@ -12,6 +12,7 @@ import Image from './components/Image.svelte'
 import ImageSlider from './components/ImageSlider.svelte'
 import Meta from './components/Meta.svelte'
 import Nav from './components/Nav.svelte'
+import OG from './components/OG.svelte'
 import Podcasters from './components/Podcasters.svelte'
 import Polymarket from './components/Polymarket.svelte'
 import Posts from './components/Posts.svelte'
@@ -36,6 +37,7 @@ export {
   ImageSlider,
   Meta,
   Nav,
+  OG,
   Podcasters,
   Polymarket,
   Posts,

@@ -1,30 +1,13 @@
 <script lang="ts">
 	import { formatDate, slugify } from '$lib/utils'
-	import * as config from '$lib/config'
+	import { OG } from '$lib'
 
 	let { data } = $props()
 	const { content, metadata: meta } = data
 </script>
 
 <svelte:head>
-	<title>{config.name} | {meta.title}</title>
-
-	<meta name="robots" content="index, follow" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:site_name" content={config.name} />
-	<meta property="og:title" content={meta.title} />
-	<meta property="og:description" content={meta.description} />
-	<meta property="og:image" content={meta.image} />
-	<meta property="og:url" content={`${config.url}/blog/${slugify(meta.title)}`} />
-	<meta property="og:type" content="article" />
-
-	<meta name="twitter:creator" content="@TrumpTalk4547" />
-	<meta name="twitter:card" content={meta.image} />
-	<meta name="twitter:site" content="@TrumpTalk4547" />
-	<meta name="twitter:title" content={meta.title} />
-	<meta name="twitter:description" content={meta.description} />
-	<meta name="twitter:image" content={meta.image} />
-	<meta name="twitter:url" content={`${config.url}/blog/${slugify(meta.title)}`} />
+	<OG {meta} />
 </svelte:head>
 
 <article>
