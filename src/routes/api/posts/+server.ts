@@ -20,6 +20,8 @@ async function getPosts() {
 	posts = posts.sort(
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
+	
+	console.log("Posts: ", posts)
 
 	return posts
 }
