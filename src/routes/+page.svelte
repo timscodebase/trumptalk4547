@@ -1,9 +1,3 @@
-<script lang="ts">
-	import type { PageData } from './$types'
-
-	let { data }: { data: PageData } = $props()
-</script>
-
 <div class="container">
 	<h1>TrumpTalk4547.com</h1>
 	<p>This premium domain is now available for purchase!</p>

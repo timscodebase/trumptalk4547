@@ -3,7 +3,6 @@ import BlogLink from './components/BlogLink.svelte'
 import BuyMeACoffee from './components/BuyMeACoffee.svelte'
 import CookieConsent from './components/CookieConsent.svelte'
 import ContactForm from './components/ContactForm.svelte'
-import DarkModeToggle from './components/DarkModeToggle.svelte'
 import ElectionCountDown from './components/ElectionCountDown.svelte'
 import ExternalLink from './components/ExternalLink.svelte'
 import Footer from './components/Footer.svelte'
@@ -28,7 +27,6 @@ export {
   BuyMeACoffee,
   ContactForm,
   CookieConsent,
-  DarkModeToggle,
   ElectionCountDown,
   ExternalLink,
   Footer,
