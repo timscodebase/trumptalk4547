@@ -19,7 +19,7 @@
 	<meta property="og:type" content="article" />
 
 	<meta name="twitter:creator" content="@TrumpTalk4547" />
-	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content={meta.image} />
 	<meta name="twitter:site" content="@TrumpTalk4547" />
 	<meta name="twitter:title" content={meta.title} />
 	<meta name="twitter:description" content={meta.description} />
