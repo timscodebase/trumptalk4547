@@ -1,27 +1,30 @@
 <script>
 	import * as config from '$lib/config'
-	import { Image, Meta } from '$lib'
+	import { Image, Meta, Nav } from '$lib'
 </script>
 
 <Meta />
 
 <header>
-	<a href="/home">
-		<Image
-			src="https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150/v1729009614/Trump_Talk_Logo_rrlvas.svg"
-			alt="Trump Talk 45/47"
-			width="200"
-			className="logo"
-		/>
+	<div class="logo">
+		<a href="/">
+			<Image
+				src="https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150/v1729009614/Trump_Talk_Logo_rrlvas.svg"
+				alt="Trump Talk 45/47"
+				width="200"
+				className="logo"
+			/>
+		</a>
+	</div>
+	<div class="header-right">
 		<p>{config.description}</p>
-	</a>
+		<Nav />
+	</div>
 </header>
 
 <style>
 	header {
 		display: flex;
-		justify-content: space-between;
-		align-items: end;
 		padding-top: 1.5rem;
 		border-bottom: 3px solid var(--color-accent);
 		margin-bottom: 2rem;
@@ -41,6 +44,13 @@
 			font-size: 1rem;
 			margin: 0;
 			padding: 0;
+		}
+
+		.header-right {
+			display: flex;
+			flex-direction: column;
+			margin-top: auto;
+			padding-left: 1rem;
 		}
 	}
 
