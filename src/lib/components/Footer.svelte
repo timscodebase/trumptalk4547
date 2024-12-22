@@ -10,6 +10,7 @@
 			width="150"
 			className="logo"
 		/>
+		<p>© {new Date().getFullYear()} Trump Talk 45/47</p>
 		<div class="address center">
 			Founded in &nbsp;
 			<address>Gresham, Oregon</address>

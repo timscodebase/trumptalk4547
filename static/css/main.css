@@ -22,7 +22,7 @@
 	--color-toggle-light: #070f26;
 
 	--color-surface: var(--color-surface-dark);
-	--color-surface-op: var(--color-surface-light);
+	--color-surface-op: var(--color-accent-light);
 	--color-text: var(--color-text-dark);
 	--color-text-op: var(--color-text-light);
 	--color-accent: var(--color-accent-dark);
@@ -71,7 +71,7 @@
 
 [data-theme='dark'] {
 	--color-surface: var(--color-surface-dark);
-	--color-surface-op: var(--color-surface-light);
+	--color-surface-op: var(--color-accent-light);
 	--color-text: var(--color-text-dark);
 	--color-text-op: var(--color-text-light);
 	--color-accent: var(--color-accent-dark);

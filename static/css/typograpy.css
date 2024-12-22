@@ -85,12 +85,12 @@ a {
 	}
 }
 
-p {
+/* p {
 	font-size: clamp(1rem, 1.5vw, 1.25rem);
 	line-height: 1.5;
 	margin: 0;
 	margin-bottom: 1rem;
-}
+} */
 
 p::selection {
 	color: var(--color-selected-text);
