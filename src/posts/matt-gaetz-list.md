@@ -7,6 +7,7 @@ categories:
   - Rep. Matt Gaetz
   - Rep. John Rutherford
   - Rep. Michael Guest
+type: "news"
 published: true
 featured: true
 author: Tim Smith

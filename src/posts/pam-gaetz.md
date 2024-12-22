@@ -1,6 +1,6 @@
 ---
-title: 'Pam Bondi Nominated as Attorney General as Matt Gaetz Step Aside'
-description: 'Pam Bondi has been nominated as= Attorney General as Matt Gaetz Step Aside'
+title: 'Pam Bondi Nominated as Attorney General as Matt Gaetz Steps Aside'
+description: 'Pam Bondi has been nominated as Attorney General as Matt Gaetz Steps Aside'
 date: '2024-11-21'
 image: 'https://res.cloudinary.com/tithos/image/upload/q_auto:eco/v1732248824/pam-bondi-5_glzjpr.avif'
 categories:
@@ -8,6 +8,7 @@ categories:
   - Matt Gaetz
   - Attorney General
   - Donald J Trump
+type: "news"
 published: true
 featured: true
 author: Tim Smith
