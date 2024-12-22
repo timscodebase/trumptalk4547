@@ -30,7 +30,7 @@
 			display: block;
 			padding: 0;
 			height: 100%;
-			background: var(--color-surface-op);
+			background: var(--color-surface-light);
 
 			&:hover {
 				text-decoration: none;
@@ -46,7 +46,7 @@
 				padding: 0.5rem 5px;
 				color: var(--color-text);
 				background: var(--color-accent);
-				font-size: clamp(1.75rem, 3vw, 2.5rem);
+				font-size: clamp(1.75rem, 2.75vw, 2.25rem);
 			}
 		}
 	}
@@ -62,9 +62,6 @@
 		text-align: center;
 		background: rgba(15, 5, 128, 0.5);
 	}
-	.meta {
-		color: var(--color-text);
-	}
 
 	img {
 		height: auto;
@@ -73,7 +70,7 @@
 	}
 
 	.meta {
-		color: var(--color-text-op);
+		color: var(--color-post-meta);
 
 		.date {
 			font-weight: bold;
