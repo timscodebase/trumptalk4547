@@ -9,6 +9,7 @@ categories:
   - Bankruptcy
   - Joe Biden
   - Donald J Trump
+type: "news"
 published: true
 featured: true
 author: Tim Smith

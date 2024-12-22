@@ -10,6 +10,7 @@ categories:
   - No Wars
   - Proxy Wars
   - Forever Wars
+type: "news"
 published: false
 featured: false
 author: Tim Smith

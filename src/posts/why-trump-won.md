@@ -8,6 +8,7 @@ categories:
   - Kamala Harris
   - Trump - 295
   - Harris - 226
+type: "news"
 published: true
 featured: true
 author: Tim Smith

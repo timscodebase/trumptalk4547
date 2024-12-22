@@ -1,11 +1,21 @@
-export type Categories = 'sveltekit' | 'svelte'
-export type Post = {
+enum ArticleType {
+    News = "news",
+    Opinion = "opinion",
+    Feature = "feature",
+    Review = "review",
+    Interview = "interview",
+    Editorial = "editorial",
+    Analysis = "analysis"
+}
+
+export interface Post {
 	title: string
 	slug: string
 	description: string
 	date: string
 	image: string
-	categories: Categories[]
+	type: ArticleType
+	categories: [string]
 	published: boolean
 	featured: boolean
 	author: string

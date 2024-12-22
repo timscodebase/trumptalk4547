@@ -7,6 +7,7 @@ categories:
   - Donald J Trump
   - Hostages
   - Gaza
+type: "news"
 published: true
 featured: true
 author: Tim Smith
