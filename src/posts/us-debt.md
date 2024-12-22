@@ -1,6 +1,6 @@
 ---
 title: 'The US Debt is estimated to be 40 Trillion by Jan 20'
-description: 'The US Debt is estimated to be 40 Trillion by Jan 20'
+description: 'As of late 2024, the United States national debt stands at an unprecedented level of approximately **36 trillion dollars**. This figure has seen a marked increase, growing by roughly $1 trillion every few months, highlighting a rapid pace of accumulation'
 date: '2024-12-21'
 image: 'https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/v1734819402/Screenshot_2024-12-21_at_2.15.55_PM_r3ekge.avif'
 categories:

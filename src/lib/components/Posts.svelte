@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Post } from '$lib/types'
-	import BlogLink from './BlogLink.svelte'
+	import PostLink from './PostLink.svelte'
 
 	const { posts } = $props() as { posts: Post[] }
 </script>
@@ -9,7 +9,7 @@
 	<ul class="posts">
 		{#each posts as post, i}
 			<li class="post" style={`--transition-name: post-${post.slug}`}>
-				<BlogLink {post} />
+				<PostLink {post} />
 			</li>
 		{/each}
 	</ul>
@@ -18,7 +18,7 @@
 <style>
 	.posts {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 		grid-template-rows: 1fr;
 		gap: 1rem;
 

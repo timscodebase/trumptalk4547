@@ -54,7 +54,7 @@ src/
     components/
       Analylitics.svelte
       Avengers.svelte
-      BlogLink.svelte
+      PostLink.svelte
       BuyMeACoffee.svelte
       CookieConsent.svelte
       DarkModeToggle.svelte
@@ -192,7 +192,7 @@ File: src/lib/components/Avengers.svelte
 </section>
 
 ================
-File: src/lib/components/BlogLink.svelte
+File: src/lib/components/PostLink.svelte
 ================
 <script lang="ts">
 	import type { Post } from '$lib/types'
@@ -916,7 +916,7 @@ File: src/lib/components/Posts.svelte
 ================
 <script lang="ts">
 	import type { Post } from '$lib/types'
-	import BlogLink from './BlogLink.svelte'
+	import PostLink from './PostLink.svelte'
 
 	const { posts } = $props() as { posts: Post[] }
 </script>
@@ -925,7 +925,7 @@ File: src/lib/components/Posts.svelte
 	<ul class="posts">
 		{#each posts as post, i}
 			<li class="post" style={`--transition-name: post-${post.slug}`}>
-				<BlogLink {post} />
+				<PostLink {post} />
 			</li>
 		{/each}
 	</ul>
@@ -1145,7 +1145,7 @@ export const nav_links = [
 File: src/lib/index.ts
 ================
 import Analylitics from './components/Analylitics.svelte'
-import BlogLink from './components/BlogLink.svelte'
+import PostLink from './components/PostLink.svelte'
 import BuyMeACoffee from './components/BuyMeACoffee.svelte'
 import CookieConsent from './components/CookieConsent.svelte'
 import DarkModeToggle from './components/DarkModeToggle.svelte'
@@ -1164,7 +1164,7 @@ import USAFacts from './components/USAFacts.svelte'
 
 export {
 	Analylitics,
-	BlogLink,
+	PostLink,
 	BuyMeACoffee,
 	CookieConsent,
 	DarkModeToggle,

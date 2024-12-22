@@ -1,5 +1,5 @@
 import Analylitics from './components/Analylitics.svelte'
-import BlogLink from './components/BlogLink.svelte'
+import PostLink from './components/PostLink.svelte'
 import BuyMeACoffee from './components/BuyMeACoffee.svelte'
 import CookieConsent from './components/CookieConsent.svelte'
 import ContactForm from './components/ContactForm.svelte'
@@ -24,7 +24,7 @@ import YouTubers from './components/YouTubers.svelte'
 
 export {
   Analylitics,
-  BlogLink,
+  PostLink,
   BuyMeACoffee,
   ContactForm,
   CookieConsent,

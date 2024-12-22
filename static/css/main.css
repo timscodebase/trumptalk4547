@@ -9,13 +9,14 @@
   /* Primary Theme Colors */
   --color-surface-light: #a3c2ff;
   --color-surface-dark: #0339a6;
-  --color-text-light: #070f26;
+  --color-text-light: #142557;
   --color-text-dark: #f2f2f2;
+	--color-post-meta: #0b327b;
   --color-accent: #fa4848; /* Previously --color-accent-light */
   --color-accent-light: #fa4848;
   --color-accent-dark: #fa4848; /* Making explicit for clarity, as they're the same */
   
-  --color-success-light: #00c700;
+  --color-success-light: #00c700; 
   --color-success-dark: #008b00;
   --color-error-light: #e24000;
   --color-error-dark: #8c2800;
@@ -24,11 +25,10 @@
   --color-toggle-light: #070f26;
   --color-toggle-dark: #f2f2f2;
 
-  /* Default Theme (Assuming dark mode as default) */
   --color-surface: var(--color-surface-dark);
-  --color-surface-op: var(--color-accent-light); /* Consider renaming for clarity, e.g., --color-surface-contrast */
+  --color-surface-op: var(--color-accent-light);
   --color-text: var(--color-text-dark);
-  --color-text-op: var(--color-text-light); /* Similarly, consider --color-text-contrast */
+  --color-text-op: var(--color-text-light);
   --color-success: var(--color-success-dark);
   --color-error: var(--color-error-dark);
   --color-warning: var(--color-warning-dark);
@@ -141,11 +141,11 @@ html:active-view-transition-type(reload) {
 
 @keyframes move-in {
 	from {
-		transform: translateY(100%);
+		transform: translateX(100%);
 	}
 
 	to {
-		transform: translateY(0%);
+		transform: translateX(0%);
 	}
 }
 
