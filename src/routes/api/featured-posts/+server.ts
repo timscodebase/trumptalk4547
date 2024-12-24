@@ -1,7 +1,7 @@
 import { json } from '@sveltejs/kit'
 import type { Post } from '$lib/types'
 
-async function getPosts() {
+async function getPosts(limit: number) {
 	let posts: Post[] = []
 
 	const paths = import.meta.glob('/src/posts/*.md', { eager: true })
@@ -21,10 +21,17 @@ async function getPosts() {
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
 
+	console.log('All Posts: ', posts)
+
+	posts = posts.slice(0, limit)
+
+	console.log('5 Posts: ', posts)
+
 	return posts
 }
 
-export async function GET() {
-	const posts = await getPosts()
-	return json(posts)
+export async function GET(event) {
+	const limit = event.url.searchParams.get('limit') || '5';
+	const posts = await getPosts(parseInt(limit));
+	return json(posts);
 }
