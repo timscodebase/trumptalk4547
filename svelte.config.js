@@ -31,7 +31,7 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
 		adapter: adapter({
-			edge: false, // If you want serverless functions
+			edge: true, // If you want serverless functions
       isr: {
         expiration: 60, // ISR regeneration every 60 seconds for example
         bypassToken: 'trump-talk-09-01-1981' // for on-demand revalidation
