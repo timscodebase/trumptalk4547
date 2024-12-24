@@ -19,7 +19,6 @@ import Posts from './components/Posts.svelte'
 import SponsorLink from './components/SponsorLink.svelte'
 import Sponsors from './components/Sponsors.svelte'
 import Socials from './components/Socials.svelte'
-import USAFacts from './components/USAFacts.svelte'
 import YouTubers from './components/YouTubers.svelte'
 
 export {
@@ -44,6 +43,5 @@ export {
   SponsorLink,
   Sponsors,
   Socials,
-  USAFacts,
   YouTubers
 }

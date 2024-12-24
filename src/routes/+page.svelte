@@ -20,7 +20,7 @@
 	</p>
 
 	<Image
-		src="https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1731989370/Screenshot_2024-11-18_at_7.28.48_PM_jd0vvi.webp"
+		src="https://res.cloudinary.com/tithos/image/upload/a_hflip,c_scale,q_auto:eco,w_1200/v1731989370/Screenshot_2024-11-18_at_7.28.48_PM_jd0vvi.avif"
 		alt="Trump Vance and M.A.G.A. Flags"
 	/>
 
