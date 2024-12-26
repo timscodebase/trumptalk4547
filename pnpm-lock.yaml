@@ -60,9 +60,6 @@ importers:
       '@beyonk/gdpr-cookie-consent-banner':
         specifier: ^12.1.4
         version: 12.1.4
-      '@codewithshin/svelte-utterances':
-        specifier: ^0.2.4
-        version: 0.2.4
       '@sveltejs/adapter-auto':
         specifier: ^3.3.1
         version: 3.3.1(@sveltejs/kit@2.15.0(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.260)(vite@5.4.11(@types/node@22.10.2)))(svelte@5.0.0-next.260)(vite@5.4.11(@types/node@22.10.2)))
@@ -171,9 +168,6 @@ packages:
 
   '@cloudinary/url-gen@1.15.0':
     resolution: {integrity: sha512-bjU67eZxLUgoRy/Plli4TQio7q6P31OYqnEgXxeN9TKXrzr6h0DeEdIUhKI9gy3HkEBWXWWJIPh7j7gkOJPnyA==}
-
-  '@codewithshin/svelte-utterances@0.2.4':
-    resolution: {integrity: sha512-8s4HS1GELFz8WUpABBHvO1XfjddQlHn15clpZ7dqXLbyY2bkP9V3Y4O2uVLsEsuyDFv8ePnwX+2CMa/o+q92HA==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -3246,8 +3240,6 @@ snapshots:
   '@cloudinary/url-gen@1.15.0':
     dependencies:
       '@cloudinary/transformation-builder-sdk': 1.16.1
-
-  '@codewithshin/svelte-utterances@0.2.4': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:

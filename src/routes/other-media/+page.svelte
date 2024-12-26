@@ -6,10 +6,10 @@
 </script>
 
 <svelte:head>
-	<title>{config.name} | They say it best!</title>
+	<title>{config.name} | Other Media</title>
 </svelte:head>
 
-<h1>They say it best!</h1>
+<h1>Other Media</h1>
 
 <h2>YouTubers</h2>
 <YouTubers />

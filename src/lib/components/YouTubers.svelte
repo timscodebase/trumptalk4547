@@ -13,7 +13,7 @@
 			description: 'The full story, first. Free, wherever you get your news.',
 			url: 'https://www.youtube.com/@SkyNews/videos',
 			image:
-				'https://yt3.googleusercontent.com/KULPln7L2HaMtu5cuq89eb773a-jQQTyTctZGSs8razRyl-mp2q967tbrlWVwbORUBZVhcPgbA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
+				'https://res.cloudinary.com/tithos/image/upload/c_scale,e_upscale,q_auto:eco,w_1200/v1735175108/SVG_Minifier_Result_wbks2n.avif'
 		},
 		{
 			name: 'LV NATION',
