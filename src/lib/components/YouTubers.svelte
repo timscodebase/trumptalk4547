@@ -1,62 +1,89 @@
 <script lang="ts">
 	const you_tubers = [
 		{
-			name: 'Red Eagle Politics',
-			description:
-				'This channel consists of political commentary, strategy, and analysis from a right-leaning perspective.',
-			url: 'https://www.youtube.com/@RedEaglePolitics/videos',
-			image:
-				'https://yt3.googleusercontent.com/GPK2toZ9pyW1xsgMimCdVQmk22pyy28OrZ7kAOi2c_dNxIERzjFbsWJvJMJc94Kiuq_vuOwY=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
+			name: 'The Young Turks',
+			description: 'The Largest Online News Show in the World. Hosted by Cenk Uygur & Ana Kasparian. LIVE weekdays 6-8pm ET.',
+			url: 'https://www.youtube.com/@TheYoungTurks/videos',
+			'political-leaning': 'left'
+		},
+		{
+			name: 'The Hill',
+			description: 'The Hill is the premier source for policy and political news. Follow for all the latest on campaigns, Congress and the White House.',
+			url: 'https://www.youtube.com/@TheHill/videos',
+			'political-leaning': 'middle'
+		},
+		{
+			name: 'The Daily Wire',
+			description: 'The Daily Wire is a politically conservative news and opinion website featuring daily podcasts by Andrew Klavan, Michael Knowles, and Editor-In-Chief Ben Shapiro.',
+			url: 'https://www.youtube.com/@TheDailyWire/videos',
+			'political-leaning': 'right'
+		},
+		{
+			name: 'The Rubin Report',
+			description: 'The Rubin Report is the largest talk show about free speech and big ideas on YouTube.',
+			url: 'https://www.youtube.com/@RubinReport/videos',
+			'political-leaning': 'right'
+		},
+		{
+			name: 'The Jimmy Dore Show',
+			description: 'The Jimmy Dore Show is a hilarious and irreverent take on news, politics and culture featuring Jimmy Dore, a professional stand up comedian, author and podcaster.',
+			url: 'https://www.youtube.com/@TheJimmyDoreShow/videos',
+			'political-leaning': 'left'
+		},
+		{
+			name: 'The Real News Network',
+			description: 'The Real News Network (TRNN) produces independent, verifiable, fact-based journalism that engages ordinary people in solving the critical problems of our times.',
+			url: 'https://www.youtube.com/@TheRealNews/videos',
+			'political-leaning': 'left'
+		},
+		{
+			name: 'The Damage Report',
+			description: "The Damage Report is the only daily news show that offers a progressive take on the day's events, featuring a mix of news, politics, and culture.",
+			url: 'https://www.youtube.com/@TheDamageReport/videos',
+			'political-leaning': 'left'
 		},
 		{
 			name: 'Sky News',
 			description: 'The full story, first. Free, wherever you get your news.',
 			url: 'https://www.youtube.com/@SkyNews/videos',
-			image:
-				'https://res.cloudinary.com/tithos/image/upload/c_scale,e_upscale,q_auto:eco,w_1200/v1735175108/SVG_Minifier_Result_wbks2n.avif'
+			'political-leaning': 'middle'
 		},
 		{
 			name: 'LV NATION',
 			description: `Welcome to the LV nation where we seek truth and we react to today's culture, politics & world overall!! we will be going live on here 💪🏽💪🏽`,
 			url: 'https://www.youtube.com/@The_LVNATION/videos',
-			image:
-				'https://yt3.googleusercontent.com/iS2nu5bJ52rTOlnH417coOBMDYta1gHWzS_7Fjgwa79jyuiqTiopfxJM0-A46infXP2j9te2qHM=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
+			'political-leaning': 'right'
 		},
 		{
 			name: 'StateOfDaniel',
 			description: 'Right-leaning Independent. Always approaching topics with an open mind.',
 			url: 'https://www.youtube.com/@StateOfDaniel',
-			image:
-				'https://yt3.googleusercontent.com/PvBsW8bBJ9CyY9xDu0pOb0hfxzIsnh0hXd_WGE3NvnqlWAbrA490BNDt42RpUzUFYVF2FsM8KeQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
+			'political-leaning': 'right'
 		},
 		{
 			name: 'DeVory Darkins',
 			description: 'God, Family, and Country First! Common Sense Commentary for Uncommon Times!',
 			url: 'https://www.youtube.com/@DeVoryDarkins',
-			image:
-				'https://yt3.googleusercontent.com/qPC69SlcRVp0MuJVFc19tT11STr8OF6clRz_gE475cCddpr1deguBHVIRh7BgeY2VK2KekT-nQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
+			'political-leaning': 'right'
 		},
 		{
 			name: 'Ron Yates',
 			description: 'For Business InquiriesEmail theronyatesshow@gmail.com',
 			url: 'https://www.youtube.com/@RonYates1',
-			image:
-				'https://yt3.googleusercontent.com/c5WjaPARQQowNJdfJmGo6_nuLpY4bN5RvaUbCVDL3SBtxokZQ_4LI0ZsIX5hZXuGhNeyuLfGMg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
+			'political-leaning': 'right'
 		},
 		{
 			name: 'Tulsi Gabbard',
 			description: 'Honest. Independent. Unafraid. Always with aloha.',
 			url: 'https://www.youtube.com/@TulsiGabbard',
-			image:
-				'https://yt3.googleusercontent.com/NsbwzMOoCKLK6SGfs7gR0VDJ-5BuJ_F-_pBuH-_xShUNXpr51Z5KUM3ILXXLi-Tyy0QMjggU3IQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
+			'political-leaning': 'right'
 		},
 		{
 			name: 'Rasmussen Reports',
 			description:
 				"Rasmussen Reports is an electronic publishing firm specializing in the collection, publication, and distribution of public opinion polling information.  Since its founding in 2003, Rasmussen Reports work has been followed by millions on a wide variety of media platforms. We regularly release our results at RasmussenReports.com, America's most visited public opinion website, and through a daily email newsletter, Twitter and Facebook.",
 			url: 'https://www.youtube.com/@rasmussen_poll',
-			image:
-				'https://yt3.googleusercontent.com/gO8wC8MA3c1ryG9ogCaiayrKqWFbOvGBzVpZVXUKPQ6gVDX_L1EX-OuGw88Z9cCLbAnAWYjt=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
+			'political-leaning': 'middle'
 		}
 	]
 </script>
