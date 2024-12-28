@@ -18,12 +18,12 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import {  Image } from '../lib';
+  import { Image } from '../lib';
 </script>
 
 ## Know Your Rights
 
-<Image src="https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735346417/Image_from_x.com_ggdopz.avif" alt="ICE Preparedness Plan for Undocumented Immigrants in Oregon"
+<Image src="https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735346417/Image_from_x.com_ggdopz.avif" alt="ICE Preparedness Plan for Undocumented Immigrants in Oregon"/>
 
 **Workshops and Materials** 🛡️  
 - Undocumented immigrants have access to 'Know Your Rights' workshops and materials to understand their legal rights in the U.S., regardless of their immigration status.
