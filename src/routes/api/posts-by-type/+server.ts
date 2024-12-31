@@ -3,9 +3,6 @@ import type { Post } from '$lib/types'
 
 async function getPosts(limit: number, type: string): Promise<Post[]> {
 	let posts: Post[] = []
-
-	console.log('Limit: ', limit)
-	console.log('Type: ', type)
 	
 	const paths = import.meta.glob('/src/posts/*.md', { eager: true })
 
@@ -16,7 +13,9 @@ async function getPosts(limit: number, type: string): Promise<Post[]> {
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Post, 'slug'>
 			const post = { ...metadata, slug } satisfies Post
-			post.published && post.type === type && posts.push(post)
+			// Published posts and posts where type includes the given type
+			if (post.published && post.type.includes(type)) posts.push(post)
+			// post.published && post.type === type && posts.push(post)
 		}
 	}
 
@@ -25,7 +24,6 @@ async function getPosts(limit: number, type: string): Promise<Post[]> {
 	)
 
 	posts = posts.slice(0, limit)
-	console.log('Posts: ', posts)
 
 	return posts
 }
@@ -33,9 +31,6 @@ async function getPosts(limit: number, type: string): Promise<Post[]> {
 export async function GET(event: { url: URL }) {
 	const limit = event.url.searchParams.get('limit') || '6';
 	const type = event.url.searchParams.get('type') || 'feature';
-
-	console.log('Limit: ', limit)
-	console.log('Type: ', type)
 
 	const posts = await getPosts(parseInt(limit), type);
 	return json(posts);

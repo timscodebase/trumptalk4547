@@ -17,7 +17,7 @@ export interface Post {
 	image: string
 	categories: [string]
 	published: boolean
-	type: ArticleType
+	type: [ArticleType]
 	author: string
 	avatar: string
 }

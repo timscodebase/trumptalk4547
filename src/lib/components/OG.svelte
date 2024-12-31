@@ -3,7 +3,6 @@
 	import * as config from '$lib/config'
 
 	let { meta } = $props()
-	console.log(meta)
 </script>
 
 <meta name="title" property="og:title" content={meta.title} />
