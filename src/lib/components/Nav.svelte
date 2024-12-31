@@ -7,7 +7,6 @@
 		{ url: '/foreign', text: 'Foreign' },
 		{ url: '/economy', text: 'Economy' },
 		{ url: '/health', text: 'Health' },
-		{ url: '/other-media', text: 'Other Media' },
 		{ url: '/about', text: 'About' },
 		{ url: '/contact-us', text: 'Contact' }
 	]
