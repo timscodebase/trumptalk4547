@@ -2,7 +2,7 @@
 title: 'ICE Preparedness Plan for Undocumented Immigrants in Oregon'
 description: 'An overview of the strategies and resources available for undocumented immigrants in Oregon to prepare for possible ICE actions.'
 date: '2024-12-27'
-image: {post_image} 
+image: 'https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735346417/Image_from_x.com_ggdopz.jpg'
 categories:
   - Immigration
   - Legal Rights
@@ -14,19 +14,16 @@ categories:
 published: true
 featured: true
 author: Tim Smith
-avatar: 'tim-smith.avif'
+avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif''
 ---
 
 <script>
   import { Image } from '../lib';
-  import tim_smith from '../lib/images/tim-smith.avif'
-  import post_image from '../lib/image/or-ice-preparedness-plan.jpg'
 </script>
 
 ## Know Your Rights
 
-![ICE Preparedness Plan for Undocumented Immigrants in Oregon](or-ice-preparedness-plan.jpg)
-<Image src={post_image} alt=""/>
+<Image src='https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735346417/Image_from_x.com_ggdopz.jpg' alt="ICE Preparedness Plan for Undocumented Immigrants in Oregon"/>
 
 **Workshops and Materials** 🛡️  
 - Undocumented immigrants have access to 'Know Your Rights' workshops and materials to understand their legal rights in the U.S., regardless of their immigration status.
