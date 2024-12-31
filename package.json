@@ -1,5 +1,5 @@
 {
-  "name": "trump-talk-45-47",
+  "name": "trumptalk4547",
   "version": "0.2.0",
   "private": true,
   "type": "module",
@@ -60,11 +60,7 @@
     "rehype-slug": "^6.0.0",
     "remark-toc": "^9.0.0",
     "remark-unwrap-images": "^4.0.1",
-<<<<<<< HEAD
-    "shiki": "^1.23.1"
-=======
     "shiki": "^1.24.4",
     "tailwindcss": "4.0.0-beta.8"
->>>>>>> main
   }
 }
