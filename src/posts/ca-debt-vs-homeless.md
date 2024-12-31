@@ -1,6 +1,6 @@
 ---
-title: 'California`s $24 Billion Homelessness Spending: An Analysis'
-description: 'An examination of California`s $24 billion investment in homelessness, its outcomes, and the challenges faced.'
+title: "California's $24 Billion Homelessness Spending: An Analysis"
+description: "An examination of California's $24 billion investment in homelessness, its outcomes, and the challenges faced."
 date: '2024-12-31'
 image: 'https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735660990/California_Homelessness_Spending_eyqhnu.jpg'
 categories:
