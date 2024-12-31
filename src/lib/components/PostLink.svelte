@@ -47,6 +47,7 @@
 				color: var(--color-text);
 				background: var(--color-accent);
 				font-size: clamp(1.75rem, 2.75vw, 2.25rem);
+				text-shadow: none;
 			}
 		}
 	}

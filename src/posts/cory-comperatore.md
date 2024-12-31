@@ -7,9 +7,9 @@ categories:
   - Corey Comperatore
   - Butter, PA
   - Donald J Trump
-type: "news"
-published: false
-featured: false
+type: "domestic"
+published: true
+featured: true
 author: Tim Smith
 ---
 

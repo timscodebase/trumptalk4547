@@ -1,9 +1,12 @@
 import { json } from '@sveltejs/kit'
 import type { Post } from '$lib/types'
 
-async function getPosts(limit: number) {
+async function getPosts(limit: number, type: string): Promise<Post[]> {
 	let posts: Post[] = []
 
+	console.log('Limit: ', limit)
+	console.log('Type: ', type)
+	
 	const paths = import.meta.glob('/src/posts/*.md', { eager: true })
 
 	for (const path in paths) {
@@ -13,7 +16,7 @@ async function getPosts(limit: number) {
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Post, 'slug'>
 			const post = { ...metadata, slug } satisfies Post
-			post.published && post.featured && posts.push(post)
+			post.published && post.type === type && posts.push(post)
 		}
 	}
 
@@ -21,17 +24,19 @@ async function getPosts(limit: number) {
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
 
-	console.log('All Posts: ', posts)
-
 	posts = posts.slice(0, limit)
-
-	console.log('5 Posts: ', posts)
+	console.log('Posts: ', posts)
 
 	return posts
 }
 
-export async function GET(event) {
-	const limit = event.url.searchParams.get('limit') || '5';
-	const posts = await getPosts(parseInt(limit));
+export async function GET(event: { url: URL }) {
+	const limit = event.url.searchParams.get('limit') || '6';
+	const type = event.url.searchParams.get('type') || 'feature';
+
+	console.log('Limit: ', limit)
+	console.log('Type: ', type)
+
+	const posts = await getPosts(parseInt(limit), type);
 	return json(posts);
 }

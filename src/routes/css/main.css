@@ -13,9 +13,9 @@
   --color-text-light: #142557;
   --color-text-dark: #f2f2f2;
 	--color-post-meta: #0b327b;
-  --color-accent: #fa4848; /* Previously --color-accent-light */
-  --color-accent-light: #fa4848;
-  --color-accent-dark: #fa4848; /* Making explicit for clarity, as they're the same */
+  --color-accent: #c70b0b; /* Previously --color-accent-light */
+  --color-accent-light: #c70b0b;
+  --color-accent-dark: #c70b0b; /* Making explicit for clarity, as they're the same */
   
   --color-success-light: #00c700; 
   --color-success-dark: #008b00;
@@ -42,8 +42,8 @@
   --color-shadow: var(--color-accent);
 
   /* Shadows */
-  --shadow-light: 0px 1px 0px var(--color-surface-light);
-  --shadow-light-footer: 0px 0.5px 0px var(--color-surface-light);
+  --shadow-light: 2px 2px 0px var(--color-text);
+  --shadow-light-footer: 0px 0.5px 0px var(--color-text);
   --shadow-dark: 0px 1px 0px var(--color-surface-op);
   --shadow-dark-footer: 0px 0.5px 0px var(--color-surface-op);
 
@@ -208,15 +208,6 @@ footer .logo-span {
 
 .op-shadow {
 	text-shadow: var(--op-shadow);
-}
-
-strong {
-	color: var(--color-text);
-	text-shadow: var(--op-shadow);
-}
-
-.mono {
-	font-family: var(--font-mono);
 }
 
 .flow-text {

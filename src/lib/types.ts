@@ -1,23 +1,23 @@
 enum ArticleType {
     News = "news",
+		Domestic = "domestic",
+		Foriegn = "foriegn",
+		Economy = "economy",
     Opinion = "opinion",
-    Feature = "feature",
-    Review = "review",
+		Health = "health",
+    Featured = "featured",
     Interview = "interview",
-    Editorial = "editorial",
-    Analysis = "analysis"
+    Editorial = "editorial"
 }
 
 export interface Post {
 	title: string
-	slug: string
 	description: string
 	date: string
 	image: string
-	type: ArticleType
 	categories: [string]
 	published: boolean
-	featured: boolean
+	type: ArticleType
 	author: string
 	avatar: string
 }

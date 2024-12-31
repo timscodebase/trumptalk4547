@@ -9,7 +9,6 @@ categories:
   - Gaza
 type: "news"
 published: true
-featured: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
@@ -17,8 +16,6 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 <script>
   import { ExternalLink, Image } from '../lib';
 </script>
-
-## Trump Warns of Consequences if Gaza Hostages Not Released
 
 <Image
   src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1733421628/Screenshot_2024-12-05_at_9.52.15_AM_uf9u2k.avif'
