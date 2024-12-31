@@ -117,11 +117,11 @@
 		text-decoration: none;
 		color: var(--color-text);
 		padding: 0.25rem 0.5rem;
-		border-bottom: 2px dotted var(--color-accent);
+		border-bottom: 2px dotted var(--color-highligh);
 
 		&:hover {
 			color: var(--color-text);
-			border-bottom: 2px solid var(--color-accent);
+			border-bottom: 2px solid var(--color-highligh);
 		}
 	}
 </style>

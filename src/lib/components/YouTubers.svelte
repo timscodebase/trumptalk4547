@@ -103,7 +103,7 @@
 <style>
 	a {
 		& * {
-			color: var(--color-accent);
+			color: var(--color-highligh);
 		}
 	}
 </style>

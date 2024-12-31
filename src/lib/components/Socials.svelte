@@ -69,7 +69,7 @@
 			font-size: 1rem;
 
 			&:hover {
-				color: var(--color-accent);
+				color: var(--color-highligh);
 			}
 		}
 	}

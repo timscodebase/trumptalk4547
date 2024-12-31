@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { daysUntilFutureDate } from '$lib/utils'
-	const inaugurationDay = new Date('2025-01-20')
+	const inaugurationDay = new Date('2025-01-6')
+	const trumpTremStart = new Date('2025-01-20')
 </script>
 
 <section>
 	<span class="header">Countdown To Inauguration Day</span>
 	<p class="blue bold op-shadow">
 		<span class="red mono">{daysUntilFutureDate(inaugurationDay)} days</span>
+	</p>
+	<span class="header">Countdown To Trump's Presidency</span>
+	<p class="blue bold op-shadow">
+		<span class="red mono">{daysUntilFutureDate(trumpTremStart)} days</span>
 	</p>
 </section>
 
@@ -30,7 +35,9 @@
 			url('https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727595366/American_Flag_vgd5il.webp');
 		background-size: cover;
 		text-shadow: 0px 2px 2px var(--color-text-op);
-		border: 2px solid var(--color-accent);
+		border: 2px solid var(--color-highligh);
+		margin: 1rem 0;
+		padding: 1rem;
 
 		p {
 			display: inline-block;
