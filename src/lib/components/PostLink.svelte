@@ -24,7 +24,11 @@
 		height: 100%;
 		place-items: center;
 		overflow: hidden;
+<<<<<<< HEAD
 		border: 2px solid var(--color-accent);
+=======
+		border: 2px solid var(--color-highligh);
+>>>>>>> main
 
 		a {
 			display: block;
@@ -45,8 +49,14 @@
 				margin-top: -7px;
 				padding: 0.5rem 5px;
 				color: var(--color-text);
+<<<<<<< HEAD
 				background: var(--color-accent);
 				font-size: clamp(1.75rem, 2.75vw, 2.25rem);
+=======
+				background: var(--color-highligh);
+				font-size: clamp(1.75rem, 2.75vw, 2.25rem);
+				text-shadow: none;
+>>>>>>> main
 			}
 		}
 	}

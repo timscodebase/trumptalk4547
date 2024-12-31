@@ -9,9 +9,14 @@ categories:
   - Bankruptcy
   - Joe Biden
   - Donald J Trump
+<<<<<<< HEAD
 type: "news"
 published: true
 featured: true
+=======
+type: ["features", "domestic", "economy"]
+published: true
+>>>>>>> main
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
@@ -20,8 +25,11 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
   import { ExternalLink, Image } from '../lib';
 </script>
 
+<<<<<<< HEAD
 # The US Debt is estimated to be 40 Trillion by Jan 20
 
+=======
+>>>>>>> main
 <Image
   src='https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/v1734819402/Screenshot_2024-12-21_at_2.15.55_PM_r3ekge.avif'
   alt='The US Debt is estimated to be 40 Trillion by Jan 20'

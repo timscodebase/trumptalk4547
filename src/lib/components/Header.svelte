@@ -26,7 +26,11 @@
 	header {
 		display: flex;
 		padding-top: 1.5rem;
+<<<<<<< HEAD
 		border-bottom: 3px solid var(--color-accent);
+=======
+		border-bottom: 3px solid var(--color-highligh);
+>>>>>>> main
 		margin-bottom: 2rem;
 		padding-bottom: 1rem;
 

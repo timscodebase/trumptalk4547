@@ -3,7 +3,10 @@
 	import * as config from '$lib/config'
 
 	let { meta } = $props()
+<<<<<<< HEAD
 	console.log(meta)
+=======
+>>>>>>> main
 </script>
 
 <meta name="title" property="og:title" content={meta.title} />

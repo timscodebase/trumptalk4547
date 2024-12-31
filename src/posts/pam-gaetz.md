@@ -8,9 +8,14 @@ categories:
   - Matt Gaetz
   - Attorney General
   - Donald J Trump
+<<<<<<< HEAD
 type: "news"
 published: true
 featured: true
+=======
+type: ["domestic"]
+published: true
+>>>>>>> main
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1732248824/pam-bondi-4_m69mj7.avif'
 ---

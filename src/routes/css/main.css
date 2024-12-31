@@ -1,0 +1,302 @@
+@import url('./typograpy.css');
+@import url('./consent.css');
+@import url('./banner.css');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer theme, base, components, utilities;
+
+@layer theme {
+  :root {
+		/* View Transition */
+		--view-transition-name: root;
+
+		/* Fonts: */
+    --font-sans: 'Lato', 'Source Serif Pro', sans-serif;
+    --font-serif: 'Arvo', serif;
+    --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+		/* Base Colors */
+		--color-light-blue: #a3c2ff;
+		--color-blue: #0339a6;
+		--color-dark-blue: #142557;
+		--color-white: #f2f2f2;
+		--color-red: #c70b0b;
+		--color-green: #00c700;
+		--color-yellow: #f2eb1f;
+		--color-black: #070f26;
+
+		/* Primary Theme Colors */
+		--color-surface-light: var(--color-light-blue);
+		--color-surface-dark: var(--color-blue);
+		--color-surface-darker: var(--color-dark-blue);
+		--color-text-light: var(--color-dark-blue);
+		--color-text-dark: var(--color-white);
+		--color-post-meta: var(--color-dark-blue);
+		--color-highligh: var(--color-red); 
+		--color-highligh-light: var(--color-red);
+		--color-highligh-dark: var(--color-red);
+
+		--color-success: #00c700;
+		--color-error: #e24000;
+		--color-warning: #c4bd00;
+		--color-toggle-light: #070f26;
+		--color-toggle-dark: #f2f2f2;
+
+		--color-surface: var(--color-surface-dark);
+		--color-surface-op: var(--color-highligh-light);
+		--color-text: var(--color-text-dark);
+		--color-text-op: var(--color-text-light);
+		--color-success: var(--color-success);
+		--color-error: var(--color-error);
+		--color-warning: var(--color-warning);
+		--color-toggle: var(--color-toggle-dark);
+		--color-selected: var(--color-highligh-light);
+
+		/* Shadows */
+		--shadow-light: 2px 2px 0px var(--color-text);
+		--shadow-light-footer: 0px 0.5px 0px var(--color-text);
+		--shadow-dark: 0px 1px 0px var(--color-surface-op);
+		--shadow-dark-footer: 0px 0.5px 0px var(--color-surface-op);
+
+		--shadow: var(--shadow-dark);
+		--op-shadow: var(--shadow-light); /* Consider renaming for clarity, e.g., --inverse-shadow */
+
+		/* Icons */
+		--text-toggle: '☀️';
+	}
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+}
+
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .visibility-hidden {
+    visibility: hidden;
+  }
+
+  .focus\:outline:focus {
+    outline-width: 1px;
+  }
+
+  @media (width >= 40rem) {
+    @media (hover: hover) {
+      .sm\:hover\:opacity-100:hover {
+        opacity: 100%;
+      }
+    }
+  }
+}
+
+[data-theme='light'] {
+  --color-surface: var(--color-surface-light);
+  --color-surface-op: var(--color-surface-dark); /* Consider clarity in naming */
+  --color-text: var(--color-text-light);
+  --color-text-op: var(--color-text-dark);
+  --color-success: var(--color-success-light);
+  --color-error: var(--color-error-light);
+  --color-warning: var(--color-warning-light);
+  --color-toggle: var(--color-toggle-light);
+  --color-selected: var(--color-highligh-dark);
+
+  --color-red: var(--color-highligh-dark);
+  --color-blue: var(--color-surface-dark);
+  --color-shadow: var(--color-highligh);
+
+  --shadow: var(--shadow-light);
+  --op-shadow: var(--shadow-dark);
+
+  --text-toggle: '🌙';
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+	types: slide, forwards;
+}
+
+/* Determine what gets captured when the type is forwards or backwards */
+html:active-view-transition-type(forwards, backwards) {
+	:root {
+		view-transition-name: none;
+	}
+	article {
+		view-transition-name: content;
+	}
+	.pagination {
+		view-transition-name: pagination;
+	}
+}
+
+/* Animation styles for forwards type only */
+html:active-view-transition-type(forwards) {
+	&::view-transition-old(content) {
+		animation-name: slide-out-to-left;
+	}
+	&::view-transition-new(content) {
+		animation-name: slide-in-from-right;
+	}
+}
+
+/* Animation styles for backwards type only */
+html:active-view-transition-type(backwards) {
+	&::view-transition-old(content) {
+		animation-name: slide-out-to-right;
+	}
+	&::view-transition-new(content) {
+		animation-name: slide-in-from-left;
+	}
+}
+
+/* Animation styles for reload type only */
+html:active-view-transition-type(reload) {
+	&::view-transition-old(root) {
+		animation-name: fade-out, scale-down;
+	}
+	&::view-transition-new(root) {
+		animation-delay: 0.25s;
+		animation-name: fade-in, scale-up;
+	}
+}
+
+@keyframes move-out {
+	from {
+		transform: translateY(0%);
+	}
+
+	to {
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes move-in {
+	from {
+		transform: translateX(100%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+}
+
+/* Apply the custom animation to the old and new page states */
+
+::view-transition-old(root) {
+	animation: 0.2s ease-in both move-out;
+}
+
+::view-transition-new(root) {
+	animation: 0.2s ease-in both move-in;
+}
+
+body {
+	background: var(--color-surface);
+	color: var(--color-text);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.side-by-side:has(img) {
+	img {
+		border: none;
+	}
+}
+
+.side-by-side > img:first-child {
+	/* border-radius: var(--radius-3) 0 0 var(--radius-3); */
+}
+
+.side-by-side > img:last-child {
+	/* border-radius: 0 var(--radius-3) var(--radius-3) 0; */
+}
+
+.logo-span {
+	font-size: 2.5rem;
+	text-shadow: var(--shadow);
+}
+
+footer .logo-span {
+	font-size: 1.5rem;
+	text-shadow: var(--op-shadow-footer);
+}
+
+.red {
+	color: var(--color-red);
+}
+
+.blue {
+	color: var(--color-blue);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.op-shadow {
+	text-shadow: var(--op-shadow);
+}
+
+.flow-text {
+	float: left;
+	shape-outside: margin-box;
+}
+
+hr {
+	border: 0;
+	height: 6px;
+	margin: 2rem 0;
+	background: linear-gradient(
+		to right,
+		var(--color-highligh),
+		var(--color-text-dark),
+		var(--color-surface-op)
+	);
+}
+
+@media (max-width: 1000px) {
+	.logo {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+}
+
+.bmc-btn-container {
+	/* pin it to the bottom of the page NOT the bottom of the screen */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.center {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

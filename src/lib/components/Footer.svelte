@@ -52,7 +52,11 @@
 
 	footer {
 		display: grid;
+<<<<<<< HEAD
 		border-top: 2px solid var(--color-accent);
+=======
+		border-top: 2px solid var(--color-highligh);
+>>>>>>> main
 		margin-top: 2rem;
 		padding: 2rem 10px;
 		text-align: center;

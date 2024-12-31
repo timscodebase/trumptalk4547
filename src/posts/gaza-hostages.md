@@ -7,9 +7,14 @@ categories:
   - Donald J Trump
   - Hostages
   - Gaza
+<<<<<<< HEAD
 type: "news"
 published: true
 featured: true
+=======
+type: ["foreign"]
+published: true
+>>>>>>> main
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
@@ -18,8 +23,11 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
   import { ExternalLink, Image } from '../lib';
 </script>
 
+<<<<<<< HEAD
 ## Trump Warns of Consequences if Gaza Hostages Not Released
 
+=======
+>>>>>>> main
 <Image
   src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1733421628/Screenshot_2024-12-05_at_9.52.15_AM_uf9u2k.avif'
   alt='Sky News Report'
