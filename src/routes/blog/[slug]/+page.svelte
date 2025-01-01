@@ -11,7 +11,7 @@
 	<OG {meta} />
 </svelte:head>
 
-<article >
+<article>
 	<header>
 		<h1 style={`--transition-name: post-${slugify(meta.title)}`}>
 			{meta.title}
@@ -37,16 +37,14 @@
 </article>
 
 <style>
-	article {
-		padding: 1rem;
-		margin-inline: auto;
-		background: var(--color-surface-darker);
-	}
 
 	.content {
 		font-size: 24px;
 		content-visibility: auto;
-		contain-intrinsic-size: 1000px; /* Explained in the next section. */
+		contain-intrinsic-size: 1000px;
+		padding: 1rem;
+		margin-inline: auto;
+		background: var(--color-surface-darker);
 	}
 
 	h1 {
