@@ -1,6 +1,8 @@
 <script>
 	import * as config from '$lib/config'
-	import { Image, Meta, Nav } from '$lib'
+	import Image from './Image.svelte'
+	import Meta from './Meta.svelte'
+	import Nav from './Nav.svelte'
 </script>
 
 <Meta />
