@@ -14,14 +14,14 @@ categories:
 published: true
 type: ["featured", "domestic"]
 author: Tim Smith
-avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
+avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1500/v1735346417/Image_from_x.com_ggdopz.avif'
 ---
 
 <script>
   import { Image } from '../lib';
 </script>
 
-<Image src='https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735346417/Image_from_x.com_ggdopz.jpg' alt="ICE Preparedness Plan for Undocumented Immigrants in Oregon"/>
+<Image src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1500/v1735346417/Image_from_x.com_ggdopz.avif' alt="ICE Preparedness Plan for Undocumented Immigrants in Oregon"/>
 
 ## Know Your Rights
 

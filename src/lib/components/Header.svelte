@@ -72,6 +72,9 @@
 		}
 
 		p {
+			font-size: 2rem !important;
+			line-height: 2.5rem !important;
+			padding: 1rem 0 !important;
 			text-align: center;
 			line-height: 2rem;
 		}

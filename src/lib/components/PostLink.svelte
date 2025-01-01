@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Post } from '$lib/types'
-	import { Image } from '$lib'
+	import Image from './Image.svelte'
 	import { formatDate } from '$lib/utils'
 	let { post } = $props() as { post: Post }
 </script>

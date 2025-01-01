@@ -2,7 +2,7 @@
 title: "California's $24 Billion Homelessness Spending: An Analysis"
 description: "An examination of California's $24 billion investment in homelessness, its outcomes, and the challenges faced."
 date: '2024-12-31'
-image: 'https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735660990/California_Homelessness_Spending_eyqhnu.jpg'
+image: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1500/v1735660990/California_Homelessness_Spending_eyqhnu.avif'
 categories:
   - Homelessness
   - Government Oversight
@@ -22,19 +22,19 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <Image
-  src='https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735660990/California_Homelessness_Spending_eyqhnu.jpg'
+  src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1500/v1735660990/California_Homelessness_Spending_eyqhnu.avif'
   alt="California's $24 Billion Homelessness Spending: An Analysis"
 />
 
-💸 **Spending Overview** — California has spent approximately $24 billion on homelessness since 2019, aiming to address the growing crisis.
+**Spending Overview** — California has spent approximately $24 billion on homelessness since 2019, aiming to address the growing crisis.
 
-📈 **Homelessness Increase** — Despite the significant expenditure, the homeless population in California increased by about 30,000, reaching over 181,000 individuals.
+**Homelessness Increase** — Despite the significant expenditure, the homeless population in California increased by about 30,000, reaching over 181,000 individuals.
 
-🔍 **Lack of Tracking** — A major issue identified is the lack of consistent tracking and evaluation of the spending's effectiveness, as highlighted by a state audit.
+**Lack of Tracking** — A major issue identified is the lack of consistent tracking and evaluation of the spending's effectiveness, as highlighted by a state audit.
 
-🏠 **Costly Housing Solutions** — Some housing projects for the homeless are extremely expensive, with costs exceeding $1 million per unit, which is not sustainable.
+**Costly Housing Solutions** — Some housing projects for the homeless are extremely expensive, with costs exceeding $1 million per unit, which is not sustainable.
 
-📊 **Data Deficiency** — The California Interagency Council on Homelessness has failed to collect and verify accurate data, hindering effective policy-making.
+**Data Deficiency** — The California Interagency Council on Homelessness has failed to collect and verify accurate data, hindering effective policy-making.
 
 ## Top Search Results
 
@@ -49,6 +49,6 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ## Challenges in Homelessness Spending
 
-🔍 **Oversight Issues** — The state auditor's report highlights a lack of oversight and information on the ongoing costs and outcomes of homelessness programs.
+**Oversight Issues** — The state auditor's report highlights a lack of oversight and information on the ongoing costs and outcomes of homelessness programs.
 
-📉 **Ineffective Programs** — Only two out of five evaluated programs were found to be cost-effective, indicating inefficiencies in the management and implementation of homelessness initiatives.
+**Ineffective Programs** — Only two out of five evaluated programs were found to be cost-effective, indicating inefficiencies in the management and implementation of homelessness initiatives.

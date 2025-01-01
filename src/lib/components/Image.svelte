@@ -24,5 +24,6 @@
 		height: auto;
 		max-width: 100%;
 		object-fit: contain;
+		margin: 0 auto;
 	}
 </style>

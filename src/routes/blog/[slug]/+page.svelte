@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { BIGINT } from './../../../../node_modules/.pnpm/@ungap+structured-clone@1.2.1/node_modules/@ungap/structured-clone/esm/types.js';
 	import { formatDate, slugify } from '$lib/utils'
 	import { OG } from '$lib'
 
@@ -10,7 +11,7 @@
 	<OG {meta} />
 </svelte:head>
 
-<article>
+<article >
 	<header>
 		<h1 style={`--transition-name: post-${slugify(meta.title)}`}>
 			{meta.title}
@@ -37,7 +38,9 @@
 
 <style>
 	article {
+		padding: 1rem;
 		margin-inline: auto;
+		background: var(--color-surface-darker);
 	}
 
 	.content {

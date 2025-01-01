@@ -22,6 +22,7 @@
 		--color-blue: #0339a6;
 		--color-dark-blue: #142557;
 		--color-white: #f2f2f2;
+		--color-red-light: #f0b9b9;
 		--color-red: #c70b0b;
 		--color-green: #00c700;
 		--color-yellow: #f2eb1f;
@@ -34,6 +35,7 @@
 		--color-text-light: var(--color-dark-blue);
 		--color-text-dark: var(--color-white);
 		--color-post-meta: var(--color-dark-blue);
+		--color-sub-header: var(--color-red-light);
 		--color-highligh: var(--color-red); 
 		--color-highligh-light: var(--color-red);
 		--color-highligh-dark: var(--color-red);
