@@ -44,10 +44,9 @@ h1 {
 }
 
 h2 {
-	margin: 0.5rem 0;
 	font-size: clamp(1.5rem, 4vw, 3rem);
 	font-weight: bold;
-	text-shadow: var(--op-shadow);
+	color: var(--color-text-dark);
 }
 
 h3 {
