@@ -41,10 +41,7 @@
 	}
 
 	.content {
-<<<<<<< HEAD
-=======
 		font-size: 24px;
->>>>>>> main
 		content-visibility: auto;
 		contain-intrinsic-size: 1000px; /* Explained in the next section. */
 	}

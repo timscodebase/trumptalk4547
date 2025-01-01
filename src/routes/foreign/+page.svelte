@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<h1>Foreign</h1>
-=======
 <script>
 	import { Image, Posts, Sponsors } from '$lib'
 	import * as config from '$lib/config'
@@ -39,4 +36,3 @@
 		}
 	}
 </style>
->>>>>>> main

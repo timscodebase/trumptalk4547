@@ -27,19 +27,6 @@ export {
   ForSaleBanner,
   Header,
   Image,
-<<<<<<< HEAD
-  ImageSlider,
-  Meta,
-  Nav,
-  OG,
-  Podcasters,
-  Polymarket,
-  Posts,
-  SponsorLink,
-  Sponsors,
-  Socials,
-  YouTubers
-=======
   Meta,
   Nav,
   OG,
@@ -49,5 +36,4 @@ export {
   Sponsors,
   SponsorLink,
   Socials
->>>>>>> main
 }

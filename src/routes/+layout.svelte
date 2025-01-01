@@ -3,13 +3,9 @@
 	import { inject } from '@vercel/analytics'
 	import { Analylitics, CookieConsent, Footer, Header } from '$lib'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
-<<<<<<< HEAD
-	// import PartytownSnippet from 'partytown-sveltekit/PartytownSnippet.svelte'
-=======
 	
 	import './css/main.css'
 
->>>>>>> main
 	let { children } = $props()
 
 	injectSpeedInsights() // Inject Vercel Insights

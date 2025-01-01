@@ -69,11 +69,7 @@
 			font-size: 1rem;
 
 			&:hover {
-<<<<<<< HEAD
-				color: var(--color-accent);
-=======
 				color: var(--color-highligh);
->>>>>>> main
 			}
 		}
 	}

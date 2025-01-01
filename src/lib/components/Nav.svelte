@@ -7,16 +7,8 @@
 		{ url: '/foreign', text: 'Foreign' },
 		{ url: '/economy', text: 'Economy' },
 		{ url: '/health', text: 'Health' },
-<<<<<<< HEAD
-		{ url: '/other-media', text: 'Other Media' },
-		{ url: '/contact-us', text: 'Contact Us' },
-		{ url: '/about-us', text: 'About Us' },
-		{ url: '/privacy', text: 'Privacy' },
-		{ url: '/tos', text: 'Terms of Service' }
-=======
 		{ url: '/about', text: 'About' },
 		{ url: '/contact-us', text: 'Contact' }
->>>>>>> main
 	]
 </script>
 

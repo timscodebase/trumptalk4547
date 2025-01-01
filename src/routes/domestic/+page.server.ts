@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import type { PageServerLoad } from './$types';
-
-export const load = (async () => {
-    return {};
-}) satisfies PageServerLoad;
-=======
 import type { PageServerLoad } from './$types'
 import type { Post } from '$lib/types'
 
@@ -17,4 +10,3 @@ export const load = (async ({ fetch }: { fetch: (input: RequestInfo, init?: Requ
 	return { posts }
 }) satisfies PageServerLoad
 
->>>>>>> main

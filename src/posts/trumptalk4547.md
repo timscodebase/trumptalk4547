@@ -8,22 +8,13 @@ categories:
   - Podcasters
   - Independant News
 published: true
-<<<<<<< HEAD
-featured: true
-type: "news"
-=======
 type: ["featured"]
->>>>>>> main
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
-<<<<<<< HEAD
-  import { ExternalLink, Image } from '../lib';
-=======
   import { Image } from '../lib';
->>>>>>> main
 </script>
 
 <Image
@@ -85,21 +76,8 @@ Interested in owning `trumptalk4547.com`? Here’s what you need to know:
 
 Ready to take the first step? Contact us to discuss how `trumptalk4547.com` can become an integral part of your digital strategy. Whether you're looking to buy, inquire, or negotiate, we're here to make this transition as seamless as possible.
 
-<<<<<<< HEAD
-- **Email:** contact@yourdomain.com
-- **X:** @trumptalk4547
-- **Phone:** [Your Number]
-
-Don't let this opportunity pass you by. Own `trumptalk4547.com` and lead the conversation in political digital spaces.
-
-<Image
-  src=''
-  alt=''
-/>
-=======
 - **Email:** trumptalk4547.com
 - **X:** @trumptalk4547
 - **Phone:** 415-694-3568
 
 Don't let this opportunity pass you by. Own `trumptalk4547.com` and lead the conversation in political digital spaces.
->>>>>>> main
