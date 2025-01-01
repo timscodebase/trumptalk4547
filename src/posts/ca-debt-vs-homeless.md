@@ -38,14 +38,9 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ## Top Search Results
 
-- **Despite California Spending $24 Billion On It Since 2019 ...**
-  [hoover.org](https://www.hoover.org)
-
-- **Audit finds California spent $24B on homelessness in 5 ...**
-  [cbsnews.com](https://www.cbsnews.com)
-
-- **California's homelessness solution could cost $100 billion**
-  [calmatters.org](https://calmatters.org)
+- <ExternalLink href="https://www.hoover.org/research/despite-california-spending-24-billion-it-2019-homelessness-increased-what-happened" text="Despite California Spending $24 Billion On It Since 2019 ..." />
+- <ExternalLink href="https://www.cbsnews.com/sanfrancisco/news/california-homelessness-spending-audit-24b-five-years-didnt-consistently-track-outcomes/" text="Audit finds California spent $24B on homelessness in 5 ..." />
+- <ExternalLink href="https://calmatters.org/commentary/2024/10/california-cost-to-end-homelessness/" text="California's homelessness solution could cost $100 billion" />
 
 ## Challenges in Homelessness Spending
 

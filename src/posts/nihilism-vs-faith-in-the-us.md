@@ -16,7 +16,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { Image } from '../lib';
+  import { ExternalLink, Image } from '../lib';
 </script>
 
 <Image
@@ -70,11 +70,6 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ### Top Search Results
 
-- **Unveiling America's New Religion: The Emergence of ...**
-  [linkedin.com](https://www.linkedin.com)
-
-- **American Nihilism and Its Discontents**
-  [beatinpaths.com](https://beatinpaths.com)
-
-- **Can someone help me understand how religion is a form of ...**
-  [reddit.com](https://www.reddit.com)
+- <ExternalLink href="https://www.linkedin.com/pulse/unveiling-americas-new-religion-emergence-nihilism-michael-a-smith--p2izc" text="Unveiling America's New Religion: The Emergence of ..." />
+- <ExternalLink href="https://beatinpaths.com/2022/10/11/american-nihilism-and-its-discontents/" text="American Nihilism and Its Discontents" />
+- <ExternalLink href="https://www.reddit.com/r/philosophy/comments/gydq8/can_somone_help_me_understand_how_religion_is_a/" text="Can someone help me understand how religion is a form of ..." />
