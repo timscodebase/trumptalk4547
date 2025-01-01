@@ -54,14 +54,15 @@
 	.by_line,
 	.date,
 	.tags {
+		padding: 1rem;
 		font-family: var(--font-mono);
+		background: var(--color-surface-darker);
 	}
 
 	.by_line {
 		display: flex;
 		place-items: center;
 		gap: 0 1rem;
-		padding: 1rem 0;
 	}
 
 	.tags {
