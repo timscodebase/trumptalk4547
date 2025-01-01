@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Image, SponsorLink } from '$lib'
+	import Image from './Image.svelte'
+	import SponsorLink from './SponsorLink.svelte'
 </script>
 
 <section>
