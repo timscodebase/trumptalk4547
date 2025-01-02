@@ -22,9 +22,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ### CNN: Trump - 295 | Harris - 226
 
 <CldImage
-  width="100%"
-  src="Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm"
+  width='100%'
+  src='Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm'
   alt='While Trump indeed ran a great campain, is was NOT why he won.'
+  aspect-ratio='16:9'
 />
 
 ## Why Trump Won

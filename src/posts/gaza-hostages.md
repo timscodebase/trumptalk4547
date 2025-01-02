@@ -19,9 +19,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="Screenshot_2024-12-05_at_9.52.15_AM_uf9u2k"
-  alt=”Trump Warns of Consequences if Gaza Hostages Not Released”
+  width='100%'
+  src='Screenshot_2024-12-05_at_9.52.15_AM_uf9u2k'
+  alt='Trump Warns of Consequences if Gaza Hostages Not Released'
+  aspect-ratio='16:9'
 />
 
  - Statement — Donald Trump, the President-elect of the United States, declared that if hostages held by Hamas in Gaza are not released by January 20, 2025, there will be severe consequences in the Middle East.

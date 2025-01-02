@@ -23,9 +23,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150
 </script>
 
 <CldImage
-  width="100%"
-  src="pharma_p37b9s"
+  width='100%'
+  src='pharma_p37b9s'
   alt='Exploring the Nexus of US Pharmaceutical Dependence, Healthcare, and Obesity'
+  aspect-ratio='16:9'
 />sity'
 />
 

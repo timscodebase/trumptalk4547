@@ -23,9 +23,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="IMG_3043_o5a6ht"
+  width='100%'
+  src='IMG_3043_o5a6ht'
   alt='Donald J Trumps Triumphant Return to Buttler, PA'
+  aspect-ratio='16:9'
 />
 
 <iframe style="width: 100%; height: 550px;" width="560" height="315" src="https://www.youtube.com/embed/Q0JtLHHggAE?si=rWppuUJPuj-wL9WO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

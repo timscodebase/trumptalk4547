@@ -18,9 +18,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="nihilism-01"
-  alt=”Nihilism and Faith in the United States”
+  width='100%'
+  src='nihilism-01'
+  alt='Nihilism and Faith in the United States'
+  aspect-ratio='16:9'
 />
 
 ## The Opportunity of a Lifetime

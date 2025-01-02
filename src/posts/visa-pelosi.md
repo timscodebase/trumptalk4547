@@ -18,9 +18,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="paul-pelosi_nawalj"
+  width='100%'
+  src='paul-pelosi_nawalj'
   alt='Controversy Over Nancy'
+  aspect-ratio='16:9'
 />
 
 On July 1, 2024, Paul Pelosi, the husband of former House Speaker Nancy Pelosi, sold 2,000 shares of Visa stock valued between $500,000 and $1 million. This transaction became a focal point of controversy following a significant legal action by the U.S. Department of Justice (DOJ). On September 24, 2024, the DOJ filed an antitrust lawsuit against Visa, accusing the company of monopolizing the debit card market. The announcement of this lawsuit caused Visa's stock price to plummet by 5.5%.

@@ -1,6 +1,6 @@
 ---
-title: "Speaker Mike Johnson's Leadership Challenge"
-description: "An examination of Speaker Mike Johnson's leadership challenge within the Republican Party, his re-election bid, and the implications of Donald Trump's endorsement."
+title: Speaker Mike Johnson's Leadership Challenge
+description: An examination of Speaker Mike Johnson's leadership challenge within the Republican Party, his re-election bid, and the implications of Donald Trump's endorsement.
 date: '2024-12-31'
 image_id: 'speaker-johnson_ybqynl'
 categories:
@@ -22,9 +22,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="speaker-johnson_ybqynl"
+  width='100%'
+  src='speaker-johnson_ybqynl'
   alt='Speaker Mike Johnsons Leadership Challenge'
+  aspect-ratio='16:9'
 />
 
 **Context** - Speaker Mike Johnson is facing a leadership challenge within the Republican Party as he seeks re-election as Speaker of the House.

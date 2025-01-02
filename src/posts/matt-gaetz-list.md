@@ -19,9 +19,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="Screenshot_2024-11-18_at_6.04.47_PM_dtetud"
-  alt=”Matt Gaetzs congressional hit list”
+  width='100%'
+  src='Screenshot_2024-11-18_at_6.04.47_PM_dtetud'
+  alt='Matt Gaetzs congressional hit list'
+  aspect-ratio='16:9'
 />
 
 ## Matt Gaetz's congressional hit list

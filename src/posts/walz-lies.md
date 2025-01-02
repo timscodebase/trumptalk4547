@@ -19,9 +19,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="IMG_3115_k88a46"
+  width='100%'
+  src='IMG_3115_k88a46'
   alt='Tim Walz Addresses Past False Statements'
+  aspect-ratio='16:9'
 />
 
 ## Interview Context

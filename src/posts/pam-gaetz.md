@@ -20,9 +20,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_120
 </script>
 
 <CldImage
-  width="100%"
-  src="pam-bondi-5_glzjpr"
+  width='100%'
+  src='pam-bondi-5_glzjpr'
   alt='Pam Bondi Nominated as Attorney General as Matt Gaetz Steps Aside'
+  aspect-ratio='16:9'
 />
 
 ## Pam Bondi Nominated as Attorney General as Matt Gaetz Steps Aside

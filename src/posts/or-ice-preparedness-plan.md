@@ -23,9 +23,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150
 </script>
 
 <CldImage
-  width="100%"
-  src="Image_from_x.com_ggdopz"
-  alt=”ICE Preparedness Plan for Undocumented Immigrants in Oregon”
+  width='100%'
+  src='Image_from_x.com_ggdopz'
+  alt='ICE Preparedness Plan for Undocumented Immigrants in Oregon'
+  aspect-ratio='16:9'
 />
 
 ## Know Your Rights

@@ -19,9 +19,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="Political_Artwork_Enemies_Within_smu4ee"
-  alt="The Enemies Within"
+  width='100%'
+  src='Political_Artwork_Enemies_Within_smu4ee'
+  alt='The Enemies Within'
+  aspect-ratio='16:9'
 />
 
 Donald Trump did not coin the phrase "enemies within". The concept has been a recurring theme in US history, highlighting the importance of addressing internal threats alongside external ones. This phenomenon has influenced the country's strategic thinking, policy-making, and national security approaches.

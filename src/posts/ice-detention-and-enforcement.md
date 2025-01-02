@@ -18,9 +18,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="border-crisis-hero_qbayoz"
-  alt=”ICE Detention and Enforcement”
+  width='100%'
+  src='border-crisis-hero_qbayoz'
+  alt='ICE Detention and Enforcement'
+  aspect-ratio='16:9'
 />
 
 <Image

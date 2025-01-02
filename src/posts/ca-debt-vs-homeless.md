@@ -1,6 +1,6 @@
 ---
-title: "California's $24 Billion Homelessness Spending: An Analysis"
-description: "An examination of California's $24 billion investment in homelessness, its outcomes, and the challenges faced."
+title: California's $24 Billion Homelessness Spending
+description: An examination of California's $24 billion investment in homelessness, its outcomes, and the challenges faced.
 date: '2024-12-31'
 image_id: 'California_Homelessness_Spending_eyqhnu'
 categories:
@@ -23,9 +23,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="California_Homelessness_Spending_eyqhnu"
+  width='100%'
+  src='California_Homelessness_Spending_eyqhnu'
   alt='Californias $24 Billion Homelessness Spending: An Analysis'
+  aspect-ratio='16:9'
 />
 
 **Spending Overview** — California has spent approximately $24 billion on homelessness since 2019, aiming to address the growing crisis.

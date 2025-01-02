@@ -20,9 +20,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="Kamala_Harris_2024-grad_atlibu"
-  alt=”Kamala Harris Nominated Without Primary Votes”
+  width='100%'
+  src='Kamala_Harris_2024-grad_atlibu'
+  alt='Kamala Harris Nominated Without Primary Votes'
+  aspect-ratio='16:9'
 />
 
 ## An Unconventional Nomination Process

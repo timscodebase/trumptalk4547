@@ -21,9 +21,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="Screenshot_2024-12-21_at_2.15.55_PM_r3ekge"
-  alt=”The US Debt is estimated to be 40 Trillion by Jan 20”
+  width='100%'
+  src='Screenshot_2024-12-21_at_2.15.55_PM_r3ekge'
+  alt='The US Debt is estimated to be 40 Trillion by Jan 20'
+  aspect-ratio='16:9'
 />
 
 ## Current Debt Levels

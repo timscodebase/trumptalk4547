@@ -18,9 +18,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="trumps-ear_qwd1xd"
+  width='100%'
+  src='trumps-ear_qwd1xd'
   alt='Donald J. Trumps Ear'
+  aspect-ratio='16:9'
 />
 
 ## Donald J. Trump's Ear

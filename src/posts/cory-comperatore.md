@@ -19,9 +19,10 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 </script>
 
 <CldImage
-  width="100%"
-  src="Fire_House_Tribute_s9xyqg"
-  alt=”Remembering Corey Comperatore - A Heros Legacy”
+  width='100%'
+  src='Fire_House_Tribute_s9xyqg'
+  alt='Remembering Corey Comperatore - A Heros Legacy'
+  aspect-ratio='16:9'
 />
 
 ## A Dedicated Firefighter and Family Man
