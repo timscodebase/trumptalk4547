@@ -1,15 +1,39 @@
 <script lang="ts">
 	import { formatDate, slugify } from '$lib/utils'
-	import { CldImage } from 'svelte-cloudinary'
+	import { CldImage, CldOgImage } from 'svelte-cloudinary'
 	import { OG } from '$lib'
 
 	let { data } = $props()
 	const { content, metadata: meta } = data
+	console.log('Meta Data:', { image_id: meta.image_id, title: meta.title });
 </script>
 
 <svelte:head>
-	<!-- <OG {meta} /> -->
+	<OG {meta} />
 </svelte:head>
+
+<CldOgImage
+	src='California_Homelessness_Spending_eyqhnu'
+	alt="California's $24 Billion Homelessness Spending: An Analysis"
+	twitterTitle="California's $24 Billion Homelessness Spending: An Analysis"
+	width={960}
+	height={600}
+	blur="500"
+	overlays={[
+		{
+			crop: "fit",
+			width: "1000",
+			text: {
+				color: "white",
+				fontFamily: "Poppins",
+				fontSize: "180",
+				fontWeight: "bold",
+				lineSpacing: "-85",
+				text: meta.title,
+			}
+		},
+	]}
+/>
 
 <article>
 	<header>
