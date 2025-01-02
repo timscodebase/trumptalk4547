@@ -2,7 +2,7 @@
 title: Kamala Harris Nominated Without Primary Votes
 description: Kamala Harris was nominated for the Democratic presidential candidacy without participating in primary elections, a unique scenario resulting from President Joe Biden stepping down. The Democratic Party swiftly rallied behind Harris, demonstrating a strategic move to maintain unity. Notably, influential party figures like Nancy Pelosi played a significant role in consolidating support for Harris.
 date: '2024-10-06'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728221958/Kamala_Harris_2024-grad_atlibu.png'
+image_id: 'Kamala_Harris_2024-grad_atlibu'
 categories:
   - Kamala Harris
   - Nancy Peloci
@@ -15,12 +15,14 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728221958/Kamala_Harris_2024-grad_atlibu.png"
-  alt="Kamala Harris waving on stage after a bloodless coep on President Joe Biden."
+<CldImage
+  width="100%"
+  src="Kamala_Harris_2024-grad_atlibu"
+  alt=”Kamala Harris Nominated Without Primary Votes”
 />
 
 ## An Unconventional Nomination Process

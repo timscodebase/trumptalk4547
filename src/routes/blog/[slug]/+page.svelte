@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { BIGINT } from './../../../../node_modules/.pnpm/@ungap+structured-clone@1.2.1/node_modules/@ungap/structured-clone/esm/types.js';
 	import { formatDate, slugify } from '$lib/utils'
+	import { CldImage } from 'svelte-cloudinary'
 	import { OG } from '$lib'
 
 	let { data } = $props()
@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<OG {meta} />
+	<!-- <OG {meta} /> -->
 </svelte:head>
 
 <article>
@@ -17,6 +17,14 @@
 			{meta.title}
 		</h1>
 	</header>
+	
+	<!-- <CldImage
+		width="1500"
+		height="1125"
+		src="nihilism-01"
+		alt=”Nihilism and Faith in the United States”
+	/> -->
+
 	<section class="content">
 		{@render content()}
 	</section>

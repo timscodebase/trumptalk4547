@@ -2,7 +2,7 @@
 title: Tim Walz Addresses Past False Statements
 description: Tim Walz, the Democratic vice-presidential candidate, recently addressed past false statements during an interview with Shannon Bream on Fox News Sunday. This interview provided Walz with a platform to confront criticisms and clarify misunderstandings that have arisen from his previous statements.
 date: '2024-10-06'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728245581/IMG_3115_k88a46.webp'
+image_id: 'IMG_3115_k88a46'
 categories:
   - Shannon Bream
   - Tim Walz
@@ -14,12 +14,14 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728245581/IMG_3115_k88a46.webp"
-  alt="Kamala Harris waving on stage after a bloodless coep on President Joe Biden."
+<CldImage
+  width="100%"
+  src="IMG_3115_k88a46"
+  alt='Tim Walz Addresses Past False Statements'
 />
 
 ## Interview Context

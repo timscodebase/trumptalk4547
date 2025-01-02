@@ -2,7 +2,7 @@
 title: The "Enemies Within"
 description: Donald Trump did not coin the phrase "enemies within". The concept has been a recurring theme in US history, highlighting the importance of addressing internal threats alongside external ones. This phenomenon has influenced the country's strategic thinking, policy-making, and national security approaches..
 date: '2024-10-18'
-image: 'https://res.cloudinary.com/tithos/image/upload/e_auto_color,q_auto:eco/v1734904939/Political_Artwork_Enemies_Within_smu4ee.avif'
+image_id: 'Political_Artwork_Enemies_Within_smu4ee'
 categories:
   - Corey Comperatore
   - Butter, PA
@@ -14,12 +14,14 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/e_auto_color,q_auto:eco/v1734904939/Political_Artwork_Enemies_Within_smu4ee.avif"
-  alt="Corey Comperatore memorial jacket and his fire station."
+<CldImage
+  width="100%"
+  src="Political_Artwork_Enemies_Within_smu4ee"
+  alt="The Enemies Within"
 />
 
 Donald Trump did not coin the phrase "enemies within". The concept has been a recurring theme in US history, highlighting the importance of addressing internal threats alongside external ones. This phenomenon has influenced the country's strategic thinking, policy-making, and national security approaches.

@@ -2,7 +2,7 @@
 title: Seize the Digital Spotlight with trumptalk4547.com
 description: In an era where political discourse drives digital engagement, `trumptalk4547.com` stands out as a beacon for those looking to make an impact in the political arena. This domain isn't just an address; it's a platform, a statement, and an opportunity for you to carve your niche in the digital world.
 date: '2024-12-21'
-image: 'https://res.cloudinary.com/tithos/image/upload/e_contrast:0,q_auto:eco/v1734808003/tt4547_for_sale_klekm4.avif'
+image_id: 'tt4547_for_sale_klekm4'
 categories:
   - Premium Domain Sale
   - Podcasters
@@ -14,12 +14,13 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { Image } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/e_contrast:0,q_auto:eco/v1734808003/tt4547_for_sale_klekm4.avif"
-  alt="Premium Domain For Sale"
+<CldImage
+  width="100%"
+  src="nihilism-01"
+  alt=”Nihilism and Faith in the United States”
 />
 
 ## The Opportunity of a Lifetime

@@ -14,7 +14,8 @@ export interface Post {
 	title: string
 	description: string
 	date: string
-	image: string
+	image?: Image
+	image_id?: string
 	categories: [string]
 	published: boolean
 	type: [ArticleType]

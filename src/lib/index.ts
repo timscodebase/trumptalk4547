@@ -1,6 +1,5 @@
 import Analylitics from './components/Analylitics.svelte'
 import BuyMeACoffee from './components/BuyMeACoffee.svelte'
-import CookieConsent from './components/CookieConsent.svelte'
 import ElectionCountDown from './components/ElectionCountDown.svelte'
 import ExternalLink from './components/ExternalLink.svelte'
 import Footer from './components/Footer.svelte'
@@ -20,7 +19,6 @@ import Socials from './components/Socials.svelte'
 export {
   Analylitics,
   BuyMeACoffee,
-  CookieConsent,
   ElectionCountDown,
   ExternalLink,
   Footer,

@@ -2,7 +2,7 @@
 title: ICE Detention and Enforcement
 description: New ICE report reveals the Biden-Harris administration has let in 425,000 illegal immigrants who are convicted criminals.
 date: '2024-09-28'
-image: 'https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1727555109/border-crisis-hero_qbayoz.webp'
+image_id: 'border-crisis-hero_qbayoz'
 categories:
   - Kamala Harris
   - Border Czar
@@ -14,12 +14,13 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { Image } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727555109/border-crisis-2_hczyd4.png"
-  alt="Collin Rugg: New ICE report reveals the Biden-Harris administration has let in 425,000 illegal immigrants who are convicted criminals."
+<CldImage
+  width="100%"
+  src="border-crisis-hero_qbayoz"
+  alt=”ICE Detention and Enforcement”
 />
 
 <Image

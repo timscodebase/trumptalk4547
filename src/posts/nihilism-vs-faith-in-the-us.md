@@ -2,7 +2,8 @@
 title: Nihilism and Faith in the United States
 description: An exploration into the interplay between nihilism and faith in contemporary American society, examining historical influences, philosophical intersections, and sociobiological perspectives.
 date: '2025-01-01'
-image: 'https://res.cloudinary.com/tithos/image/upload/c_scale,e_auto_color,q_auto:eco,w_1500/v1735759285/Grok_Image_glrqtv.avif'
+image: ''
+image_id: 'nihilism-01'
 categories:
   - Philosophy
   - American Culture
@@ -16,13 +17,17 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src='https://res.cloudinary.com/tithos/image/upload/c_scale,e_auto_color,q_auto:eco,w_1500/v1735759285/Grok_Image_glrqtv.avif'
-  alt="Nihilism and Faith in the United States"
+<CldImage
+  width="100%"
+  src="nihilism-01"
+  alt=”Nihilism and Faith in the United States”
 />
+
+## Nihilism and Faith in the United States
 
 **Nihilism in America** - Nihilism in the United States is characterized by a sense of meaninglessness and disconnection, with many Americans feeling a lack of purpose and direction in life.
 

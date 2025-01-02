@@ -2,7 +2,7 @@
 title: Matt Gaetz's congressional hit list
 description: Matt Gaetz walks the The House of Representatives, pointing out corrupt Representatives.  Most are Rrepublican...
 date: '2024-11-18'
-image: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1731982763/Screenshot_2024-11-18_at_6.04.47_PM_dtetud.webp'
+image_id: 'Screenshot_2024-11-18_at_6.04.47_PM_dtetud'
 categories:
   - Rep. Matt Gaetz
   - Rep. John Rutherford
@@ -14,12 +14,14 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1731982763/Screenshot_2024-11-18_at_6.04.47_PM_dtetud.webp'
-  alt='Rep. John Rutherford'
+<CldImage
+  width="100%"
+  src="Screenshot_2024-11-18_at_6.04.47_PM_dtetud"
+  alt=”Matt Gaetzs congressional hit list”
 />
 
 ## Matt Gaetz's congressional hit list

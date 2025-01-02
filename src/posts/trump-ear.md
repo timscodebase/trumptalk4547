@@ -2,7 +2,7 @@
 title: Donald J. Trump's Ear
 description: Trump sustained a minor injury to his right ear, described as a 'half-moon shape' wound that did not require stitches.
 date: '2024-09-27'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727451101/trumps-ear_qwd1xd.webp'
+image_id: 'trumps-ear_qwd1xd'
 categories:
   - Donald Trump
   - Assasination Attempt
@@ -14,16 +14,16 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { Image, ImageSlider } from '../lib';
-  const images = [
-    { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_Biography_Photos_rroysh.webp", alt: "Young Donald Trump with family" },
-    { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_2016_Biography_Photos_1_pjh0af.webp", alt: "Young Donald Trump as a ball player" },
-    { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_2016_Biography_Photos_tzfabu.webp", alt: "Donald Trump at military academy" },
-    { src: "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727334680/Donald_Trump_2016_Biography_1_oahr0u.webp", alt: "Donald Trump with his father" }
-  ];
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727451102/trumps-ear-3_gurqsc.avif" alt="Trump's bloody right ear after first assasination attempt" />
+<CldImage
+  width="100%"
+  src="trumps-ear_qwd1xd"
+  alt='Donald J. Trumps Ear'
+/>
+
+## Donald J. Trump's Ear
 
 On July 13, 2024, former President Donald Trump was the target of an assassination attempt during a rally in Butler, Pennsylvania. The event, meant to rally his supporters, quickly turned chaotic as gunfire erupted. Amidst the commotion, Trump sustained a minor injury to his right ear. The wound, described as a ‘half-moon shape,’ did not require stitches but did necessitate medical attention.
 

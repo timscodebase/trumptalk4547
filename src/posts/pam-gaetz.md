@@ -2,7 +2,7 @@
 title: 'Pam Bondi Nominated as Attorney General as Matt Gaetz Steps Aside'
 description: 'Pam Bondi has been nominated as Attorney General as Matt Gaetz Steps Aside'
 date: '2024-11-21'
-image: 'https://res.cloudinary.com/tithos/image/upload/q_auto:eco/v1732248824/pam-bondi-5_glzjpr.avif'
+image_id: 'pam-bondi-5_glzjpr'
 categories:
   - Pam Bondi
   - Matt Gaetz
@@ -15,15 +15,17 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_120
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-## Pam Bondi Nominated as Attorney General as Matt Gaetz Step Aside
-
-<Image
-  src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1732248824/pam-bondi-4_m69mj7.avif'
-  alt='Pam Bondi speaking at a Trump/Vance Rally'
+<CldImage
+  width="100%"
+  src="pam-bondi-5_glzjpr"
+  alt='Pam Bondi Nominated as Attorney General as Matt Gaetz Steps Aside'
 />
+
+## Pam Bondi Nominated as Attorney General as Matt Gaetz Steps Aside
 
 **Background** — Pam Bondi, former Florida Attorney General, has been nominated by President-elect Donald Trump to be the U.S. Attorney General.
 

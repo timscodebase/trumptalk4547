@@ -1,18 +1,24 @@
 <script lang="ts">
 	import type { Post } from '$lib/types'
+	import { CldImage } from 'svelte-cloudinary';
 	import Image from './Image.svelte'
 	import { formatDate } from '$lib/utils'
 	let { post } = $props() as { post: Post }
+	const { date, description, image_id, slug, title } = post
 </script>
 
 <article>
-	<a href={`/blog/${post.slug}`} class="title">
-		<img src={post.image} alt={post.title} loading="lazy" />
-		<h2>{post.title}</h2>
+	<a href={`/blog/${slug}`} class="title">
+		<CldImage
+			width="100%"
+			src={image_id}
+			alt={title}
+		/>
+		<h2>{title}</h2>
 
 		<div class="meta">
-			<p class="date">{formatDate(post.date)}</p>
-			<p class="description">{post.description}</p>
+			<p class="date">{formatDate(date)}</p>
+			<p class="description">{description}</p>
 		</div>
 	</a>
 </article>

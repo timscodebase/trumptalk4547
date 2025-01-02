@@ -2,7 +2,7 @@
 title: 'Exploring the Nexus of US Pharmaceutical Dependence, Healthcare, and Obesity'
 description: 'An analysis of how pharmaceutical reliance, healthcare system inefficiencies, and rising obesity rates intersect in the US.'
 date: '2024-12-31'
-image: 'https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735660194/pharma_p37b9s.jpg'
+image_id: 'pharma_p37b9s'
 categories:
   - Public Health
   - Obesity
@@ -18,12 +18,15 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src='https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
+<CldImage
+  width="100%"
+  src="pharma_p37b9s"
   alt='Exploring the Nexus of US Pharmaceutical Dependence, Healthcare, and Obesity'
+/>sity'
 />
 
 ## Introduction

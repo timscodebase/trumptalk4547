@@ -2,7 +2,7 @@
 title: ICE Preparedness Plan for Undocumented Immigrants in Oregon
 description: An overview of the strategies and resources available for undocumented immigrants in Oregon to prepare for possible ICE actions.
 date: '2024-12-26'
-image: 'https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735346417/Image_from_x.com_ggdopz.jpg'
+image_id: 'Image_from_x.com_ggdopz'
 categories:
   - Immigration
   - Legal Rights
@@ -18,10 +18,15 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150
 ---
 
 <script>
-  import { Image } from '../lib';
+  
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1500/v1735346417/Image_from_x.com_ggdopz.avif' alt="ICE Preparedness Plan for Undocumented Immigrants in Oregon"/>
+<CldImage
+  width="100%"
+  src="Image_from_x.com_ggdopz"
+  alt=”ICE Preparedness Plan for Undocumented Immigrants in Oregon”
+/>
 
 ## Know Your Rights
 
