@@ -26,7 +26,7 @@
 			text: {
 				color: "white",
 				fontFamily: "Poppins",
-				fontSize: "180",
+				fontSize: "24",
 				fontWeight: "bold",
 				lineSpacing: "-85",
 				text: meta.title,
