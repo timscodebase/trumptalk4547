@@ -13,9 +13,9 @@
 </svelte:head>
 
 <CldOgImage
-	src='California_Homelessness_Spending_eyqhnu'
-	alt="California's $24 Billion Homelessness Spending: An Analysis"
-	twitterTitle="California's $24 Billion Homelessness Spending: An Analysis"
+	src={meta.image_id}
+	alt={meta.title}
+	twitterTitle={meta.title}
 	width={960}
 	height={600}
 	blur="500"
