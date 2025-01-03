@@ -28,6 +28,11 @@
 		}
 	}
 
+	ul { 
+		list-style-type: none;
+		margin: 0;
+	}
+
 	@media (max-width: 1000px) {
 		.posts {
 			gap: 0.5rem;

@@ -70,12 +70,6 @@
 		background: rgba(15, 5, 128, 0.5);
 	}
 
-	img {
-		height: auto;
-		max-width: 100%;
-		object-fit: contain;
-	}
-
 	.meta {
 		color: var(--color-post-meta);
 

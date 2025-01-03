@@ -24,18 +24,6 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
   aspect-ratio='16:9'
 />
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727555109/border-crisis-3_zozn30.png"
-  alt="This was the graph the New York Times accused of being false. It's literally just raw data sourced from the CBP nationwide encounters dataset."
-/>
-
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727555109/border-crisis-1_rbfpyy.png"
-  alt="Yesterday, Mark Cuban joined CNBC and said Kamala Harris was doing a great job protecting the southern border."
-/>
-
-# ICE Detention and Enforcement: Key Statistics and Insights
-
 ## Detained Individuals
 
 As of September 8, 2024, U.S. Immigration and Customs Enforcement (ICE) held 37,395 individuals in detention. This number reflects the ongoing efforts of ICE to manage and process individuals through its detention system.
