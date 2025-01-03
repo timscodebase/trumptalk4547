@@ -1,4 +1,5 @@
 <script>
+	import { list } from './../../../node_modules/.pnpm/tar@7.4.3/node_modules/tar/dist/esm/list.js';
 	// import { Image } from '$lib'
 	import { name } from '$lib/config'
 

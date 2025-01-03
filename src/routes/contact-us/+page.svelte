@@ -13,12 +13,14 @@
 <p>
 	TrumpTalk4547.com values your input, questions, and feedback. We're committed to providing you
 	with the most accurate and balanced information, and we welcome the opportunity to hear from you.
-	Here’s how you can reach us:
+	Here's how you can reach us:
 </p>
 
-Email:<a href="mailto:trumptalk4547@gmail.com">trumptalk4547@gmail.com</a>
+<p>Email:</p>
+<a href="mailto:trumptalk4547@gmail.com">trumptalk4547@gmail.com</a>
 
-Phone: <a href="tel:415-694-3568">+1 (415) 694-3568</a>
+<p>Phone:</p>
+<a href="tel:415-694-3568">+1 (415) 694-3568</a>
 
 <h2>Connect With Us:</h2>
 <ul>
