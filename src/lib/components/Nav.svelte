@@ -24,7 +24,7 @@
 		{/each}
 		<li>
 			<a href="rss.xml" target="_blank" rel="noopener noreferrer">
-				<iconify-icon icon="mdi:rss"></iconify-icon>
+				<iconify-icon width="2rem" height="2rem" icon="mdi:rss"></iconify-icon>
 			</a>
 		</li>
 	</ul>
