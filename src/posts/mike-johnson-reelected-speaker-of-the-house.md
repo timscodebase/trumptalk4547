@@ -29,7 +29,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 On January 3, 2025, Mike Johnson, the current Speaker of the House, secured his position for the 119th Congress amidst a backdrop of internal Republican discord. Johnson's reelection came down to a dramatic vote where he initially seemed headed for defeat but was bolstered by last-minute support from two Republican holdouts, ensuring his victory with 218 votes against a backdrop of a narrowly split House.
 
-<iframe width="100%" src="https://www.youtube.com/embed/1_7opvn-ya0?si=UG1I3Z87aGzxaFP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" style="aspect-ratio='16:9'" src="https://www.youtube.com/embed/1_7opvn-ya0?si=UG1I3Z87aGzxaFP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Key Points
 
