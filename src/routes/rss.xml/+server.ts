@@ -2,8 +2,9 @@ import * as config from '$lib/config'
 import type { Post } from '$lib/types'
 
 export async function GET({ fetch }) {
-	const response = await fetch('api/posts')
+	const response = await fetch('api/all-posts')
 	const posts: Post[] = await response.json()
+	console.log("Post from RSS: ", posts)
 
 	const headers = { 'Content-Type': 'application/xml' }
 
