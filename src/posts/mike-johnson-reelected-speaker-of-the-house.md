@@ -8,10 +8,8 @@ categories:
   - US Government
   - House of Representatives
   - Mike Johnson
-  - Speaker of the House
   - Donald Trump
-  - Republican Party
-  - 2025 Congress
+  - 119th Congress
 type: ["featured", "domestic", "economy"]
 published: true
 author: Tim Smith
