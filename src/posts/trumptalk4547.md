@@ -19,8 +19,8 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 <CldImage
   width='100%'
-  src='nihilism-01'
-  alt='Nihilism and Faith in the United States'
+  src='tt4547_for_sale_klekm4'
+  alt='Seize the Digital Spotlight with trumptalk4547.com'
   aspect-ratio='16:9'
 />
 
