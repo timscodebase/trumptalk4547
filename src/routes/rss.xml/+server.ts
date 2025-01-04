@@ -1,6 +1,5 @@
 import * as config from '$lib/config'
 import type { Post } from '$lib/types'
-import { CldImage } from 'svelte-cloudinary';
 
 export async function GET({ fetch }) {
 	const response = await fetch('api/all-posts')
@@ -14,7 +13,7 @@ export async function GET({ fetch }) {
 			<channel>
 				<title>${config.name}</title>
 				<description>${config.description}</description>
-				<link>/blog/${config.url}</link>
+				<link>${config.url}</link>
 				<atom:link href="${config.url}/rss.xml" rel="self" type="application/rss+xml"/>
 				${posts
 					.map(
@@ -22,18 +21,12 @@ export async function GET({ fetch }) {
 						<item>
 							<title>${post.title}</title>
 							<description>${post.description}</description>
-							<link>${config.url}/${post.slug}</link>
+							<link>${config.url}/blog/${post.slug}</link>
 							<image>
-								<url>${post.image}</url>
-								<CldImage
-										width='100%'
-										src={post.image_id}
-										alt={post.title}
-										aspect-ratio='16:9'
-									/>
-								<link>${config.url}/${post.slug}</link>
+								<url>https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1500/v1735759285/${post.image_id}.avif</url>
+								<link>${config.url}/blog/${post.slug}</link>
 							</image>
-							<guid isPermaLink="true">${config.url}/${post.slug}</guid>
+							<guid isPermaLink="true">${config.url}/blog/${post.slug}</guid>
 							<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 						</item>
 					`
