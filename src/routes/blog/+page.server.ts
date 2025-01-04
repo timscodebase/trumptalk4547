@@ -1,5 +1,6 @@
 import type { PageServerLoad } from './$types'
 import type { Post } from '$lib/types'
+export const prerender = true
 
 
 export const load = (async ({ fetch, url }: { fetch: (input: RequestInfo, init?: RequestInit) => Promise<Response>, url: URL }) => {

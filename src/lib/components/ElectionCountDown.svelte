@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { daysUntilFutureDate } from '$lib/utils'
 	const inaugurationDay = new Date('2025-01-20')
+
+	const flag = './american-flag.png'
 </script>
 
 <section>
@@ -20,14 +22,13 @@
 		display: grid;
 		place-content: center;
 		text-align: center;
-		background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.15)),
+		background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)),
 			linear-gradient(
 				to right,
-				rgba(196, 0, 0, 0.65),
-				rgba(197, 197, 197, 0.45),
-				rgba(0, 35, 173, 0.65)
-			),
-			url('./american-flag.png');
+				rgba(196, 0, 0, 0.75),
+				rgba(197, 197, 197, 0.55),
+				rgba(0, 35, 173, 0.75)
+			);
 		background-size: cover;
 		text-shadow: 0px 2px 2px var(--color-text-op);
 		border: 2px solid var(--color-highligh);
