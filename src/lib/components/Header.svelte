@@ -1,4 +1,5 @@
 <script>
+	import { svelte } from 'eslint-plugin-svelte';
 	import * as config from '$lib/config'
 	import Image from './Image.svelte'
 	import Meta from './Meta.svelte'
@@ -6,6 +7,32 @@
 </script>
 
 <Meta />
+
+<svelte:head>
+	<style>
+		.header-right {
+			display: flex;
+			flex-direction: column;
+			margin-top: auto;
+			padding-left: 1rem;
+
+			p {
+				font-size: 1rem;
+				margin: 0;
+				padding: 0;
+			}
+		}
+		@media (max-width: 1000px) {
+			.header-right p {
+				font-size: 2rem !important;
+				line-height: 2.5rem !important;
+				padding: 1rem 0 !important;
+				text-align: center;
+				line-height: 2rem;
+			}
+	}
+	</style>
+</svelte:head>
 
 <header>
 	<div class="logo">
