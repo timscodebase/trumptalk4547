@@ -7,7 +7,9 @@ Object.freeze(
 			Object.getOwnPropertyNames(currentObj).forEach((item) => {
 				'function' == typeof currentObj[item] && properties.add(item)
 			})
-		} while ((currentObj = Object.getPrototypeOf(currentObj)) !== Object.prototype)
+		} while (
+			(currentObj = Object.getPrototypeOf(currentObj)) !== Object.prototype
+		)
 		return Array.from(properties)
 	})([])
 )
@@ -29,7 +31,9 @@ const httpRequestFromWebWorker = (req) =>
 					const tabId = msgId.split('.').pop()
 					let client = clients.find((a) => a.url.endsWith(`?${tabId}`))
 					client ||
-						(client = [...clients].sort((a, b) => (a.url > b.url ? -1 : a.url < b.url ? 1 : 0))[0])
+						(client = [...clients].sort((a, b) =>
+							a.url > b.url ? -1 : a.url < b.url ? 1 : 0
+						)[0])
 					return client
 				})([...clients], accessReq.$msgId$)
 				if (client) {
@@ -83,6 +87,7 @@ self.onfetch = (ev) => {
 			)
 		)
 	} else {
-		pathname.endsWith('proxytown') && ev.respondWith(httpRequestFromWebWorker(req))
+		pathname.endsWith('proxytown') &&
+			ev.respondWith(httpRequestFromWebWorker(req))
 	}
 }

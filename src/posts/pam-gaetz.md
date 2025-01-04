@@ -8,7 +8,7 @@ categories:
   - Matt Gaetz
   - Attorney General
   - Donald J Trump
-type: ["domestic"]
+type: ['domestic']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1732248824/pam-bondi-4_m69mj7.avif'
@@ -56,7 +56,7 @@ Experience — Bondi has extensive legal experience, having served as Florida's 
 
 ### Pam Bondi's Background
 
-**Education — Pam Bondi graduated from the University of Florida and earned her law degree from Stetson University College of Law.
+\*\*Education — Pam Bondi graduated from the University of Florida and earned her law degree from Stetson University College of Law.
 
 **Career** — She served as Florida's Attorney General from 2011 to 2019, focusing on issues like consumer protection and drug abuse.
 

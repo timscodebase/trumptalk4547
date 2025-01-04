@@ -6,14 +6,18 @@
 			var t, r, n
 			try {
 				const r =
-					null === (t = null == e ? void 0 : e.constructor) || void 0 === t ? void 0 : t.name
+					null === (t = null == e ? void 0 : e.constructor) || void 0 === t
+						? void 0
+						: t.name
 				if (r) return r
 			} catch (e) {}
 			try {
 				const t =
 					null ===
 						(n =
-							null === (r = null == e ? void 0 : e.__zone_symbol__originalInstance) || void 0 === r
+							null ===
+								(r = null == e ? void 0 : e.__zone_symbol__originalInstance) ||
+							void 0 === r
 								? void 0
 								: r.constructor) || void 0 === n
 						? void 0
@@ -24,7 +28,13 @@
 		},
 		i = (e, t) => e.startsWith(t),
 		s = (e) =>
-			!(i(e, 'webkit') || i(e, 'toJSON') || i(e, 'constructor') || i(e, 'toString') || i(e, '_')),
+			!(
+				i(e, 'webkit') ||
+				i(e, 'toJSON') ||
+				i(e, 'constructor') ||
+				i(e, 'toString') ||
+				i(e, '_')
+			),
 		o = (e) => (11 === e.nodeType && e.host ? '#s' : e.nodeName),
 		a = () => Math.round(Math.random() * Number.MAX_SAFE_INTEGER).toString(36),
 		c = {
@@ -93,7 +103,9 @@
 		R = (e, t, r) => {
 			const n = ((e, t) => {
 				return (
-					(r = e), (n = { value: t }), Object.defineProperty(r, 'name', { ...n, configurable: !0 })
+					(r = e),
+					(n = { value: t }),
+					Object.defineProperty(r, 'name', { ...n, configurable: !0 })
 				)
 				var r, n
 			})(class extends f[e].U.HTMLElement {}, r[0])
@@ -148,8 +160,11 @@
 			if (((a = {}), !r.has(t)))
 				for (c in (r.add(t), t))
 					s(c) &&
-						((l = 'path' === c && n(t).endsWith('Event') ? t.composedPath() : t[c]),
-						(i || 'function' != typeof l) && (o || '' !== l) && (a[c] = M(e, l, r)))
+						((l =
+							'path' === c && n(t).endsWith('Event') ? t.composedPath() : t[c]),
+						(i || 'function' != typeof l) &&
+							(o || '' !== l) &&
+							(a[c] = M(e, l, r)))
 			return a
 		},
 		N = (e) => {
@@ -161,7 +176,10 @@
 	let L = null
 	const A = (t) => {
 			var r
-			return (L = (null === (r = e.top) || void 0 === r ? void 0 : r.Error) || L), t instanceof L
+			return (
+				(L = (null === (r = e.top) || void 0 === r ? void 0 : r.Error) || L),
+				t instanceof L
+			)
 		},
 		C = (t, r, n, i) =>
 			r
@@ -198,7 +216,10 @@
 			for (n in ((r = {}), t)) r[n] = C(e, t[n])
 			return r
 		},
-		U = 'cssText,selectorText,href,media,namespaceURI,prefix,name,conditionText'.split(','),
+		U =
+			'cssText,selectorText,href,media,namespaceURI,prefix,name,conditionText'.split(
+				','
+			),
 		H = async (e, t) => {
 			let n,
 				i,
@@ -233,7 +254,10 @@
 											('string' == typeof n.d
 												? v(a, n.d)
 												: (f[n.d.V] = { V: n.d.V, U: { document: a } })),
-										'object' == typeof (d = a) && d && d.then && ((a = await a), c && (l.z = !0)),
+										'object' == typeof (d = a) &&
+											d &&
+											d.then &&
+											((a = await a), c && (l.z = !0)),
 										c && (l.M = M(i, a, void 0, void 0, void 0, n.w)))
 									: (l.p = n.w + ' not found'))
 				} catch (e) {
@@ -255,15 +279,20 @@
 				try {
 					if (!Array.isArray(c))
 						if ('string' == typeof l || 'number' == typeof l) {
-							if (h + 1 === g && a) return (d = {}), a.map((e) => (d[e] = i[e])), d
+							if (h + 1 === g && a)
+								return (d = {}), a.map((e) => (d[e] = i[e])), d
 							i = i[l]
 						} else {
 							if (0 === c) return void (i[u] = C(e, l))
 							if (
 								'function' == typeof i[u] &&
 								((p = C(e, l)),
-								'define' === u && 'CustomElementRegistry' === n(i) && (p[1] = R(t, e, p[1])),
-								'insertRule' === u && p[1] > r(i.cssRules) && (p[1] = r(i.cssRules)),
+								'define' === u &&
+									'CustomElementRegistry' === n(i) &&
+									(p[1] = R(t, e, p[1])),
+								'insertRule' === u &&
+									p[1] > r(i.cssRules) &&
+									(p[1] = r(i.cssRules)),
 								(i = i[u].apply(i, p)),
 								'play' === u)
 							)
@@ -283,7 +312,8 @@
 				o = t.V,
 				a = t.U,
 				c = a.document,
-				l = 'script[type="text/partytown"]:not([data-ptid]):not([data-pterror])',
+				l =
+					'script[type="text/partytown"]:not([data-ptid]):not([data-pterror])',
 				d = l + ':not([async]):not([defer])'
 			c && c.body
 				? ((n = c.querySelector(d)),
@@ -291,7 +321,9 @@
 					n
 						? ((n.dataset.ptid = i = $(n, o)),
 							(s = { V: o, w: i }),
-							n.src ? ((s.S = n.src), (s.H = n.dataset.ptsrc || n.src)) : (s.j = n.innerHTML),
+							n.src
+								? ((s.S = n.src), (s.H = n.dataset.ptsrc || n.src))
+								: (s.j = n.innerHTML),
 							e.postMessage([7, s]))
 						: (t.x ||
 								((t.x = 1),
@@ -300,7 +332,11 @@
 										s,
 										o = n._ptf,
 										a = (n.partytown || {}).forward || [],
-										c = (r, n) => e.postMessage([10, { V: t, q: r, b: M(t, Array.from(n)) }])
+										c = (r, n) =>
+											e.postMessage([
+												10,
+												{ V: t, q: r, b: M(t, Array.from(n)) }
+											])
 									if (
 										((n._ptf = void 0),
 										a.map((e) => {
@@ -314,19 +350,28 @@
 													var a
 													s = s[o[t]] =
 														t + 1 < r(o)
-															? s[o[t]] || ((a = o[t + 1]), p.includes(a) ? [] : {})
+															? s[o[t]] ||
+																((a = o[t + 1]), p.includes(a) ? [] : {})
 															: (() => {
 																	let e = null
 																	if (i) {
-																		const { methodOrProperty: t, thisObject: r } = ((e, t) => {
+																		const {
+																			methodOrProperty: t,
+																			thisObject: r
+																		} = ((e, t) => {
 																			let r = e
-																			for (let e = 0; e < t.length - 1; e += 1) r = r[t[e]]
+																			for (let e = 0; e < t.length - 1; e += 1)
+																				r = r[t[e]]
 																			return {
 																				thisObject: r,
-																				methodOrProperty: t.length > 0 ? r[t[t.length - 1]] : void 0
+																				methodOrProperty:
+																					t.length > 0
+																						? r[t[t.length - 1]]
+																						: void 0
 																			}
 																		})(n, o)
-																		'function' == typeof t && (e = (...e) => t.apply(r, ...e))
+																		'function' == typeof t &&
+																			(e = (...e) => t.apply(r, ...e))
 																	}
 																	return (...t) => {
 																		let r
@@ -355,7 +400,10 @@
 						o ? e() : a.push(e)
 					},
 					l = () => {
-						e.postMessage([5, { V: t, J: s, S: n.baseURI, T: n.visibilityState }]),
+						e.postMessage([
+							5,
+							{ V: t, J: s, S: n.baseURI, T: n.visibilityState }
+						]),
 							setTimeout(() => {
 								;(o = !0),
 									a.forEach((e) => {
@@ -366,7 +414,10 @@
 					u = i.pushState.bind(i),
 					p = i.replaceState.bind(i),
 					d = (r, i, s, o) => () => {
-						e.postMessage([13, { V: t, type: r, state: i, url: n.baseURI, newUrl: s, oldUrl: o }])
+						e.postMessage([
+							13,
+							{ V: t, type: r, state: i, url: n.baseURI, newUrl: s, oldUrl: o }
+						])
 					}
 				;(i.pushState = (e, t, r) => {
 					u(e, t, r), c(d(0, e, null == r ? void 0 : r.toString()))
@@ -383,7 +434,9 @@
 					r.addEventListener('ptupdate', () => {
 						B(e, f[t])
 					}),
-					n.addEventListener('visibilitychange', () => e.postMessage([14, t, n.visibilityState])),
+					n.addEventListener('visibilitychange', () =>
+						e.postMessage([14, t, n.visibilityState])
+					),
 					(f[t] = { V: t, U: r }),
 					'complete' === n.readyState ? l() : r.addEventListener('load', l)
 			}
@@ -447,13 +500,15 @@
 					isNaN(r[0]) &&
 					'all' !== r &&
 					('function' == (o = typeof (i = t[r]))
-						? (String(i).includes('[native') || Object.getPrototypeOf(t)[r]) && e.push([r, 5])
+						? (String(i).includes('[native') || Object.getPrototypeOf(t)[r]) &&
+							e.push([r, 5])
 						: 'object' === o && null != i
 							? 'Object' !== (a = n(i)) &&
 								'Function' !== a &&
 								self[a] &&
 								e.push([r, i.nodeType || a])
-							: 'symbol' !== o && (r.toUpperCase() === r ? e.push([r, 6, i]) : e.push([r, 6])))
+							: 'symbol' !== o &&
+								(r.toUpperCase() === r ? e.push([r, 6, i]) : e.push([r, 6])))
 			} catch (e) {
 				console.warn(e)
 			}
@@ -522,11 +577,22 @@
 								)
 							)
 						})(T),
-						h = { i: d, v: D(u, p), C: new URL(I, S.location) + '', I: origin, $tabId$: S._pttab }
+						h = {
+							i: d,
+							v: D(u, p),
+							C: new URL(I, S.location) + '',
+							I: origin,
+							$tabId$: S._pttab
+						}
 					return (
 						((e, t, r) => {
 							void 0 !== t[r] &&
-								e.push([r, 'Object', Object.keys(t[r].prototype).map((e) => [e, 6]), 12])
+								e.push([
+									r,
+									'Object',
+									Object.keys(t[r].prototype).map((e) => [e, 6]),
+									12
+								])
 						})(h.v, S, 'IntersectionObserverEntry'),
 						h
 					)
@@ -550,8 +616,11 @@
 											? requestAnimationFrame(() => B(e, r))
 											: 6 === t[0] &&
 												((e, t, r, n, i) => {
-													;(i = t.U.document.querySelector(`[data-ptid="${r}"]`)) &&
-														(n ? (i.dataset.pterror = n) : (i.type += '-x'), delete i.dataset.ptid),
+													;(i = t.U.document.querySelector(
+														`[data-ptid="${r}"]`
+													)) &&
+														(n ? (i.dataset.pterror = n) : (i.type += '-x'),
+														delete i.dataset.ptid),
 														B(e, t)
 												})(e, r, t[2], t[3]))
 							})(n, i)
@@ -573,6 +642,8 @@
 				const r = t.data
 				12 === r[0] ? H(G, r[1]) : e(G, r)
 			}),
-			S.addEventListener('pt1', (e) => k(G, $(e.detail.frameElement), e.detail)))
+			S.addEventListener('pt1', (e) =>
+				k(G, $(e.detail.frameElement), e.detail)
+			))
 	})
 })(window)

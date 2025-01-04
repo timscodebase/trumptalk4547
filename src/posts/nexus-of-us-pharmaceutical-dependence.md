@@ -12,7 +12,7 @@ categories:
   - Lifestyle Medicine
   - Socioeconomic Factors in Health
 published: true
-type: ["featured", "health", "economy"]
+type: ['featured', 'health', 'economy']
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1500/v1735660194/pharma_p37b9s.avif'
 ---

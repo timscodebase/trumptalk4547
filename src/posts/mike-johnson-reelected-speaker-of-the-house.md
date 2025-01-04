@@ -10,7 +10,7 @@ categories:
   - Mike Johnson
   - Donald Trump
   - 119th Congress
-type: ["featured", "domestic", "economy"]
+type: ['featured', 'domestic', 'economy']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
@@ -34,7 +34,6 @@ On January 3, 2025, Mike Johnson, the current Speaker of the House, secured his 
 ## Key Points
 
 - **Endorsement by Trump**: President-elect Donald Trump's endorsement was pivotal, providing Johnson with the necessary backing to sway votes in his favor at the last minute.
-  
 - **Narrow Majority**: With a slim majority, Johnson's ability to maintain the speakership highlights his capacity to manage GOP factionalism and negotiate within his party.
 
 - **Legislative Agenda**: Johnson's reelection is seen as a win for Trump's legislative priorities, promising a focus on tax cuts, immigration reform, and a robust federal agenda.
@@ -52,4 +51,3 @@ For further details on Johnson's leadership and the implications for the Republi
 - [Reuters]()[](https://www.reuters.com/world/us/trumps-republicans-take-congressional-majority-mike-johnson-faces-test-2025-01-03/)
 - [PBS News]()[](https://www.pbs.org/newshour/politics/mike-johnson-wins-gop-nomination-to-remain-house-speaker-with-full-vote-to-come-next-year)
 - [Fox News]()[](https://www.foxnews.com/live-news/speaker-house-election-2025)
-

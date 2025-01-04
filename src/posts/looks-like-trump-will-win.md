@@ -11,7 +11,7 @@ categories:
   - Liberation Day
   - 47th President of the United States
   - Historic Moment
-type: ["news"]
+type: ['news']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
@@ -39,6 +39,3 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
   src="https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1200/v1730803526/Screenshot_2024-11-05_at_2.44.53_AM_ynd8uy.png"
   alt="Polymarket poll showing 60% for Trump & 40% for Harris"
 />
-
-
-

@@ -1,5 +1,5 @@
 <script>
-	import { svelte } from 'eslint-plugin-svelte';
+	import { svelte } from 'eslint-plugin-svelte'
 	import * as config from '$lib/config'
 	import Image from './Image.svelte'
 	import Meta from './Meta.svelte'

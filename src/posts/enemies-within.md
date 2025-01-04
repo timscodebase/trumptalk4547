@@ -7,7 +7,7 @@ categories:
   - Corey Comperatore
   - Butter, PA
   - Donald J Trump
-type: ["features", "domestic", "foreign"]
+type: ['features', 'domestic', 'foreign']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
@@ -27,11 +27,11 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 Donald Trump did not coin the phrase "enemies within". The concept has been a recurring theme in US history, highlighting the importance of addressing internal threats alongside external ones. This phenomenon has influenced the country's strategic thinking, policy-making, and national security approaches.
 
-* **Domestic Insurgencies**: The US has faced various domestic insurgencies, such as the Whiskey Rebellion (1794), the Mormon War (1857-1858), and the Haymarket Affair (1886). These internal conflicts have shaped the country's approach to maintaining law and order, as well as its understanding of the role of government in addressing social and economic grievances.
-* **Communist Infiltration**: During the Cold War, the US government perceived communist infiltration as an internal threat. The Red Scare of the 1940s and 1950s led to widespread paranoia and the persecution of suspected communists, including the infamous House Un-American Activities Committee (HUAC) hearings. This period highlights the tension between national security concerns and civil liberties.
-* **Domestic Terrorism**: The 1960s and 1970s saw the rise of domestic terrorist groups, such as the Weather Underground and the Symbionese Liberation Army. The FBI's COINTELPRO program, aimed at disrupting and dismantling these groups, raised concerns about government overreach and violations of civil rights.
-* **Right-Wing Extremism**: In recent decades, the US has faced threats from right-wing extremist groups, including white supremacists and anti-government militias. The Oklahoma City bombing (1995) and the Charleston church shooting (2015) are notable examples of domestic terrorism linked to these ideologies.
-* **Homegrown Jihadism**: The post-9/11 era has seen a growing concern about homegrown jihadist terrorism, with individuals inspired by extremist ideologies and often radicalized online. This phenomenon has led to a shift in US counterterrorism strategies, emphasizing community engagement, online surveillance, and deradicalization efforts.
+- **Domestic Insurgencies**: The US has faced various domestic insurgencies, such as the Whiskey Rebellion (1794), the Mormon War (1857-1858), and the Haymarket Affair (1886). These internal conflicts have shaped the country's approach to maintaining law and order, as well as its understanding of the role of government in addressing social and economic grievances.
+- **Communist Infiltration**: During the Cold War, the US government perceived communist infiltration as an internal threat. The Red Scare of the 1940s and 1950s led to widespread paranoia and the persecution of suspected communists, including the infamous House Un-American Activities Committee (HUAC) hearings. This period highlights the tension between national security concerns and civil liberties.
+- **Domestic Terrorism**: The 1960s and 1970s saw the rise of domestic terrorist groups, such as the Weather Underground and the Symbionese Liberation Army. The FBI's COINTELPRO program, aimed at disrupting and dismantling these groups, raised concerns about government overreach and violations of civil rights.
+- **Right-Wing Extremism**: In recent decades, the US has faced threats from right-wing extremist groups, including white supremacists and anti-government militias. The Oklahoma City bombing (1995) and the Charleston church shooting (2015) are notable examples of domestic terrorism linked to these ideologies.
+- **Homegrown Jihadism**: The post-9/11 era has seen a growing concern about homegrown jihadist terrorism, with individuals inspired by extremist ideologies and often radicalized online. This phenomenon has led to a shift in US counterterrorism strategies, emphasizing community engagement, online surveillance, and deradicalization efforts.
 
 Throughout its history, the US has struggled to balance the need to address internal threats with the protection of civil liberties and the prevention of government overreach. This ongoing challenge has influenced the development of US national security policies, law enforcement strategies, and community engagement initiatives.
 

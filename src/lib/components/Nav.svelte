@@ -17,7 +17,11 @@
 	<ul>
 		{#each menu_links as { url, text }}
 			<li>
-				<a href={url} class:active={$page.url.pathname === url} onmouseup={() => (open = false)}>
+				<a
+					href={url}
+					class:active={$page.url.pathname === url}
+					onmouseup={() => (open = false)}
+				>
 					{text}
 				</a>
 			</li>

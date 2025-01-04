@@ -22,7 +22,11 @@
 		display: grid;
 		place-content: center;
 		text-align: center;
-		background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)),
+		background-image: linear-gradient(
+				45deg,
+				rgba(0, 0, 0, 0.55),
+				rgba(0, 0, 0, 0.15)
+			),
 			linear-gradient(
 				to right,
 				rgba(196, 0, 0, 0.75),

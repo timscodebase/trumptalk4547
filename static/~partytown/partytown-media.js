@@ -15,7 +15,11 @@
 			const r = {
 					getContext: {
 						value(e, t) {
-							return this[c] || (this[c] = (e.includes('webgl') ? g : p)(this, e, t)), this[c]
+							return (
+								this[c] ||
+									(this[c] = (e.includes('webgl') ? g : p)(this, e, t)),
+								this[c]
+							)
 						}
 					}
 				},
@@ -70,7 +74,8 @@
 									: e[t],
 							set: (e, t, n) => (
 								'string' == typeof t && t in p
-									? (p[t] !== n && 'function' != typeof n && s(f, [t], n), (p[t] = n))
+									? (p[t] !== n && 'function' != typeof n && s(f, [t], n),
+										(p[t] = n))
 									: (e[t] = n),
 								!0
 							)
@@ -91,7 +96,8 @@
 									: e[t],
 							set: (e, t, n) => (
 								'string' == typeof t && t in f
-									? (f[t] !== n && 'function' != typeof n && s(h, [t], n), (f[t] = n))
+									? (f[t] !== n && 'function' != typeof n && s(h, [t], n),
+										(f[t] = n))
 									: (e[t] = n),
 								!0
 							)
@@ -100,10 +106,15 @@
 				},
 				l = 'checkFramebufferStatus,makeXRCompatible'.split(','),
 				m = (e) =>
-					e.startsWith('create') || e.startsWith('get') || e.startsWith('is') || l.includes(e)
+					e.startsWith('create') ||
+					e.startsWith('get') ||
+					e.startsWith('is') ||
+					l.includes(e)
 						? 1
 						: 2
-			v(t, 'CanvasGradient', h), v(t, 'CanvasPattern', f), i(t.HTMLCanvasElement, r)
+			v(t, 'CanvasGradient', h),
+				v(t, 'CanvasPattern', f),
+				i(t.HTMLCanvasElement, r)
 		},
 		y = (e, u, c, b) => {
 			var y, T
@@ -157,7 +168,10 @@
 									n(e, [s, 'removeEventListener'], t, 3)
 								}
 							},
-							{ get: (e, t) => ('number' == typeof t ? new w(r, i, [s, t]) : e[t]) }
+							{
+								get: (e, t) =>
+									'number' == typeof t ? new w(r, i, [s, t]) : e[t]
+							}
 						)
 					}
 				},
@@ -181,7 +195,9 @@
 					'SourceBuffer',
 					((T = class extends u {
 						constructor(e) {
-							super(e[o], e[d], ['sourceBuffers']), (this[y] = []), (this[h] = e)
+							super(e[o], e[d], ['sourceBuffers']),
+								(this[y] = []),
+								(this[h] = e)
 						}
 						abort() {
 							const e = R(this)
@@ -335,7 +351,8 @@
 					}
 					removeSourceBuffer(e) {
 						const t = R(e)
-						t > -1 && (this[p].splice(t, 1), n(this, ['removeSourceBuffer'], [t], 1))
+						t > -1 &&
+							(this[p].splice(t, 1), n(this, ['removeSourceBuffer'], [t], 1))
 					}
 					setLiveSeekableRange(e, t) {
 						n(this, ['setLiveSeekableRange'], [e, t], 2)

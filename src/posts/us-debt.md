@@ -9,7 +9,7 @@ categories:
   - Bankruptcy
   - Joe Biden
   - Donald J Trump
-type: ["features", "domestic", "economy"]
+type: ['features', 'domestic', 'economy']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
@@ -39,7 +39,7 @@ As of late 2024, the United States national debt stands at an unprecedented leve
 
 Several key elements contribute to this rising debt:
 
-- **Government Spending**: Expenditures on defense, healthcare, and social programs are significant drivers. 
+- **Government Spending**: Expenditures on defense, healthcare, and social programs are significant drivers.
 - **Tax Policies**: Changes in tax legislation, including tax cuts, can lead to reduced government revenue and larger deficits.
 - **Economic Events**: The recent global health crisis has necessitated borrowing for economic stimulus and relief efforts.
 - **Fiscal Policies**: The combination of spending increases and revenue management directly influences the debt trajectory.
@@ -67,11 +67,12 @@ While specific projections for the debt reaching $40 trillion by January 2025 ar
 The U.S. national debt's current status and projected trajectory pose significant questions about economic strategy, policy-making, and the balance between fiscal responsibility and economic growth. It's crucial for policymakers to consider these aspects to ensure sustainable economic health, while the public remains informed about the implications of such debt levels on their lives and the nation's future.
 
 ### Additional Resources for Understanding the National Debt
+
 - [Understanding the National Debt](fiscaldata.treasury.gov)
 - [U.S. National Debt by Year](investopedia.com)
 - [An Update to the Budget and Economic Outlook: 2024](cbo.gov)
 
-*Note: The figures and projections are based on available data as of late 2024 and should be considered in the context of ongoing economic developments.*
+_Note: The figures and projections are based on available data as of late 2024 and should be considered in the context of ongoing economic developments._
 
 ### LV Nation goes deep
 

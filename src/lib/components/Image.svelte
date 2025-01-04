@@ -8,7 +8,14 @@
 		className?: string
 	}
 
-	let { alt, border = true, padding = 0, width = '100%', src, className = '' } = $props() as Props
+	let {
+		alt,
+		border = true,
+		padding = 0,
+		width = '100%',
+		src,
+		className = ''
+	} = $props() as Props
 </script>
 
 <img

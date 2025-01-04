@@ -37,10 +37,11 @@ h1 {
 	margin: 0;
 	font-size: clamp(1.75rem, 6vw, 5.5rem);
 	padding-bottom: 10px;
-	text-shadow: 3px 3px 0px var(--color-surface-op),
-							 -3px -3px 0px var(--color-surface-op),
-							 3px -3px 0px var(--color-surface-op),
-							 -3px 3px 0px var(--color-surface-op);
+	text-shadow:
+		3px 3px 0px var(--color-surface-op),
+		-3px -3px 0px var(--color-surface-op),
+		3px -3px 0px var(--color-surface-op),
+		-3px 3px 0px var(--color-surface-op);
 }
 
 h2 {
@@ -70,7 +71,8 @@ h6 {
 	margin: 0.15rem 0;
 }
 
-a, a[href^="mailto:"] {
+a,
+a[href^='mailto:'] {
 	color: var(--color-sub-header);
 	text-decoration: none;
 	font-weight: bold;
@@ -85,12 +87,15 @@ a, a[href^="mailto:"] {
 	}
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
 	line-height: 1.75;
 }
 
-
-a, p, ul {
+a,
+p,
+ul {
 	font-size: 24px;
 	line-height: 1.5;
 	padding: 1rem 0;

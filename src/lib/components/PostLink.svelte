@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Post } from '$lib/types'
-	import { CldImage } from 'svelte-cloudinary';
+	import { CldImage } from 'svelte-cloudinary'
 	import Image from './Image.svelte'
 	import { formatDate } from '$lib/utils'
 	let { post } = $props() as { post: Post }
@@ -9,11 +9,7 @@
 
 <article>
 	<a href={`/blog/${slug}`} class="title">
-		<CldImage
-			width="100%"
-			src={image_id}
-			alt={title}
-		/>
+		<CldImage width="100%" src={image_id} alt={title} />
 		<h2>{title}</h2>
 
 		<div class="meta">

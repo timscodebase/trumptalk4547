@@ -3,7 +3,7 @@
 	import { inject } from '@vercel/analytics'
 	import { Analylitics, Footer, Header } from '$lib'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
-	
+
 	import './css/main.css'
 
 	let { children } = $props()

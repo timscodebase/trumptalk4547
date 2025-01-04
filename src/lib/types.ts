@@ -1,13 +1,13 @@
 enum ArticleType {
-    News = "news",
-		Domestic = "domestic",
-		Foriegn = "foriegn",
-		Economy = "economy",
-    Opinion = "opinion",
-		Health = "health",
-    Featured = "featured",
-    Interview = "interview",
-    Editorial = "editorial"
+	News = 'news',
+	Domestic = 'domestic',
+	Foriegn = 'foriegn',
+	Economy = 'economy',
+	Opinion = 'opinion',
+	Health = 'health',
+	Featured = 'featured',
+	Interview = 'interview',
+	Editorial = 'editorial'
 }
 
 export interface Post {

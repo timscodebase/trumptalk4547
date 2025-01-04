@@ -14,7 +14,7 @@
 
 <section>
 	{#if posts.length === 0}
-		<p>No Economy articles yet.  Pleaase check back soon</p>
+		<p>No Economy articles yet. Pleaase check back soon</p>
 	{:else}
 		<Posts {posts} />
 	{/if}

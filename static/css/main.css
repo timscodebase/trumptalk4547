@@ -3,77 +3,81 @@
 @import url('./banner.css');
 
 :root {
-  /* View Transition */
-  --view-transition-name: root;
+	/* View Transition */
+	--view-transition-name: root;
 
-  /* Primary Theme Colors */
-  --color-surface-light: #a3c2ff;
-  --color-surface-dark: #0339a6;
-  --color-text-light: #142557;
-  --color-text-dark: #f2f2f2;
+	/* Primary Theme Colors */
+	--color-surface-light: #a3c2ff;
+	--color-surface-dark: #0339a6;
+	--color-text-light: #142557;
+	--color-text-dark: #f2f2f2;
 	--color-post-meta: #0b327b;
-  --color-accent: #fa4848; /* Previously --color-accent-light */
-  --color-accent-light: #fa4848;
-  --color-accent-dark: #fa4848; /* Making explicit for clarity, as they're the same */
-  
-  --color-success-light: #00c700; 
-  --color-success-dark: #008b00;
-  --color-error-light: #e24000;
-  --color-error-dark: #8c2800;
-  --color-warning-light: #c4bd00;
-  --color-warning-dark: #8a8600;
-  --color-toggle-light: #070f26;
-  --color-toggle-dark: #f2f2f2;
+	--color-accent: #fa4848; /* Previously --color-accent-light */
+	--color-accent-light: #fa4848;
+	--color-accent-dark: #fa4848; /* Making explicit for clarity, as they're the same */
 
-  --color-surface: var(--color-surface-dark);
-  --color-surface-op: var(--color-accent-light);
-  --color-text: var(--color-text-dark);
-  --color-text-op: var(--color-text-light);
-  --color-success: var(--color-success-dark);
-  --color-error: var(--color-error-dark);
-  --color-warning: var(--color-warning-dark);
-  --color-toggle: var(--color-toggle-dark);
-  --color-selected: var(--color-accent-light);
+	--color-success-light: #00c700;
+	--color-success-dark: #008b00;
+	--color-error-light: #e24000;
+	--color-error-dark: #8c2800;
+	--color-warning-light: #c4bd00;
+	--color-warning-dark: #8a8600;
+	--color-toggle-light: #070f26;
+	--color-toggle-dark: #f2f2f2;
 
-  /* Named Colors */
-  --color-red: var(--color-accent-light);
-  --color-blue: var(--color-surface-light);
-  --color-shadow: var(--color-accent);
+	--color-surface: var(--color-surface-dark);
+	--color-surface-op: var(--color-accent-light);
+	--color-text: var(--color-text-dark);
+	--color-text-op: var(--color-text-light);
+	--color-success: var(--color-success-dark);
+	--color-error: var(--color-error-dark);
+	--color-warning: var(--color-warning-dark);
+	--color-toggle: var(--color-toggle-dark);
+	--color-selected: var(--color-accent-light);
 
-  /* Shadows */
-  --shadow-light: 0px 1px 0px var(--color-surface-light);
-  --shadow-light-footer: 0px 0.5px 0px var(--color-surface-light);
-  --shadow-dark: 0px 1px 0px var(--color-surface-op);
-  --shadow-dark-footer: 0px 0.5px 0px var(--color-surface-op);
+	/* Named Colors */
+	--color-red: var(--color-accent-light);
+	--color-blue: var(--color-surface-light);
+	--color-shadow: var(--color-accent);
 
-  --shadow: var(--shadow-dark);
-  --op-shadow: var(--shadow-light); /* Consider renaming for clarity, e.g., --inverse-shadow */
+	/* Shadows */
+	--shadow-light: 0px 1px 0px var(--color-surface-light);
+	--shadow-light-footer: 0px 0.5px 0px var(--color-surface-light);
+	--shadow-dark: 0px 1px 0px var(--color-surface-op);
+	--shadow-dark-footer: 0px 0.5px 0px var(--color-surface-op);
 
-  /* Icons */
-  --text-toggle: '☀️';
+	--shadow: var(--shadow-dark);
+	--op-shadow: var(
+		--shadow-light
+	); /* Consider renaming for clarity, e.g., --inverse-shadow */
 
-  /* Spacing or other utility variables could go here */
+	/* Icons */
+	--text-toggle: '☀️';
+
+	/* Spacing or other utility variables could go here */
 }
 
 [data-theme='light'] {
-  --color-surface: var(--color-surface-light);
-  --color-surface-op: var(--color-surface-dark); /* Consider clarity in naming */
-  --color-text: var(--color-text-light);
-  --color-text-op: var(--color-text-dark);
-  --color-success: var(--color-success-light);
-  --color-error: var(--color-error-light);
-  --color-warning: var(--color-warning-light);
-  --color-toggle: var(--color-toggle-light);
-  --color-selected: var(--color-accent-dark);
+	--color-surface: var(--color-surface-light);
+	--color-surface-op: var(
+		--color-surface-dark
+	); /* Consider clarity in naming */
+	--color-text: var(--color-text-light);
+	--color-text-op: var(--color-text-dark);
+	--color-success: var(--color-success-light);
+	--color-error: var(--color-error-light);
+	--color-warning: var(--color-warning-light);
+	--color-toggle: var(--color-toggle-light);
+	--color-selected: var(--color-accent-dark);
 
-  --color-red: var(--color-accent-dark);
-  --color-blue: var(--color-surface-dark);
-  --color-shadow: var(--color-accent);
+	--color-red: var(--color-accent-dark);
+	--color-blue: var(--color-surface-dark);
+	--color-shadow: var(--color-accent);
 
-  --shadow: var(--shadow-light);
-  --op-shadow: var(--shadow-dark);
+	--shadow: var(--shadow-light);
+	--op-shadow: var(--shadow-dark);
 
-  --text-toggle: '🌙';
+	--text-toggle: '🌙';
 }
 
 * {

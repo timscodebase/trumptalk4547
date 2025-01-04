@@ -17,21 +17,21 @@ import SponsorLink from './components/SponsorLink.svelte'
 import Socials from './components/Socials.svelte'
 
 export {
-  Analylitics,
-  BuyMeACoffee,
-  ElectionCountDown,
-  ExternalLink,
-  Footer,
-  ForSaleBanner,
-  Header,
-  Image,
-  Meta,
-  Nav,
-  OG,
-  Polymarket,
-  PostLink,
-  Posts,
-  Sponsors,
-  SponsorLink,
-  Socials
+	Analylitics,
+	BuyMeACoffee,
+	ElectionCountDown,
+	ExternalLink,
+	Footer,
+	ForSaleBanner,
+	Header,
+	Image,
+	Meta,
+	Nav,
+	OG,
+	Polymarket,
+	PostLink,
+	Posts,
+	Sponsors,
+	SponsorLink,
+	Socials
 }

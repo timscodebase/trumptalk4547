@@ -1,7 +1,7 @@
 <script>
-	import BuyMeACoffee from './BuyMeACoffee.svelte';
-	import Image from './Image.svelte';
-	import Socials from './Socials.svelte';
+	import BuyMeACoffee from './BuyMeACoffee.svelte'
+	import Image from './Image.svelte'
+	import Socials from './Socials.svelte'
 </script>
 
 <footer>

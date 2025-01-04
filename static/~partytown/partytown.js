@@ -36,9 +36,12 @@ const t = { preserveBehavior: !1 },
 											t.active
 												? y()
 												: t.installing &&
-													t.installing.addEventListener('statechange', function (t) {
-														'activated' == t.target.state && y()
-													})
+													t.installing.addEventListener(
+														'statechange',
+														function (t) {
+															'activated' == t.target.state && y()
+														}
+													)
 										}, console.error)
 								: v())))
 	}
@@ -52,7 +55,10 @@ const t = { preserveBehavior: !1 },
 				(p.style.border = '0'),
 				(p.style.visibility = 'hidden'),
 				p.setAttribute('aria-hidden', !0)),
-			(p.src = c + 'partytown-' + (e ? 'atomics.js?v=0.10.2' : 'sandbox-sw.html?' + t._pttab)),
+			(p.src =
+				c +
+				'partytown-' +
+				(e ? 'atomics.js?v=0.10.2' : 'sandbox-sw.html?' + t._pttab)),
 			r.querySelector(s.sandboxParent || 'body').appendChild(p)
 	}
 	function v(n, o) {
@@ -88,24 +94,33 @@ const t = { preserveBehavior: !1 },
 								: (() => {
 										let e = null
 										if (i) {
-											const { methodOrProperty: n, thisObject: r } = ((t, e) => {
+											const { methodOrProperty: n, thisObject: r } = ((
+												t,
+												e
+											) => {
 												let n = t
 												for (let t = 0; t < e.length - 1; t += 1) n = n[e[t]]
 												return {
 													thisObject: n,
-													methodOrProperty: e.length > 0 ? n[e[e.length - 1]] : void 0
+													methodOrProperty:
+														e.length > 0 ? n[e[e.length - 1]] : void 0
 												}
 											})(t, o)
 											'function' == typeof n && (e = (...t) => n.apply(r, ...t))
 										}
 										return function () {
 											let n
-											return e && (n = e(arguments)), (t._ptf = t._ptf || []).push(o, arguments), n
+											return (
+												e && (n = e(arguments)),
+												(t._ptf = t._ptf || []).push(o, arguments),
+												n
+											)
 										}
 									})()
 					})
 			}),
 		'complete' == r.readyState
 			? h()
-			: (t.addEventListener('DOMContentLoaded', h), t.addEventListener('load', h))
+			: (t.addEventListener('DOMContentLoaded', h),
+				t.addEventListener('load', h))
 })(window, document, navigator, top, window.crossOriginIsolated)

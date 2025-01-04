@@ -1,5 +1,11 @@
 <script>
-	let { email = '', error = '', message = '', name = '', success = false } = $props()
+	let {
+		email = '',
+		error = '',
+		message = '',
+		name = '',
+		success = false
+	} = $props()
 
 	async function handleSubmit(e) {
 		e.preventDefault()

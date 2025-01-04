@@ -25,7 +25,7 @@
 			{meta.title}
 		</h1>
 	</header>
-	
+
 	<!-- <CldImage
 		width="1500"
 		height="1125"
@@ -53,7 +53,6 @@
 </article>
 
 <style>
-
 	.content {
 		font-size: 24px;
 		content-visibility: auto;

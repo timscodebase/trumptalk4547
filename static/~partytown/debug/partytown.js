@@ -5,7 +5,10 @@ const defaultPartytownForwardPropertySettings = {
 
 const resolvePartytownForwardProperty = (propertyOrPropertyWithSettings) => {
 	if ('string' == typeof propertyOrPropertyWithSettings) {
-		return [propertyOrPropertyWithSettings, defaultPartytownForwardPropertySettings]
+		return [
+			propertyOrPropertyWithSettings,
+			defaultPartytownForwardPropertySettings
+		]
 	}
 	const [property, settings = defaultPartytownForwardPropertySettings] =
 		propertyOrPropertyWithSettings
@@ -26,7 +29,9 @@ const arrayMethods = Object.freeze(
 			Object.getOwnPropertyNames(currentObj).forEach((item) => {
 				'function' == typeof currentObj[item] && properties.add(item)
 			})
-		} while ((currentObj = Object.getPrototypeOf(currentObj)) !== Object.prototype)
+		} while (
+			(currentObj = Object.getPrototypeOf(currentObj)) !== Object.prototype
+		)
 		return Array.from(properties)
 	})([])
 )
@@ -48,7 +53,9 @@ const arrayMethods = Object.freeze(
 	function ready() {
 		if (!isReady) {
 			isReady = 1
-			libPath = (config.lib || '/~partytown/') + (false !== config.debug ? 'debug/' : '')
+			libPath =
+				(config.lib || '/~partytown/') +
+				(false !== config.debug ? 'debug/' : '')
 			if ('/' == libPath[0]) {
 				scripts = doc.querySelectorAll('script[type="text/partytown"]')
 				if (top != win) {
@@ -71,9 +78,12 @@ const arrayMethods = Object.freeze(
 										if (swRegistration.active) {
 											loadSandbox()
 										} else if (swRegistration.installing) {
-											swRegistration.installing.addEventListener('statechange', function (ev) {
-												'activated' == ev.target.state && loadSandbox()
-											})
+											swRegistration.installing.addEventListener(
+												'statechange',
+												function (ev) {
+													'activated' == ev.target.state && loadSandbox()
+												}
+											)
 										} else {
 											console.warn(swRegistration)
 										}
@@ -97,7 +107,9 @@ const arrayMethods = Object.freeze(
 			sandbox.setAttribute('aria-hidden', !0)
 		}
 		sandbox.src =
-			libPath + 'partytown-' + (isAtomics ? 'atomics.js?v=0.10.2' : 'sandbox-sw.html?' + win._pttab)
+			libPath +
+			'partytown-' +
+			(isAtomics ? 'atomics.js?v=0.10.2' : 'sandbox-sw.html?' + win._pttab)
 		doc.querySelector(config.sandboxParent || 'body').appendChild(sandbox)
 	}
 	function fallback(i, script) {
@@ -129,16 +141,17 @@ const arrayMethods = Object.freeze(
 				mainForwardFn = mainForwardFn[forwardPropsArr[i]] =
 					i + 1 < forwardPropsArr.length
 						? mainForwardFn[forwardPropsArr[i]] ||
-							((propertyName) => (arrayMethods.includes(propertyName) ? [] : {}))(
+							((propertyName) =>
+								arrayMethods.includes(propertyName) ? [] : {})(
 								forwardPropsArr[i + 1]
 							)
 						: (() => {
 								let originalFunction = null
 								if (preserveBehavior) {
-									const { methodOrProperty: methodOrProperty, thisObject: thisObject } = ((
-										window,
-										properties
-									) => {
+									const {
+										methodOrProperty: methodOrProperty,
+										thisObject: thisObject
+									} = ((window, properties) => {
 										let thisObject = window
 										for (let i = 0; i < properties.length - 1; i += 1) {
 											thisObject = thisObject[properties[i]]
@@ -152,11 +165,13 @@ const arrayMethods = Object.freeze(
 										}
 									})(win, forwardPropsArr)
 									'function' == typeof methodOrProperty &&
-										(originalFunction = (...args) => methodOrProperty.apply(thisObject, ...args))
+										(originalFunction = (...args) =>
+											methodOrProperty.apply(thisObject, ...args))
 								}
 								return function () {
 									let returnValue
-									originalFunction && (returnValue = originalFunction(arguments))
+									originalFunction &&
+										(returnValue = originalFunction(arguments))
 									;(win._ptf = win._ptf || []).push(forwardPropsArr, arguments)
 									return returnValue
 								}

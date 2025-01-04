@@ -4,7 +4,7 @@
 	import { CldOgImage } from 'svelte-cloudinary'
 
 	let { meta } = $props()
-  console.log("META: ", meta.image_id)
+	console.log('META: ', meta.image_id)
 </script>
 
 <meta name="title" property="og:title" content={meta.title} />

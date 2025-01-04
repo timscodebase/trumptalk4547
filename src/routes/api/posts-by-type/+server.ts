@@ -3,7 +3,7 @@ import type { Post } from '$lib/types'
 
 async function getPosts(limit: number, type: string): Promise<Post[]> {
 	let posts: Post[] = []
-	
+
 	const paths = import.meta.glob('/src/posts/*.md', { eager: true })
 
 	for (const path in paths) {
@@ -20,7 +20,8 @@ async function getPosts(limit: number, type: string): Promise<Post[]> {
 	}
 
 	posts = posts.sort(
-		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
+		(first, second) =>
+			new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
 
 	posts = posts.slice(0, limit)
@@ -29,9 +30,9 @@ async function getPosts(limit: number, type: string): Promise<Post[]> {
 }
 
 export async function GET(event: { url: URL }) {
-	const limit = event.url.searchParams.get('limit') || '6';
-	const type = event.url.searchParams.get('type') || 'feature';
+	const limit = event.url.searchParams.get('limit') || '6'
+	const type = event.url.searchParams.get('type') || 'feature'
 
-	const posts = await getPosts(parseInt(limit), type);
-	return json(posts);
+	const posts = await getPosts(parseInt(limit), type)
+	return json(posts)
 }

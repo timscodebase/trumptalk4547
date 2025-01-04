@@ -24,14 +24,16 @@
 		},
 		{
 			name: 'StateOfDaniel',
-			description: 'Right-leaning Independent. Always approaching topics with an open mind.',
+			description:
+				'Right-leaning Independent. Always approaching topics with an open mind.',
 			url: 'https://www.youtube.com/@StateOfDaniel',
 			image:
 				'https://yt3.googleusercontent.com/PvBsW8bBJ9CyY9xDu0pOb0hfxzIsnh0hXd_WGE3NvnqlWAbrA490BNDt42RpUzUFYVF2FsM8KeQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'
 		},
 		{
 			name: 'DeVory Darkins',
-			description: 'God, Family, and Country First! Common Sense Commentary for Uncommon Times!',
+			description:
+				'God, Family, and Country First! Common Sense Commentary for Uncommon Times!',
 			url: 'https://www.youtube.com/@DeVoryDarkins',
 			image:
 				'https://yt3.googleusercontent.com/qPC69SlcRVp0MuJVFc19tT11STr8OF6clRz_gE475cCddpr1deguBHVIRh7BgeY2VK2KekT-nQ=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj'

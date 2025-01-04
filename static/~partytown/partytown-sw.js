@@ -14,7 +14,9 @@ Object.freeze(
 const e = new Map(),
 	t = (e, t) => ({ F: e.F, p: t }),
 	r = (e, t) =>
-		new Response(e, { headers: { 'content-type': t || 'text/html', 'Cache-Control': 'no-store' } })
+		new Response(e, {
+			headers: { 'content-type': t || 'text/html', 'Cache-Control': 'no-store' }
+		})
 ;(self.oninstall = () => self.skipWaiting()),
 	(self.onactivate = () => self.clients.claim()),
 	(self.onmessage = (t) => {
