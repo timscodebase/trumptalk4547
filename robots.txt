@@ -1,26 +1,11 @@
 # robots.txt for trumptalk4547.com
 
 User-agent: *
-Disallow: /admin/
-Disallow: /cgi-bin/
-Disallow: /wp-admin/  # Assuming you're using WordPress or similar CMS
-Disallow: /wp-login.php
-Disallow: /wp-content/plugins/
-Disallow: /wp-includes/
-Disallow: /search/
-Disallow: /?s=
-Disallow: /feed/
-Disallow: /trackback/
-Disallow: /xmlrpc.php
-Disallow: /*?replytocom
-Disallow: /comments/feed/
 
 # Allow specific user agents or bots if needed
 User-agent: Googlebot
-Allow: /wp-content/uploads/
 
 User-agent: Bingbot
-Allow: /wp-content/uploads/
 
 # Sitemap
 Sitemap: https://trumptalk4547.com/sitemap.xml
