@@ -18,6 +18,8 @@
 <style>
 	a {
 		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 		text-decoration: none;
 		color: var(--color-text);
 		border-bottom: 2px dotted var(--color-highligh);
