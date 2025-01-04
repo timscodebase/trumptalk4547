@@ -4,13 +4,14 @@ import type { Post } from '$lib/types'
 export async function GET({ fetch }) {
 	const response = await fetch('api/all-posts')
 	const posts: Post[] = await response.json()
+	console.log("Post from RSS: ", posts)
 
 	const headers = { 'Content-Type': 'application/xml' }
 
 	const xml = `
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 			<channel>
-				<title>${config.url}/blog/${post.slug}</title>
+				<title>${config.url}</title>
 				<description>${config.description}</description>
 				<link>${config.url}</link>
 				<atom:link href="${config.url}/rss.xml" rel="self" type="application/rss+xml"/>
