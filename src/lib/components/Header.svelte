@@ -8,7 +8,7 @@
 
 <Meta />
 
-<svelte:head>
+<!-- <svelte:head>
 	<style>
 		.header-right {
 			display: flex;
@@ -32,7 +32,7 @@
 			}
 	}
 	</style>
-</svelte:head>
+</svelte:head> -->
 
 <header>
 	<div class="logo">
