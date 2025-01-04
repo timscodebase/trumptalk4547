@@ -27,7 +27,7 @@
 				rgba(197, 197, 197, 0.45),
 				rgba(0, 35, 173, 0.65)
 			),
-			url('https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727595366/American_Flag_vgd5il.webp');
+			url('./american-flag.png');
 		background-size: cover;
 		text-shadow: 0px 2px 2px var(--color-text-op);
 		border: 2px solid var(--color-highligh);
