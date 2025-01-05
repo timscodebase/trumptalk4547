@@ -3,7 +3,7 @@ import type { Post } from '$lib/types'
 
 async function getPosts(): Promise<Post[]> {
 	let posts: Post[] = []
-	
+
 	const paths = import.meta.glob('/src/posts/*.md', { eager: true })
 
 	for (const path in paths) {
@@ -18,13 +18,14 @@ async function getPosts(): Promise<Post[]> {
 	}
 
 	posts = posts.sort(
-		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
+		(first, second) =>
+			new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
 
 	return posts
 }
 
 export async function GET(): Promise<Response> {
-	const posts = await getPosts();
-	return json(posts);
+	const posts = await getPosts()
+	return json(posts)
 }

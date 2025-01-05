@@ -2,31 +2,30 @@
 title: 'Why Trump Won'
 description: 'While Trump indeed ran a great campain, is was NOT why he won.'
 date: '2024-11-07'
-image: 'https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/e_contrast:0/e_sharpen:100/v1730993816/Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm.avif'
+image_id: 'Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm'
 categories:
   - Donald J Trump
   - Kamala Harris
   - Trump - 295
   - Harris - 226
-type: ["domestic", "news"]
+type: ['domestic', 'news']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/e_contrast:0,q_auto:eco/e_enhance/v1730991702/Screenshot_2024-11-07_at_5.51.02_AM_zmjwwi.avif"
-  alt="Donald J. Trump elected the 47 Presisent of the United States"
-/>
-
 ### CNN: Trump - 295 | Harris - 226
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/e_enhance,q_auto:eco/e_contrast:0/e_sharpen:100/v1730993816/Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm.avif"
-  alt="CNN 2024 Election Results"
+
+<CldImage
+  width='100%'
+  src='Screenshot_2024-11-07_at_7.36.34_AM_ayn2cm'
+  alt='While Trump indeed ran a great campain, is was NOT why he won.'
+  aspect-ratio='16:9'
 />
 
 ## Why Trump Won
@@ -38,8 +37,6 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 - "TAMPON TIM"
 
 ## "NOTHING COMES TO MIND" Kamala Harris
-
-
 
 ## The M.A.G.A Movement includes more demographic groups than we thought
 

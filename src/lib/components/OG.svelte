@@ -1,25 +1,16 @@
 <script lang="ts">
 	import { slugify } from '$lib/utils'
 	import * as config from '$lib/config'
+	import { CldOgImage } from 'svelte-cloudinary'
 
 	let { meta } = $props()
+	console.log('META: ', meta.image_id)
 </script>
 
 <meta name="title" property="og:title" content={meta.title} />
 <meta name="description" property="og:description" content={meta.description} />
 <meta name="author" content={meta.author} />
-
-<meta name="image" property="og:image" content={meta.image} />
-<meta property="og:image:secure_url" content={meta.image} />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content={meta.title} />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="Trump Talk 45/47" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content={`${config.url}/blog/${slugify(meta.title)}`} />
-
 <meta property="article:publisher" content={config.url} />
 <meta property="article:author" content={meta.author} />
 <meta property="article:section" content="Blog" />

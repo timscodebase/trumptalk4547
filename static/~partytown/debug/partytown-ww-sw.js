@@ -30,12 +30,18 @@
 	const elementStructurePropNames = commaSplit(
 		'childElementCount,children,firstElementChild,lastElementChild,nextElementSibling,previousElementSibling'
 	)
-	const structureChangingMethodNames = commaSplit('insertBefore,remove,removeChild,replaceChild')
+	const structureChangingMethodNames = commaSplit(
+		'insertBefore,remove,removeChild,replaceChild'
+	)
 	const dimensionChangingSetterNames = commaSplit(
 		'className,width,height,hidden,innerHTML,innerText,textContent,text'
 	)
-	const dimensionChangingMethodNames = commaSplit('setAttribute,setAttributeNS,setProperty')
-	const eventTargetMethods = commaSplit('addEventListener,dispatchEvent,removeEventListener')
+	const dimensionChangingMethodNames = commaSplit(
+		'setAttribute,setAttributeNS,setProperty'
+	)
+	const eventTargetMethods = commaSplit(
+		'addEventListener,dispatchEvent,removeEventListener'
+	)
 	const nonBlockingMethods = eventTargetMethods.concat(
 		dimensionChangingMethodNames,
 		commaSplit('add,observe,remove,unobserve')
@@ -47,7 +53,9 @@
 		var _a, _b, _c
 		try {
 			const constructorName =
-				null === (_a = null == obj ? void 0 : obj.constructor) || void 0 === _a ? void 0 : _a.name
+				null === (_a = null == obj ? void 0 : obj.constructor) || void 0 === _a
+					? void 0
+					: _a.name
 			if (constructorName) {
 				return constructorName
 			}
@@ -56,7 +64,9 @@
 			const zoneJsConstructorName =
 				null ===
 					(_c =
-						null === (_b = null == obj ? void 0 : obj.__zone_symbol__originalInstance) ||
+						null ===
+							(_b =
+								null == obj ? void 0 : obj.__zone_symbol__originalInstance) ||
 						void 0 === _b
 							? void 0
 							: _b.constructor) || void 0 === _c
@@ -69,7 +79,8 @@
 		return ''
 	}
 	const EMPTY_ARRAY = []
-	const randomId = () => Math.round(Math.random() * Number.MAX_SAFE_INTEGER).toString(36)
+	const randomId = () =>
+		Math.round(Math.random() * Number.MAX_SAFE_INTEGER).toString(36)
 	const SCRIPT_TYPE = 'text/partytown'
 	const defineProperty = (obj, memberName, descriptor) =>
 		Object.defineProperty(obj, memberName, {
@@ -97,7 +108,9 @@
 				Object.getOwnPropertyNames(currentObj).forEach((item) => {
 					'function' == typeof currentObj[item] && properties.add(item)
 				})
-			} while ((currentObj = Object.getPrototypeOf(currentObj)) !== Object.prototype)
+			} while (
+				(currentObj = Object.getPrototypeOf(currentObj)) !== Object.prototype
+			)
 			return Array.from(properties)
 		})([])
 	)
@@ -124,8 +137,10 @@
 			_b
 		)
 	}
-	const hasInstanceStateValue = (instance, stateKey) => stateKey in instance[InstanceStateKey]
-	const getInstanceStateValue = (instance, stateKey) => instance[InstanceStateKey][stateKey]
+	const hasInstanceStateValue = (instance, stateKey) =>
+		stateKey in instance[InstanceStateKey]
+	const getInstanceStateValue = (instance, stateKey) =>
+		instance[InstanceStateKey][stateKey]
 	const setInstanceStateValue = (instance, stateKey, stateValue) =>
 		(instance[InstanceStateKey][stateKey] = stateValue)
 	const setWorkerRef = (ref, refId) => {
@@ -146,7 +161,12 @@
 		instance = webWorkerInstances.get(instanceId)
 		if (!instance && nodeName && environments[winId]) {
 			const prevInstance = webWorkerInstances.get(prevInstanceId || '')
-			instance = environments[winId].$createNode$(nodeName, instanceId, namespace, prevInstance)
+			instance = environments[winId].$createNode$(
+				nodeName,
+				instanceId,
+				namespace,
+				prevInstance
+			)
 			webWorkerInstances.set(instanceId, instance)
 		}
 		return instance
@@ -172,7 +192,9 @@
 			instance[WinIdKey],
 			instance[InstanceIdKey],
 			memberName,
-			...(args || EMPTY_ARRAY).map((arg) => String(arg && arg[WinIdKey] ? arg[InstanceIdKey] : arg))
+			...(args || EMPTY_ARRAY).map((arg) =>
+				String(arg && arg[WinIdKey] ? arg[InstanceIdKey] : arg)
+			)
 		].join('.')
 	const cachedProps = (Cstr, propNames) =>
 		commaSplit(propNames).map((propName) =>
@@ -183,7 +205,8 @@
 					return getInstanceStateValue(this, propName)
 				},
 				set(val) {
-					getInstanceStateValue(this, propName) !== val && setter(this, [propName], val)
+					getInstanceStateValue(this, propName) !== val &&
+						setter(this, [propName], val)
 					setInstanceStateValue(this, propName, val)
 				}
 			})
@@ -192,14 +215,24 @@
 		getterDimensionPropNames.map((propName) =>
 			definePrototypeProperty(Cstr, propName, {
 				get() {
-					const dimension = cachedDimensions.get(getInstanceCacheKey(this, propName))
+					const dimension = cachedDimensions.get(
+						getInstanceCacheKey(this, propName)
+					)
 					if ('number' == typeof dimension) {
 						return dimension
 					}
-					const groupedDimensions = getter(this, [propName], getterDimensionPropNames)
+					const groupedDimensions = getter(
+						this,
+						[propName],
+						getterDimensionPropNames
+					)
 					if (groupedDimensions && 'object' == typeof groupedDimensions) {
-						Object.entries(groupedDimensions).map(([dimensionPropName, value]) =>
-							cachedDimensions.set(getInstanceCacheKey(this, dimensionPropName), value)
+						Object.entries(groupedDimensions).map(
+							([dimensionPropName, value]) =>
+								cachedDimensions.set(
+									getInstanceCacheKey(this, dimensionPropName),
+									value
+								)
 						)
 						return groupedDimensions[propName]
 					}
@@ -221,7 +254,10 @@
 		})
 	const serializeForMain = ($winId$, $instanceId$, value, added, type) =>
 		void 0 !== value && (type = typeof value)
-			? 'string' === type || 'boolean' === type || 'number' === type || null == value
+			? 'string' === type ||
+				'boolean' === type ||
+				'number' === type ||
+				null == value
 				? [0, value]
 				: 'function' === type
 					? [
@@ -237,20 +273,40 @@
 							? [1, []]
 							: added.add(value) && [
 									1,
-									value.map((v) => serializeForMain($winId$, $instanceId$, v, added))
+									value.map((v) =>
+										serializeForMain($winId$, $instanceId$, v, added)
+									)
 								]
 						: 'object' === type
 							? value[InstanceIdKey]
 								? [3, [value[WinIdKey], value[InstanceIdKey]]]
 								: value instanceof Event
-									? [5, serializeObjectForMain($winId$, $instanceId$, value, false, added)]
+									? [
+											5,
+											serializeObjectForMain(
+												$winId$,
+												$instanceId$,
+												value,
+												false,
+												added
+											)
+										]
 									: supportsTrustedHTML && value instanceof TrustedHTML
 										? [0, value.toString()]
 										: value instanceof ArrayBuffer
 											? [8, value]
 											: ArrayBuffer.isView(value)
 												? [9, value.buffer, getConstructorName(value)]
-												: [2, serializeObjectForMain($winId$, $instanceId$, value, true, added)]
+												: [
+														2,
+														serializeObjectForMain(
+															$winId$,
+															$instanceId$,
+															value,
+															true,
+															added
+														)
+													]
 							: void 0
 			: value
 	const supportsTrustedHTML = 'undefined' != typeof TrustedHTML
@@ -270,13 +326,20 @@
 			for (propName in obj) {
 				propValue = obj[propName]
 				;(includeFunctions || 'function' != typeof propValue) &&
-					(serializedObj[propName] = serializeForMain(winId, instanceId, propValue, added))
+					(serializedObj[propName] = serializeForMain(
+						winId,
+						instanceId,
+						propValue,
+						added
+					))
 			}
 		}
 		return serializedObj
 	}
 	const serializeInstanceForMain = (instance, value) =>
-		instance ? serializeForMain(instance[WinIdKey], instance[InstanceIdKey], value) : [0, value]
+		instance
+			? serializeForMain(instance[WinIdKey], instance[InstanceIdKey], value)
+			: [0, value]
 	const deserializeFromMain = (
 		winId,
 		instanceId,
@@ -290,7 +353,11 @@
 		if (serializedValueTransfer) {
 			serializedType = serializedValueTransfer[0]
 			serializedValue = serializedValueTransfer[1]
-			if (0 === serializedType || 11 === serializedType || 12 === serializedType) {
+			if (
+				0 === serializedType ||
+				11 === serializedType ||
+				12 === serializedType
+			) {
 				return serializedValue
 			}
 			if (4 === serializedType) {
@@ -298,7 +365,8 @@
 			}
 			if (6 === serializedType) {
 				return winId && applyPath.length > 0
-					? (...args) => callMethod(environments[winId].$window$, applyPath, args, 1)
+					? (...args) =>
+							callMethod(environments[winId].$window$, applyPath, args, 1)
 					: noop
 			}
 			if (3 === serializedType) {
@@ -311,14 +379,21 @@
 				return new Attr(serializedValue)
 			}
 			if (1 === serializedType) {
-				return serializedValue.map((v) => deserializeFromMain(winId, instanceId, applyPath, v))
+				return serializedValue.map((v) =>
+					deserializeFromMain(winId, instanceId, applyPath, v)
+				)
 			}
 			if (14 === serializedType) {
 				return new CustomError(serializedValue)
 			}
 			obj = {}
 			for (key in serializedValue) {
-				obj[key] = deserializeFromMain(winId, instanceId, [...applyPath, key], serializedValue[key])
+				obj[key] = deserializeFromMain(
+					winId,
+					instanceId,
+					[...applyPath, key],
+					serializedValue[key]
+				)
 			}
 			if (13 === serializedType) {
 				return new environments[winId].$window$.CSSStyleDeclaration(
@@ -331,7 +406,9 @@
 			if (5 === serializedType) {
 				if ('message' === obj.type && obj.origin) {
 					let postMessageKey = JSON.stringify(obj.data)
-					let postMessageData = postMessages.find((pm) => pm.$data$ === postMessageKey)
+					let postMessageData = postMessages.find(
+						(pm) => pm.$data$ === postMessageKey
+					)
 					let env
 					if (postMessageData) {
 						env = environments[postMessageData.$winId$]
@@ -355,18 +432,39 @@
 			}
 		}
 	}
-	const getOrCreateSerializedInstance = ([winId, instanceId, nodeName, prevInstanceId]) =>
+	const getOrCreateSerializedInstance = ([
+		winId,
+		instanceId,
+		nodeName,
+		prevInstanceId
+	]) =>
 		instanceId === winId && environments[winId]
 			? environments[winId].$window$
-			: getOrCreateNodeInstance(winId, instanceId, nodeName, void 0, void 0, prevInstanceId)
+			: getOrCreateNodeInstance(
+					winId,
+					instanceId,
+					nodeName,
+					void 0,
+					void 0,
+					prevInstanceId
+				)
 	const deserializeRefFromMain = (
 		applyPath,
-		{ $winId$: $winId$, $instanceId$: $instanceId$, $nodeName$: $nodeName$, $refId$: $refId$ }
+		{
+			$winId$: $winId$,
+			$instanceId$: $instanceId$,
+			$nodeName$: $nodeName$,
+			$refId$: $refId$
+		}
 	) => {
 		webWorkerRefsByRefId[$refId$] ||
 			webWorkerRefIdsByRef.set(
 				(webWorkerRefsByRefId[$refId$] = function (...args) {
-					const instance = getOrCreateNodeInstance($winId$, $instanceId$, $nodeName$)
+					const instance = getOrCreateNodeInstance(
+						$winId$,
+						$instanceId$,
+						$nodeName$
+					)
 					return callMethod(instance, applyPath, args)
 				}),
 				$refId$
@@ -420,7 +518,10 @@
 		}
 	}
 	const warnCrossOrigin = (apiType, apiName, env) =>
-		console.warn(`Partytown unable to ${apiType} cross-origin ${apiName}: ` + env.$location$)
+		console.warn(
+			`Partytown unable to ${apiType} cross-origin ${apiName}: ` +
+				env.$location$
+		)
 	const logWorker = (msg, winId) => {
 		try {
 			const config = webWorkerCtx.$config$
@@ -492,7 +593,9 @@
 											? 'namedNodeMap.'
 											: 'ResizeObserver' === cstrName
 												? 'resizeObserver.'
-												: cstrName.substring(0, 1).toLowerCase() + cstrName.substring(1) + '.'
+												: cstrName.substring(0, 1).toLowerCase() +
+													cstrName.substring(1) +
+													'.'
 			}
 			target[ApplyPathKey] &&
 				target[ApplyPathKey].length &&
@@ -580,14 +683,27 @@
 	}
 	const logDimensionCacheClearStyle = (target, propName) => {
 		;(webWorkerCtx.$config$.logGetters || webWorkerCtx.$config$.logSetters) &&
-			logWorker(`Dimension cache cleared from style.${propName} setter`, target[WinIdKey])
+			logWorker(
+				`Dimension cache cleared from style.${propName} setter`,
+				target[WinIdKey]
+			)
 	}
 	const logDimensionCacheClearMethod = (target, methodName) => {
 		;(webWorkerCtx.$config$.logGetters || webWorkerCtx.$config$.logCalls) &&
-			logWorker(`Dimension cache cleared from method call ${methodName}()`, target[WinIdKey])
+			logWorker(
+				`Dimension cache cleared from method call ${methodName}()`,
+				target[WinIdKey]
+			)
 	}
 	const taskQueue = []
-	const queue = (instance, $applyPath$, callType, $assignInstanceId$, $groupedGetters$, buffer) => {
+	const queue = (
+		instance,
+		$applyPath$,
+		callType,
+		$assignInstanceId$,
+		$groupedGetters$,
+		buffer
+	) => {
 		if (instance[ApplyPathKey]) {
 			taskQueue.push({
 				$winId$: instance[WinIdKey],
@@ -596,7 +712,11 @@
 				$assignInstanceId$: $assignInstanceId$,
 				$groupedGetters$: $groupedGetters$
 			})
-			taskQueue[len(taskQueue) - 1].$debug$ = ((target, applyPath, callType) => {
+			taskQueue[len(taskQueue) - 1].$debug$ = ((
+				target,
+				applyPath,
+				callType
+			) => {
 				let m = getTargetProp(target, applyPath)
 				1 === callType
 					? (m += ' (blocking)')
@@ -605,7 +725,9 @@
 						: 3 === callType && (m += ' (non-blocking, no-side-effect)')
 				return m.trim()
 			})(instance, $applyPath$, callType)
-			buffer && 3 !== callType && console.error('buffer must be sent NonBlockingNoSideEffect')
+			buffer &&
+				3 !== callType &&
+				console.error('buffer must be sent NonBlockingNoSideEffect')
 			if (3 === callType) {
 				webWorkerCtx.$postMessage$(
 					[
@@ -615,7 +737,9 @@
 							$tasks$: [...taskQueue]
 						}
 					],
-					buffer ? [buffer instanceof ArrayBuffer ? buffer : buffer.buffer] : void 0
+					buffer
+						? [buffer instanceof ArrayBuffer ? buffer : buffer.buffer]
+						: void 0
 				)
 				taskQueue.length = 0
 			} else if (1 === callType) {
@@ -662,13 +786,21 @@
 	}
 	const getter = (instance, applyPath, groupedGetters, rtnValue) => {
 		if (webWorkerCtx.$config$.get) {
-			rtnValue = webWorkerCtx.$config$.get(createHookOptions(instance, applyPath))
+			rtnValue = webWorkerCtx.$config$.get(
+				createHookOptions(instance, applyPath)
+			)
 			if (rtnValue !== HookContinue) {
 				return rtnValue
 			}
 		}
 		rtnValue = queue(instance, applyPath, 1, void 0, groupedGetters)
-		;((target, applyPath, rtnValue, restrictedToWorker = false, groupedGetters = false) => {
+		;((
+			target,
+			applyPath,
+			rtnValue,
+			restrictedToWorker = false,
+			groupedGetters = false
+		) => {
 			if (webWorkerCtx.$config$.logGetters) {
 				try {
 					const msg = `Get ${getTargetProp(target, applyPath)}, returned: ${getLogValue(applyPath, rtnValue)}${restrictedToWorker ? ' (restricted to worker)' : ''}${groupedGetters ? ' (grouped getter)' : ''}`
@@ -693,8 +825,12 @@
 		if (dimensionChangingSetterNames.some((s) => applyPath.includes(s))) {
 			cachedDimensions.clear()
 			;((target, propName) => {
-				;(webWorkerCtx.$config$.logGetters || webWorkerCtx.$config$.logSetters) &&
-					logWorker(`Dimension cache cleared from setter "${propName}"`, target[WinIdKey])
+				;(webWorkerCtx.$config$.logGetters ||
+					webWorkerCtx.$config$.logSetters) &&
+					logWorker(
+						`Dimension cache cleared from setter "${propName}"`,
+						target[WinIdKey]
+					)
 			})(instance, applyPath[applyPath.length - 1])
 		}
 		applyPath = [...applyPath, serializeInstanceForMain(instance, value), 0]
@@ -733,7 +869,10 @@
 		methodName = applyPath[len(applyPath) - 1]
 		applyPath = [...applyPath, serializeInstanceForMain(instance, args)]
 		callType = callType || (nonBlockingMethods.includes(methodName) ? 2 : 1)
-		if ('setAttribute' === methodName && hasInstanceStateValue(instance, args[0])) {
+		if (
+			'setAttribute' === methodName &&
+			hasInstanceStateValue(instance, args[0])
+		) {
 			setInstanceStateValue(instance, args[0], args[1])
 		} else if (structureChangingMethodNames.includes(methodName)) {
 			cachedDimensions.clear()
@@ -750,7 +889,14 @@
 			cachedDimensions.clear()
 			logDimensionCacheClearMethod(instance, methodName)
 		}
-		rtnValue = queue(instance, applyPath, callType, assignInstanceId, void 0, buffer)
+		rtnValue = queue(
+			instance,
+			applyPath,
+			callType,
+			assignInstanceId,
+			void 0,
+			buffer
+		)
 		;((target, applyPath, args, rtnValue) => {
 			if (webWorkerCtx.$config$.logCalls) {
 				try {
@@ -823,13 +969,16 @@
 		}
 		win[storageName] = new Proxy(storage, {
 			get: (target, key) =>
-				Reflect.has(target, key) ? Reflect.get(target, key) : target.getItem(key),
+				Reflect.has(target, key)
+					? Reflect.get(target, key)
+					: target.getItem(key),
 			set(target, key, value) {
 				target.setItem(key, value)
 				return true
 			},
 			has: (target, key) =>
-				!!Reflect.has(target, key) || ('string' == typeof key && null !== target.getItem(key)),
+				!!Reflect.has(target, key) ||
+				('string' == typeof key && null !== target.getItem(key)),
 			deleteProperty(target, key) {
 				target.removeItem(key)
 				return true
@@ -910,7 +1059,12 @@
 					const cssRules = getCssRules(this.ownerNode)
 					index = void 0 === index ? 0 : index
 					if (index >= 0 && index <= cssRules.length) {
-						callMethod(this.ownerNode, ['sheet', 'insertRule'], [ruleText, index], 2)
+						callMethod(
+							this.ownerNode,
+							['sheet', 'insertRule'],
+							[ruleText, index],
+							2
+						)
 						cssRules.splice(index, 0, 0)
 					}
 					logDimensionCacheClearMethod(this.ownerNode, 'insertRule')
@@ -936,7 +1090,10 @@
 				}
 			}
 		}
-		definePrototypePropertyDescriptor(win.HTMLStyleElement, HTMLStyleDescriptorMap)
+		definePrototypePropertyDescriptor(
+			win.HTMLStyleElement,
+			HTMLStyleDescriptorMap
+		)
 	}
 	const getCssRules = (ownerNode, cssRules) => {
 		cssRules = getInstanceStateValue(ownerNode, 2)
@@ -949,10 +1106,20 @@
 	const getCssRule = (ownerNode, index, cssRules) => {
 		cssRules = getCssRules(ownerNode)
 		0 === cssRules[index] &&
-			(cssRules[index] = getter(ownerNode, ['sheet', 'cssRules', parseInt(index, 10)]))
+			(cssRules[index] = getter(ownerNode, [
+				'sheet',
+				'cssRules',
+				parseInt(index, 10)
+			]))
 		return cssRules[index]
 	}
-	const runScriptContent = (env, instanceId, scriptContent, winId, errorMsg) => {
+	const runScriptContent = (
+		env,
+		instanceId,
+		scriptContent,
+		winId,
+		errorMsg
+	) => {
 		try {
 			webWorkerCtx.$config$.logScriptExecution &&
 				logWorker(
@@ -992,7 +1159,10 @@
 				.map((g) => `(typeof ${g}=='function'&&(this.${g}=${g}))`)
 				.join(';')};` + (scriptUrl ? '\n//# sourceURL=' + scriptUrl : '')
 		env.$isSameOrigin$ ||
-			(scriptContent = scriptContent.replace(/.postMessage\(/g, `.postMessage('${env.$winId$}',`))
+			(scriptContent = scriptContent.replace(
+				/.postMessage\(/g,
+				`.postMessage('${env.$winId$}',`
+			))
 		new Function(scriptContent).call(env.$window$)
 		env.$runWindowLoadEvent$ = 0
 	}
@@ -1018,11 +1188,22 @@
 		}
 		return baseLocation
 	}
-	const resolveToUrl = (env, url, type, baseLocation, resolvedUrl, configResolvedUrl) => {
+	const resolveToUrl = (
+		env,
+		url,
+		type,
+		baseLocation,
+		resolvedUrl,
+		configResolvedUrl
+	) => {
 		baseLocation = resolveBaseLocation(env, baseLocation)
 		resolvedUrl = new URL(url || '', baseLocation)
 		if (type && webWorkerCtx.$config$.resolveUrl) {
-			configResolvedUrl = webWorkerCtx.$config$.resolveUrl(resolvedUrl, baseLocation, type)
+			configResolvedUrl = webWorkerCtx.$config$.resolveUrl(
+				resolvedUrl,
+				baseLocation,
+				type
+			)
 			if (configResolvedUrl) {
 				return configResolvedUrl
 			}
@@ -1034,10 +1215,11 @@
 		const baseLocation = resolveBaseLocation(env)
 		const resolvedUrl = new URL(url || '', baseLocation)
 		if (webWorkerCtx.$config$.resolveSendBeaconRequestParameters) {
-			const configResolvedParams = webWorkerCtx.$config$.resolveSendBeaconRequestParameters(
-				resolvedUrl,
-				baseLocation
-			)
+			const configResolvedParams =
+				webWorkerCtx.$config$.resolveSendBeaconRequestParameters(
+					resolvedUrl,
+					baseLocation
+				)
 			if (configResolvedParams) {
 				return configResolvedParams
 			}
@@ -1059,7 +1241,10 @@
 			}
 			set src(src) {
 				webWorkerCtx.$config$.logImageRequests &&
-					logWorker(`Image() request: ${resolveUrl(env, src, 'image')}`, env.$winId$)
+					logWorker(
+						`Image() request: ${resolveUrl(env, src, 'image')}`,
+						env.$winId$
+					)
 				this.s = src
 				fetch(resolveUrl(env, src, 'image'), {
 					mode: 'no-cors',
@@ -1145,7 +1330,9 @@
 		},
 		getAttribute: {
 			value(attrName) {
-				return 'src' === attrName ? this.src : callMethod(this, ['getAttribute'], [attrName])
+				return 'src' === attrName
+					? this.src
+					: callMethod(this, ['getAttribute'], [attrName])
 			}
 		},
 		setAttribute: {
@@ -1173,8 +1360,10 @@
 					setter(this, ['src'], url)
 					orgUrl !== url && setter(this, ['dataset', 'ptsrc'], orgUrl)
 					if (this.type) {
-						const shouldExecuteScriptViaMainThread = testIfMustLoadScriptOnMainThread(config, url)
-						shouldExecuteScriptViaMainThread && setter(this, ['type'], 'text/javascript')
+						const shouldExecuteScriptViaMainThread =
+							testIfMustLoadScriptOnMainThread(config, url)
+						shouldExecuteScriptViaMainThread &&
+							setter(this, ['type'], 'text/javascript')
 					}
 				}
 			},
@@ -1193,7 +1382,10 @@
 			},
 			...HTMLSrcElementDescriptorMap
 		}
-		definePrototypePropertyDescriptor(WorkerHTMLScriptElement, HTMLScriptDescriptorMap)
+		definePrototypePropertyDescriptor(
+			WorkerHTMLScriptElement,
+			HTMLScriptDescriptorMap
+		)
 	}
 	const innerHTMLDescriptor = {
 		get() {
@@ -1210,7 +1402,8 @@
 			setInstanceStateValue(this, 3, scriptContent)
 		}
 	}
-	const isScriptJsType = (scriptType) => !scriptType || 'text/javascript' === scriptType
+	const isScriptJsType = (scriptType) =>
+		!scriptType || 'text/javascript' === scriptType
 	const createNodeCstr = (win, env, WorkerBase) => {
 		const config = webWorkerCtx.$config$
 		const WorkerNode = defineConstructorName(
@@ -1237,7 +1430,13 @@
 								if (loadOnMainThread) {
 									setter(newNode, ['type'], 'text/javascript')
 								} else {
-									const errorMsg = runScriptContent(env, instanceId, scriptContent, winId, '')
+									const errorMsg = runScriptContent(
+										env,
+										instanceId,
+										scriptContent,
+										winId,
+										''
+									)
 									const datasetType = errorMsg ? 'pterror' : 'ptid'
 									const datasetValue = errorMsg || instanceId
 									setter(newNode, ['type'], 'text/partytown-x')
@@ -1294,7 +1493,9 @@
 					return newNode
 				}
 				get nodeName() {
-					return '#s' === this[InstanceDataKey] ? '#document-fragment' : this[InstanceDataKey]
+					return '#s' === this[InstanceDataKey]
+						? '#document-fragment'
+						: this[InstanceDataKey]
 				}
 				get nodeType() {
 					return 3
@@ -1360,7 +1561,8 @@
 						setter(elm, ['srcdoc'], getPartytownScript())
 					} else if ('SCRIPT' === tagName) {
 						const scriptType = getInstanceStateValue(elm, 5)
-						isScriptJsType(scriptType) && setter(elm, ['type'], 'text/partytown')
+						isScriptJsType(scriptType) &&
+							setter(elm, ['type'], 'text/partytown')
 					}
 					return elm
 				}
@@ -1368,8 +1570,19 @@
 			createElementNS: {
 				value(namespace, tagName) {
 					const instanceId = randomId()
-					const nsElm = getOrCreateNodeInstance(this[WinIdKey], instanceId, tagName, namespace)
-					callMethod(this, ['createElementNS'], [namespace, tagName], 2, instanceId)
+					const nsElm = getOrCreateNodeInstance(
+						this[WinIdKey],
+						instanceId,
+						tagName,
+						namespace
+					)
+					callMethod(
+						this,
+						['createElementNS'],
+						[namespace, tagName],
+						2,
+						instanceId
+					)
 					return nsElm
 				}
 			},
@@ -1388,7 +1601,11 @@
 			currentScript: {
 				get() {
 					return env.$currentScriptId$
-						? getOrCreateNodeInstance(this[WinIdKey], env.$currentScriptId$, 'SCRIPT')
+						? getOrCreateNodeInstance(
+								this[WinIdKey],
+								env.$currentScriptId$,
+								'SCRIPT'
+							)
 						: null
 				}
 			},
@@ -1427,9 +1644,15 @@
 						hasFeature: () => true,
 						createHTMLDocument: (title) => {
 							const $winId$ = randomId()
-							callMethod(this, ['implementation', 'createHTMLDocument'], [title], 1, {
-								$winId$: $winId$
-							})
+							callMethod(
+								this,
+								['implementation', 'createHTMLDocument'],
+								[title],
+								1,
+								{
+									$winId$: $winId$
+								}
+							)
 							const docEnv = createEnvironment(
 								{
 									$winId$: $winId$,
@@ -1481,7 +1704,10 @@
 				get: () => env.$documentElement$
 			}
 		}
-		definePrototypePropertyDescriptor(WokerDocumentElementChild, DocumentElementChildDescriptorMap)
+		definePrototypePropertyDescriptor(
+			WokerDocumentElementChild,
+			DocumentElementChildDescriptorMap
+		)
 	}
 	const patchElement = (WorkerElement, WorkerHTMLElement) => {
 		const ElementDescriptorMap = {
@@ -1508,11 +1734,16 @@
 		cachedTreeProps(WorkerElement, elementStructurePropNames)
 		cachedProps(WorkerElement, 'id')
 		cachedDimensionProps(WorkerHTMLElement)
-		cachedDimensionMethods(WorkerHTMLElement, commaSplit('getClientRects,getBoundingClientRect'))
+		cachedDimensionMethods(
+			WorkerHTMLElement,
+			commaSplit('getClientRects,getBoundingClientRect')
+		)
 	}
 	const patchHTMLAnchorElement = (WorkerHTMLAnchorElement, env) => {
 		const HTMLAnchorDescriptorMap = {}
-		commaSplit('hash,host,hostname,href,origin,pathname,port,protocol,search').map((anchorProp) => {
+		commaSplit(
+			'hash,host,hostname,href,origin,pathname,port,protocol,search'
+		).map((anchorProp) => {
 			HTMLAnchorDescriptorMap[anchorProp] = {
 				get() {
 					let value = getInstanceStateValue(this, 4)
@@ -1555,7 +1786,10 @@
 				}
 			}
 		})
-		definePrototypePropertyDescriptor(WorkerHTMLAnchorElement, HTMLAnchorDescriptorMap)
+		definePrototypePropertyDescriptor(
+			WorkerHTMLAnchorElement,
+			HTMLAnchorDescriptorMap
+		)
 	}
 	const patchHTMLIFrameElement = (WorkerHTMLIFrameElement, env) => {
 		const HTMLIFrameDescriptorMap = {
@@ -1631,10 +1865,16 @@
 			},
 			...HTMLSrcElementDescriptorMap
 		}
-		definePrototypePropertyDescriptor(WorkerHTMLIFrameElement, HTMLIFrameDescriptorMap)
+		definePrototypePropertyDescriptor(
+			WorkerHTMLIFrameElement,
+			HTMLIFrameDescriptorMap
+		)
 	}
 	const ATTR_REGEXP_STR = '((?:\\w|-)+(?:=(?:(?:\\w|-)+|\'[^\']*\'|"[^"]*")?)?)'
-	const SCRIPT_TAG_REGEXP = new RegExp(`<script\\s*((${ATTR_REGEXP_STR}\\s*)*)>`, 'mg')
+	const SCRIPT_TAG_REGEXP = new RegExp(
+		`<script\\s*((${ATTR_REGEXP_STR}\\s*)*)>`,
+		'mg'
+	)
 	const ATTR_REGEXP = new RegExp(ATTR_REGEXP_STR, 'mg')
 	const getIframeEnv = (iframe) => {
 		const $winId$ = iframe[InstanceIdKey]
@@ -1651,7 +1891,14 @@
 	}
 	const patchSvgElement = (WorkerSVGGraphicsElement) => {
 		const getMatrix = (elm, methodName) => {
-			const { a: a, b: b, c: c, d: d, e: e, f: f } = callMethod(elm, [methodName], EMPTY_ARRAY)
+			const {
+				a: a,
+				b: b,
+				c: c,
+				d: d,
+				e: e,
+				f: f
+			} = callMethod(elm, [methodName], EMPTY_ARRAY)
 			return new DOMMatrixReadOnly([a, b, c, d, e, f])
 		}
 		const SVGGraphicsElementDescriptorMap = {
@@ -1667,7 +1914,10 @@
 				}
 			}
 		}
-		definePrototypePropertyDescriptor(WorkerSVGGraphicsElement, SVGGraphicsElementDescriptorMap)
+		definePrototypePropertyDescriptor(
+			WorkerSVGGraphicsElement,
+			SVGGraphicsElementDescriptorMap
+		)
 	}
 	const createNamedNodeMapCstr = (win, WorkerBase) => {
 		win.NamedNodeMap = defineConstructorName(
@@ -1677,12 +1927,16 @@
 					return new Proxy(this, {
 						get(target, propName) {
 							const handler = NAMED_NODE_MAP_HANDLERS[propName]
-							return handler ? handler.bind(target, [propName]) : getter(target, [propName])
+							return handler
+								? handler.bind(target, [propName])
+								: getter(target, [propName])
 						},
 						set(target, propName, propValue) {
 							const handler = NAMED_NODE_MAP_HANDLERS[propName]
 							if (handler) {
-								throw new Error("Can't set read-only property: " + String(propName))
+								throw new Error(
+									"Can't set read-only property: " + String(propName)
+								)
 							}
 							setter(target, [propName], propValue)
 							return true
@@ -1724,7 +1978,8 @@
 				this[ApplyPathKey] = applyPath || []
 				this[InstanceDataKey] = instanceData || cstrNodeName
 				this[NamespaceKey] = namespace || cstrNamespace
-				this[InstanceStateKey] = (cstrPrevInstance && cstrPrevInstance[InstanceStateKey]) || {}
+				this[InstanceStateKey] =
+					(cstrPrevInstance && cstrPrevInstance[InstanceStateKey]) || {}
 				cstrInstanceId = cstrNodeName = cstrNamespace = void 0
 			}
 		}
@@ -1744,7 +1999,8 @@
 		)
 		const $location$ = new WorkerLocation(url)
 		const $isSameOrigin$ =
-			$location$.origin === webWorkerCtx.$origin$ || 'about:blank' === $location$.origin
+			$location$.origin === webWorkerCtx.$origin$ ||
+			'about:blank' === $location$.origin
 		const $isTopWindow$ = $parentWinId$ === $winId$
 		const env = {}
 		const getChildEnvs = () => {
@@ -1753,7 +2009,9 @@
 			let otherEnv
 			for (envWinId in environments) {
 				otherEnv = environments[envWinId]
-				otherEnv.$parentWinId$ !== $winId$ || otherEnv.$isTopWindow$ || childEnv.push(otherEnv)
+				otherEnv.$parentWinId$ !== $winId$ ||
+					otherEnv.$isTopWindow$ ||
+					childEnv.push(otherEnv)
 			}
 			return childEnv
 		}
@@ -1790,17 +2048,30 @@
 										InstanceIdKey,
 										ApplyPathKey
 									]
-									webWorkerCtx.$importScripts$(partytownLibUrl('partytown-media.js?v=0.10.2'))
+									webWorkerCtx.$importScripts$(
+										partytownLibUrl('partytown-media.js?v=0.10.2')
+									)
 									webWorkerCtx.$initWindowMedia$ = self.$bridgeFromMedia$
 									delete self.$bridgeFromMedia$
 								}
 								return webWorkerCtx.$initWindowMedia$
-							})()(WorkerBase, WorkerEventTargetProxy, env, win, windowMediaConstructors)
+							})()(
+								WorkerBase,
+								WorkerEventTargetProxy,
+								env,
+								win,
+								windowMediaConstructors
+							)
 							hasInitializedMedia = 1
 						}
 					}
 					let nodeCstrs = {}
-					let $createNode$ = (nodeName, instanceId, namespace, prevInstance) => {
+					let $createNode$ = (
+						nodeName,
+						instanceId,
+						namespace,
+						prevInstance
+					) => {
 						htmlMedia.includes(nodeName) && initWindowMedia()
 						const NodeCstr = nodeCstrs[nodeName]
 							? nodeCstrs[nodeName]
@@ -1838,15 +2109,25 @@
 								registry.set(tagName, Cstr)
 								nodeCstrs[tagName.toUpperCase()] = Cstr
 								const ceData = [Cstr.name, Cstr.observedAttributes]
-								callMethod(win, ['customElements', 'define'], [tagName, ceData, opts])
+								callMethod(
+									win,
+									['customElements', 'define'],
+									[tagName, ceData, opts]
+								)
 							},
 							get: (tagName) =>
-								registry.get(tagName) || callMethod(win, ['customElements', 'get'], [tagName]),
+								registry.get(tagName) ||
+								callMethod(win, ['customElements', 'get'], [tagName]),
 							whenDefined: (tagName) =>
 								registry.has(tagName)
 									? Promise.resolve()
-									: callMethod(win, ['customElements', 'whenDefined'], [tagName]),
-							upgrade: (elm) => callMethod(win, ['customElements', 'upgrade'], [elm])
+									: callMethod(
+											win,
+											['customElements', 'whenDefined'],
+											[tagName]
+										),
+							upgrade: (elm) =>
+								callMethod(win, ['customElements', 'upgrade'], [elm])
 						}
 					})(win, nodeCstrs)
 					webWorkerCtx.$interfaces$.map(
@@ -1878,7 +2159,10 @@
 												get() {
 													if (!hasInstanceStateValue(this, memberName)) {
 														const instanceId = this[InstanceIdKey]
-														const applyPath = [...this[ApplyPathKey], memberName]
+														const applyPath = [
+															...this[ApplyPathKey],
+															memberName
+														]
 														const PropCstr = win[memberType]
 														PropCstr &&
 															setInstanceStateValue(
@@ -1894,9 +2178,13 @@
 												}
 											})
 										: 5 === memberType
-											? definePrototypeValue(Cstr, memberName, function (...args) {
-													return callMethod(this, [memberName], args)
-												})
+											? definePrototypeValue(
+													Cstr,
+													memberName,
+													function (...args) {
+														return callMethod(this, [memberName], args)
+													}
+												)
 											: memberType > 0 &&
 												(void 0 !== staticValue
 													? definePrototypeValue(Cstr, memberName, staticValue)
@@ -1919,7 +2207,8 @@
 							value = self[globalName]
 							null != value &&
 								(win[globalName] =
-									'function' != typeof value || value.toString().startsWith('class')
+									'function' != typeof value ||
+									value.toString().startsWith('class')
 										? value
 										: value.bind(self))
 						}
@@ -1961,7 +2250,10 @@
 								get: () => env.$document$
 							}
 						}
-						definePrototypePropertyDescriptor(WorkerHTMLHtmlElement, DocumentElementDescriptorMap)
+						definePrototypePropertyDescriptor(
+							WorkerHTMLHtmlElement,
+							DocumentElementDescriptorMap
+						)
 					})(win.HTMLHtmlElement, env)
 					createCSSStyleSheetConstructor(win, 'CSSStyleSheet')
 					definePrototypeNodeType(win.Comment, 8)
@@ -1974,7 +2266,8 @@
 								var _a
 								if ('string' != typeof propName || isNaN(propName)) {
 									return (
-										null === (_a = webWorkerCtx.$config$.mainWindowAccessors) || void 0 === _a
+										null === (_a = webWorkerCtx.$config$.mainWindowAccessors) ||
+										void 0 === _a
 											? void 0
 											: _a.includes(propName)
 									)
@@ -1998,7 +2291,8 @@
 						$isTopWindow$: $isTopWindow$,
 						$createNode$: $createNode$
 					})
-					win.requestAnimationFrame = (cb) => setTimeout(() => cb(performance.now()), 9)
+					win.requestAnimationFrame = (cb) =>
+						setTimeout(() => cb(performance.now()), 9)
 					win.cancelAnimationFrame = (id) => clearTimeout(id)
 					win.requestIdleCallback = (cb, start) => {
 						start = Date.now()
@@ -2032,12 +2326,16 @@
 						win.indexeddb = void 0
 					} else {
 						const originalPushState = win.history.pushState.bind(win.history)
-						const originalReplaceState = win.history.replaceState.bind(win.history)
+						const originalReplaceState = win.history.replaceState.bind(
+							win.history
+						)
 						win.history.pushState = (stateObj, _, newUrl) => {
-							false !== env.$propagateHistoryChange$ && originalPushState(stateObj, _, newUrl)
+							false !== env.$propagateHistoryChange$ &&
+								originalPushState(stateObj, _, newUrl)
 						}
 						win.history.replaceState = (stateObj, _, newUrl) => {
-							false !== env.$propagateHistoryChange$ && originalReplaceState(stateObj, _, newUrl)
+							false !== env.$propagateHistoryChange$ &&
+								originalReplaceState(stateObj, _, newUrl)
 						}
 					}
 					win.Worker = void 0
@@ -2052,14 +2350,19 @@
 					return env.$documentElement$
 				}
 				fetch(input, init) {
-					input = 'string' == typeof input || input instanceof URL ? String(input) : input.url
+					input =
+						'string' == typeof input || input instanceof URL
+							? String(input)
+							: input.url
 					return fetch(resolveUrl(env, input, 'fetch'), init)
 				}
 				get frames() {
 					return env.$window$
 				}
 				get frameElement() {
-					return $isTopWindow$ ? null : getOrCreateNodeInstance($parentWinId$, $winId$, 'IFRAME')
+					return $isTopWindow$
+						? null
+						: getOrCreateNodeInstance($parentWinId$, $winId$, 'IFRAME')
 				}
 				get globalThis() {
 					return env.$window$
@@ -2172,7 +2475,8 @@
 								super.open(...args)
 							}
 							set withCredentials(_) {
-								webWorkerCtx.$config$.allowXhrCredentials && (super.withCredentials = _)
+								webWorkerCtx.$config$.allowXhrCredentials &&
+									(super.withCredentials = _)
 							}
 							toString() {
 								return str
@@ -2236,7 +2540,10 @@
 			)
 			{
 				const winType = $winId$ === $parentWinId$ ? 'top' : 'iframe'
-				logWorker(`Created ${winType} window ${normalizedWinId($winId$)} environment`, $winId$)
+				logWorker(
+					`Created ${winType} window ${normalizedWinId($winId$)} environment`,
+					$winId$
+				)
 			}
 		}
 		webWorkerCtx.$postMessage$([7, $winId$])
@@ -2284,10 +2591,12 @@
 										(_c =
 											null ===
 												(_a =
-													null == responseContentType ? void 0 : responseContentType.toLowerCase) ||
-											void 0 === _a
+													null == responseContentType
+														? void 0
+														: responseContentType.toLowerCase) || void 0 === _a
 												? void 0
-												: (_b = _a.call(responseContentType)).includes) || void 0 === _c
+												: (_b = _a.call(responseContentType)).includes) ||
+										void 0 === _c
 										? void 0
 										: _c.call(_b, ct)
 								})
@@ -2308,7 +2617,13 @@
 						}
 					} else {
 						scriptContent &&
-							(errorMsg = runScriptContent(env, instanceId, scriptContent, winId, errorMsg))
+							(errorMsg = runScriptContent(
+								env,
+								instanceId,
+								scriptContent,
+								winId,
+								errorMsg
+							))
 					}
 					env.$currentScriptId$ = ''
 					webWorkerCtx.$postMessage$([6, winId, instanceId, errorMsg])
@@ -2341,7 +2656,10 @@
 						for (; i < l; i++) {
 							i + 1 < l
 								? (target = target[$forward$[i]])
-								: target[$forward$[i]].apply(target, deserializeFromMain(null, $winId$, [], $args$))
+								: target[$forward$[i]].apply(
+										target,
+										deserializeFromMain(null, $winId$, [], $args$)
+									)
 						}
 					} catch (e) {
 						console.error(e)
@@ -2354,7 +2672,10 @@
 					const winId = msgValue
 					const env = environments[winId]
 					const winType = env.$winId$ === env.$parentWinId$ ? 'top' : 'iframe'
-					logWorker(`Initialized ${winType} window ${normalizedWinId(winId)} environment 🎉`, winId)
+					logWorker(
+						`Initialized ${winType} window ${normalizedWinId(winId)} environment 🎉`,
+						winId
+					)
 				}
 				environments[msgValue].$isInitialized$ = 1
 				environments[msgValue].$isLoading$ = 0
@@ -2387,12 +2708,16 @@
 				15 === msgType &&
 					((_type, winId, instanceId, callbackName, args) => {
 						const elm = getOrCreateNodeInstance(winId, instanceId)
-						elm && 'function' == typeof elm[callbackName] && elm[callbackName].apply(elm, args)
+						elm &&
+							'function' == typeof elm[callbackName] &&
+							elm[callbackName].apply(elm, args)
 					})(...msg)
 			}
 		} else if (1 === msgType) {
 			;((initWebWorkerData) => {
-				const config = (webWorkerCtx.$config$ = JSON.parse(initWebWorkerData.$config$))
+				const config = (webWorkerCtx.$config$ = JSON.parse(
+					initWebWorkerData.$config$
+				))
 				const locOrigin = initWebWorkerData.$origin$
 				webWorkerCtx.$importScripts$ = importScripts.bind(self)
 				webWorkerCtx.$interfaces$ = initWebWorkerData.$interfaces$
@@ -2404,12 +2729,14 @@
 				self.importScripts = void 0
 				delete self.postMessage
 				delete self.WorkerGlobalScope
-				commaSplit('resolveUrl,resolveSendBeaconRequestParameters,get,set,apply').map(
-					(configName) => {
-						config[configName] &&
-							(config[configName] = new Function('return ' + config[configName])())
-					}
-				)
+				commaSplit(
+					'resolveUrl,resolveSendBeaconRequestParameters,get,set,apply'
+				).map((configName) => {
+					config[configName] &&
+						(config[configName] = new Function(
+							'return ' + config[configName]
+						)())
+				})
 			})(msgValue)
 			webWorkerCtx.$postMessage$([2])
 		} else if (3 === msgType) {
@@ -2417,7 +2744,8 @@
 			webWorkerCtx.$isInitialized$ = 1
 			logWorker('Initialized web worker')
 			webWorkerCtx.$postMessage$([4])
-			queuedEvents.length && logWorker(`Queued ready messages: ${queuedEvents.length}`)
+			queuedEvents.length &&
+				logWorker(`Queued ready messages: ${queuedEvents.length}`)
 			;[...queuedEvents].map(receiveMessageFromSandboxToWorker)
 			queuedEvents.length = 0
 		} else {

@@ -3,6 +3,7 @@
 
 	let open = $state(false)
 	const menu_links = [
+		{ url: '/', text: 'Home' },
 		{ url: '/domestic', text: 'Domestic' },
 		{ url: '/foreign', text: 'Foreign' },
 		{ url: '/economy', text: 'Economy' },
@@ -16,17 +17,28 @@
 	<ul>
 		{#each menu_links as { url, text }}
 			<li>
-				<a href={url} class:active={$page.url.pathname === url} onmouseup={() => (open = false)}>
+				<a
+					href={url}
+					class:active={$page.url.pathname === url}
+					onmouseup={() => (open = false)}
+				>
 					{text}
 				</a>
 			</li>
 		{/each}
+		<li>
+			<a href="rss.xml" target="_blank" rel="noopener noreferrer">
+				<iconify-icon width="2rem" height="2rem" icon="mdi:rss"></iconify-icon>
+			</a>
+		</li>
 	</ul>
 </nav>
 
 <style>
 	ul {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		list-style: none;
 		margin: 0;
 		padding: 0;

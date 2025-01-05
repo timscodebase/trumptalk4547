@@ -19,7 +19,8 @@
 	const SourceBufferTasksKey = Symbol()
 	const TimeRangesKey = Symbol()
 	const EMPTY_ARRAY = []
-	const defineCstr = (win, cstrName, Cstr) => (win[cstrName] = defineCstrName(cstrName, Cstr))
+	const defineCstr = (win, cstrName, Cstr) =>
+		(win[cstrName] = defineCstrName(cstrName, Cstr))
 	const defineCstrName = (cstrName, Cstr) =>
 		Object.defineProperty(Cstr, 'name', {
 			value: cstrName
@@ -30,7 +31,9 @@
 				value(contextType, contextAttributes) {
 					this[ContextKey] ||
 						(this[ContextKey] = (
-							contextType.includes('webgl') ? createContextWebGL : createContext2D
+							contextType.includes('webgl')
+								? createContextWebGL
+								: createContext2D
 						)(this, contextType, contextAttributes))
 					return this[ContextKey]
 				}
@@ -54,7 +57,11 @@
 				}
 			}
 		)
-		const createContext2D = (canvasInstance, contextType, contextAttributes) => {
+		const createContext2D = (
+			canvasInstance,
+			contextType,
+			contextAttributes
+		) => {
 			const winId = canvasInstance[WinIdKey]
 			const ctxInstanceId = randomId()
 			const ctxInstance = {
@@ -81,7 +88,10 @@
 									if (propName.startsWith('create')) {
 										const instanceId = randomId()
 										callMethod(ctxInstance, [propName], args, 2, instanceId)
-										if ('createImageData' === propName || 'createPattern' === propName) {
+										if (
+											'createImageData' === propName ||
+											'createPattern' === propName
+										) {
 											;((api) => {
 												console.warn(`${api} not implemented`)
 											})(`${propName}()`)
@@ -91,8 +101,15 @@
 										}
 										return new WorkerCanvasGradient(winId, instanceId)
 									}
-									const methodCallType = ctx2dGetterMethods.includes(propName) ? 1 : 2
-									return callMethod(ctxInstance, [propName], args, methodCallType)
+									const methodCallType = ctx2dGetterMethods.includes(propName)
+										? 1
+										: 2
+									return callMethod(
+										ctxInstance,
+										[propName],
+										args,
+										methodCallType
+									)
 								}
 							: ctx[propName]
 						: target[propName],
@@ -110,7 +127,11 @@
 			}
 			return new Proxy(ctx, CanvasRenderingContext2D)
 		}
-		const createContextWebGL = (canvasInstance, contextType, contextAttributes) => {
+		const createContextWebGL = (
+			canvasInstance,
+			contextType,
+			contextAttributes
+		) => {
 			const winId = canvasInstance[WinIdKey]
 			const ctxInstanceId = randomId()
 			const ctxInstance = {
@@ -131,7 +152,12 @@
 						? 'function' != typeof ctx[propName]
 							? ctx[propName]
 							: (...args) =>
-									callMethod(ctxInstance, [propName], args, getWebGlMethodCallType(propName))
+									callMethod(
+										ctxInstance,
+										[propName],
+										args,
+										getWebGlMethodCallType(propName)
+									)
 						: target[propName],
 				set(target, propName, value) {
 					if ('string' == typeof propName && propName in ctx) {
@@ -147,7 +173,8 @@
 			}
 			return new Proxy(ctx, WebGLRenderingContextHandler)
 		}
-		const ctxWebGLGetterMethods = 'checkFramebufferStatus,makeXRCompatible'.split(',')
+		const ctxWebGLGetterMethods =
+			'checkFramebufferStatus,makeXRCompatible'.split(',')
 		const getWebGlMethodCallType = (methodName) =>
 			methodName.startsWith('create') ||
 			methodName.startsWith('get') ||
@@ -157,7 +184,10 @@
 				: 2
 		defineCstr(win, 'CanvasGradient', WorkerCanvasGradient)
 		defineCstr(win, 'CanvasPattern', WorkerCanvasPattern)
-		definePrototypePropertyDescriptor(win.HTMLCanvasElement, HTMLCanvasDescriptorMap)
+		definePrototypePropertyDescriptor(
+			win.HTMLCanvasElement,
+			HTMLCanvasDescriptorMap
+		)
 	}
 	const initMedia = (WorkerBase, WorkerEventTargetProxy, env, win) => {
 		var _a, _b
@@ -202,18 +232,27 @@
 					addEventListener(...args) {
 						callMethod(mediaElm, ['audioTracks', 'addEventListener'], args, 3)
 					},
-					getTrackById: (...args) => callMethod(mediaElm, ['audioTracks', 'getTrackById'], args),
+					getTrackById: (...args) =>
+						callMethod(mediaElm, ['audioTracks', 'getTrackById'], args),
 					get length() {
 						return getter(mediaElm, ['audioTracks', 'length'])
 					},
 					removeEventListener(...args) {
-						callMethod(mediaElm, ['audioTracks', 'removeEventListener'], args, 3)
+						callMethod(
+							mediaElm,
+							['audioTracks', 'removeEventListener'],
+							args,
+							3
+						)
 					}
 				}
 				return new Proxy(instance, {
 					get: (target, propName) =>
 						'number' == typeof propName
-							? new WorkerAudioTrack(winId, instanceId, ['audioTracks', propName])
+							? new WorkerAudioTrack(winId, instanceId, [
+									'audioTracks',
+									propName
+								])
 							: target[propName]
 				})
 			}
@@ -227,10 +266,20 @@
 					this[MediaSourceKey] = mediaSource
 				}
 				addEventListener(...args) {
-					callMethod(this[MediaSourceKey], ['sourceBuffers', 'addEventListener'], args, 3)
+					callMethod(
+						this[MediaSourceKey],
+						['sourceBuffers', 'addEventListener'],
+						args,
+						3
+					)
 				}
 				removeEventListener(...args) {
-					callMethod(this[MediaSourceKey], ['sourceBuffers', 'removeEventListener'], args, 3)
+					callMethod(
+						this[MediaSourceKey],
+						['sourceBuffers', 'removeEventListener'],
+						args,
+						3
+					)
 				}
 			}
 		)
@@ -239,7 +288,9 @@
 			'SourceBuffer',
 			((_b = class extends WorkerEventTargetProxy {
 				constructor(mediaSource) {
-					super(mediaSource[WinIdKey], mediaSource[InstanceIdKey], ['sourceBuffers'])
+					super(mediaSource[WinIdKey], mediaSource[InstanceIdKey], [
+						'sourceBuffers'
+					])
 					this[_a] = []
 					this[MediaSourceKey] = mediaSource
 				}
@@ -346,7 +397,14 @@
 					const task = sourceBuffer[SourceBufferTasksKey].shift()
 					if (task) {
 						const sbIndex = getSourceBufferIndex(sourceBuffer)
-						callMethod(sourceBuffer, [sbIndex, task[0]], task[1], 3, void 0, task[2])
+						callMethod(
+							sourceBuffer,
+							[sbIndex, task[0]],
+							task[1],
+							3,
+							void 0,
+							task[2]
+						)
 					}
 				}
 				setTimeout(() => drainSourceBufferQueue(sourceBuffer), 50)
@@ -356,9 +414,11 @@
 			buffered: {
 				get() {
 					if (!this[TimeRangesKey]) {
-						this[TimeRangesKey] = new WorkerTimeRanges(this[WinIdKey], this[InstanceIdKey], [
-							'buffered'
-						])
+						this[TimeRangesKey] = new WorkerTimeRanges(
+							this[WinIdKey],
+							this[InstanceIdKey],
+							['buffered']
+						)
 						setTimeout(() => {
 							this[TimeRangesKey] = void 0
 						}, 5e3)
@@ -429,7 +489,11 @@
 				}
 				static isTypeSupported(mimeType) {
 					if (!isStaticTypeSupported.has(mimeType)) {
-						const isSupported = callMethod(win, ['MediaSource', 'isTypeSupported'], [mimeType])
+						const isSupported = callMethod(
+							win,
+							['MediaSource', 'isTypeSupported'],
+							[mimeType]
+						)
 						isStaticTypeSupported.set(mimeType, isSupported)
 					}
 					return isStaticTypeSupported.get(mimeType)
@@ -447,9 +511,14 @@
 				}
 			}
 		}
-		definePrototypePropertyDescriptor(win.HTMLMediaElement, HTMLMediaDescriptorMap)
-		winURL.createObjectURL = (obj) => callMethod(win, ['URL', 'createObjectURL'], [obj])
-		winURL.revokeObjectURL = (obj) => callMethod(win, ['URL', 'revokeObjectURL'], [obj])
+		definePrototypePropertyDescriptor(
+			win.HTMLMediaElement,
+			HTMLMediaDescriptorMap
+		)
+		winURL.createObjectURL = (obj) =>
+			callMethod(win, ['URL', 'createObjectURL'], [obj])
+		winURL.revokeObjectURL = (obj) =>
+			callMethod(win, ['URL', 'revokeObjectURL'], [obj])
 	}
 	const isStaticTypeSupported = new Map()
 	self.$bridgeFromMedia$ = (

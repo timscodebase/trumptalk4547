@@ -2,24 +2,26 @@
 title: Seize the Digital Spotlight with trumptalk4547.com
 description: In an era where political discourse drives digital engagement, `trumptalk4547.com` stands out as a beacon for those looking to make an impact in the political arena. This domain isn't just an address; it's a platform, a statement, and an opportunity for you to carve your niche in the digital world.
 date: '2024-12-21'
-image: 'https://res.cloudinary.com/tithos/image/upload/e_contrast:0,q_auto:eco/v1734808003/tt4547_for_sale_klekm4.avif'
+image_id: 'tt4547_for_sale_klekm4'
 categories:
   - Premium Domain Sale
   - Podcasters
   - Independant News
 published: true
-type: ["featured"]
+type: ['featured']
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
-  import { Image } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/e_contrast:0,q_auto:eco/v1734808003/tt4547_for_sale_klekm4.avif"
-  alt="Premium Domain For Sale"
+<CldImage
+  width='100%'
+  src='tt4547_for_sale_klekm4'
+  alt='Seize the Digital Spotlight with trumptalk4547.com'
+  aspect-ratio='16:9'
 />
 
 ## The Opportunity of a Lifetime

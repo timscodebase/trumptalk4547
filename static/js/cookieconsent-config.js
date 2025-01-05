@@ -33,7 +33,8 @@ CookieConsent.run({
 					acceptAllBtn: 'Accept all',
 					acceptNecessaryBtn: 'Reject all',
 					showPreferencesBtn: 'Manage preferences',
-					footer: '<a href="#link">Privacy Policy</a>\n<a href="#link">Terms and conditions</a>'
+					footer:
+						'<a href="#link">Privacy Policy</a>\n<a href="#link">Terms and conditions</a>'
 				},
 				preferencesModal: {
 					title: 'Consent Preferences Center',
@@ -49,7 +50,8 @@ CookieConsent.run({
 								'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 						},
 						{
-							title: 'Strictly Necessary Cookies <span class="pm__badge">Always Enabled</span>',
+							title:
+								'Strictly Necessary Cookies <span class="pm__badge">Always Enabled</span>',
 							description:
 								'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 							linkedCategory: 'necessary'

@@ -2,26 +2,27 @@
 @import url('./consent.css');
 @import url('./banner.css');
 
-@import "tailwindcss";
-@plugin "daisyui";
+@import 'tailwindcss';
 
 @layer theme, base, components, utilities;
 
 @layer theme {
-  :root {
+	:root {
 		/* View Transition */
 		--view-transition-name: root;
 
 		/* Fonts: */
-    --font-sans: 'Lato', 'Source Serif Pro', sans-serif;
-    --font-serif: 'Arvo', serif;
-    --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+		--font-sans: 'Lato', 'Source Serif Pro', sans-serif;
+		--font-serif: 'Arvo', serif;
+		--font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco,
+			Consolas, 'Liberation Mono', 'Courier New', monospace;
 
 		/* Base Colors */
 		--color-light-blue: #a3c2ff;
 		--color-blue: #0339a6;
 		--color-dark-blue: #142557;
 		--color-white: #f2f2f2;
+		--color-red-light: #f0b9b9;
 		--color-red: #c70b0b;
 		--color-green: #00c700;
 		--color-yellow: #f2eb1f;
@@ -34,7 +35,8 @@
 		--color-text-light: var(--color-dark-blue);
 		--color-text-dark: var(--color-white);
 		--color-post-meta: var(--color-dark-blue);
-		--color-highligh: var(--color-red); 
+		--color-sub-header: var(--color-red-light);
+		--color-highligh: var(--color-red);
 		--color-highligh-light: var(--color-red);
 		--color-highligh-dark: var(--color-red);
 
@@ -61,7 +63,9 @@
 		--shadow-dark-footer: 0px 0.5px 0px var(--color-surface-op);
 
 		--shadow: var(--shadow-dark);
-		--op-shadow: var(--shadow-light); /* Consider renaming for clarity, e.g., --inverse-shadow */
+		--op-shadow: var(
+			--shadow-light
+		); /* Consider renaming for clarity, e.g., --inverse-shadow */
 
 		/* Icons */
 		--text-toggle: '☀️';
@@ -69,58 +73,60 @@
 }
 
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0 solid;
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		border: 0 solid;
+	}
 }
 
 @layer utilities {
-  .pointer-events-none {
-    pointer-events: none;
-  }
-  .visibility-hidden {
-    visibility: hidden;
-  }
+	.pointer-events-none {
+		pointer-events: none;
+	}
+	.visibility-hidden {
+		visibility: hidden;
+	}
 
-  .focus\:outline:focus {
-    outline-width: 1px;
-  }
+	.focus\:outline:focus {
+		outline-width: 1px;
+	}
 
-  @media (width >= 40rem) {
-    @media (hover: hover) {
-      .sm\:hover\:opacity-100:hover {
-        opacity: 100%;
-      }
-    }
-  }
+	@media (width >= 40rem) {
+		@media (hover: hover) {
+			.sm\:hover\:opacity-100:hover {
+				opacity: 100%;
+			}
+		}
+	}
 }
 
 [data-theme='light'] {
-  --color-surface: var(--color-surface-light);
-  --color-surface-op: var(--color-surface-dark); /* Consider clarity in naming */
-  --color-text: var(--color-text-light);
-  --color-text-op: var(--color-text-dark);
-  --color-success: var(--color-success-light);
-  --color-error: var(--color-error-light);
-  --color-warning: var(--color-warning-light);
-  --color-toggle: var(--color-toggle-light);
-  --color-selected: var(--color-highligh-dark);
+	--color-surface: var(--color-surface-light);
+	--color-surface-op: var(
+		--color-surface-dark
+	); /* Consider clarity in naming */
+	--color-text: var(--color-text-light);
+	--color-text-op: var(--color-text-dark);
+	--color-success: var(--color-success-light);
+	--color-error: var(--color-error-light);
+	--color-warning: var(--color-warning-light);
+	--color-toggle: var(--color-toggle-light);
+	--color-selected: var(--color-highligh-dark);
 
-  --color-red: var(--color-highligh-dark);
-  --color-blue: var(--color-surface-dark);
-  --color-shadow: var(--color-highligh);
+	--color-red: var(--color-highligh-dark);
+	--color-blue: var(--color-surface-dark);
+	--color-shadow: var(--color-highligh);
 
-  --shadow: var(--shadow-light);
-  --op-shadow: var(--shadow-dark);
+	--shadow: var(--shadow-light);
+	--op-shadow: var(--shadow-dark);
 
-  --text-toggle: '🌙';
+	--text-toggle: '🌙';
 }
 
 * {

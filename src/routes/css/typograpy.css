@@ -35,19 +35,19 @@ h6 {
 
 h1 {
 	margin: 0;
-	font-size: clamp(2rem, 6vw, 5.5rem);
+	font-size: clamp(1.75rem, 6vw, 5.5rem);
 	padding-bottom: 10px;
-	text-shadow: 3px 3px 0px var(--color-surface-op),
-							 -3px -3px 0px var(--color-surface-op),
-							 3px -3px 0px var(--color-surface-op),
-							 -3px 3px 0px var(--color-surface-op);
+	text-shadow:
+		3px 3px 0px var(--color-surface-op),
+		-3px -3px 0px var(--color-surface-op),
+		3px -3px 0px var(--color-surface-op),
+		-3px 3px 0px var(--color-surface-op);
 }
 
 h2 {
-	margin: 0.5rem 0;
 	font-size: clamp(1.5rem, 4vw, 3rem);
 	font-weight: bold;
-	text-shadow: var(--op-shadow);
+	color: var(--color-text-dark);
 }
 
 h3 {
@@ -71,8 +71,9 @@ h6 {
 	margin: 0.15rem 0;
 }
 
-a {
-	color: var(--color-text);
+a,
+a[href^='mailto:'] {
+	color: var(--color-sub-header);
 	text-decoration: none;
 	font-weight: bold;
 
@@ -82,12 +83,27 @@ a {
 	}
 
 	&:visited {
-		color: var(--color-text);
+		color: var(--color-sub-header);
 	}
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
 	line-height: 1.75;
+}
+
+a,
+p,
+ul {
+	font-size: 24px;
+	line-height: 1.5;
+	padding: 1rem 0;
+}
+
+ul {
+	list-style-type: disc;
+	margin-left: 3rem;
 }
 
 p::selection {
@@ -99,11 +115,7 @@ strong {
 	color: var(--color-text);
 	font-weight: bold;
 	font-family: var(--font-serif);
-	color: var(--color-surface-op);
-	text-shadow: 1px 1px 0px var(--color-text),
-							 -1px -1px 0px var(--color-text),
-							 1px -1px 0px var(--color-text),
-							 -1px 1px 0px var(--color-text);
+	color: var(--color-sub-header);
 }
 
 .mono {

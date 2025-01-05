@@ -2,27 +2,30 @@
 title: 'Trump Warns of Consequences if Gaza Hostages Not Released'
 description: 'Donald Trump, the President-elect of the United States, declared that if hostages held by Hamas in Gaza are not released by January 20, 2025, there will be severe consequences in the Middle East.'
 date: '2024-12-05'
-image: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1733421628/Screenshot_2024-12-05_at_9.52.15_AM_uf9u2k.avif'
+image_id: 'Screenshot_2024-12-05_at_9.52.15_AM_uf9u2k'
 categories:
   - Donald J Trump
   - Hostages
   - Gaza
-type: ["foreign"]
+type: ['foreign']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { Image } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1733421628/Screenshot_2024-12-05_at_9.52.15_AM_uf9u2k.avif'
-  alt='Sky News Report'
+<CldImage
+  width='100%'
+  src='Screenshot_2024-12-05_at_9.52.15_AM_uf9u2k'
+  alt='Trump Warns of Consequences if Gaza Hostages Not Released'
+  aspect-ratio='16:9'
 />
 
- - Statement — Donald Trump, the President-elect of the United States, declared that if hostages held by Hamas in Gaza are not released by January 20, 2025, there will be severe consequences in the Middle East.
+- Statement — Donald Trump, the President-elect of the United States, declared that if hostages held by Hamas in Gaza are not released by January 20, 2025, there will be severe consequences in the Middle East.
 
 - Context — This statement was made in the context of ongoing tensions following the October 2023 Hamas-led assault on Israel, during which over 250 individuals were taken hostage.
 

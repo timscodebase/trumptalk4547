@@ -2,24 +2,27 @@
 title: Remembering Corey Comperatore - A Hero's Legacy
 description: Corey Comperatore, a 50-year-old firefighter and former fire chief from Sarver, Pennsylvania, tragically lost his life during an attempted assassination of former President Donald Trump at a rally in Butler, Pennsylvania, on July 13, 2024. Corey's heroic actions during the attack, where he shielded his family from gunfire, epitomize his lifelong commitment to protecting others.
 date: '2024-10-05'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728161471/Fire_House_Tribute_s9xyqg.webp'
+image_id: 'Fire_House_Tribute_s9xyqg'
 categories:
   - Corey Comperatore
   - Butter, PA
   - Donald J Trump
-type: "domestic"
+type: 'domestic'
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728161471/Fire_House_Tribute_s9xyqg.webp"
-  alt="Corey Comperatore memorial jacket and his fire station."
+<CldImage
+  width='100%'
+  src='Fire_House_Tribute_s9xyqg'
+  alt='Remembering Corey Comperatore - A Heros Legacy'
+  aspect-ratio='16:9'
 />
 
 ## A Dedicated Firefighter and Family Man

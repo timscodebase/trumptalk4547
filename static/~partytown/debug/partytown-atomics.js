@@ -7,7 +7,9 @@
 		var _a, _b, _c
 		try {
 			const constructorName =
-				null === (_a = null == obj ? void 0 : obj.constructor) || void 0 === _a ? void 0 : _a.name
+				null === (_a = null == obj ? void 0 : obj.constructor) || void 0 === _a
+					? void 0
+					: _a.name
 			if (constructorName) {
 				return constructorName
 			}
@@ -16,7 +18,9 @@
 			const zoneJsConstructorName =
 				null ===
 					(_c =
-						null === (_b = null == obj ? void 0 : obj.__zone_symbol__originalInstance) ||
+						null ===
+							(_b =
+								null == obj ? void 0 : obj.__zone_symbol__originalInstance) ||
 						void 0 === _b
 							? void 0
 							: _b.constructor) || void 0 === _c
@@ -37,8 +41,10 @@
 			startsWith(memberName, 'toString') ||
 			startsWith(memberName, '_')
 		)
-	const getNodeName = (node) => (11 === node.nodeType && node.host ? '#s' : node.nodeName)
-	const randomId = () => Math.round(Math.random() * Number.MAX_SAFE_INTEGER).toString(36)
+	const getNodeName = (node) =>
+		11 === node.nodeType && node.host ? '#s' : node.nodeName
+	const randomId = () =>
+		Math.round(Math.random() * Number.MAX_SAFE_INTEGER).toString(36)
 	const defineConstructorName = (Cstr, value) =>
 		((obj, memberName, descriptor) =>
 			Object.defineProperty(obj, memberName, {
@@ -76,7 +82,9 @@
 				Object.getOwnPropertyNames(currentObj).forEach((item) => {
 					'function' == typeof currentObj[item] && properties.add(item)
 				})
-			} while ((currentObj = Object.getPrototypeOf(currentObj)) !== Object.prototype)
+			} while (
+				(currentObj = Object.getPrototypeOf(currentObj)) !== Object.prototype
+			)
 			return Array.from(properties)
 		})([])
 	)
@@ -91,7 +99,8 @@
 			if ((instanceId = windowIds.get(instance))) {
 				return instanceId
 			}
-			;(instanceId = instance[InstanceIdKey]) || setInstanceId(instance, (instanceId = randomId()))
+			;(instanceId = instance[InstanceIdKey]) ||
+				setInstanceId(instance, (instanceId = randomId()))
 			return instanceId
 		}
 	}
@@ -156,26 +165,47 @@
 			ceData[0]
 		)
 		const ceCallbackMethods =
-			'connectedCallback,disconnectedCallback,attributeChangedCallback,adoptedCallback'.split(',')
+			'connectedCallback,disconnectedCallback,attributeChangedCallback,adoptedCallback'.split(
+				','
+			)
 		ceCallbackMethods.map(
 			(callbackMethodName) =>
 				(Cstr.prototype[callbackMethodName] = function (...args) {
-					worker.postMessage([15, winId, getAndSetInstanceId(this), callbackMethodName, args])
+					worker.postMessage([
+						15,
+						winId,
+						getAndSetInstanceId(this),
+						callbackMethodName,
+						args
+					])
 				})
 		)
 		Cstr.observedAttributes = ceData[1]
 		return Cstr
 	}
-	const serializeForWorker = ($winId$, value, added, type, cstrName, prevInstanceId) =>
+	const serializeForWorker = (
+		$winId$,
+		value,
+		added,
+		type,
+		cstrName,
+		prevInstanceId
+	) =>
 		void 0 !== value && (type = typeof value)
-			? 'string' === type || 'number' === type || 'boolean' === type || null == value
+			? 'string' === type ||
+				'number' === type ||
+				'boolean' === type ||
+				null == value
 				? [0, value]
 				: 'function' === type
 					? [6]
 					: (added = added || new Set()) && Array.isArray(value)
 						? added.has(value)
 							? [1, []]
-							: added.add(value) && [1, value.map((v) => serializeForWorker($winId$, v, added))]
+							: added.add(value) && [
+									1,
+									value.map((v) => serializeForWorker($winId$, v, added))
+								]
 						: 'object' === type
 							? serializedValueIsError(value)
 								? [
@@ -191,15 +221,31 @@
 									: 'Window' === cstrName
 										? [3, [$winId$, $winId$]]
 										: 'HTMLCollection' === cstrName || 'NodeList' === cstrName
-											? [7, Array.from(value).map((v) => serializeForWorker($winId$, v, added)[1])]
+											? [
+													7,
+													Array.from(value).map(
+														(v) => serializeForWorker($winId$, v, added)[1]
+													)
+												]
 											: cstrName.endsWith('Event')
 												? [5, serializeObjectForWorker($winId$, value, added)]
 												: 'CSSRuleList' === cstrName
-													? [12, Array.from(value).map(serializeCssRuleForWorker)]
-													: startsWith(cstrName, 'CSS') && cstrName.endsWith('Rule')
+													? [
+															12,
+															Array.from(value).map(serializeCssRuleForWorker)
+														]
+													: startsWith(cstrName, 'CSS') &&
+														  cstrName.endsWith('Rule')
 														? [11, serializeCssRuleForWorker(value)]
 														: 'CSSStyleDeclaration' === cstrName
-															? [13, serializeObjectForWorker($winId$, value, added)]
+															? [
+																	13,
+																	serializeObjectForWorker(
+																		$winId$,
+																		value,
+																		added
+																	)
+																]
 															: 'Attr' === cstrName
 																? [10, [value.name, value.value]]
 																: value.nodeType
@@ -212,7 +258,16 @@
 																				prevInstanceId
 																			]
 																		]
-																	: [2, serializeObjectForWorker($winId$, value, added, true, true)]
+																	: [
+																			2,
+																			serializeObjectForWorker(
+																				$winId$,
+																				value,
+																				added,
+																				true,
+																				true
+																			)
+																		]
 							: void 0
 			: value
 	const serializeObjectForWorker = (
@@ -236,7 +291,11 @@
 							: obj[propName]
 					;(includeFunctions || 'function' != typeof propValue) &&
 						(includeEmptyStrings || '' !== propValue) &&
-						(serializedObj[propName] = serializeForWorker(winId, propValue, added))
+						(serializedObj[propName] = serializeForWorker(
+							winId,
+							propValue,
+							added
+						))
 				}
 			}
 		}
@@ -253,10 +312,17 @@
 	let ErrorObject = null
 	const serializedValueIsError = (value) => {
 		var _a
-		ErrorObject = (null === (_a = window.top) || void 0 === _a ? void 0 : _a.Error) || ErrorObject
+		ErrorObject =
+			(null === (_a = window.top) || void 0 === _a ? void 0 : _a.Error) ||
+			ErrorObject
 		return value instanceof ErrorObject
 	}
-	const deserializeFromWorker = (worker, serializedTransfer, serializedType, serializedValue) => {
+	const deserializeFromWorker = (
+		worker,
+		serializedTransfer,
+		serializedType,
+		serializedValue
+	) => {
 		if (serializedTransfer) {
 			serializedType = serializedTransfer[0]
 			serializedValue = serializedTransfer[1]
@@ -269,7 +335,9 @@
 						: 3 === serializedType
 							? getInstance(serializedValue[0], serializedValue[1])
 							: 5 === serializedType
-								? constructEvent(deserializeObjectFromWorker(worker, serializedValue))
+								? constructEvent(
+										deserializeObjectFromWorker(worker, serializedValue)
+									)
 								: 2 === serializedType
 									? deserializeObjectFromWorker(worker, serializedValue)
 									: 8 === serializedType
@@ -303,7 +371,10 @@
 		return ref
 	}
 	const constructEvent = (eventProps) =>
-		new ('detail' in eventProps ? CustomEvent : Event)(eventProps.type, eventProps)
+		new ('detail' in eventProps ? CustomEvent : Event)(
+			eventProps.type,
+			eventProps
+		)
 	const deserializeObjectFromWorker = (worker, serializedValue, obj, key) => {
 		obj = {}
 		for (key in serializedValue) {
@@ -312,7 +383,9 @@
 		return obj
 	}
 	const validCssRuleProps =
-		'cssText,selectorText,href,media,namespaceURI,prefix,name,conditionText'.split(',')
+		'cssText,selectorText,href,media,namespaceURI,prefix,name,conditionText'.split(
+			','
+		)
 	const mainAccessHandler = async (worker, accessReq) => {
 		let accessRsp = {
 			$msgId$: accessReq.$msgId$
@@ -336,7 +409,9 @@
 					(await new Promise((resolve) => {
 						let check = 0
 						let callback = () => {
-							winCtxs[winId] || check++ > 1e3 ? resolve() : requestAnimationFrame(callback)
+							winCtxs[winId] || check++ > 1e3
+								? resolve()
+								: requestAnimationFrame(callback)
 						}
 						callback()
 					}))
@@ -391,7 +466,14 @@
 		}
 		return accessRsp
 	}
-	const applyToInstance = (worker, winId, instance, applyPath, isLast, groupedGetters) => {
+	const applyToInstance = (
+		worker,
+		winId,
+		instance,
+		applyPath,
+		isLast,
+		groupedGetters
+	) => {
 		let i = 0
 		let l = len(applyPath)
 		let next
@@ -408,7 +490,9 @@
 					if ('string' == typeof current || 'number' == typeof current) {
 						if (i + 1 === l && groupedGetters) {
 							groupedRtnValues = {}
-							groupedGetters.map((propName) => (groupedRtnValues[propName] = instance[propName]))
+							groupedGetters.map(
+								(propName) => (groupedRtnValues[propName] = instance[propName])
+							)
 							return groupedRtnValues
 						}
 						instance = instance[current]
@@ -461,7 +545,10 @@
 				propertyOrPropertyWithSettings
 			) => {
 				if ('string' == typeof propertyOrPropertyWithSettings) {
-					return [propertyOrPropertyWithSettings, defaultPartytownForwardPropertySettings]
+					return [
+						propertyOrPropertyWithSettings,
+						defaultPartytownForwardPropertySettings
+					]
 				}
 				const [property, settings = defaultPartytownForwardPropertySettings] =
 					propertyOrPropertyWithSettings
@@ -478,14 +565,15 @@
 				mainForwardFn = mainForwardFn[arr[i]] =
 					i + 1 < len(arr)
 						? mainForwardFn[arr[i]] ||
-							((propertyName) => (arrayMethods.includes(propertyName) ? [] : {}))(arr[i + 1])
+							((propertyName) =>
+								arrayMethods.includes(propertyName) ? [] : {})(arr[i + 1])
 						: (() => {
 								let originalFunction = null
 								if (preserveBehavior) {
-									const { methodOrProperty: methodOrProperty, thisObject: thisObject } = ((
-										window,
-										properties
-									) => {
+									const {
+										methodOrProperty: methodOrProperty,
+										thisObject: thisObject
+									} = ((window, properties) => {
 										let thisObject = window
 										for (let i = 0; i < properties.length - 1; i += 1) {
 											thisObject = thisObject[properties[i]]
@@ -499,7 +587,8 @@
 										}
 									})(win, arr)
 									'function' == typeof methodOrProperty &&
-										(originalFunction = (...args) => methodOrProperty.apply(thisObject, ...args))
+										(originalFunction = (...args) =>
+											methodOrProperty.apply(thisObject, ...args))
 								}
 								return (...args) => {
 									let returnValue
@@ -520,7 +609,8 @@
 		let $winId$ = winCtx.$winId$
 		let win = winCtx.$window$
 		let doc = win.document
-		let scriptSelector = 'script[type="text/partytown"]:not([data-ptid]):not([data-pterror])'
+		let scriptSelector =
+			'script[type="text/partytown"]:not([data-ptid]):not([data-pterror])'
 		let blockingScriptSelector = scriptSelector + ':not([async]):not([defer])'
 		let scriptElm
 		let $instanceId$
@@ -529,7 +619,10 @@
 			scriptElm = doc.querySelector(blockingScriptSelector)
 			scriptElm || (scriptElm = doc.querySelector(scriptSelector))
 			if (scriptElm) {
-				scriptElm.dataset.ptid = $instanceId$ = getAndSetInstanceId(scriptElm, $winId$)
+				scriptElm.dataset.ptid = $instanceId$ = getAndSetInstanceId(
+					scriptElm,
+					$winId$
+				)
 				scriptData = {
 					$winId$: $winId$,
 					$instanceId$: $instanceId$
@@ -604,11 +697,23 @@
 			}
 			history.pushState = (state, _, newUrl) => {
 				pushState(state, _, newUrl)
-				onInitialised(onLocationChange(0, state, null == newUrl ? void 0 : newUrl.toString()))
+				onInitialised(
+					onLocationChange(
+						0,
+						state,
+						null == newUrl ? void 0 : newUrl.toString()
+					)
+				)
 			}
 			history.replaceState = (state, _, newUrl) => {
 				replaceState(state, _, newUrl)
-				onInitialised(onLocationChange(1, state, null == newUrl ? void 0 : newUrl.toString()))
+				onInitialised(
+					onLocationChange(
+						1,
+						state,
+						null == newUrl ? void 0 : newUrl.toString()
+					)
+				)
 			}
 			$window$.addEventListener('popstate', (event) => {
 				onInitialised(onLocationChange(2, event.state))
@@ -646,9 +751,13 @@
 					? requestAnimationFrame(() => readNextScript(worker, winCtx))
 					: 6 === msg[0] &&
 						((worker, winCtx, instanceId, errorMsg, scriptElm) => {
-							scriptElm = winCtx.$window$.document.querySelector(`[data-ptid="${instanceId}"]`)
+							scriptElm = winCtx.$window$.document.querySelector(
+								`[data-ptid="${instanceId}"]`
+							)
 							if (scriptElm) {
-								errorMsg ? (scriptElm.dataset.pterror = errorMsg) : (scriptElm.type += '-x')
+								errorMsg
+									? (scriptElm.dataset.pterror = errorMsg)
+									: (scriptElm.type += '-x')
 								delete scriptElm.dataset.ptid
 							}
 							readNextScript(worker, winCtx)
@@ -663,8 +772,14 @@
 		const shadowRoot = docImpl.createElement('p').attachShadow({
 			mode: 'open'
 		})
-		const intersectionObserver = getGlobalConstructor(mainWindow, 'IntersectionObserver')
-		const mutationObserver = getGlobalConstructor(mainWindow, 'MutationObserver')
+		const intersectionObserver = getGlobalConstructor(
+			mainWindow,
+			'IntersectionObserver'
+		)
+		const mutationObserver = getGlobalConstructor(
+			mainWindow,
+			'MutationObserver'
+		)
 		const resizeObserver = getGlobalConstructor(mainWindow, 'ResizeObserver')
 		const perf = mainWindow.performance
 		const screen = mainWindow.screen
@@ -737,7 +852,8 @@
 						return 'S' == interfaceName[0]
 							? doc.createElementNS(
 									'http://www.w3.org/2000/svg',
-									svgConstructorTags[tag] || tag.slice(0, 2).toLowerCase() + tag.slice(2)
+									svgConstructorTags[tag] ||
+										tag.slice(0, 2).toLowerCase() + tag.slice(2)
 								)
 							: doc.createElement(htmlConstructorTags[tag] || tag)
 					}
@@ -759,7 +875,14 @@
 				return [cstrName, CstrPrototype, impl, interfaceType]
 			})
 		cstrImpls.map(([cstrName, CstrPrototype, impl, intefaceType]) =>
-			readOwnImplementation(cstrs, interfaces, cstrName, CstrPrototype, impl, intefaceType)
+			readOwnImplementation(
+				cstrs,
+				interfaces,
+				cstrName,
+				CstrPrototype,
+				impl,
+				intefaceType
+			)
 		)
 		return interfaces
 	}
@@ -785,11 +908,24 @@
 			const superCstrName = getConstructorName(SuperCstr)
 			const interfaceMembers = []
 			const propDescriptors = Object.getOwnPropertyDescriptors(CstrPrototype)
-			readOwnImplementation(cstrs, interfaces, superCstrName, SuperCstr, impl, interfaceType)
+			readOwnImplementation(
+				cstrs,
+				interfaces,
+				superCstrName,
+				SuperCstr,
+				impl,
+				interfaceType
+			)
 			for (const memberName in propDescriptors) {
 				readImplementationMember(interfaceMembers, impl, memberName)
 			}
-			interfaces.push([cstrName, superCstrName, interfaceMembers, interfaceType, getNodeName(impl)])
+			interfaces.push([
+				cstrName,
+				superCstrName,
+				interfaceMembers,
+				interfaceType,
+				getNodeName(impl)
+			])
 		}
 	}
 	const readImplementationMember = (
@@ -801,7 +937,11 @@
 		cstrName
 	) => {
 		try {
-			if (isValidMemberName(memberName) && isNaN(memberName[0]) && 'all' !== memberName) {
+			if (
+				isValidMemberName(memberName) &&
+				isNaN(memberName[0]) &&
+				'all' !== memberName
+			) {
 				value = implementation[memberName]
 				memberType = typeof value
 				if ('function' === memberType) {
@@ -827,12 +967,19 @@
 	}
 	const getGlobalConstructor = (mainWindow, cstrName) =>
 		void 0 !== mainWindow[cstrName] ? new mainWindow[cstrName](noop) : 0
-	const addGlobalConstructorUsingPrototype = ($interfaces$, mainWindow, cstrName) => {
+	const addGlobalConstructorUsingPrototype = (
+		$interfaces$,
+		mainWindow,
+		cstrName
+	) => {
 		void 0 !== mainWindow[cstrName] &&
 			$interfaces$.push([
 				cstrName,
 				'Object',
-				Object.keys(mainWindow[cstrName].prototype).map((propName) => [propName, 6]),
+				Object.keys(mainWindow[cstrName].prototype).map((propName) => [
+					propName,
+					6
+				]),
 				12
 			])
 	}
@@ -872,12 +1019,18 @@
 			})
 			worker.onmessage = (ev) => {
 				const msg = ev.data
-				12 === msg[0] ? mainAccessHandler(worker, msg[1]) : onMessageHandler(worker, msg)
+				12 === msg[0]
+					? mainAccessHandler(worker, msg[1])
+					: onMessageHandler(worker, msg)
 			}
 			logMain('Created Partytown web worker (0.10.2)')
 			worker.onerror = (ev) => console.error('Web Worker Error', ev)
 			mainWindow.addEventListener('pt1', (ev) =>
-				registerWindow(worker, getAndSetInstanceId(ev.detail.frameElement), ev.detail)
+				registerWindow(
+					worker,
+					getAndSetInstanceId(ev.detail.frameElement),
+					ev.detail
+				)
 			)
 		}
 	})

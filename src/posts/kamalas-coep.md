@@ -2,25 +2,28 @@
 title: Kamala Harris Nominated Without Primary Votes
 description: Kamala Harris was nominated for the Democratic presidential candidacy without participating in primary elections, a unique scenario resulting from President Joe Biden stepping down. The Democratic Party swiftly rallied behind Harris, demonstrating a strategic move to maintain unity. Notably, influential party figures like Nancy Pelosi played a significant role in consolidating support for Harris.
 date: '2024-10-06'
-image: 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728221958/Kamala_Harris_2024-grad_atlibu.png'
+image_id: 'Kamala_Harris_2024-grad_atlibu'
 categories:
   - Kamala Harris
   - Nancy Peloci
   - DNC
   - Joe Biden
-type: ["domestic"]
+type: ['domestic']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1728221958/Kamala_Harris_2024-grad_atlibu.png"
-  alt="Kamala Harris waving on stage after a bloodless coep on President Joe Biden."
+<CldImage
+  width='100%'
+  src='Kamala_Harris_2024-grad_atlibu'
+  alt='Kamala Harris Nominated Without Primary Votes'
+  aspect-ratio='16:9'
 />
 
 ## An Unconventional Nomination Process
@@ -43,9 +46,9 @@ Harris received overwhelming support from the delegates, securing 99% of their v
 
 The nomination of Kamala Harris without primary votes has sparked significant public and media interest. Articles and analyses from various sources provide insights into the process and its implications:
 
-- [How did Kamala Harris wrap up the Democratic nomination?](https://www.brookings.edu/)
-- [Democratic Party's choice of Harris was undemocratic](https://www.theconversation.com/)
-- [Kamala Harris has earned enough votes to win the nomination](https://www.cnn.com/)
+- <ExternalLink href="https://www.brookings.edu/" text="How did Kamala Harris wrap up the Democratic nomination?" />
+- <ExternalLink href="https://www.theconversation.com/" text="Democratic Party's choice of Harris was undemocratic" />
+- <ExternalLink href="https://www.cnn.com/" text="Kamala Harris has earned enough votes to win the nomination" />
 
 ## Conclusion
 

@@ -2,15 +2,16 @@ import * as config from '$lib/config'
 import type { Post } from '$lib/types'
 
 export async function GET({ fetch }) {
-	const response = await fetch('api/posts')
+	const response = await fetch('api/all-posts')
 	const posts: Post[] = await response.json()
+	console.log('Post from RSS: ', posts)
 
 	const headers = { 'Content-Type': 'application/xml' }
 
 	const xml = `
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 			<channel>
-				<title>${config.name}</title>
+				<title>${config.url}</title>
 				<description>${config.description}</description>
 				<link>${config.url}</link>
 				<atom:link href="${config.url}/rss.xml" rel="self" type="application/rss+xml"/>
@@ -20,13 +21,12 @@ export async function GET({ fetch }) {
 						<item>
 							<title>${post.title}</title>
 							<description>${post.description}</description>
-							<link>${config.url}/${post.slug}</link>
+							<link>${config.url}/blog/${post.slug}</link>
 							<image>
-								<url>${post.image}</url>
-								<title>${post.title}</title>
-								<link>${config.url}/${post.slug}</link>
+								<url>https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1500/v1735759285/${post.image_id}.avif</url>
+								<link>${config.url}/blog/${post.slug}</link>
 							</image>
-							<guid isPermaLink="true">${config.url}/${post.slug}</guid>
+							<guid isPermaLink="true">${config.url}/blog/${post.slug}</guid>
 							<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 						</item>
 					`

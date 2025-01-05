@@ -18,7 +18,7 @@
 <style>
 	.posts {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		grid-template-rows: 1fr;
 		gap: 1rem;
 
@@ -26,6 +26,11 @@
 			padding: 0;
 			margin: 0;
 		}
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
 	}
 
 	@media (max-width: 1000px) {

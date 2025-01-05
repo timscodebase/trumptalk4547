@@ -1,14 +1,14 @@
 <script lang="ts">
 	import 'iconify-icon'
 	import { inject } from '@vercel/analytics'
-	import { Analylitics, CookieConsent, Footer, Header } from '$lib'
+	import { Analylitics, Footer, Header } from '$lib'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
-	
+
 	import './css/main.css'
 
 	let { children } = $props()
 
-	injectSpeedInsights() // Inject Vercel Insights
+	injectSpeedInsights()
 
 	$effect(() => {
 		const root = document.documentElement || document.body
@@ -34,10 +34,6 @@
 	</main>
 	<Footer />
 </div>
-
-<CookieConsent />
-
-<!-- <PartytownSnippet /> -->
 
 <style>
 	.wrapper {

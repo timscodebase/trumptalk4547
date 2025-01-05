@@ -1,8 +1,8 @@
 ---
-title: "Speaker Mike Johnson's Leadership Challenge"
-description: "An examination of Speaker Mike Johnson's leadership challenge within the Republican Party, his re-election bid, and the implications of Donald Trump's endorsement."
+title: Speaker Mike Johnson's Leadership Challenge
+description: An examination of Speaker Mike Johnson's leadership challenge within the Republican Party, his re-election bid, and the implications of Donald Trump's endorsement.
 date: '2024-12-31'
-image: 'https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735677607/speaker-johnson_ybqynl.jpg'
+image_id: 'speaker-johnson_ybqynl'
 categories:
   - Mike Johnson
   - Donald Trump
@@ -10,19 +10,22 @@ categories:
   - House Speaker
   - Political Endorsements
   - US Politics
-type: ["featured", "domestic"]
+type: ['featured', 'domestic']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
-  import { ExternalLink, Image } from '../lib';
+  import { ExternalLink } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src='https://res.cloudinary.com/tithos/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1735677607/speaker-johnson_ybqynl.jpg'
-  alt="Speaker Mike Johnson's Leadership Challenge"
+<CldImage
+  width='100%'
+  src='speaker-johnson_ybqynl'
+  alt='Speaker Mike Johnsons Leadership Challenge'
+  aspect-ratio='16:9'
 />
 
 **Context** - Speaker Mike Johnson is facing a leadership challenge within the Republican Party as he seeks re-election as Speaker of the House.
@@ -61,11 +64,4 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ### Top Search Results
 
-- **Mike Johnson seems to have won it; Donald Trump gives ...**
-  [economictimes.com](https://economictimes.com)
-
-- **Why Trump backing Speaker Mike Johnson (sort of) matters**
-  [yahoo.com](https://www.yahoo.com)
-
-- **Trump backs House Speaker Mike Johnson amid Republican ...**
-  [youtube.com](https://www.youtube.com)
+<ExternalLink href="https://economictimes.com" text="Mike Johnson seems to have won it; Donald Trump gives ..." />

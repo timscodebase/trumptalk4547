@@ -2,37 +2,27 @@
 title: ICE Detention and Enforcement
 description: New ICE report reveals the Biden-Harris administration has let in 425,000 illegal immigrants who are convicted criminals.
 date: '2024-09-28'
-image: 'https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1727555109/border-crisis-hero_qbayoz.webp'
+image_id: 'border-crisis-hero_qbayoz'
 categories:
   - Kamala Harris
   - Border Czar
   - Border Crisis
-type: ["featured", "domestic"]
+type: ['featured', 'domestic']
 published: true
 author: Tim Smith
 avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_auto:eco,r_max,w_100/v1703907649/me_f8wxaa.avif'
 ---
 
 <script>
-  import { Image } from '../lib';
+  import { CldImage } from 'svelte-cloudinary';
 </script>
 
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727555109/border-crisis-2_hczyd4.png"
-  alt="Collin Rugg: New ICE report reveals the Biden-Harris administration has let in 425,000 illegal immigrants who are convicted criminals."
+<CldImage
+  width='100%'
+  src='border-crisis-hero_qbayoz'
+  alt='ICE Detention and Enforcement'
+  aspect-ratio='16:9'
 />
-
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727555109/border-crisis-3_zozn30.png"
-  alt="This was the graph the New York Times accused of being false. It's literally just raw data sourced from the CBP nationwide encounters dataset."
-/>
-
-<Image
-  src="https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1727555109/border-crisis-1_rbfpyy.png"
-  alt="Yesterday, Mark Cuban joined CNBC and said Kamala Harris was doing a great job protecting the southern border."
-/>
-
-# ICE Detention and Enforcement: Key Statistics and Insights
 
 ## Detained Individuals
 
