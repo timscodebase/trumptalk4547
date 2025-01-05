@@ -33,9 +33,11 @@ _Ethics Investigation_ — Matt Gaetz has been under investigation by the House 
 
 _Political Feud_ — Gaetz's actions have been linked to political turmoil within the Republican Party, including a feud with former Speaker Kevin McCarthy, which contributed to McCarthy's ousting.
 
-<Image
-  src='https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1200/v1731982762/Screenshot_2024-11-18_at_6.12.13_PM_qy4n3w.webp'
+<CldImage
+  width='100%'
+  src='Screenshot_2024-11-18_at_6.12.13_PM_qy4n3w'
   alt='Rep. Michael Guest'
+  aspect-ratio='16:9'
 />
 
 _Attorney General Nomination_ — Despite the controversies, President-elect Donald Trump has nominated Gaetz to be the next Attorney General, a decision that has sparked significant debate and skepticism.

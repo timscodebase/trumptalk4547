@@ -17,6 +17,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
+  import { ExternalLink } from '../lib'
   import { CldImage } from 'svelte-cloudinary';
 </script>
 
@@ -48,6 +49,6 @@ The reelection of Mike Johnson as Speaker marks a significant moment for the GOP
 
 For further details on Johnson's leadership and the implications for the Republican agenda, refer to the following sources:
 
-- [Reuters]()[](https://www.reuters.com/world/us/trumps-republicans-take-congressional-majority-mike-johnson-faces-test-2025-01-03/)
-- [PBS News]()[](https://www.pbs.org/newshour/politics/mike-johnson-wins-gop-nomination-to-remain-house-speaker-with-full-vote-to-come-next-year)
-- [Fox News]()[](https://www.foxnews.com/live-news/speaker-house-election-2025)
+<ExternalLink href="https://www.reuters.com/world/us/trumps-republicans-take-congressional-majority-mike-johnson-faces-test-2025-01-03/" text="Reuters" />
+<ExternalLink href="https://www.pbs.org/newshour/politics/mike-johnson-wins-gop-nomination-to-remain-house-speaker-with-full-vote-to-come-next-year" text="PBS News" />
+<ExternalLink href="https://www.foxnews.com/live-news/speaker-house-election-2025" text="Fox News" />

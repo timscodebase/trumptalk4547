@@ -18,7 +18,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150
 ---
 
 <script>
-  
+  import { ExternalLink } from '../lib'
   import { CldImage } from 'svelte-cloudinary';
 </script>
 
@@ -87,8 +87,4 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150
 
 ### Additional Resources
 
-- [Immigration Preparedness Toolkit](https://ilrc.org)
-- [Emergency Preparedness for Possible ICE Action in Your ...](https://greaternw.org)
-- [Family Preparedness Plan](https://ilrc.org)
-
-This article aims to compile and present information from various sources to assist undocumented immigrants in Oregon with preparing for potential ICE interactions, focusing on community support, legal awareness, and safety planning.
+<ExternalLink href="https://ilrc.org" text="Immigration Preparedness Toolkit" />

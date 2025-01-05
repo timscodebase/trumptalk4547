@@ -14,7 +14,6 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 ---
 
 <script>
-  import { ExternalLink } from '../lib';
   import { CldImage } from 'svelte-cloudinary';
 </script>
 

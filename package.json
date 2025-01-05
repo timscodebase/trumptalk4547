@@ -16,7 +16,7 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/adapter-vercel": "^5.5.2",
 		"@sveltejs/kit": "^2.15.1",
 		"@sveltejs/vite-plugin-svelte": "4.0.0-next.7",
 		"@types/eslint": "^9.6.1",
@@ -44,7 +44,6 @@
 	"dependencies": {
 		"@builder.io/partytown": "^0.10.3",
 		"@cloudinary/url-gen": "^1.21.0",
-		"@sveltejs/adapter-vercel": "^5.5.2",
 		"@sveltelaunch/svelte-5-email": "^0.0.11",
 		"@tailwindcss/postcss": "4.0.0-beta.8",
 		"@tailwindcss/vite": "4.0.0-beta.8",

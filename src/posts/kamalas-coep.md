@@ -46,9 +46,9 @@ Harris received overwhelming support from the delegates, securing 99% of their v
 
 The nomination of Kamala Harris without primary votes has sparked significant public and media interest. Articles and analyses from various sources provide insights into the process and its implications:
 
-- [How did Kamala Harris wrap up the Democratic nomination?](https://www.brookings.edu/)
-- [Democratic Party's choice of Harris was undemocratic](https://www.theconversation.com/)
-- [Kamala Harris has earned enough votes to win the nomination](https://www.cnn.com/)
+- <ExternalLink href="https://www.brookings.edu/" text="How did Kamala Harris wrap up the Democratic nomination?" />
+- <ExternalLink href="https://www.theconversation.com/" text="Democratic Party's choice of Harris was undemocratic" />
+- <ExternalLink href="https://www.cnn.com/" text="Kamala Harris has earned enough votes to win the nomination" />
 
 ## Conclusion
 

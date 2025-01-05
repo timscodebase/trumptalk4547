@@ -64,11 +64,4 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/ar_1:1,c_fill,g_auto,q_a
 
 ### Top Search Results
 
-- **Mike Johnson seems to have won it; Donald Trump gives ...**
-  [economictimes.com](https://economictimes.com)
-
-- **Why Trump backing Speaker Mike Johnson (sort of) matters**
-  [yahoo.com](https://www.yahoo.com)
-
-- **Trump backs House Speaker Mike Johnson amid Republican ...**
-  [youtube.com](https://www.youtube.com)
+<ExternalLink href="https://economictimes.com" text="Mike Johnson seems to have won it; Donald Trump gives ..." />

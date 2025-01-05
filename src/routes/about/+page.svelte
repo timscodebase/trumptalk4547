@@ -1,8 +1,5 @@
 <script>
-	// import { Image } from '$lib'
 	import { name } from '$lib/config'
-
-	const size = '350px'
 </script>
 
 <svelte:head>
