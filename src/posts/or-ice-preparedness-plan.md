@@ -31,60 +31,36 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150
 
 ## Know Your Rights
 
-**Workshops and Materials** 🛡️
-
-- Undocumented immigrants have access to 'Know Your Rights' workshops and materials to understand their legal rights in the U.S., regardless of their immigration status.
+- **Workshops and Materials** Undocumented immigrants have access to 'Know Your Rights' workshops and materials to understand their legal rights in the U.S., regardless of their immigration status.
 
 ## Community Support Initiatives
 
-**Faith-Based Support** 🤲
+-  **Faith-Based Support** Churches and faith communities in Oregon are integral in providing support, resources, and safe spaces for families at risk during potential ICE actions.
 
-- Churches and faith communities in Oregon are integral in providing support, resources, and safe spaces for families at risk during potential ICE actions.
+-  **Educational Workshops** 'Know Your Rights' workshops educate immigrants on their legal rights and procedures to follow during encounters with ICE.
 
-**Educational Workshops** 📚
+- **Multilingual Resources** Resources and workshops are offered in multiple languages such as English, Spanish, and Somali, ensuring broader community access.
 
-- 'Know Your Rights' workshops educate immigrants on their legal rights and procedures to follow during encounters with ICE.
+- **Coalition Building** Strengthening support through alliances with other community organizations enhances resource sharing and collective action.
 
-**Multilingual Resources** 🗣️
-
-- Resources and workshops are offered in multiple languages such as English, Spanish, and Somali, ensuring broader community access.
-
-**Coalition Building** 🏢
-
-- Strengthening support through alliances with other community organizations enhances resource sharing and collective action.
-
-**Advocacy Efforts** 📜
-
-- Community groups play a role in advocating for immigrant rights and influencing local policies to safeguard vulnerable populations.
+- **Advocacy Efforts** Community groups play a role in advocating for immigrant rights and influencing local policies to safeguard vulnerable populations.
 
 ## Safety Plans
 
-**Family Preparedness** 📄
-
-- Families are advised to create safety plans to ensure child care and address legal matters in case of parental detention or deportation.
+- **Family Preparedness** Families are advised to create safety plans to ensure child care and address legal matters in case of parental detention or deportation.
 
 ## Legal Resources and Assistance
 
-**Immigration Attorneys** 👨‍⚖️
+- **Immigration Attorneys** Consulting with an immigration attorney is recommended for understanding legal options and rights.
 
-- Consulting with an immigration attorney is recommended for understanding legal options and rights.
+- **Emergency Contacts** Having an attorney's contact information readily available is essential for quick legal support if detained.
 
-**Emergency Contacts** 📞
+- **Legal Workshops** Community organizations conduct workshops to educate on legal processes and rights concerning immigration.
 
-- Having an attorney's contact information readily available is essential for quick legal support if detained.
+- **Finding Attorneys** Assistance from churches and community groups can help in locating reputable immigration attorneys.
 
-**Legal Workshops** 📑
-
-- Community organizations conduct workshops to educate on legal processes and rights concerning immigration.
-
-**Finding Attorneys** 🔍
-
-- Assistance from churches and community groups can help in locating reputable immigration attorneys.
-
-**Legal Documentation** 📝
-
-- Preparation and accessibility of legal documents are critical for managing emergencies.
+- **Legal Documentation** Preparation and accessibility of legal documents are critical for managing emergencies.
 
 ### Additional Resources
 
-<ExternalLink href="https://ilrc.org" text="Immigration Preparedness Toolkit" />
+<ExternalLink href="Immigration Preparedness Toolkit" text="https://ilrc.org" />
