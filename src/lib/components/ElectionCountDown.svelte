@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { daysUntilFutureDate } from '$lib/utils'
 	const inaugurationDay = new Date('2025-01-20')
-
-	const flag = './american-flag.png'
 </script>
 
 <section>
