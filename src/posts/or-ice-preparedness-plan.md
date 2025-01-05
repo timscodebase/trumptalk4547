@@ -37,7 +37,7 @@ avatar: 'https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_150
 
 -  **Faith-Based Support** Churches and faith communities in Oregon are integral in providing support, resources, and safe spaces for families at risk during potential ICE actions.
 
--  **Educational Workshops** 'Know Your Rights' workshops educate immigrants on their legal rights and procedures to follow during encounters with ICE.
+- **Educational Workshops** 'Know Your Rights' workshops educate immigrants on their legal rights and procedures to follow during encounters with ICE.
 
 - **Multilingual Resources** Resources and workshops are offered in multiple languages such as English, Spanish, and Somali, ensuring broader community access.
 
