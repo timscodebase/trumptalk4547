@@ -1,5 +1,5 @@
 <script>
-	import { ElectionCountDown, Image, Posts, Sponsors } from '$lib'
+	import { Posts, Sponsors } from '$lib'
 	import * as config from '$lib/config'
 
 	let data = $props()
@@ -9,8 +9,6 @@
 <svelte:head>
 	<title>{config.name}</title>
 </svelte:head>
-
-<ElectionCountDown />
 
 <section>
 	<Posts {posts} />
