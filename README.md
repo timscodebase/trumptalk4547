@@ -28,7 +28,7 @@ Educational Resource: A hub for political science students studying modern U.S. 
 - **X (Twitter)**: [@trumptalk4547](https://x.com/TrumpTalk4547)
 - **Negotiation**: We're open to offers. Please provide your best price or proposal.
 
-## How to Purchase
+### How to Purchase
 - **Contact**: Reach out via email or X with your interest.
 - **Offer**: Submit your offer or ask for more details.
 - **Negotiation**: We'll discuss terms and price.
