@@ -73,5 +73,9 @@
 			text-align: center;
 			line-height: 2rem;
 		}
+
+		.header-right {
+			padding-left: 0 !important;
+		}
 	}
 </style>

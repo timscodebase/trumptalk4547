@@ -3,7 +3,6 @@
 @import url('./banner.css');
 
 @import "tailwindcss";
-@plugin "daisyui";
 
 @layer theme, base, components, utilities;
 

@@ -25,6 +25,7 @@
 </nav>
 
 <style>
+
 	ul {
 		display: flex;
 		list-style: none;
@@ -32,6 +33,24 @@
 		padding: 0;
 		gap: 1rem;
 		text-align: center;
+
+		a {
+			font-weight: bolder;
+			text-decoration: underline;
+		}
+	}
+
+	@media (max-width: 1000px) {
+    nav {
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-highligh);
+    }
+    
+		ul {
+			place-content: center;
+			flex-wrap: wrap;
+		}
 	}
 
 	:global(.active) {
